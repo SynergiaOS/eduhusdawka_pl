@@ -30,15 +30,30 @@ pnpm dev
 
 ```bash
 # Rozwój
-pnpm dev          # Uruchomienie serwera deweloperskiego
+pnpm dev              # Serwer deweloperski (HTTP)
+pnpm dev:https        # Serwer deweloperski (HTTPS)
+pnpm dev:turbo        # Z Turbopack (szybszy)
+pnpm dev:https-turbo  # HTTPS + Turbopack
 
 # Produkcja
-pnpm build        # Budowanie aplikacji
-pnpm start        # Uruchomienie serwera produkcyjnego
+pnpm build            # Budowanie aplikacji
+pnpm start            # Serwer produkcyjny
 
 # Narzędzia
-pnpm lint         # Sprawdzanie kodu
+pnpm lint             # Sprawdzanie kodu
 ```
+
+### 🔐 HTTPS w developmencie
+
+```bash
+# Automatyczny certyfikat
+pnpm dev:https
+
+# Z Turbopack
+pnpm dev:https-turbo
+```
+
+Aplikacja będzie dostępna na `https://localhost:3000`. Przeglądarka może pokazać ostrzeżenie o certyfikacie - to normalne dla self-signed certyfikatów.
 
 ## 🌐 Deployment
 

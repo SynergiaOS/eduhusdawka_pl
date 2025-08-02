@@ -7,6 +7,12 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // HTTPS configuration for development
+  ...(process.env.NODE_ENV === 'development' && {
+    experimental: {
+      https: true,
+    },
+  }),
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
