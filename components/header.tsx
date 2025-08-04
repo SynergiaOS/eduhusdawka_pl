@@ -107,7 +107,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/kontakt"
+              href="/#lokalizacja"
               className="text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group"
             >
               Kontakt
@@ -190,7 +190,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/kontakt"
+              href="/#lokalizacja"
               className="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >

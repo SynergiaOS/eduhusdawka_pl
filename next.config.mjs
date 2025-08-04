@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Port configuration for Railway
+  ...(process.env.PORT && {
+    server: {
+      port: parseInt(process.env.PORT, 10),
+    },
+  }),
   eslint: {
     ignoreDuringBuilds: true,
   },
