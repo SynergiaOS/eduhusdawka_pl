@@ -1,17 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Port configuration for Railway
-  ...(process.env.PORT && {
-    server: {
-      port: parseInt(process.env.PORT, 10),
-    },
-  }),
+  // Railway uses PORT via package.json start script, not Next.js config
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Temporarily ignore for deployment
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true, // Temporarily ignore for deployment
   },
   // HTTPS configuration for development
   ...(process.env.NODE_ENV === 'development' && {
