@@ -3,14 +3,14 @@ import ClientLayout from "./client-layout"
 import './globals.css'
 
 export const metadata = {
-  metadataBase: new URL('https://eduhustawka.pl'),
+  metadataBase: new URL('https://eduhusdawka.pl'),
   title: 'EduHustawka - Terapia pedagogiczna i rozwój dziecka',
   description: 'Profesjonalna terapia pedagogiczna, diagnoza KORP, trening słuchowy Johansena i inne usługi wspierające rozwój dzieci.',
   generator: 'v0.dev',
   openGraph: {
     title: 'EduHustawka - Terapia pedagogiczna i rozwój dziecka',
     description: 'Profesjonalna terapia pedagogiczna, diagnoza KORP, trening słuchowy Johansena i inne usługi wspierające rozwój dzieci.',
-    url: 'https://eduhustawka.pl',
+    url: 'https://eduhusdawka.pl',
     siteName: 'EduHustawka',
     locale: 'pl_PL',
     type: 'website',

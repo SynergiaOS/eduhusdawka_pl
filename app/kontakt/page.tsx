@@ -12,6 +12,7 @@ import PrintableDirections from "@/components/printable-directions"
 import ErrorBoundary from "@/components/error-boundary"
 import { ContactFormError, MapError } from "@/components/error-fallbacks"
 import { FormLoadingState, LoadingSpinner } from "@/components/loading-states"
+import { EnhancedBreadcrumb } from "@/components/enhanced-breadcrumb"
 
 export const metadata: Metadata = {
   title: "Kontakt | EduHustawka",
@@ -29,8 +30,13 @@ export default function ContactPage() {
 
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <EnhancedBreadcrumb
+            items={[{ label: "Kontakt" }]}
+            className="mb-8"
+          />
+
           <AnimatedSection>
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 font-heading heading-fancy pb-4">Kontakt</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 font-heading heading-enhanced center pb-4">Kontakt</h1>
             <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
               Skontaktuj się z nami, aby umówić wizytę lub uzyskać więcej informacji o naszych usługach. Jesteśmy
               dostępni telefonicznie, mailowo oraz przez media społecznościowe.

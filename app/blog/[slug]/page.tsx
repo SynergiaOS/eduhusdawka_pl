@@ -144,7 +144,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               name: "EduHustawka - Joanna Świrydowicz",
               logo: {
                 "@type": "ImageObject",
-                url: "https://eduhustawka.pl/images/logo.png",
+                url: "https://eduhusdawka.pl/images/logo.png",
               },
             },
             description: post.excerpt,

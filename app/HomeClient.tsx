@@ -9,6 +9,7 @@ import ContactForm from "@/components/contact-form"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { EnhancedButton } from "@/components/ui/enhanced-button"
 import {
   ArrowRight,
   Brain,
@@ -31,9 +32,21 @@ import Link from "next/link"
 export default function HomeClient() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50 to-white pb-16 lg:pb-0">
+      {/* Skip link for accessibility */}
+      <a href="#main-content" className="skip-link focus-enhanced">
+        Przejdź do głównej treści
+      </a>
+
+      {/* Live region for screen readers */}
+      <div aria-live="polite" aria-atomic="true" className="sr-only" id="status-updates" />
+
+      {/* Screen reader only heading for page structure */}
+      <h1 className="sr-only">EduHustawka - Centrum terapii pedagogicznej i rozwoju dziecka</h1>
+
       <Header />
 
       {/* Hero Section */}
+      <main id="main-content">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-teal-50 via-teal-50 to-teal-100">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-600/10 via-teal-600/5 to-teal-600/10" />
 
@@ -52,31 +65,37 @@ export default function HomeClient() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <Button
+                  <EnhancedButton
                     size="lg"
-                    className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                    variant="primary"
+                    glow="strong"
                     onClick={() => (window.location.href = "tel:+48531509008")}
+                    aria-describedby="phone-description"
                   >
                     <Phone className="mr-2 h-5 w-5" />
                     Zadzwoń teraz
-                  </Button>
-                  <Button
+                    <span id="phone-description" className="sr-only">
+                      Numer telefonu: 531 509 008. Bezpłatna konsultacja telefoniczna.
+                    </span>
+                  </EnhancedButton>
+                  <EnhancedButton
                     size="lg"
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                    variant="secondary"
+                    glow="strong"
                     onClick={() => (window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację")}
                   >
                     <MessageSquare className="mr-2 h-5 w-5" />
                     WhatsApp
-                  </Button>
-                  <Button
+                  </EnhancedButton>
+                  <EnhancedButton
                     size="lg"
                     variant="outline"
-                    className="border-teal-600 text-teal-600 hover:bg-teal-50 px-8 py-4 text-lg bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
+                    glow="subtle"
                     onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     Formularz
-                  </Button>
+                  </EnhancedButton>
                 </div>
 
                 <div className="mt-8 flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-600">
@@ -115,17 +134,17 @@ export default function HomeClient() {
       </section>
 
       {/* Services Section - Grid Layout */}
-      <section id="services" className="py-20 bg-gradient-to-br from-teal-50 to-teal-50">
+      <section id="services" className="py-20 bg-gradient-to-br from-teal-50 to-teal-50 gradient-mesh-subtle" aria-labelledby="services-heading">
         <div className="container mx-auto px-4">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 font-heading text-teal-800">Moje Usługi</h2>
+            <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-center mb-16 font-heading text-teal-800 heading-enhanced center">Moje Usługi</h2>
           </AnimatedSection>
 
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* KORP - Karty Oceny Rozwoju Psychoruchowego */}
               <AnimatedSection>
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow" role="article" aria-labelledby="korp-heading">
                   <div className="relative h-64 overflow-hidden">
                     <OptimizedImage
                       src="/child-development-puzzle.png"
@@ -163,7 +182,7 @@ export default function HomeClient() {
 
               {/* Terapia ręki */}
               <AnimatedSection delay={100}>
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">
                   <div className="relative h-64 overflow-hidden">
                     <OptimizedImage
                       src="/images/hand-therapy.png"
@@ -201,7 +220,7 @@ export default function HomeClient() {
 
               {/* Trening Umiejętności Społecznych */}
               <AnimatedSection delay={200}>
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">
                   <div className="relative h-64 overflow-hidden">
                     <OptimizedImage
                       src="/colorful-learning-tools.png"
@@ -239,7 +258,7 @@ export default function HomeClient() {
 
               {/* Terapia pedagogiczna */}
               <AnimatedSection delay={300}>
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">
                   <div className="relative h-64 overflow-hidden">
                     <OptimizedImage
                       src="/colorful-learning-tools.png"
@@ -277,7 +296,7 @@ export default function HomeClient() {
 
               {/* IAS Johansena */}
               <AnimatedSection delay={400}>
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div className="glass-card rounded-2xl overflow-hidden group">
                   <div className="relative h-64 overflow-hidden">
                     <div className="w-full h-full bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                       <div className="aspect-video w-full max-w-sm">
@@ -321,7 +340,7 @@ export default function HomeClient() {
 
               {/* NEUROFLOW */}
               <AnimatedSection delay={500}>
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div className="glass-card rounded-2xl overflow-hidden group">
                   <div className="relative h-64 overflow-hidden">
                     <div className="w-full h-full bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
                       <div className="aspect-video w-full max-w-sm">
@@ -367,8 +386,10 @@ export default function HomeClient() {
         </div>
       </section>
 
+      <div className="section-divider wide" />
+
       {/* Simple Contact Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white gradient-mesh-subtle">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Gotowy na pierwszą konsultację?</h2>
@@ -379,17 +400,18 @@ export default function HomeClient() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               <div className="text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4 mx-auto">
-                  <Phone className="h-8 w-8 text-teal-600" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4 mx-auto hover-glow">
+                  <Phone className="h-8 w-8 text-teal-600 float-gentle" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Zadzwoń</h3>
                 <p className="text-gray-600 mb-4 flex-grow">Porozmawiajmy o potrzebach Twojego dziecka</p>
-                <Button
-                  className="bg-teal-600 hover:bg-teal-700 text-white mt-auto"
+                <EnhancedButton
+                  variant="primary"
+                  className="mt-auto"
                   onClick={() => (window.location.href = "tel:+48531509008")}
                 >
                   531 509 008
-                </Button>
+                </EnhancedButton>
               </div>
 
               <div className="text-center flex flex-col h-full">
@@ -398,12 +420,13 @@ export default function HomeClient() {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
                 <p className="text-gray-600 mb-4 flex-grow">Szybka wiadomość przez WhatsApp</p>
-                <Button
-                  className="bg-green-600 hover:bg-green-700 text-white mt-auto"
+                <EnhancedButton
+                  variant="secondary"
+                  className="mt-auto"
                   onClick={() => (window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację")}
                 >
                   Napisz na WhatsApp
-                </Button>
+                </EnhancedButton>
               </div>
 
               <div className="text-center flex flex-col h-full">
@@ -466,14 +489,20 @@ export default function HomeClient() {
       </section>
 
       <TestimonialsSection />
+
+      <div className="section-divider wide" />
+
       <BlogSection />
+
+      <div className="section-divider" />
+
       <FaqSection />
 
       {/* Pricing Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800 heading-enhanced center">
               Cennik usług
             </h2>
           </AnimatedSection>
@@ -618,11 +647,13 @@ export default function HomeClient() {
         </div>
       </section>
 
+      <div className="section-divider" />
+
       {/* Location Section */}
       <section id="lokalizacja" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800 heading-enhanced center">
               Jak do nas dojechać
             </h2>
           </AnimatedSection>
@@ -714,10 +745,10 @@ export default function HomeClient() {
       </section>
 
       {/* Contact Section */}
-      <section id="kontakt" className="py-16 bg-white">
+      <section id="kontakt" className="py-16 bg-white gradient-mesh-subtle">
         <div className="container mx-auto px-4">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading heading-fancy">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800 heading-enhanced center">
               Formularz kontaktowy
             </h2>
           </AnimatedSection>
@@ -725,8 +756,22 @@ export default function HomeClient() {
         </div>
       </section>
 
+      {/* Floating Action Button for quick call */}
+      <div className="fixed bottom-6 right-6 z-50 lg:hidden">
+        <EnhancedButton
+          size="icon"
+          variant="primary"
+          glow="strong"
+          className="h-14 w-14 rounded-full shadow-lg pulse-ring"
+          onClick={() => (window.location.href = "tel:+48531509008")}
+          aria-label="Zadzwoń teraz"
+        >
+          <Phone className="h-6 w-6" />
+        </EnhancedButton>
+      </div>
+
       {/* Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50 lg:hidden">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 lg:hidden">
         <div className="container mx-auto px-4 py-3">
           <div className="flex gap-2">
             <Button
@@ -757,6 +802,7 @@ export default function HomeClient() {
           </div>
         </div>
       </div>
+      </main>
 
       <Footer />
     </div>

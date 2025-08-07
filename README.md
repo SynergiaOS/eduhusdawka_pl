@@ -94,7 +94,7 @@ Utwórz plik `.env.local`:
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 
 # Konfiguracja domeny (produkcja)
-NEXT_PUBLIC_SITE_URL=https://eduhustawka.pl
+NEXT_PUBLIC_SITE_URL=https://eduhusdawka.pl
 ```
 
 ## 📁 Struktura projektu
