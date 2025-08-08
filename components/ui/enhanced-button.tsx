@@ -4,37 +4,45 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const enhancedButtonVariants = cva(
-  "relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 overflow-hidden group focus-enhanced",
+  "relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-base font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500/80 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0 overflow-hidden group focus-enhanced hover:brightness-[1.05] active:translate-y-[1px]",
+
   {
     variants: {
       variant: {
         primary: [
           "bg-gradient-to-r from-teal-600 to-teal-700 text-white",
           "hover:from-teal-700 hover:to-teal-800",
-          "shadow-lg hover:shadow-xl",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent",
+          "active:from-teal-800 active:to-teal-900",
+          "shadow-lg hover:shadow-xl active:shadow-md",
+          "contrast-more:from-teal-700 contrast-more:to-teal-800 contrast-more:text-white",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/25 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
         ],
         secondary: [
-          "bg-gradient-to-r from-green-600 to-green-700 text-white",
-          "hover:from-green-700 hover:to-green-800",
-          "shadow-lg hover:shadow-xl",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent",
+          "bg-gradient-to-r from-emerald-600 to-emerald-700 text-white",
+          "hover:from-emerald-700 hover:to-emerald-800",
+          "active:from-emerald-800 active:to-emerald-900",
+          "shadow-lg hover:shadow-xl active:shadow-md",
+          "contrast-more:from-emerald-700 contrast-more:to-emerald-800 contrast-more:text-white",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/25 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
         ],
         outline: [
-          "border-2 border-teal-600 text-teal-600 bg-white/80 backdrop-blur-sm",
-          "hover:bg-teal-50 hover:border-teal-700",
-          "shadow-lg hover:shadow-xl",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-teal-100/30 before:to-transparent",
+          "border-2 border-teal-700 text-teal-800 bg-white/90 backdrop-blur-sm",
+          "hover:bg-teal-50 hover:border-teal-800 hover:text-teal-900",
+          "active:bg-teal-100",
+          "shadow-lg hover:shadow-xl active:shadow-md",
+          "contrast-more:border-teal-900 contrast-more:text-teal-900",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-teal-100/40 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
         ],
         ghost: [
-          "text-teal-600 hover:bg-teal-50",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-teal-100/20 before:to-transparent",
+          "text-teal-700 hover:bg-teal-50",
+          "contrast-more:text-teal-900",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-teal-100/30 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
         ],
@@ -48,11 +56,11 @@ const enhancedButtonVariants = cva(
         ]
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3 text-xs",
-        lg: "h-11 rounded-md px-8 text-lg",
+        default: "h-11 px-5 py-3",
+        sm: "h-10 rounded-md px-4 text-sm",
+        lg: "h-12 rounded-lg px-8 text-lg",
         xl: "h-14 rounded-lg px-10 py-4 text-xl",
-        icon: "h-10 w-10",
+        icon: "h-12 w-12",
       },
       glow: {
         none: "",
@@ -96,7 +104,7 @@ const EnhancedButton = React.forwardRef<HTMLButtonElement, EnhancedButtonProps>(
             <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
           </div>
         )}
-        <span className={cn("relative z-10", loading && "opacity-0")}>
+        <span className={cn("relative z-10 inline-flex items-center", loading && "opacity-0")}>
           {children}
         </span>
       </Comp>

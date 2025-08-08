@@ -2,6 +2,8 @@
 
 import { z } from "zod"
 import { isLikelySpam } from "@/lib/spam-protection"
+import { getSMSQueue } from "@/lib/sms-queue"
+import { Resend } from "resend"
 
 // Define validation schema
 const ContactFormSchema = z.object({
@@ -80,6 +82,41 @@ export async function submitContactForm(prevState: ContactFormState, formData: F
 
     // Log the form data (in a real app, you'd send this data somewhere)
     console.log("Form submission:", { name, email, phone, message })
+
+    // Enqueue SMS notification to admin (high priority)
+    try {
+      const adminPhone = process.env.ADMIN_PHONE || ""
+      if (adminPhone) {
+        const queue = getSMSQueue()
+        const preview = message.length > 120 ? message.slice(0, 117) + "..." : message
+        const sms = `Nowe zapytanie (EduHustawka)\nImię: ${name}\nEmail: ${email}${phone ? `\nTel: ${phone}` : ""}\nWiadomość: ${preview}`
+        queue.enqueue(adminPhone, sms, { priority: 1 })
+      }
+    } catch (e) {
+      console.error("Błąd podczas dodawania SMS do kolejki:", e)
+    }
+
+    // Send email via Resend (if configured)
+    try {
+      const RESEND_API_KEY = process.env.RESEND_API_KEY
+      const ADMIN_EMAIL_TO = process.env.ADMIN_EMAIL_TO
+      const EMAIL_FROM = process.env.EMAIL_FROM || "onboarding@resend.dev"
+
+      if (RESEND_API_KEY && ADMIN_EMAIL_TO) {
+        const resend = new Resend(RESEND_API_KEY)
+        await resend.emails.send({
+          from: EMAIL_FROM,
+          to: ADMIN_EMAIL_TO,
+          subject: "Nowe zapytanie ze strony – EduHustawka",
+          html: `<p><strong>Imię:</strong> ${name}</p>
+                 <p><strong>Email:</strong> ${email}</p>
+                 ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ""}
+                 <p><strong>Wiadomość:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>`,
+        })
+      }
+    } catch (e) {
+      console.error("Błąd podczas wysyłania e-mail przez Resend:", e)
+    }
 
     // Return success state
     return {

@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import OptimizedImage from "@/components/optimized-image"
 
 export default function Footer() {
   return (
@@ -10,11 +11,18 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">E</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <OptimizedImage
+                src="/images/logo-eduhustawka.png"
+                alt="EduHustawka Logo"
+                width={50}
+                height={50}
+                className="w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg"
+              />
+              <div className="hidden sm:block">
+                <span className="font-bold text-lg bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent">EduHustawka</span>
+                <p className="text-xs text-gray-400 -mt-1">Pedagog specjalny</p>
               </div>
-              <span className="font-bold text-lg">EduHustawka</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Profesjonalne wsparcie rozwoju dzieci z niepełnosprawnością intelektualną, spektrum autyzmu i trudnościami

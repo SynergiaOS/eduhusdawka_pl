@@ -28,8 +28,10 @@ import {
   Clock,
 } from "lucide-react"
 import Link from "next/link"
+import { useAnalytics } from "@/hooks/use-analytics"
 
 export default function HomeClient() {
+  const { trackEvent } = useAnalytics()
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50 to-white pb-16 lg:pb-0">
       {/* Skip link for accessibility */}
@@ -69,10 +71,10 @@ export default function HomeClient() {
                     size="lg"
                     variant="primary"
                     glow="strong"
-                    onClick={() => (window.location.href = "tel:+48531509008")}
+                    onClick={() => { trackEvent("call_click", "CTA", "hero"); window.location.href = "tel:+48531509008"; }}
                     aria-describedby="phone-description"
                   >
-                    <Phone className="mr-2 h-5 w-5" />
+                    <Phone className="mr-2 h-6 w-6" />
                     Zadzwoń teraz
                     <span id="phone-description" className="sr-only">
                       Numer telefonu: 531 509 008. Bezpłatna konsultacja telefoniczna.
@@ -82,18 +84,18 @@ export default function HomeClient() {
                     size="lg"
                     variant="secondary"
                     glow="strong"
-                    onClick={() => (window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację")}
+                    onClick={() => { trackEvent("whatsapp_click", "CTA", "hero"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
                   >
-                    <MessageSquare className="mr-2 h-5 w-5" />
+                    <MessageSquare className="mr-2 h-6 w-6" />
                     WhatsApp
                   </EnhancedButton>
                   <EnhancedButton
                     size="lg"
                     variant="outline"
                     glow="subtle"
-                    onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
+                    onClick={() => { trackEvent("scroll_to_form", "CTA", "hero"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
                   >
-                    <MessageCircle className="mr-2 h-5 w-5" />
+                    <MessageCircle className="mr-2 h-6 w-6" />
                     Formularz
                   </EnhancedButton>
                 </div>
@@ -408,7 +410,7 @@ export default function HomeClient() {
                 <EnhancedButton
                   variant="primary"
                   className="mt-auto"
-                  onClick={() => (window.location.href = "tel:+48531509008")}
+                  onClick={() => { trackEvent("call_click", "CTA", "cards"); window.location.href = "tel:+48531509008"; }}
                 >
                   531 509 008
                 </EnhancedButton>
@@ -423,7 +425,7 @@ export default function HomeClient() {
                 <EnhancedButton
                   variant="secondary"
                   className="mt-auto"
-                  onClick={() => (window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację")}
+                  onClick={() => { trackEvent("whatsapp_click", "CTA", "cards"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
                 >
                   Napisz na WhatsApp
                 </EnhancedButton>
@@ -435,13 +437,14 @@ export default function HomeClient() {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
                 <p className="text-gray-600 mb-4 flex-grow">Wypełnij formularz kontaktowy</p>
-                <Button
+                <EnhancedButton
                   variant="outline"
-                  className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent mt-auto"
-                  onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
+                  className="mt-auto"
+                  onClick={() => { trackEvent("scroll_to_form", "CTA", "cards"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
+                  aria-label="Przejdź do formularza kontaktowego"
                 >
                   Formularz
-                </Button>
+                </EnhancedButton>
               </div>
 
               <div className="text-center flex flex-col h-full">
@@ -450,13 +453,14 @@ export default function HomeClient() {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Odwiedź</h3>
                 <p className="text-gray-600 mb-4 flex-grow">Umów się na wizytę w gabinecie</p>
-                <Button
+                <EnhancedButton
                   variant="outline"
-                  className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent mt-auto"
+                  className="mt-auto"
                   onClick={() => document.getElementById("lokalizacja")?.scrollIntoView({ behavior: "smooth" })}
+                  aria-label="Przewiń do sekcji z mapą dojazdu"
                 >
                   Lokalizacja
-                </Button>
+                </EnhancedButton>
               </div>
             </div>
 
@@ -622,22 +626,24 @@ export default function HomeClient() {
                       <p>• Możliwość pakietów terapeutycznych</p>
                     </div>
                     <div className="flex gap-2">
-                      <Button
+                      <EnhancedButton
                         size="sm"
-                        className="bg-teal-600 hover:bg-teal-700 text-white"
+                        variant="primary"
                         onClick={() => (window.location.href = "tel:+48531509008")}
+                        aria-label="Zadzwoń, aby zapytać o cenę"
                       >
                         <Phone className="mr-2 h-4 w-4" />
                         Zapytaj o cenę
-                      </Button>
-                      <Button
+                      </EnhancedButton>
+                      <EnhancedButton
                         size="sm"
-                        className="bg-green-600 hover:bg-green-700 text-white"
+                        variant="secondary"
                         onClick={() => (window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20zapytać%20o%20cennik%20usług")}
+                        aria-label="Napisz na WhatsApp w sprawie cennika"
                       >
                         <MessageSquare className="mr-2 h-4 w-4" />
                         WhatsApp
-                      </Button>
+                      </EnhancedButton>
                     </div>
                   </div>
                 </div>
@@ -728,14 +734,16 @@ export default function HomeClient() {
                     <p className="text-teal-700 text-sm mb-3">
                       <strong>Wskazówka:</strong> Gabinet w domu prywatnym. Wejście od strony ogrodu, z prawej strony budynku. Tabliczka "EDU HUSTAWKA" na bramie.
                     </p>
-                    <Button
+                    <EnhancedButton
                       size="sm"
-                      className="w-full bg-teal-600 hover:bg-teal-700 text-white"
-                      onClick={() => window.open("https://maps.app.goo.gl/TpyfdHUWGnogFuLKA", "_blank")}
+                      variant="primary"
+                      className="w-full"
+                      onClick={() => { trackEvent("maps_click", "CTA", "location_card"); window.open("https://maps.app.goo.gl/TpyfdHUWGnogFuLKA", "_blank"); }}
+                      aria-label="Otwórz lokalizację w Google Maps"
                     >
                       <MapPin className="mr-2 h-4 w-4" />
                       Otwórz w Google Maps
-                    </Button>
+                    </EnhancedButton>
                   </div>
                 </div>
               </AnimatedSection>
@@ -757,13 +765,13 @@ export default function HomeClient() {
       </section>
 
       {/* Floating Action Button for quick call */}
-      <div className="fixed bottom-6 right-6 z-50 lg:hidden">
+      <div className="fixed bottom-20 right-5 z-50 lg:hidden">
         <EnhancedButton
           size="icon"
           variant="primary"
           glow="strong"
           className="h-14 w-14 rounded-full shadow-lg pulse-ring"
-          onClick={() => (window.location.href = "tel:+48531509008")}
+          onClick={() => { trackEvent("call_click", "CTA", "fab"); window.location.href = "tel:+48531509008"; }}
           aria-label="Zadzwoń teraz"
         >
           <Phone className="h-6 w-6" />
@@ -774,31 +782,36 @@ export default function HomeClient() {
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 lg:hidden">
         <div className="container mx-auto px-4 py-3">
           <div className="flex gap-2">
-            <Button
+            <EnhancedButton
               size="sm"
-              className="bg-teal-600 hover:bg-teal-700 text-white flex-1"
-              onClick={() => (window.location.href = "tel:+48531509008")}
+              variant="primary"
+              className="flex-1"
+              onClick={() => { trackEvent("call_click", "CTA", "sticky"); window.location.href = "tel:+48531509008"; }}
+              aria-label="Zadzwoń teraz"
             >
               <Phone className="mr-2 h-4 w-4" />
               Zadzwoń
-            </Button>
-            <Button
+            </EnhancedButton>
+            <EnhancedButton
               size="sm"
-              className="bg-green-600 hover:bg-green-700 text-white flex-1"
-              onClick={() => (window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację")}
+              variant="secondary"
+              className="flex-1"
+              onClick={() => { trackEvent("whatsapp_click", "CTA", "sticky"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
+              aria-label="Napisz na WhatsApp"
             >
               <MessageSquare className="mr-2 h-4 w-4" />
               WhatsApp
-            </Button>
-            <Button
+            </EnhancedButton>
+            <EnhancedButton
               size="sm"
               variant="outline"
-              className="border-teal-600 text-teal-600 hover:bg-teal-50 flex-1"
-              onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
+              className="flex-1"
+              onClick={() => { trackEvent("scroll_to_form", "CTA", "sticky"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
+              aria-label="Przejdź do formularza"
             >
               <MessageCircle className="mr-2 h-4 w-4" />
               Formularz
-            </Button>
+            </EnhancedButton>
           </div>
         </div>
       </div>
