@@ -7,10 +7,10 @@ import { Phone, Hand, CheckCircle, ArrowRight, AlertTriangle } from "lucide-reac
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terapia Ręki - Rozwój Motoryki Małej | EduHustawka",
+  title: "Terapia Ręki - 120 zł gabinet, 150 zł dojazd | EduHustawka",
   description:
-    "Profesjonalna terapia ręki w Białymstoku. Rozwój motoryki małej, grafomotoryki i umiejętności pisania u dzieci. Indywidualne podejście.",
-  keywords: "terapia ręki, motoryka mała, grafomotoryka, pisanie, Białystok",
+    "Profesjonalna terapia ręki w Pomigaczach. 120 zł (gabinet), 150 zł (dojazd). Rozwój motoryki małej, grafomotoryki i umiejętności pisania u dzieci. Indywidualne podejście.",
+  keywords: "terapia ręki, motoryka mała, grafomotoryka, pisanie, Pomigacze, 120 zł, koordynacja wzrokowo-ruchowa",
 }
 
 export default function TerapiaRekiPage() {

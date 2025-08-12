@@ -30,7 +30,7 @@ export default function StructuredData() {
       "Mo-Fr 09:00-17:00",
       "Sa 09:00-13:00"
     ],
-    "priceRange": "120-470 PLN",
+    "priceRange": "80-470 PLN",
     "paymentAccepted": "Cash, Bank Transfer",
     "currenciesAccepted": "PLN",
     "areaServed": {
@@ -52,50 +52,72 @@ export default function StructuredData() {
       "itemListElement": [
         {
           "@type": "Offer",
+          "price": "120",
+          "priceCurrency": "PLN",
           "itemOffered": {
             "@type": "Service",
             "name": "Terapia pedagogiczna",
-            "description": "Wsparcie w nauce i rozwoju umiejętności edukacyjnych"
+            "description": "Wsparcie w nauce i rozwoju umiejętności edukacyjnych - 120 zł (gabinet), 150 zł (dojazd)"
           }
         },
         {
           "@type": "Offer",
+          "price": "120",
+          "priceCurrency": "PLN",
           "itemOffered": {
             "@type": "Service",
             "name": "Terapia ręki",
-            "description": "Rozwój motoryki precyzyjnej i koordynacji wzrokowo-ruchowej"
+            "description": "Rozwój motoryki precyzyjnej i koordynacji wzrokowo-ruchowej - 120 zł (gabinet), 150 zł (dojazd)"
           }
         },
         {
           "@type": "Offer",
+          "price": "80",
+          "priceCurrency": "PLN",
           "itemOffered": {
             "@type": "Service",
             "name": "Trening Umiejętności Społecznych (TUS)",
-            "description": "Zajęcia grupowe wspierające rozwój umiejętności społecznych"
+            "description": "Zajęcia grupowe wspierające rozwój umiejętności społecznych - 80 zł za 50 min, karnet miesięczny 300 zł"
           }
         },
         {
           "@type": "Offer",
+          "price": "350",
+          "priceCurrency": "PLN",
           "itemOffered": {
             "@type": "Service",
             "name": "Karty Oceny Rozwoju Psychoruchowego (KORP)",
-            "description": "Diagnostyka rozwoju psychoruchowego dzieci od 1 miesiąca do 9 lat"
+            "description": "Diagnostyka rozwoju psychoruchowego dzieci od 1 miesiąca do 9 lat - 350 zł"
           }
         },
         {
           "@type": "Offer",
+          "price": "350",
+          "priceCurrency": "PLN",
           "itemOffered": {
             "@type": "Service",
             "name": "Trening słuchowy Johansen IAS",
-            "description": "Indywidualna stymulacja słuchu metodą dr K. Johansena"
+            "description": "Indywidualna stymulacja słuchu metodą dr K. Johansena - od 350 zł"
           }
         },
         {
           "@type": "Offer",
+          "price": "350",
+          "priceCurrency": "PLN",
           "itemOffered": {
             "@type": "Service",
             "name": "Aktywny Trening Słuchowy Neuroflow",
-            "description": "Nowoczesny trening słuchowy wspierający rozwój słuchu i koncentracji"
+            "description": "Nowoczesny trening słuchowy wspierający rozwój słuchu i koncentracji - od 350 zł"
+          }
+        },
+        {
+          "@type": "Offer",
+          "price": "150",
+          "priceCurrency": "PLN",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Czytanie sylabowe z Forbrain",
+            "description": "Zajęcia nauki czytania z wykorzystaniem słuchawek Forbrain - 150 zł (gabinet), 180 zł (dojazd)"
           }
         }
       ]

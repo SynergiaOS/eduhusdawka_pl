@@ -6,8 +6,9 @@ import { BookOpen, Target, Heart, Users, CheckCircle } from "lucide-react"
 import OptimizedImage from "@/components/optimized-image"
 
 export const metadata: Metadata = {
-  title: "Terapia Pedagogiczna - Wsparcie w Nauce | EduHustawka",
-  description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Terapia pedagogiczna dostosowana do indywidualnych potrzeb dziecka.",
+  title: "Terapia Pedagogiczna - 120 zł gabinet, 150 zł dojazd | EduHustawka",
+  description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Terapia pedagogiczna 120 zł (gabinet), 150 zł (dojazd). Indywidualne podejście, nowoczesne metody.",
+  keywords: "terapia pedagogiczna, trudności w nauce, czytanie, pisanie, liczenie, dysleksja, ADHD, koncentracja, 120 zł, Pomigacze",
 }
 
 export default function TerapiaPedagogicznaPage() {

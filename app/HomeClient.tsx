@@ -540,7 +540,7 @@ export default function HomeClient() {
                         </td>
                         <td className="px-6 py-4 text-center text-gray-600">90-120 min</td>
                         <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">200 zł</span>
+                          <span className="text-lg font-semibold text-teal-600">350 zł</span>
                         </td>
                       </tr>
                       <tr className="hover:bg-teal-50 transition-colors">
@@ -553,9 +553,9 @@ export default function HomeClient() {
                             </div>
                           </div>
                         </td>
-                        <td className="px-6 py-4 text-center text-gray-600">45 min</td>
+                        <td className="px-6 py-4 text-center text-gray-600">50 min</td>
                         <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">80 zł</span>
+                          <span className="text-lg font-semibold text-teal-600">120 zł</span>
                         </td>
                       </tr>
                       <tr className="hover:bg-teal-50 transition-colors">
@@ -568,9 +568,9 @@ export default function HomeClient() {
                             </div>
                           </div>
                         </td>
-                        <td className="px-6 py-4 text-center text-gray-600">60 min</td>
+                        <td className="px-6 py-4 text-center text-gray-600">50 min</td>
                         <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">100 zł</span>
+                          <span className="text-lg font-semibold text-teal-600">80 zł</span>
                         </td>
                       </tr>
                       <tr className="hover:bg-teal-50 transition-colors">
@@ -583,9 +583,9 @@ export default function HomeClient() {
                             </div>
                           </div>
                         </td>
-                        <td className="px-6 py-4 text-center text-gray-600">45 min</td>
+                        <td className="px-6 py-4 text-center text-gray-600">50 min</td>
                         <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">80 zł</span>
+                          <span className="text-lg font-semibold text-teal-600">120 zł</span>
                         </td>
                       </tr>
                       <tr className="hover:bg-teal-50 transition-colors">
