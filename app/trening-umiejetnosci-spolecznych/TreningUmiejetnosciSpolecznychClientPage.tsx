@@ -314,8 +314,8 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                 </CardHeader>
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <div className="text-3xl font-bold text-gray-800 mb-2">60 zł</div>
-                    <p className="text-gray-600">za 60 minut</p>
+                    <div className="text-3xl font-bold text-gray-800 mb-2">80 zł</div>
+                    <p className="text-gray-600">za 50 minut</p>
                   </div>
 
                   <div className="space-y-3 mb-6">
@@ -357,8 +357,8 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                 </CardHeader>
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <div className="text-3xl font-bold text-gray-800 mb-2">220 zł</div>
-                    <p className="text-gray-600">zamiast 240 zł</p>
+                    <div className="text-3xl font-bold text-gray-800 mb-2">300 zł</div>
+                    <p className="text-gray-600">zamiast 320 zł</p>
                     <p className="text-sm text-green-600 font-semibold">Oszczędzasz 20 zł!</p>
                   </div>
 

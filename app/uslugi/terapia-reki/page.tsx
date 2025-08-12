@@ -58,39 +58,33 @@ export default function TerapiaRekiPage() {
                     <div className="border-b pb-3">
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="font-medium text-gray-800">Sesja terapeutyczna (45 min)</h3>
+                          <h3 className="font-medium text-gray-800">W gabinecie (50 min)</h3>
                           <p className="text-sm text-gray-600">Indywidualna terapia ręki</p>
                         </div>
                         <div className="text-right">
-                          <p className="text-2xl font-bold text-purple-600">150 zł</p>
+                          <p className="text-2xl font-bold text-purple-600">120 zł</p>
                           <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
                             Popularne
                           </span>
                         </div>
                       </div>
                     </div>
-                    <div className="border-b pb-3">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h3 className="font-medium text-gray-800">Pakiet 5 sesji</h3>
-                          <p className="text-sm text-gray-600">Oszczędność 50 zł</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="text-2xl font-bold text-purple-600">700 zł</p>
-                        </div>
-                      </div>
-                    </div>
                     <div>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="font-medium text-gray-800">Pakiet 10 sesji</h3>
-                          <p className="text-sm text-gray-600">Oszczędność 150 zł</p>
+                          <h3 className="font-medium text-gray-800">Z dojazdem do klienta (50 min)</h3>
+                          <p className="text-sm text-gray-600">Terapia w domu dziecka</p>
                         </div>
                         <div className="text-right">
-                          <p className="text-2xl font-bold text-purple-600">1350 zł</p>
+                          <p className="text-2xl font-bold text-purple-600">150 zł</p>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div className="mt-6 p-4 bg-purple-50 rounded-lg">
+                    <p className="text-sm text-purple-700 text-center">
+                      💡 Zajęcia mogą odbywać się indywidualnie lub w małych grupach
+                    </p>
                   </div>
                 </div>
               </div>
