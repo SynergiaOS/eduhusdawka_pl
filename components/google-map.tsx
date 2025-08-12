@@ -4,6 +4,7 @@ import { useState, useRef } from "react"
 import { MapPin, Navigation, X, Info, Printer } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Dialog, DialogContent, DialogDescription } from "@/components/ui/dialog"
+import { useAnalytics } from "@/hooks/use-analytics"
 
 interface LocationInfo {
   hours?: string
@@ -36,6 +37,7 @@ export default function GoogleMap({
     isHomeOffice: true,
   },
 }: GoogleMapProps) {
+  const { trackEvent } = useAnalytics()
   const [showInfoWindow, setShowInfoWindow] = useState(false)
   const [isFullscreenOpen, setIsFullscreenOpen] = useState(false)
   const mapRef = useRef<HTMLDivElement>(null)
@@ -51,6 +53,7 @@ export default function GoogleMap({
   const navigationUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`
 
   const handleNavigate = () => {
+    trackEvent("maps_click", "Navigation", "Google Maps navigation")
     if (typeof window !== "undefined") {
       window.open(navigationUrl, "_blank")
     }

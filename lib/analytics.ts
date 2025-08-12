@@ -50,11 +50,24 @@ export const event = ({
   label?: string
   value?: number
 }) => {
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", action, {
-      event_category: category,
-      event_label: label,
-      value: value,
-    })
+  if (typeof window !== "undefined") {
+    // Send to GA4 via gtag (if available)
+    if (window.gtag) {
+      window.gtag("event", action, {
+        event_category: category,
+        event_label: label,
+        value: value,
+      })
+    }
+
+    // Send to GTM via dataLayer (for GTM tags)
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: action,
+        event_category: category,
+        event_label: label,
+        value: value,
+      })
+    }
   }
 }

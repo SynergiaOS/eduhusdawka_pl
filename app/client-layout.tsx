@@ -6,7 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { UserPreferencesProvider } from "@/contexts/user-preferences-context"
 import { ConsentProvider } from "@/contexts/consent-context"
 import CookieBanner from "@/components/cookie-banner"
-import GoogleAnalytics from "@/components/google-analytics"
+import GoogleTagManager from "@/components/google-tag-manager"
+import AnalyticsTest from "@/components/analytics-test"
 import { Toaster } from "@/components/ui/toast"
 import { usePathname } from "next/navigation"
 import { useEffect, Suspense } from "react"
@@ -54,8 +55,9 @@ export default function ClientLayout({
           <Toaster />
           <CookieBanner />
           <Suspense fallback={null}>
-            <GoogleAnalytics />
+            <GoogleTagManager />
           </Suspense>
+          {process.env.NODE_ENV === 'development' && <AnalyticsTest />}
         </ConsentProvider>
       </UserPreferencesProvider>
     </ThemeProvider>

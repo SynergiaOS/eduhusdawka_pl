@@ -85,6 +85,7 @@ export default function HomeClient() {
                     variant="secondary"
                     glow="strong"
                     onClick={() => { trackEvent("whatsapp_click", "CTA", "hero"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
+                    aria-label="Napisz wiadomość na WhatsApp w sprawie konsultacji"
                   >
                     <MessageSquare className="mr-2 h-6 w-6" />
                     WhatsApp
@@ -94,6 +95,7 @@ export default function HomeClient() {
                     variant="outline"
                     glow="subtle"
                     onClick={() => { trackEvent("scroll_to_form", "CTA", "hero"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
+                    aria-label="Przewiń do formularza kontaktowego"
                   >
                     <MessageCircle className="mr-2 h-6 w-6" />
                     Formularz
@@ -411,6 +413,7 @@ export default function HomeClient() {
                   variant="primary"
                   className="mt-auto"
                   onClick={() => { trackEvent("call_click", "CTA", "cards"); window.location.href = "tel:+48531509008"; }}
+                  aria-label="Zadzwoń na numer 531 509 008"
                 >
                   531 509 008
                 </EnhancedButton>
@@ -426,6 +429,7 @@ export default function HomeClient() {
                   variant="secondary"
                   className="mt-auto"
                   onClick={() => { trackEvent("whatsapp_click", "CTA", "cards"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
+                  aria-label="Napisz wiadomość na WhatsApp w sprawie konsultacji"
                 >
                   Napisz na WhatsApp
                 </EnhancedButton>

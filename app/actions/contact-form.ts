@@ -99,7 +99,7 @@ export async function submitContactForm(prevState: ContactFormState, formData: F
     // Send email via Resend (if configured)
     try {
       const RESEND_API_KEY = process.env.RESEND_API_KEY
-      const ADMIN_EMAIL_TO = process.env.ADMIN_EMAIL_TO
+      const ADMIN_EMAIL_TO = process.env.ADMIN_EMAIL_TO || "j.swirydowicz.eduhustawka2024@gmail.com"
       const EMAIL_FROM = process.env.EMAIL_FROM || "onboarding@resend.dev"
 
       if (RESEND_API_KEY && ADMIN_EMAIL_TO) {

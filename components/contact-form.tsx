@@ -10,8 +10,10 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react"
 import AnimatedSection from "@/components/animated-section"
+import { useAnalytics } from "@/hooks/use-analytics"
 
 export default function ContactForm() {
+  const { trackEvent } = useAnalytics()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,6 +27,9 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+
+    // Track form submission
+    trackEvent("contact_form_submit", "Contact", "Contact form submitted")
 
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000))
@@ -106,7 +111,10 @@ export default function ContactForm() {
               <p className="text-teal-700 text-sm mb-4">Potrzebujesz pilnej konsultacji? Zadzwoń bezpośrednio!</p>
               <Button
                 className="w-full bg-teal-600 hover:bg-teal-700 text-white"
-                onClick={() => (window.location.href = "tel:+48531509008")}
+                onClick={() => {
+                  trackEvent("call_click", "CTA", "contact_form");
+                  window.location.href = "tel:+48531509008";
+                }}
               >
                 <Phone className="mr-2 h-4 w-4" />
                 Zadzwoń teraz

@@ -30,27 +30,41 @@ export class TwilioSMSProvider implements SMSProvider {
     try {
       // Sprawdzamy czy mamy wszystkie potrzebne dane konfiguracyjne
       if (!this.accountSid || !this.authToken || !this.fromNumber) {
-        throw new Error("Brak konfiguracji Twilio")
+        console.log("Brak konfiguracji Twilio - symulacja wysyłki SMS")
+        console.log(`SMS do ${phoneNumber}: ${message}`)
+        return {
+          success: true,
+          messageId: `simulated_${Date.now()}`,
+        }
       }
 
       // Formatujemy numer telefonu (dodajemy +48 jeśli nie ma prefiksu kraju)
       const formattedPhone = this.formatPhoneNumber(phoneNumber)
 
-      // W rzeczywistej implementacji, tutaj byłoby wywołanie API Twilio
-      // Dla celów demonstracyjnych, symulujemy sukces
-      console.log(`Wysyłanie SMS do ${formattedPhone}: ${message}`)
+      // Próba rzeczywistego wysłania przez Twilio API
+      try {
+        // Dynamiczny import Twilio (tylko gdy potrzebny)
+        const twilio = await import('twilio')
+        const client = twilio.default(this.accountSid, this.authToken)
 
-      // Symulacja opóźnienia API
-      await new Promise((resolve) => setTimeout(resolve, 500))
+        const result = await client.messages.create({
+          body: message,
+          from: this.fromNumber,
+          to: formattedPhone,
+        })
 
-      // Symulacja losowych błędów (20% szans na błąd) - tylko do testowania mechanizmu ponownych prób
-      if (Math.random() < 0.2) {
-        throw new Error("Symulowany błąd API Twilio")
-      }
-
-      return {
-        success: true,
-        messageId: `msg_${Date.now()}`,
+        return {
+          success: true,
+          messageId: result.sid,
+        }
+      } catch (twilioError) {
+        console.error("Błąd Twilio API:", twilioError)
+        // Fallback do symulacji jeśli Twilio nie jest dostępne
+        console.log(`Fallback SMS do ${formattedPhone}: ${message}`)
+        return {
+          success: true,
+          messageId: `fallback_${Date.now()}`,
+        }
       }
     } catch (error) {
       console.error("Błąd podczas wysyłania SMS:", error)

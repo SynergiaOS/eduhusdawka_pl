@@ -1,5 +1,6 @@
 import type React from "react"
 import ClientLayout from "./client-layout"
+import StructuredData from "@/components/structured-data"
 import './globals.css'
 
 export const metadata = {
@@ -29,6 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl" suppressHydrationWarning>
+      <head>
+        <StructuredData />
+      </head>
       <body suppressHydrationWarning>
         <ClientLayout>{children}</ClientLayout>
       </body>
