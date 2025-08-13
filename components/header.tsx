@@ -25,6 +25,8 @@ export default function Header() {
     { name: "Terapia pedagogiczna", href: "/uslugi/terapia-pedagogiczna" },
     { name: "IAS Johansena", href: "/uslugi/indywidualna-stymulacja-sluchu-johansena" },
     { name: "Forbrain", href: "/uslugi/forbrain" },
+    { name: "Neuroflow", href: "/rezerwacja" },
+    { name: "Diagnoza KORP", href: "/rezerwacja" },
     { name: "Wczesna nauka czytania", href: "/wczesna-nauka-czytania" },
   ]
 
@@ -102,6 +104,14 @@ export default function Header() {
               className="text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group"
             >
               O mnie
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-200 group-hover:w-full"></span>
+            </Link>
+
+            <Link
+              href="/rezerwacja"
+              className="text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group"
+            >
+              Rezerwacja
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-200 group-hover:w-full"></span>
             </Link>
 
@@ -186,6 +196,14 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               O mnie
+            </Link>
+
+            <Link
+              href="/rezerwacja"
+              className="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Rezerwacja
             </Link>
 
             <Link
