@@ -89,7 +89,7 @@ Dodatkowe informacje:
 
 Z poważaniem`
 
-    window.location.href = `mailto:j.swirydowicz.eduhustawka2024@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:rezerwacja@eduhustawka.pl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
   }
 
   return (

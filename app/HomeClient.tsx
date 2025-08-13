@@ -146,43 +146,7 @@ export default function HomeClient() {
 
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* KORP - Karty Oceny Rozwoju Psychoruchowego */}
-              <AnimatedSection>
-                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow" role="article" aria-labelledby="korp-heading">
-                  <div className="relative h-64 overflow-hidden">
-                    <OptimizedImage
-                      src="/child-development-puzzle.png"
-                      alt="Diagnoza KORP - kompleksowa ocena rozwoju dziecka"
-                      width={600}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                        <Brain className="inline h-4 w-4 mr-1" />
-                        KORP
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4 text-teal-800">Diagnoza KORP</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Kompleksowa Ocena Rozwoju Psychoruchowego to profesjonalne narzędzie diagnostyczne, które pozwala
-                      na szczegółową ocenę rozwoju dziecka w różnych obszarach.
-                    </p>
-                    <div className="flex justify-center">
-                      <Link
-                        href="/diagnoza-korp"
-                        className="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl"
-                      >
-                        <ArrowRight className="inline h-4 w-4 mr-2" />
-                        Dowiedz się więcej
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
+
 
               {/* Terapia ręki */}
               <AnimatedSection delay={100}>
@@ -307,7 +271,7 @@ export default function HomeClient() {
                         <iframe
                           width="100%"
                           height="100%"
-                          src="https://www.youtube.com/embed/uxCj7pgGD7M"
+                          src="https://www.youtube.com/embed/knZi4V6EGOo"
                           title="JIAS-trening słuchowy"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -342,49 +306,7 @@ export default function HomeClient() {
                 </div>
               </AnimatedSection>
 
-              {/* NEUROFLOW */}
-              <AnimatedSection delay={500}>
-                <div className="glass-card rounded-2xl overflow-hidden group">
-                  <div className="relative h-64 overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
-                      <div className="aspect-video w-full max-w-sm">
-                        <iframe
-                          width="100%"
-                          height="100%"
-                          src="https://www.youtube.com/embed/knZi4V6EGOo"
-                          title="Aktywny Trening Słuchowy Neuroflow"
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          className="rounded-lg"
-                        ></iframe>
-                      </div>
-                    </div>
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-teal-700 text-white px-3 py-1 rounded-full text-sm font-medium">
-                        <Zap className="inline h-4 w-4 mr-1" />
-                        NEUROFLOW
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4 text-teal-800">NEUROFLOW</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Nowoczesna metoda neurostymulacji słuchowej łącząca muzykę z ruchem. Wspiera rozwój funkcji
-                      poznawczych i motorycznych.
-                    </p>
-                    <div className="flex justify-center">
-                      <Link
-                        href="/trening-neuroflow"
-                        className="bg-teal-700 text-white px-6 py-3 rounded-lg hover:bg-teal-800 transition-colors font-medium shadow-lg hover:shadow-xl"
-                      >
-                        <ArrowRight className="inline h-4 w-4 mr-2" />
-                        Dowiedz się więcej
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
+
             </div>
           </div>
         </div>
@@ -528,21 +450,7 @@ export default function HomeClient() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-teal-600 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">Diagnoza KORP</div>
-                              <div className="text-sm text-gray-500">Kompleksowa ocena rozwoju</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">90-120 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">350 zł</span>
-                        </td>
-                      </tr>
+
                       <tr className="hover:bg-teal-50 transition-colors">
                         <td className="px-6 py-4">
                           <div className="flex items-center">
@@ -603,21 +511,7 @@ export default function HomeClient() {
                           <span className="text-lg font-semibold text-teal-600">150 zł</span>
                         </td>
                       </tr>
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-teal-700 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">NEUROFLOW</div>
-                              <div className="text-sm text-gray-500">Neurostymulacja słuchowa</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">45 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">120 zł</span>
-                        </td>
-                      </tr>
+
                     </tbody>
                   </table>
                 </div>

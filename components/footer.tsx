@@ -86,7 +86,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-teal-400" />
-                <span className="text-gray-400 text-sm">j.swirydowicz.eduhustawka2024@gmail.com</span>
+                <span className="text-gray-400 text-sm">kontakt@eduhustawka.pl</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-teal-400" />

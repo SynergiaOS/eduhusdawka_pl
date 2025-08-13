@@ -55,12 +55,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Dane usług z cennika
   const services = [
-    { id: "diagnoza-korp", name: "Diagnoza KORP" },
     { id: "trening-umiejetnosci-spolecznych", name: "Trening Umiejętności Społecznych (TUS)" },
     { id: "terapia-reki", name: "Terapia Ręki" },
     { id: "terapia-pedagogiczna", name: "Terapia Pedagogiczna" },
     { id: "indywidualna-stymulacja-sluchu-johansena", name: "Trening Słuchowy Johansena" },
-    { id: "trening-neuroflow", name: "Trening Neuroflow" },
     { id: "wczesna-nauka-czytania", name: "Wczesna Nauka Czytania" },
   ]
 

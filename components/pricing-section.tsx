@@ -22,33 +22,12 @@ interface PricingItem {
 // Dane usług z cenami - przekształcone do formatu tabeli
 const pricingItems: PricingItem[] = [
   {
-    id: "diagnoza-korp-pelna",
-    serviceName: "Diagnoza KORP",
-    itemName: "Diagnoza pełna",
-    description: "Kompleksowa ocena rozwoju psychomotorycznego dziecka obejmująca wszystkie sfery rozwojowe",
-    price: "350 zł",
-    popular: true,
-  },
-  {
-    id: "diagnoza-korp-konsultacja",
-    serviceName: "Diagnoza KORP",
-    itemName: "Konsultacja z rodzicami",
-    description: "Omówienie wyników diagnozy i przedstawienie zaleceń terapeutycznych",
-    price: "150 zł",
-  },
-  {
     id: "tus-grupowe",
     serviceName: "Trening Umiejętności Społecznych",
     itemName: "Zajęcia grupowe (50 min, 6-8 osób)",
     description: "Zajęcia grupowe rozwijające kompetencje społeczne i emocjonalne dzieci",
     price: "80 zł",
-  },
-  {
-    id: "tus-pakiet",
-    serviceName: "Trening Umiejętności Społecznych",
-    itemName: "Pakiet miesięczny (4 zajęcia)",
-    description: "Pakiet 4 zajęć grupowych TUS - oszczędność 20 zł w porównaniu do ceny pojedynczych zajęć",
-    price: "300 zł",
+    popular: true,
   },
   {
     id: "terapia-reki-sesja",
@@ -56,7 +35,6 @@ const pricingItems: PricingItem[] = [
     itemName: "W gabinecie (50 min)",
     description: "Indywidualna terapia usprawniająca małą motorykę i koordynację wzrokowo-ruchową",
     price: "120 zł",
-    popular: true,
   },
   {
     id: "terapia-reki-dojazd",
@@ -71,6 +49,7 @@ const pricingItems: PricingItem[] = [
     itemName: "W gabinecie (50 min)",
     description: "Wsparcie rozwoju poznawczego i przezwyciężanie trudności w nauce",
     price: "120 zł",
+    popular: true,
   },
   {
     id: "terapia-pedagogiczna-dojazd",
@@ -114,46 +93,7 @@ const pricingItems: PricingItem[] = [
     description: "Kontrolna diagnoza na podstawie obserwacji i wywiadu z rodzicem",
     price: "200 zł",
   },
-  {
-    id: "neuroflow-diagnoza",
-    serviceName: "Trening Neuroflow",
-    itemName: "Diagnoza wstępna",
-    description: "Wstępna diagnoza przed rozpoczęciem innowacyjnej terapii Neuroflow",
-    price: "350 zł",
-    new: true,
-  },
-  {
-    id: "neuroflow-badanie-etap",
-    serviceName: "Trening Neuroflow",
-    itemName: "Badanie przed kolejnym etapem",
-    description: "Badanie kontrolne przed przejściem do kolejnego etapu terapii",
-    price: "350 zł",
-    new: true,
-  },
-  {
-    id: "neuroflow-etap1",
-    serviceName: "Trening Neuroflow",
-    itemName: "I etap terapii",
-    description: "Pierwszy etap treningu Neuroflow dla dzieci z trudnościami w nauce",
-    price: "470 zł",
-    new: true,
-  },
-  {
-    id: "neuroflow-etap2",
-    serviceName: "Trening Neuroflow",
-    itemName: "II etap terapii",
-    description: "Drugi etap treningu Neuroflow - kontynuacja terapii",
-    price: "460 zł",
-    new: true,
-  },
-  {
-    id: "neuroflow-etap3",
-    serviceName: "Trening Neuroflow",
-    itemName: "III etap i kolejne",
-    description: "Trzeci i kolejne etapy treningu Neuroflow - zaawansowana terapia",
-    price: "450 zł",
-    new: true,
-  },
+
   {
     id: "czytanie-forbrain-gabinet",
     serviceName: "Czytanie sylabowe z Forbrain",

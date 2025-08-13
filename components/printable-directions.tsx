@@ -47,7 +47,7 @@ export default function PrintableDirections() {
                 <p className="flex items-center justify-end text-gray-700">
                   <Phone className="h-4 w-4 mr-1" /> 531 509 008
                 </p>
-                <p className="text-gray-700">j.swirydowicz.eduhustawka2024@gmail.com</p>
+                <p className="text-gray-700">kontakt@eduhustawka.pl</p>
               </div>
             </div>
 

@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
                 <h2>6. Kontakt</h2>
                 <p>
                   Jeśli masz jakiekolwiek pytania dotyczące niniejszej Polityki Prywatności, prosimy o kontakt:
-                  j.swirydowicz.eduhustawka2024@gmail.com
+                  kontakt@eduhustawka.pl
                 </p>
               </div>
             </div>

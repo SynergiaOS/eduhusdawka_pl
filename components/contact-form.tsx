@@ -78,7 +78,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-1">Email</h4>
-                  <p className="text-gray-600 break-all">j.swirydowicz.eduhustawka2024@gmail.com</p>
+                  <p className="text-gray-600 break-all">kontakt@eduhustawka.pl</p>
                   <p className="text-sm text-gray-500">Odpowiem w ciągu 24h</p>
                 </div>
               </div>

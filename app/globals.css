@@ -810,6 +810,35 @@ html {
   border-color: #0a7c72;
 }
 
+/* Enhanced mobile responsiveness */
+@media (max-width: 640px) {
+  .mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mobile-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .mobile-spacing {
+    margin-bottom: 1rem;
+  }
+
+  /* Better touch targets for mobile */
+  .mobile-touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Improved mobile forms */
+  .mobile-form-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 0.75rem;
+  }
+}
+
 /* Focus styles for interactive elements */
 button.focus-enhanced:focus-visible,
 a.focus-enhanced:focus-visible,

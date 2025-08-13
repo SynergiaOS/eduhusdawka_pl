@@ -9,10 +9,10 @@ export default function StructuredData() {
     "@id": "https://eduhusdawka.pl/#business",
     "name": "EduHustawka - Joanna Świrydowicz",
     "alternateName": "EDU HUSTAWKA",
-    "description": "Centrum terapii pedagogicznej i rozwoju dziecka. Specjalizujemy się w terapii ręki, pedagogicznej, treningu umiejętności społecznych oraz diagnostyce KORP.",
+    "description": "Centrum terapii pedagogicznej i rozwoju dziecka w Pomigaczach k. Białegostoku. Specjalizujemy się w terapii ręki, pedagogicznej, treningu umiejętności społecznych. Obsługujemy teren województwa podlaskiego.",
     "url": "https://eduhusdawka.pl",
     "telephone": "+48531509008",
-    "email": "j.swirydowicz.eduhustawka2024@gmail.com",
+    "email": "kontakt@eduhustawka.pl",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Polna 17",
@@ -30,7 +30,7 @@ export default function StructuredData() {
       "Mo-Fr 09:00-17:00",
       "Sa 09:00-13:00"
     ],
-    "priceRange": "80-470 PLN",
+    "priceRange": "80-350 PLN",
     "paymentAccepted": "Cash, Bank Transfer",
     "currenciesAccepted": "PLN",
     "areaServed": {

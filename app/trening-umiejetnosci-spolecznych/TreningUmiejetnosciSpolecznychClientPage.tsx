@@ -442,7 +442,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                     <MessageCircle className="h-8 w-8 text-green-600 mx-auto mb-4" />
                     <h3 className="font-semibold mb-2">Napisz</h3>
                     <p className="text-sm text-gray-600 mb-4">
-                      j.swirydowicz.eduhustawka2024@gmail.com
+                      kontakt@eduhustawka.pl
                       <br />
                       Odpowiem w ciągu 24h
                     </p>

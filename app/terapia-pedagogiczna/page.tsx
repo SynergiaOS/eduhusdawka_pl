@@ -6,9 +6,9 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terapia Pedagogiczna - Wsparcie w Nauce | EduHustawka",
+  title: "Terapia Pedagogiczna Białystok, Pomigacze - Wsparcie w Nauce | EduHustawka",
   description:
-    "Profesjonalna terapia pedagogiczna w Białymstoku. Wsparcie rozwoju poznawczego i przezwyciężanie trudności w nauce.",
+    "Profesjonalna terapia pedagogiczna w Pomigaczach k. Białegostoku. Wsparcie rozwoju poznawczego i przezwyciężanie trudności w nauce. Dojazd na terenie woj. podlaskiego.",
 }
 
 export default function TerapiaPedagogicznaPage() {

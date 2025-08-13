@@ -30,7 +30,7 @@ export function ContactFormError({ error, reset }: ErrorFallbackProps) {
               <a href="tel:531509008">Zadzwoń: 531 509 008</a>
             </Button>
             <Button variant="outline" asChild className="flex-1 bg-transparent">
-              <a href="mailto:j.swirydowicz.eduhustawka2024@gmail.com">
+              <a href="mailto:kontakt@eduhustawka.pl">
                 <Mail className="h-4 w-4 mr-2" />
                 Email
               </a>

@@ -178,7 +178,7 @@ export default function CookiePolicyPage() {
                 <h2>7. Kontakt</h2>
                 <p>
                   Jeśli masz jakiekolwiek pytania dotyczące naszej polityki cookies, prosimy o kontakt:
-                  j.swirydowicz.eduhustawka2024@gmail.com
+                  kontakt@eduhustawka.pl
                 </p>
 
                 <div className="mt-8 flex justify-center">

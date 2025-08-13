@@ -19,14 +19,16 @@ export default function AppointmentForm() {
     message: "",
     smsConfirmation: false,
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setIsSubmitting(true)
 
     // Validate form
     if (!formData.name || !formData.email || !formData.phone || !formData.service) {
@@ -35,6 +37,7 @@ export default function AppointmentForm() {
         description: "Proszę wypełnić wszystkie wymagane pola.",
         variant: "destructive",
       })
+      setIsSubmitting(false)
       return
     }
 
@@ -54,7 +57,7 @@ ${formData.message || "Brak dodatkowej wiadomości"}
     `.trim()
 
     // Create mailto link
-    const mailtoLink = `mailto:j.swirydowicz.eduhustawka2024@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    const mailtoLink = `mailto:kontakt@eduhustawka.pl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
     // Open email client
     window.location.href = mailtoLink
@@ -64,6 +67,9 @@ ${formData.message || "Brak dodatkowej wiadomości"}
       title: "Formularz przygotowany",
       description: "Otwieranie klienta poczty z wypełnionymi danymi...",
     })
+
+    // Reset loading state after a delay
+    setTimeout(() => setIsSubmitting(false), 1000)
   }
 
   return (
