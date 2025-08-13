@@ -271,7 +271,7 @@ export default function HomeClient() {
                         <iframe
                           width="100%"
                           height="100%"
-                          src="https://www.youtube.com/embed/knZi4V6EGOo"
+                          src="https://www.youtube.com/embed/uxCj7pgGD7M"
                           title="JIAS-trening słuchowy"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
