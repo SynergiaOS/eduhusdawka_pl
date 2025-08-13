@@ -1,3 +1,5 @@
+"use client"
+
 import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -5,11 +7,8 @@ import AnimatedSection from "@/components/animated-section"
 import { Calendar, Phone, Mail, MessageSquare, CheckCircle, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {
-  title: "Rezerwacja wizyty - Umów się na terapię | EduHustawka",
-  description: "Zarezerwuj wizytę w EduHustawka. Oferujemy terapię pedagogiczną (120 zł), terapię ręki (120 zł), TUS (80 zł), diagnozę KORP (350 zł) i więcej.",
-  keywords: "rezerwacja, wizyta, terapia, Pomigacze, EduHustawka, umówienie, termin, 120 zł, 80 zł, 350 zł",
-}
+// Note: metadata export removed due to "use client" directive
+// Metadata should be handled by parent layout or moved to separate metadata file
 
 export default function RezerwacjaPage() {
   const services = [
