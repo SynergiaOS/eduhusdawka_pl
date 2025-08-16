@@ -56,7 +56,8 @@ export const CSP_CONFIG = {
     "https://images.unsplash.com",
     "https://source.unsplash.com",
     "https://placeholder.pics",
-    "https://via.placeholder.com"
+    "https://via.placeholder.com",
+    "https://img.youtube.com"
   ],
   'connect-src': [
     "'self'",
@@ -67,7 +68,8 @@ export const CSP_CONFIG = {
   'frame-src': [
     "'self'",
     "https://www.google.com",
-    "https://maps.google.com"
+    "https://maps.google.com",
+    "https://www.youtube.com"
   ],
   'object-src': ["'none'"],
   'base-uri': ["'self'"],

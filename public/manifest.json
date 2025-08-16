@@ -1,0 +1,53 @@
+{
+  "name": "EduHustawka - Centrum Terapii Dziecka",
+  "short_name": "EduHustawka",
+  "description": "Profesjonalna terapia pedagogiczna, terapia ręki, TUS w Pomigaczach k. Białegostoku. Pedagog specjalny z wieloletnim doświadczeniem.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d9488",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pl",
+  "categories": ["health", "education", "medical"],
+  "icons": [
+    {
+      "src": "/images/logo-eduhustawka.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo-eduhustawka.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Umów wizytę",
+      "short_name": "Rezerwacja",
+      "description": "Szybka rezerwacja wizyty",
+      "url": "/rezerwacja",
+      "icons": [
+        {
+          "src": "/images/logo-eduhustawka.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Kontakt",
+      "short_name": "Kontakt",
+      "description": "Informacje kontaktowe",
+      "url": "/#lokalizacja",
+      "icons": [
+        {
+          "src": "/images/logo-eduhustawka.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

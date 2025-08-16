@@ -3,7 +3,7 @@
 import AnimatedSection from "@/components/animated-section"
 import OptimizedImage from "@/components/optimized-image"
 import TestimonialsSection from "@/components/testimonials-section"
-import BlogSection from "@/components/blog-section"
+import ServiceArticlesSection from "@/components/service-articles-section"
 import FaqSection from "@/components/faq-section"
 import ContactForm from "@/components/contact-form"
 import Header from "@/components/header"
@@ -29,6 +29,9 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { useAnalytics } from "@/hooks/use-analytics"
+import AnimatedStats from "@/components/animated-stats"
+
+import DevelopmentTimeline from "@/components/development-timeline"
 
 export default function HomeClient() {
   const { trackEvent } = useAnalytics()
@@ -528,11 +531,14 @@ export default function HomeClient() {
         </div>
       </section>
 
+      {/* Development Timeline */}
+      <DevelopmentTimeline />
+
       <TestimonialsSection />
 
       <div className="section-divider wide" />
 
-      <BlogSection />
+      <ServiceArticlesSection />
 
       <div className="section-divider" />
 
@@ -740,66 +746,119 @@ export default function HomeClient() {
                 </div>
               </AnimatedSection>
 
-              {/* Travel Info */}
+              {/* Contact & Travel Info */}
               <AnimatedSection animation="slide" direction="right" delay={200}>
-                <div className="bg-white rounded-lg shadow-lg p-6">
-                  <h3 className="text-xl font-bold mb-6 text-gray-800">Informacje o dojeździe</h3>
+                <div className="space-y-6">
+                  {/* Contact Info Card */}
+                  <div className="bg-white rounded-lg shadow-lg p-6">
+                    <h3 className="text-xl font-bold mb-6 text-gray-800">Kontakt</h3>
 
-                  <div className="space-y-6">
-                    <div>
-                      <div className="flex items-center mb-3">
-                        <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                          <span className="text-blue-600 font-bold text-sm">🚗</span>
+                    <div className="space-y-4">
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4">
+                          <Phone className="h-5 w-5 text-teal-600" />
                         </div>
-                        <h4 className="font-semibold text-gray-800">Samochodem</h4>
+                        <div>
+                          <p className="font-semibold text-gray-800">Telefon</p>
+                          <a href="tel:+48531509008" className="text-teal-600 hover:text-teal-700 font-medium">
+                            531 509 008
+                          </a>
+                        </div>
                       </div>
-                      <p className="text-gray-600 text-sm ml-11">
-                        Z Białegostoku drogą krajową nr 19. Parking przy domu.
-                      </p>
-                    </div>
 
-                    <div>
-                      <div className="flex items-center mb-3">
-                        <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
-                          <span className="text-green-600 font-bold text-sm">🚌</span>
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                          <MessageSquare className="h-5 w-5 text-green-600" />
                         </div>
-                        <h4 className="font-semibold text-gray-800">Komunikacja</h4>
+                        <div>
+                          <p className="font-semibold text-gray-800">WhatsApp</p>
+                          <a
+                            href="https://wa.me/48531509008"
+                            className="text-green-600 hover:text-green-700 font-medium"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Napisz wiadomość
+                          </a>
+                        </div>
                       </div>
-                      <p className="text-gray-600 text-sm ml-11">
-                        Autobus: linia 105 z Białegostoku<br />
-                        Przystanek: "Pomigacze Centrum" (500m pieszo)
-                      </p>
-                    </div>
 
-                    <div>
-                      <div className="flex items-center mb-3">
-                        <div className="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center mr-3">
-                          <MapPin className="h-4 w-4 text-teal-600" />
+                      <div className="flex items-start">
+                        <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                          <Clock className="h-5 w-5 text-blue-600" />
                         </div>
-                        <h4 className="font-semibold text-gray-800">Adres</h4>
+                        <div>
+                          <p className="font-semibold text-gray-800">Godziny pracy</p>
+                          <p className="text-gray-600 text-sm">
+                            Pon-Pt: 9:00-17:00<br />
+                            Sobota: 9:00-13:00<br />
+                            <span className="text-blue-600">Umów się telefonicznie</span>
+                          </p>
+                        </div>
                       </div>
-                      <p className="text-gray-600 text-sm ml-11">
-                        Polna 17<br />
-                        18-106 Pomigacze<br />
-                        <span className="text-teal-600 font-mono">23QQ+5C Pomigacze</span>
-                      </p>
                     </div>
                   </div>
 
-                  <div className="mt-6 p-4 bg-teal-50 rounded-lg">
-                    <p className="text-teal-700 text-sm mb-3">
-                      <strong>Wskazówka:</strong> Gabinet w domu prywatnym. Wejście od strony ogrodu, z prawej strony budynku. Tabliczka "EDU HUSTAWKA" na bramie.
-                    </p>
-                    <EnhancedButton
-                      size="sm"
-                      variant="primary"
-                      className="w-full"
-                      onClick={() => { trackEvent("maps_click", "CTA", "location_card"); window.open("https://maps.app.goo.gl/TpyfdHUWGnogFuLKA", "_blank"); }}
-                      aria-label="Otwórz lokalizację w Google Maps"
-                    >
-                      <MapPin className="mr-2 h-4 w-4" />
-                      Otwórz w Google Maps
-                    </EnhancedButton>
+                  {/* Travel Info Card */}
+                  <div className="bg-white rounded-lg shadow-lg p-6">
+                    <h3 className="text-xl font-bold mb-6 text-gray-800">Jak dojechać</h3>
+
+                    <div className="space-y-4">
+                      <div className="flex items-start">
+                        <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                          <span className="text-blue-600 font-bold text-lg">🚗</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-1">Samochodem</h4>
+                          <p className="text-gray-600 text-sm">
+                            Z Białegostoku drogą krajową nr 19<br />
+                            Parking bezpłatny przy domu
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                          <span className="text-green-600 font-bold text-lg">🚌</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-1">Komunikacja</h4>
+                          <p className="text-gray-600 text-sm">
+                            Autobus linia 105 z Białegostoku<br />
+                            Przystanek: "Pomigacze Centrum" (500m)
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                          <MapPin className="h-5 w-5 text-teal-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-1">Adres</h4>
+                          <p className="text-gray-600 text-sm">
+                            Polna 17, 18-106 Pomigacze<br />
+                            <span className="text-teal-600 font-mono text-xs">23QQ+5C Pomigacze</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-6 p-4 bg-teal-50 rounded-lg">
+                      <p className="text-teal-700 text-sm mb-4">
+                        <strong>Wskazówka:</strong> Gabinet w domu prywatnym. Wejście od strony ogrodu, z prawej strony budynku. Tabliczka "EDU HUSTAWKA" na bramie.
+                      </p>
+                      <EnhancedButton
+                        size="sm"
+                        variant="primary"
+                        className="w-full"
+                        onClick={() => { trackEvent("maps_click", "CTA", "location_card"); window.open("https://maps.app.goo.gl/TpyfdHUWGnogFuLKA", "_blank"); }}
+                        aria-label="Otwórz lokalizację w Google Maps"
+                      >
+                        <MapPin className="mr-2 h-4 w-4" />
+                        Otwórz w Google Maps
+                      </EnhancedButton>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
@@ -807,6 +866,9 @@ export default function HomeClient() {
           </div>
         </div>
       </section>
+
+      {/* Animated Stats Section */}
+      <AnimatedStats />
 
       {/* Contact Section */}
       <section id="kontakt" className="py-16 bg-white gradient-mesh-subtle">

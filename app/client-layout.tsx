@@ -12,6 +12,9 @@ import { Toaster } from "@/components/ui/toast"
 import { usePathname } from "next/navigation"
 import { useEffect, Suspense } from "react"
 import PageTransition from "@/components/page-transition"
+import MobileOptimizations from "@/components/mobile-optimizations"
+import MobileFormEnhancements from "@/components/mobile-form-enhancements"
+import WelcomeNotification from "@/components/welcome-notification"
 
 function BodyClassManager() {
   const pathname = usePathname()
@@ -49,11 +52,14 @@ export default function ClientLayout({
       <UserPreferencesProvider>
         <ConsentProvider>
           <BodyClassManager />
+          <MobileFormEnhancements />
           <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Ładowanie...</div>}>
             <PageTransition>{children}</PageTransition>
           </Suspense>
           <Toaster />
           <CookieBanner />
+          <MobileOptimizations />
+          <WelcomeNotification />
           <Suspense fallback={null}>
             <GoogleTagManager />
           </Suspense>

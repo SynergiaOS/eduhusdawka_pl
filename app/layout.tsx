@@ -34,6 +34,14 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="pi1Uo8VFnU9PdbFUjuthQwEDxP-0OW7zGvxUhiT22fE" />
 
+        {/* PWA Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#0d9488" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="EduHustawka" />
+        <link rel="apple-touch-icon" href="/images/logo-eduhustawka.png" />
+
         {/* Preload critical resources */}
         <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/images/joanna.png" as="image" />
