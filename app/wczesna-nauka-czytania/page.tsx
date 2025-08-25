@@ -118,14 +118,6 @@ export default function WczesnaNaukaCzytaniaPage() {
                     <li>Poprawa koordynacji wzrokowo-ruchowej</li>
                   </ul>
 
-                  <h3 className="text-xl font-semibold mt-6 mb-3 text-teal-700">Struktura zajęć:</h3>
-                  <ol className="list-decimal list-inside mb-4 space-y-2">
-                    <li>Rozgrzewka i aktywizacja (10 min)</li>
-                    <li>Nauka nowych liter/sylab (15 min)</li>
-                    <li>Ćwiczenia praktyczne (15 min)</li>
-                    <li>Podsumowanie i zabawa (5 min)</li>
-                  </ol>
-
                   <p className="mb-4">
                     Każde dziecko pracuje w swoim tempie, a zajęcia są dostosowane do jego indywidualnych potrzeb i
                     możliwości. Wykorzystujemy pozytywne wzmocnienia i zachęcamy do eksperymentowania z językiem.

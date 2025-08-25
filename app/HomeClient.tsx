@@ -309,43 +309,6 @@ export default function HomeClient() {
                 </div>
               </AnimatedSection>
 
-              {/* Diagnoza KORP */}
-              <AnimatedSection delay={500}>
-                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">
-                  <div className="relative h-64 overflow-hidden">
-                    <OptimizedImage
-                      src="/colorful-learning-tools.png"
-                      alt="Diagnoza KORP - ocena rozwoju psychomotorycznego"
-                      width={600}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                        <Brain className="inline h-4 w-4 mr-1" />
-                        KORP
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4 text-purple-800">Diagnoza KORP</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Kompleksowa ocena rozwoju psychomotorycznego dziecka. Profesjonalna diagnoza wspierająca planowanie terapii.
-                    </p>
-                    <div className="flex justify-center">
-                      <Link
-                        href="/rezerwacja"
-                        className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium shadow-lg hover:shadow-xl"
-                      >
-                        <ArrowRight className="inline h-4 w-4 mr-2" />
-                        Umów diagnozę
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-
               {/* Forbrain */}
               <AnimatedSection delay={600}>
                 <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">

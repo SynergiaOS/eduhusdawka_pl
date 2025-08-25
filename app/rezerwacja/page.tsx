@@ -31,12 +31,6 @@ export default function RezerwacjaPage() {
       description: "Rozwój motoryki małej (gabinet/dojazd)"
     },
     {
-      name: "Diagnoza KORP",
-      price: "350 zł",
-      duration: "120 min",
-      description: "Kompleksowa ocena rozwoju psychomotorycznego"
-    },
-    {
       name: "IAS Johansena - Diagnoza",
       price: "350 zł",
       duration: "120 min",

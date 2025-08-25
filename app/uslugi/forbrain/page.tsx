@@ -118,63 +118,6 @@ export default function ForbrainPage() {
           </div>
         </AnimatedSection>
 
-        {/* Dla kogo */}
-        <AnimatedSection className="py-16 px-4 bg-gray-50" delay={400}>
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              Dla kogo jest Forbrain?
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-blue-700 mb-4 flex items-center">
-                  <Users className="w-6 h-6 mr-2" />
-                  Dla terapeutów
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Terapeuci integracji sensorycznej</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Logopedzi</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Pedagodzy specjalni</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-purple-700 mb-4 flex items-center">
-                  <Target className="w-6 h-6 mr-2" />
-                  Trudności, z którymi pomaga
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Trudności w uczeniu się</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Problemy z przetwarzaniem słuchowym</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Zaburzenia komunikacji</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Problemy z uwagą i zapamiętywaniem</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
-
         {/* Cennik */}
         <AnimatedSection className="py-16 px-4 bg-white" delay={500}>
           <div className="max-w-4xl mx-auto text-center">
