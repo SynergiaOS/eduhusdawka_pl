@@ -1,16 +1,17 @@
 "use client"
 
 import Script from "next/script"
+import { faqItems } from "@/data/faq-data"
 
 export default function StructuredData() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://eduhusdawka.pl/#business",
+    "@id": "https://eduhustawka.pl/#business",
     "name": "EduHustawka - Joanna Świrydowicz",
     "alternateName": "EDU HUSTAWKA",
     "description": "Centrum terapii pedagogicznej i rozwoju dziecka w Pomigaczach k. Białegostoku. Specjalizujemy się w terapii ręki, pedagogicznej, treningu umiejętności społecznych. Obsługujemy teren województwa podlaskiego.",
-    "url": "https://eduhusdawka.pl",
+    "url": "https://eduhustawka.pl",
     "telephone": "+48531509008",
     "email": "kontakt@eduhustawka.pl",
     "address": {
@@ -137,22 +138,35 @@ export default function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://eduhusdawka.pl/#website",
-    "url": "https://eduhusdawka.pl",
+    "@id": "https://eduhustawka.pl/#website",
+    "url": "https://eduhustawka.pl",
     "name": "EduHustawka - Centrum terapii pedagogicznej",
     "description": "Profesjonalna terapia i edukacja specjalna dla dzieci. Terapia ręki, pedagogiczna, TUS, diagnostyka KORP, treningi słuchowe.",
     "publisher": {
-      "@id": "https://eduhusdawka.pl/#business"
+      "@id": "https://eduhustawka.pl/#business"
     },
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://eduhusdawka.pl/search?q={search_term_string}"
+        "urlTemplate": "https://eduhustawka.pl/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     },
     "inLanguage": "pl-PL"
+  }
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
   }
 
   return (
@@ -169,6 +183,13 @@ export default function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(websiteSchema),
+        }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
         }}
       />
     </>

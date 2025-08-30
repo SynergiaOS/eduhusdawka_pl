@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
-import { BookOpen, Target, Heart, Users, CheckCircle } from "lucide-react"
 import OptimizedImage from "@/components/optimized-image"
+import { BookOpen, Target, Heart, Users, CheckCircle } from "lucide-react"
+import { PageMain, Container, Section, H1, H2, H3, presets } from "@/components/layout-primitives"
 
 export const metadata: Metadata = {
-  title: "Terapia Pedagogiczna - 120 zł gabinet, 150 zł dojazd | EduHustawka",
-  description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Terapia pedagogiczna 120 zł (gabinet), 150 zł (dojazd). Indywidualne podejście, nowoczesne metody.",
-  keywords: "terapia pedagogiczna, trudności w nauce, czytanie, pisanie, liczenie, dysleksja, ADHD, koncentracja, 120 zł, Pomigacze",
+  title: "Terapia Pedagogiczna | EduHustawka",
+  description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Terapia pedagogiczna w Pomigaczach. Indywidualne podejście, nowoczesne metody.",
+  keywords: "terapia pedagogiczna, trudności w nauce, czytanie, pisanie, liczenie, dysleksja, ADHD, koncentracja, Pomigacze",
 }
 
 export default function TerapiaPedagogicznaPage() {
@@ -16,15 +16,15 @@ export default function TerapiaPedagogicznaPage() {
     <div className="min-h-screen bg-gradient-to-br from-teal-50 via-white to-blue-50">
       <Header />
       
-      <main className="pt-20">
+      <PageMain>
         {/* Hero Section */}
-        <AnimatedSection className="py-16 px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <Section>
+          <Container>
+            <div className={presets.gridHero}>
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                <H1>
                   Terapia <span className="text-teal-600">Pedagogiczna</span>
-                </h1>
+                </H1>
                 <p className="text-xl text-gray-600 mb-8">
                   Skuteczne wsparcie dla dzieci z trudnościami w nauce i rozwoju
                 </p>
@@ -46,35 +46,35 @@ export default function TerapiaPedagogicznaPage() {
                   alt="Dziecko podczas terapii pedagogicznej"
                   width={600}
                   height={400}
-                  className="rounded-2xl shadow-2xl"
+                  className={presets.mediaBase}
                 />
               </div>
             </div>
-          </div>
-        </AnimatedSection>
+          </Container>
+        </Section>
 
         {/* Czym jest terapia */}
-        <AnimatedSection className="py-16 px-4 bg-white" delay={200}>
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        <Section className="bg-white">
+          <Container>
+            <H2 className="text-center">
               Czym jest terapia pedagogiczna?
-            </h2>
+            </H2>
             <p className="text-lg text-gray-600 leading-relaxed">
               Terapia pedagogiczna to specjalistyczne wsparcie dla dzieci, które mają trudności w nauce i rozwoju. 
               Pomaga przezwyciężać trudności w czytaniu, pisaniu, liczeniu oraz innych czynnościach szkolnych, 
               a także wspiera rozwój emocjonalny i społeczny.
             </p>
-          </div>
-        </AnimatedSection>
+          </Container>
+        </Section>
 
         {/* Dla kogo */}
-        <AnimatedSection className="py-16 px-4" delay={300}>
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <Section>
+          <Container>
+            <H2 className="text-center">
               Dla kogo jest terapia pedagogiczna?
-            </h2>
+            </H2>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className={presets.gridCards}>
               {[
                 "Trudności w nauce (czytanie, pisanie, liczenie)",
                 "Inteligencja przeciętna lub niższa niż przeciętna", 
@@ -86,22 +86,22 @@ export default function TerapiaPedagogicznaPage() {
                 "Trudności matematyczne i logiczne myślenie",
                 "Problemy wychowawcze i obniżona motywacja"
               ].map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                <div key={index} className={presets.cardEmphasisTeal}>
                   <p className="text-gray-700">{item}</p>
                 </div>
               ))}
             </div>
-          </div>
-        </AnimatedSection>
+          </Container>
+        </Section>
 
         {/* Cele terapii */}
-        <AnimatedSection className="py-16 px-4 bg-teal-50" delay={400}>
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+        <Section className="bg-teal-50">
+          <Container>
+            <H2 className="text-center">
               Cele terapii pedagogicznej
-            </h2>
+            </H2>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className={presets.gridTwoCol}>
               {[
                 {
                   icon: <Target className="w-8 h-8 text-teal-600" />,
@@ -124,18 +124,18 @@ export default function TerapiaPedagogicznaPage() {
                   description: "Wzmacnianie motywacji i rozwijanie talentów"
                 }
               ].map((goal, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                <div key={index} className={presets.cardBase}>
                   <div className="flex items-center gap-4 mb-4">
                     {goal.icon}
-                    <h3 className="text-xl font-semibold text-gray-900">{goal.title}</h3>
+                    <H3>{goal.title}</H3>
                   </div>
                   <p className="text-gray-600">{goal.description}</p>
                 </div>
               ))}
             </div>
-          </div>
-        </AnimatedSection>
-      </main>
+          </Container>
+        </Section>
+      </PageMain>
       
       <Footer />
     </div>

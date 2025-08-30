@@ -58,12 +58,7 @@ export const faqItems: FAQItem[] = [
     answer: "Tak, na życzenie wystawiam faktury za przeprowadzone terapie i diagnozy.",
     category: "Organizacja",
   },
-  {
-    question: "Co to jest diagnoza KORP i dla kogo jest przeznaczona?",
-    answer:
-      "KORP (Karty Oceny Rozwoju Psychomotorycznego) to narzędzie diagnostyczne służące do oceny rozwoju dziecka w wieku od 1 miesiąca do 9 lat. Diagnoza obejmuje ocenę różnych sfer rozwojowych: motorycznej, poznawczej, komunikacyjnej i społecznej. Jest szczególnie polecana dla dzieci, u których rodzice lub specjaliści zauważyli niepokojące objawy w rozwoju.",
-    category: "Oferta",
-  },
+
   {
     question: "Na czym polega Indywidualna Stymulacja Słuchu Johansena?",
     answer:

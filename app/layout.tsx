@@ -4,23 +4,55 @@ import StructuredData from "@/components/structured-data"
 import './globals.css'
 
 export const metadata = {
-  metadataBase: new URL('https://eduhusdawka.pl'),
+  metadataBase: new URL('https://eduhustawka.pl'),
   title: 'EduHustawka - Terapia Dziecka Białystok, Pomigacze | Pedagog Specjalny',
   description: 'Profesjonalna terapia pedagogiczna, terapia ręki, TUS w Pomigaczach k. Białegostoku. Pedagog specjalny z 15-letnim doświadczeniem. Dojazd na terenie woj. podlaskiego.',
   generator: 'v0.dev',
   keywords: 'terapia pedagogiczna Białystok, pedagog specjalny Pomigacze, terapia ręki Podlaskie, TUS Białystok, centrum terapii dziecka, wsparcie rozwoju dziecka województwo podlaskie',
+  authors: [{ name: 'Joanna Świrydowicz', url: 'https://eduhustawka.pl/o-mnie' }],
+  creator: 'Joanna Świrydowicz',
+  publisher: 'EduHustawka',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  verification: {
+    google: 'pi1Uo8VFnU9PdbFUjuthQwEDxP-0OW7zGvxUhiT22fE',
+  },
   openGraph: {
     title: 'EduHustawka - Centrum Terapii Dziecka Białystok, Pomigacze',
     description: 'Profesjonalna terapia pedagogiczna, terapia ręki, TUS w Pomigaczach k. Białegostoku. Pedagog specjalny z wieloletnim doświadczeniem.',
-    url: 'https://eduhusdawka.pl',
+    url: 'https://eduhustawka.pl',
     siteName: 'EduHustawka',
     locale: 'pl_PL',
     type: 'website',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'EduHustawka - Wsparcie Rozwoju Twojego Dziecka',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'EduHustawka - Centrum Terapii Dziecka Białystok',
     description: 'Profesjonalna terapia pedagogiczna, terapia ręki, TUS w Pomigaczach k. Białegostoku. Pedagog specjalny z wieloletnim doświadczeniem.',
+    images: ['/opengraph-image.png'],
+    creator: '@eduhustawka',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
@@ -32,7 +64,6 @@ export default function RootLayout({
   return (
     <html lang="pl" suppressHydrationWarning>
       <head>
-        <meta name="google-site-verification" content="pi1Uo8VFnU9PdbFUjuthQwEDxP-0OW7zGvxUhiT22fE" />
 
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
