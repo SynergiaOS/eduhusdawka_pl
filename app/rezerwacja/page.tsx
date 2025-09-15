@@ -20,21 +20,15 @@ export default function RezerwacjaPage() {
     },
     {
       name: "Terapia Pedagogiczna",
-      price: "120 zł / 150 zł",
+      price: "120 zł",
       duration: "50 min",
-      description: "Wsparcie w nauce (gabinet/dojazd)"
+      description: "Wsparcie w nauce i rozwoju"
     },
     {
       name: "Terapia Ręki",
-      price: "120 zł / 150 zł",
+      price: "120 zł",
       duration: "50 min",
-      description: "Rozwój motoryki małej (gabinet/dojazd)"
-    },
-    {
-      name: "Diagnoza KORP",
-      price: "350 zł",
-      duration: "120 min",
-      description: "Kompleksowa ocena rozwoju psychomotorycznego"
+      description: "Rozwój motoryki małej"
     },
     {
       name: "IAS Johansena - Diagnoza",
@@ -43,16 +37,10 @@ export default function RezerwacjaPage() {
       description: "Diagnoza przed treningiem słuchowym"
     },
     {
-      name: "Neuroflow - Diagnoza",
-      price: "350 zł",
-      duration: "60 min",
-      description: "Diagnoza przed treningiem Neuroflow"
-    },
-    {
       name: "Czytanie z Forbrain",
-      price: "150 zł / 180 zł",
+      price: "150 zł",
       duration: "50 min",
-      description: "Nauka czytania z Forbrain (gabinet/dojazd)"
+      description: "Nauka czytania z Forbrain"
     }
   ]
 

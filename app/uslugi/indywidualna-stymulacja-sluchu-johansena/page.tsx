@@ -375,8 +375,7 @@ export default function IASJohansenPage() {
           </div>
         </AnimatedSection>
 
-        {/* Cennik */}
-        <AnimatedSection id="cennik" className="py-16 px-4 bg-gray-50" delay={700}>
+        {/* Usunięto sekcję cennika -- <AnimatedSection id="cennik" className="py-16 px-4 bg-gray-50" delay={700}>
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Cennik</h2>
             <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -442,7 +441,7 @@ export default function IASJohansenPage() {
               </div>
             </div>
           </div>
-        </AnimatedSection>
+        </AnimatedSection> --}}
 
         {/* Dodatkowa sekcja z FAQ */}
         <AnimatedSection className="py-16 px-4 bg-white" delay={800}>

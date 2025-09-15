@@ -6,11 +6,11 @@ export default function StructuredData() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://eduhusdawka.pl/#business",
+    "@id": "https://eduhustawka.pl/#business",
     "name": "EduHustawka - Joanna Świrydowicz",
     "alternateName": "EDU HUSTAWKA",
     "description": "Centrum terapii pedagogicznej i rozwoju dziecka w Pomigaczach k. Białegostoku. Specjalizujemy się w terapii ręki, pedagogicznej, treningu umiejętności społecznych. Obsługujemy teren województwa podlaskiego.",
-    "url": "https://eduhusdawka.pl",
+    "url": "https://eduhustawka.pl",
     "telephone": "+48531509008",
     "email": "kontakt@eduhustawka.pl",
     "address": {
@@ -57,7 +57,7 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Terapia pedagogiczna",
-            "description": "Wsparcie w nauce i rozwoju umiejętności edukacyjnych - 120 zł (gabinet), 150 zł (dojazd)"
+            "description": "Wsparcie w nauce i rozwoju umiejętności edukacyjnych"
           }
         },
         {
@@ -67,7 +67,7 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Terapia ręki",
-            "description": "Rozwój motoryki precyzyjnej i koordynacji wzrokowo-ruchowej - 120 zł (gabinet), 150 zł (dojazd)"
+            "description": "Rozwój motoryki precyzyjnej i koordynacji wzrokowo-ruchowej"
           }
         },
         {
@@ -77,19 +77,10 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Trening Umiejętności Społecznych (TUS)",
-            "description": "Zajęcia grupowe wspierające rozwój umiejętności społecznych - 80 zł za 50 min, karnet miesięczny 300 zł"
+            "description": "Zajęcia grupowe wspierające rozwój umiejętności społecznych"
           }
         },
-        {
-          "@type": "Offer",
-          "price": "350",
-          "priceCurrency": "PLN",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Karty Oceny Rozwoju Psychoruchowego (KORP)",
-            "description": "Diagnostyka rozwoju psychoruchowego dzieci od 1 miesiąca do 9 lat - 350 zł"
-          }
-        },
+
         {
           "@type": "Offer",
           "price": "350",
@@ -97,19 +88,10 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Trening słuchowy Johansen IAS",
-            "description": "Indywidualna stymulacja słuchu metodą dr K. Johansena - od 350 zł"
+            "description": "Indywidualna stymulacja słuchu metodą dr K. Johansena"
           }
         },
-        {
-          "@type": "Offer",
-          "price": "350",
-          "priceCurrency": "PLN",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Aktywny Trening Słuchowy Neuroflow",
-            "description": "Nowoczesny trening słuchowy wspierający rozwój słuchu i koncentracji - od 350 zł"
-          }
-        },
+
         {
           "@type": "Offer",
           "price": "150",
@@ -117,7 +99,7 @@ export default function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Czytanie sylabowe z Forbrain",
-            "description": "Zajęcia nauki czytania z wykorzystaniem słuchawek Forbrain - 150 zł (gabinet), 180 zł (dojazd)"
+            "description": "Zajęcia nauki czytania z wykorzystaniem słuchawek Forbrain"
           }
         }
       ]
@@ -137,18 +119,18 @@ export default function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://eduhusdawka.pl/#website",
-    "url": "https://eduhusdawka.pl",
+    "@id": "https://eduhustawka.pl/#website",
+    "url": "https://eduhustawka.pl",
     "name": "EduHustawka - Centrum terapii pedagogicznej",
     "description": "Profesjonalna terapia i edukacja specjalna dla dzieci. Terapia ręki, pedagogiczna, TUS, diagnostyka KORP, treningi słuchowe.",
     "publisher": {
-      "@id": "https://eduhusdawka.pl/#business"
+      "@id": "https://eduhustawka.pl/#business"
     },
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://eduhusdawka.pl/search?q={search_term_string}"
+        "urlTemplate": "https://eduhustawka.pl/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     },

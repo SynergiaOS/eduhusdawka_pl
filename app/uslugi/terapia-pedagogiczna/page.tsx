@@ -6,8 +6,8 @@ import { BookOpen, Target, Heart, Users, CheckCircle } from "lucide-react"
 import OptimizedImage from "@/components/optimized-image"
 
 export const metadata: Metadata = {
-  title: "Terapia Pedagogiczna - 120 zł gabinet, 150 zł dojazd | EduHustawka",
-  description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Terapia pedagogiczna 120 zł (gabinet), 150 zł (dojazd). Indywidualne podejście, nowoczesne metody.",
+  title: "Terapia Pedagogiczna | EduHustawka",
+  description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Indywidualne podejście, nowoczesne metody terapii pedagogicznej.",
   keywords: "terapia pedagogiczna, trudności w nauce, czytanie, pisanie, liczenie, dysleksja, ADHD, koncentracja, 120 zł, Pomigacze",
 }
 
@@ -137,30 +137,7 @@ export default function TerapiaPedagogicznaPage() {
         </AnimatedSection>
 
         {/* Cennik */}
-        <AnimatedSection className="py-16 px-4 bg-white" delay={500}>
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
-            
-            <div className="bg-teal-50 p-8 rounded-2xl max-w-md mx-auto">
-              <h3 className="text-2xl font-semibold mb-6 text-teal-700">Terapia Pedagogiczna</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-teal-200">
-                  <span className="text-gray-700">W gabinecie (50 min)</span>
-                  <span className="text-2xl font-bold text-teal-600">120 zł</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
-                  <span className="text-2xl font-bold text-teal-600">150 zł</span>
-                </div>
-              </div>
-              <div className="mt-6 text-center">
-                <p className="text-sm text-teal-600">
-                  💡 Indywidualne podejście dostosowane do potrzeb każdego dziecka
-                </p>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
+        {/* Usunięto sekcję cennika */}
       </main>
       
       <Footer />

@@ -40,27 +40,6 @@ export default function WczesnaNaukaCzytaniaPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
-
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h2 className="text-xl font-semibold mb-4 text-teal-700">Cennik usługi</h2>
-                  <div className="space-y-4">
-                    <div className="border-b pb-3">
-                      <h3 className="font-medium text-gray-800">Sesja terapeutyczna (45 min)</h3>
-                      <p className="text-sm text-gray-600 mb-2">Indywidualne zajęcia nauki czytania</p>
-                      <p className="text-xl font-bold text-teal-600">150 zł</p>
-                    </div>
-                    <div className="border-b pb-3">
-                      <h3 className="font-medium text-gray-800">Pakiet 5 sesji</h3>
-                      <p className="text-sm text-gray-600 mb-2">Oszczędność 50 zł</p>
-                      <p className="text-xl font-bold text-teal-600">700 zł</p>
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-gray-800">Pakiet 10 sesji</h3>
-                      <p className="text-sm text-gray-600 mb-2">Oszczędność 150 zł</p>
-                      <p className="text-xl font-bold text-teal-600">1350 zł</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </AnimatedSection>
 
@@ -117,14 +96,6 @@ export default function WczesnaNaukaCzytaniaPage() {
                     <li>Wzmocnienie pamięci wzrokowej</li>
                     <li>Poprawa koordynacji wzrokowo-ruchowej</li>
                   </ul>
-
-                  <h3 className="text-xl font-semibold mt-6 mb-3 text-teal-700">Struktura zajęć:</h3>
-                  <ol className="list-decimal list-inside mb-4 space-y-2">
-                    <li>Rozgrzewka i aktywizacja (10 min)</li>
-                    <li>Nauka nowych liter/sylab (15 min)</li>
-                    <li>Ćwiczenia praktyczne (15 min)</li>
-                    <li>Podsumowanie i zabawa (5 min)</li>
-                  </ol>
 
                   <p className="mb-4">
                     Każde dziecko pracuje w swoim tempie, a zajęcia są dostosowane do jego indywidualnych potrzeb i

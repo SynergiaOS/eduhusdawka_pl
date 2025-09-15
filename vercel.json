@@ -37,7 +37,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://eduhusdawka.pl"
+          "value": "https://eduhustawka.pl"
         },
         {
           "key": "Access-Control-Allow-Methods",

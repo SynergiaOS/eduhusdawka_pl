@@ -7,10 +7,10 @@ import { Phone, Hand, CheckCircle, ArrowRight, AlertTriangle } from "lucide-reac
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terapia Ręki - 120 zł gabinet, 150 zł dojazd | EduHustawka",
+  title: "Terapia Ręki | EduHustawka",
   description:
-    "Profesjonalna terapia ręki w Pomigaczach. 120 zł (gabinet), 150 zł (dojazd). Rozwój motoryki małej, grafomotoryki i umiejętności pisania u dzieci. Indywidualne podejście.",
-  keywords: "terapia ręki, motoryka mała, grafomotoryka, pisanie, Pomigacze, 120 zł, koordynacja wzrokowo-ruchowa",
+    "Profesjonalna terapia ręki w Pomigaczach. Rozwój motoryki małej, grafomotoryki i umiejętności pisania u dzieci. Indywidualne podejście.",
+  keywords: "terapia ręki, motoryka mała, grafomotoryka, pisanie, Pomigacze, koordynacja wzrokowo-ruchowa",
 }
 
 export default function TerapiaRekiPage() {
@@ -21,8 +21,8 @@ export default function TerapiaRekiPage() {
       <main className="pt-20">
         <div className="max-w-6xl mx-auto px-4">
             {/* Hero Section */}
-            <AnimatedSection className="py-16">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <AnimatedSection>
+              <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
                     <div className="bg-purple-100 p-4 rounded-full w-fit">
@@ -60,11 +60,6 @@ export default function TerapiaRekiPage() {
                         Zadzwoń: 531 509 008
                       </button>
                     </a>
-                    <a href="#cennik">
-                      <button className="w-full sm:w-auto bg-white text-purple-600 border-2 border-purple-600 hover:bg-purple-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Zobacz cennik
-                      </button>
-                    </a>
                   </div>
                 </div>
 
@@ -87,59 +82,9 @@ export default function TerapiaRekiPage() {
             </AnimatedSection>
 
             {/* Image and Pricing */}
-            <AnimatedSection delay={200}>
-              <div id="cennik" className="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden group">
-                    <img
-                      src="/images/hand-therapy.png"
-                      alt="Terapia ręki - ćwiczenia motoryczne"
-                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                  <h2 className="text-xl font-semibold mb-4 text-purple-700">Cennik</h2>
-                  <div className="space-y-4">
-                    <div className="border-b pb-3">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h3 className="font-medium text-gray-800">W gabinecie (50 min)</h3>
-                          <p className="text-sm text-gray-600">Indywidualna terapia ręki</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="text-2xl font-bold text-purple-600">120 zł</p>
-                          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
-                            Popularne
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h3 className="font-medium text-gray-800">Z dojazdem do klienta (50 min)</h3>
-                          <p className="text-sm text-gray-600">Terapia w domu dziecka</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="text-2xl font-bold text-purple-600">150 zł</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-purple-50 rounded-lg">
-                    <p className="text-sm text-purple-700 text-center">
-                      💡 Zajęcia mogą odbywać się indywidualnie lub w małych grupach
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-
+            
             {/* Main Content */}
-            <AnimatedSection delay={300}>
+            <AnimatedSection>
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-12">
                 <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg mb-6">
                   <div className="flex items-start">
@@ -319,7 +264,7 @@ export default function TerapiaRekiPage() {
             </AnimatedSection>
 
             {/* CTA Section */}
-            <AnimatedSection delay={400}>
+            <AnimatedSection>
               <div className="bg-purple-50 p-6 md:p-8 rounded-lg text-center">
                 <h2 className="text-2xl font-semibold mb-4 text-purple-700 font-heading">Umów się na terapię ręki</h2>
                 <p className="text-gray-600 mb-6">
@@ -332,20 +277,9 @@ export default function TerapiaRekiPage() {
                       Zadzwoń: 531 509 008
                     </Button>
                   </a>
-                  <Link href="/kontakt">
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="text-purple-600 border-purple-600 hover:bg-purple-50 bg-transparent"
-                    >
-                      <ArrowRight className="h-4 w-4 mr-2" />
-                      Formularz kontaktowy
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </AnimatedSection>
-          </div>
         </div>
       </main>
 

@@ -21,13 +21,10 @@ export default function Header() {
 
   const services = [
     { name: "Terapia ręki", href: "/uslugi/terapia-reki" },
-    { name: "Trening Umiejętności Społecznych", href: "/trening-umiejetnosci-spolecznych" },
     { name: "Terapia pedagogiczna", href: "/uslugi/terapia-pedagogiczna" },
+    { name: "Trening Umiejętności Społecznych", href: "/trening-umiejetnosci-spolecznych" },
     { name: "IAS Johansena", href: "/uslugi/indywidualna-stymulacja-sluchu-johansena" },
     { name: "Forbrain", href: "/uslugi/forbrain" },
-    { name: "Neuroflow", href: "/rezerwacja" },
-    { name: "Diagnoza KORP", href: "/rezerwacja" },
-    { name: "Wczesna nauka czytania", href: "/wczesna-nauka-czytania" },
   ]
 
   return (

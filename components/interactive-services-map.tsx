@@ -77,26 +77,7 @@ const services: Service[] = [
     color: "text-pink-600",
     bgColor: "bg-pink-50 hover:bg-pink-100"
   },
-  {
-    id: "neuroflow",
-    name: "Neuroflow",
-    icon: <Target className="w-8 h-8" />,
-    price: "350 zł",
-    description: "Aktywny trening słuchowy",
-    href: "/rezerwacja",
-    color: "text-indigo-600",
-    bgColor: "bg-indigo-50 hover:bg-indigo-100"
-  },
-  {
-    id: "korp",
-    name: "Diagnoza KORP",
-    icon: <Stethoscope className="w-8 h-8" />,
-    price: "350 zł",
-    description: "Ocena rozwoju psychoruchowego",
-    href: "/rezerwacja",
-    color: "text-red-600",
-    bgColor: "bg-red-50 hover:bg-red-100"
-  }
+
 ]
 
 export default function InteractiveServicesMap() {

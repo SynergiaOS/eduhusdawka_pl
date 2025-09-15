@@ -4,7 +4,7 @@ import StructuredData from "@/components/structured-data"
 import './globals.css'
 
 export const metadata = {
-  metadataBase: new URL('https://eduhusdawka.pl'),
+  metadataBase: new URL('https://eduhustawka.pl'),
   title: 'EduHustawka - Terapia Dziecka Białystok, Pomigacze | Pedagog Specjalny',
   description: 'Profesjonalna terapia pedagogiczna, terapia ręki, TUS w Pomigaczach k. Białegostoku. Pedagog specjalny z 15-letnim doświadczeniem. Dojazd na terenie woj. podlaskiego.',
   generator: 'v0.dev',
@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'EduHustawka - Centrum Terapii Dziecka Białystok, Pomigacze',
     description: 'Profesjonalna terapia pedagogiczna, terapia ręki, TUS w Pomigaczach k. Białegostoku. Pedagog specjalny z wieloletnim doświadczeniem.',
-    url: 'https://eduhusdawka.pl',
+    url: 'https://eduhustawka.pl',
     siteName: 'EduHustawka',
     locale: 'pl_PL',
     type: 'website',

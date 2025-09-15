@@ -45,8 +45,7 @@ export default function HomeClient() {
       {/* Live region for screen readers */}
       <div aria-live="polite" aria-atomic="true" className="sr-only" id="status-updates" />
 
-      {/* Screen reader only heading for page structure */}
-      <h1 className="sr-only">EduHustawka - Centrum terapii pedagogicznej i rozwoju dziecka</h1>
+      {/* Screen reader only heading for page structure - removed duplicate H1 for better SEO */}
 
       <Header />
 
@@ -309,42 +308,7 @@ export default function HomeClient() {
                 </div>
               </AnimatedSection>
 
-              {/* Diagnoza KORP */}
-              <AnimatedSection delay={500}>
-                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">
-                  <div className="relative h-64 overflow-hidden">
-                    <OptimizedImage
-                      src="/colorful-learning-tools.png"
-                      alt="Diagnoza KORP - ocena rozwoju psychomotorycznego"
-                      width={600}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                        <Brain className="inline h-4 w-4 mr-1" />
-                        KORP
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4 text-purple-800">Diagnoza KORP</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Kompleksowa ocena rozwoju psychomotorycznego dziecka. Profesjonalna diagnoza wspierająca planowanie terapii.
-                    </p>
-                    <div className="flex justify-center">
-                      <Link
-                        href="/rezerwacja"
-                        className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium shadow-lg hover:shadow-xl"
-                      >
-                        <ArrowRight className="inline h-4 w-4 mr-2" />
-                        Umów diagnozę
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
+
 
               {/* Forbrain */}
               <AnimatedSection delay={600}>
@@ -383,42 +347,7 @@ export default function HomeClient() {
                 </div>
               </AnimatedSection>
 
-              {/* Neuroflow */}
-              <AnimatedSection delay={700}>
-                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">
-                  <div className="relative h-64 overflow-hidden">
-                    <OptimizedImage
-                      src="/colorful-learning-tools.png"
-                      alt="Neuroflow - trening neurologiczny"
-                      width={600}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                        <Brain className="inline h-4 w-4 mr-1" />
-                        Neuroflow
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold mb-4 text-indigo-800">Neuroflow</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Zaawansowany trening neurologiczny wspierający rozwój funkcji poznawczych i koncentracji u dzieci.
-                    </p>
-                    <div className="flex justify-center">
-                      <Link
-                        href="/rezerwacja"
-                        className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium shadow-lg hover:shadow-xl"
-                      >
-                        <ArrowRight className="inline h-4 w-4 mr-2" />
-                        Umów konsultację
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
+
 
             </div>
           </div>
@@ -618,31 +547,17 @@ export default function HomeClient() {
                             <div className="w-3 h-3 bg-teal-700 rounded-full mr-3"></div>
                             <div>
                               <div className="font-medium text-gray-900">IAS Johansena</div>
-                              <div className="text-sm text-gray-500">Trening słuchowy</div>
+                              <div className="text-sm text-gray-500">Diagnoza słuchowa</div>
                             </div>
                           </div>
                         </td>
-                        <td className="px-6 py-4 text-center text-gray-600">60 min</td>
+                        <td className="px-6 py-4 text-center text-gray-600">diagnoza</td>
                         <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">150 zł</span>
+                          <span className="text-lg font-semibold text-teal-600">350 zł</span>
                         </td>
                       </tr>
 
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">Diagnoza KORP</div>
-                              <div className="text-sm text-gray-500">Ocena rozwoju psychomotorycznego</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">120 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-purple-600">350 zł</span>
-                        </td>
-                      </tr>
+
 
                       <tr className="hover:bg-teal-50 transition-colors">
                         <td className="px-6 py-4">
@@ -660,21 +575,7 @@ export default function HomeClient() {
                         </td>
                       </tr>
 
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-indigo-600 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">Neuroflow - Diagnoza</div>
-                              <div className="text-sm text-gray-500">Diagnoza przed treningiem Neuroflow</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">60 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-indigo-600">350 zł</span>
-                        </td>
-                      </tr>
+
 
                     </tbody>
                   </table>

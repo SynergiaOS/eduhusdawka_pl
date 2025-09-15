@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { blogPosts } from "@/data/blog-posts"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://eduhusdawka.pl"
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://eduhustawka.pl"
   const lastModified = new Date()
 
   // Główne strony

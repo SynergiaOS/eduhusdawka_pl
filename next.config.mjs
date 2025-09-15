@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   // Railway uses PORT via package.json start script, not Next.js config
   eslint: {
-    ignoreDuringBuilds: true, // Temporarily ignore for deployment
+    ignoreDuringBuilds: false, // Enable ESLint checks during build
   },
   typescript: {
-    ignoreBuildErrors: true, // Temporarily ignore for deployment
+    ignoreBuildErrors: false, // Enable TypeScript error checking
   },
   // HTTPS configuration for development
   ...(process.env.NODE_ENV === 'development' && {
@@ -40,7 +40,7 @@ const nextConfig = {
         hostname: 'via.placeholder.com',
       },
     ],
-    unoptimized: true,
+    unoptimized: false, // Enable image optimization for better Core Web Vitals
   },
   async headers() {
     return [
