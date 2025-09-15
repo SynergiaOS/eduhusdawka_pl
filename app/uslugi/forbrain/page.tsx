@@ -117,6 +117,7 @@ export default function ForbrainPage() {
           </div>
         </AnimatedSection>
 
+<<<<<<< HEAD
         {/* Dla kogo */}
         <AnimatedSection className="py-16 px-4 bg-gray-50" delay={400}>
           <div className="max-w-4xl mx-auto">
@@ -148,6 +149,29 @@ export default function ForbrainPage() {
                     <span>Problemy z uwagą i zapamiętywaniem</span>
                   </li>
                 </ul>
+=======
+        {/* Cennik */}
+        <AnimatedSection className="py-16 px-4 bg-white" delay={500}>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
+            
+            <div className="bg-blue-50 p-8 rounded-2xl max-w-md mx-auto">
+              <h3 className="text-2xl font-semibold mb-6 text-blue-700">Czytanie sylabowe z Forbrain</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center py-2 border-b border-blue-200">
+                  <span className="text-gray-700">W gabinecie (50 min)</span>
+                  <span className="text-2xl font-bold text-blue-600">150 zł</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
+                  <span className="text-2xl font-bold text-blue-600">180 zł</span>
+                </div>
+              </div>
+              <div className="mt-6 text-center">
+                <p className="text-sm text-blue-600">
+                  💡 Możliwość wykorzystywania w środowisku rodzinnym dziecka
+                </p>
+>>>>>>> 6315968e45f9c31c7849f5ffac10195e30caa8dc
               </div>
             </div>
           </div>

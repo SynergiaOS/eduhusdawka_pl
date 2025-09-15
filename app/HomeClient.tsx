@@ -309,7 +309,6 @@ export default function HomeClient() {
               </AnimatedSection>
 
 
-
               {/* Forbrain */}
               <AnimatedSection delay={600}>
                 <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow">

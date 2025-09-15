@@ -21,107 +21,7 @@ interface PricingItem {
 
 // Dane usług z cenami - przekształcone do formatu tabeli
 const pricingItems: PricingItem[] = [
-  {
-    id: "tus-grupowe",
-    serviceName: "Trening Umiejętności Społecznych",
-    itemName: "Zajęcia grupowe (50 min, 6-8 osób)",
-    description: "Zajęcia grupowe rozwijające kompetencje społeczne i emocjonalne dzieci",
-    price: "80 zł",
-    popular: true,
-  },
-  {
-    id: "terapia-reki-sesja",
-    serviceName: "Terapia Ręki",
-    itemName: "W gabinecie (50 min)",
-    description: "Indywidualna terapia usprawniająca małą motorykę i koordynację wzrokowo-ruchową",
-    price: "120 zł",
-  },
-  {
-    id: "terapia-reki-dojazd",
-    serviceName: "Terapia Ręki",
-    itemName: "Z dojazdem do klienta (50 min)",
-    description: "Terapia ręki w domu dziecka - wygoda i komfort w znanym środowisku",
-    price: "150 zł",
-  },
-  {
-    id: "terapia-pedagogiczna-sesja",
-    serviceName: "Terapia Pedagogiczna",
-    itemName: "W gabinecie (50 min)",
-    description: "Wsparcie rozwoju poznawczego i przezwyciężanie trudności w nauce",
-    price: "120 zł",
-    popular: true,
-  },
-  {
-    id: "terapia-pedagogiczna-dojazd",
-    serviceName: "Terapia Pedagogiczna",
-    itemName: "Z dojazdem do klienta (50 min)",
-    description: "Terapia pedagogiczna w domu dziecka - komfort znanego środowiska",
-    price: "150 zł",
-  },
-  {
-    id: "johansen-diagnoza-pelna",
-    serviceName: "Trening Słuchowy Johansena",
-    itemName: "Diagnoza pełna",
-    description: "Kompleksowa diagnoza słuchowa przed rozpoczęciem treningu",
-    price: "350 zł",
-  },
-  {
-    id: "johansen-diagnoza-uproszczona",
-    serviceName: "Trening Słuchowy Johansena",
-    itemName: "Diagnoza uproszczona",
-    description: "Diagnoza na podstawie obserwacji i wywiadu z rodzicem",
-    price: "350 zł",
-  },
-  {
-    id: "johansen-program",
-    serviceName: "Trening Słuchowy Johansena",
-    itemName: "Indywidualny program (płyta CD / nagrania online)",
-    description: "Indywidualna płyta CD lub nagrania do pobrania online przygotowane przez Instytut Johansena",
-    price: "280-300 zł",
-  },
-  {
-    id: "johansen-kontrolna-pelna",
-    serviceName: "Trening Słuchowy Johansena",
-    itemName: "Diagnoza kontrolna (pełna)",
-    description: "Kontrolna diagnoza po 8-10 tygodniach treningu - pełne badanie",
-    price: "350 zł",
-  },
-  {
-    id: "johansen-kontrolna-uproszczona",
-    serviceName: "Trening Słuchowy Johansena",
-    itemName: "Diagnoza kontrolna uproszczona",
-    description: "Kontrolna diagnoza na podstawie obserwacji i wywiadu z rodzicem",
-    price: "200 zł",
-  },
-
-  {
-    id: "czytanie-forbrain-gabinet",
-    serviceName: "Czytanie sylabowe z Forbrain",
-    itemName: "W gabinecie (50 min)",
-    description: "Zajęcia nauki czytania z wykorzystaniem słuchawek Forbrain",
-    price: "150 zł",
-  },
-  {
-    id: "czytanie-forbrain-dojazd",
-    serviceName: "Czytanie sylabowe z Forbrain",
-    itemName: "Z dojazdem do klienta (50 min)",
-    description: "Zajęcia nauki czytania z Forbrain w domu dziecka",
-    price: "180 zł",
-  },
-  {
-    id: "wczesna-nauka-czytania-gabinet",
-    serviceName: "Wczesna Nauka Czytania",
-    itemName: "W gabinecie (50 min)",
-    description: "Metoda symultaniczno-sekwencyjna - skuteczna nauka czytania",
-    price: "120 zł",
-  },
-  {
-    id: "wczesna-nauka-czytania-dojazd",
-    serviceName: "Wczesna Nauka Czytania",
-    itemName: "Z dojazdem do klienta (50 min)",
-    description: "Wczesna nauka czytania w domu dziecka - komfort znanego środowiska",
-    price: "150 zł",
-  },
+  // Cenniki zostały usunięte zgodnie z uwagami klienta
 ]
 
 // Kategorie filtrowania
@@ -157,7 +57,7 @@ export default function PricingSection() {
 
   const getServiceSlug = (serviceName: string) => {
     const slugMap: { [key: string]: string } = {
-      "Diagnoza KORP": "diagnoza-korp",
+
       "Trening Umiejętności Społecznych": "trening-umiejetnosci-spolecznych",
       "Terapia Ręki": "terapia-reki",
       "Terapia Pedagogiczna": "terapia-pedagogiczna",

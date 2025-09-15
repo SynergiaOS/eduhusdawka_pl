@@ -1,5 +1,6 @@
 import * as React from "react"
 import Link from "next/link"
+import Script from "next/script"
 import { ChevronRight, Home } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -18,16 +19,36 @@ export interface EnhancedBreadcrumbProps {
 
 const EnhancedBreadcrumb = React.forwardRef<HTMLElement, EnhancedBreadcrumbProps>(
   ({ items, className, showHome = true, separator, ...props }, ref) => {
-    const allItems = showHome 
+    const allItems = showHome
       ? [{ label: "Strona główna", href: "/", icon: <Home className="h-4 w-4" /> }, ...items]
       : items
 
+    // Generate breadcrumb structured data
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": allItems.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.label,
+        "item": item.href ? `https://eduhustawka.pl${item.href}` : undefined
+      }))
+    }
+
     return (
-      <nav
-        ref={ref}
-        aria-label="Breadcrumb"
-        className={cn("flex items-center space-x-2 text-sm text-gray-600 mb-6", className)}
-        {...props}
+      <>
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema),
+          }}
+        />
+        <nav
+          ref={ref}
+          aria-label="Breadcrumb"
+          className={cn("flex items-center space-x-2 text-sm text-gray-600 mb-6", className)}
+          {...props}
       >
         <ol className="flex items-center space-x-2">
           {allItems.map((item, index) => (
@@ -63,6 +84,7 @@ const EnhancedBreadcrumb = React.forwardRef<HTMLElement, EnhancedBreadcrumbProps
           ))}
         </ol>
       </nav>
+      </>
     )
   }
 )
@@ -76,7 +98,7 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
   // Map of paths to readable labels
   const pathLabels: Record<string, string> = {
     'uslugi': 'Usługi',
-    'diagnoza-korp': 'Diagnoza KORP',
+
     'terapia-reki': 'Terapia ręki',
     'terapia-pedagogiczna': 'Terapia pedagogiczna',
     'trening-umiejetnosci-spolecznych': 'Trening Umiejętności Społecznych',

@@ -32,6 +32,7 @@ next-env.d.ts
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
+<<<<<<< HEAD
 .clinerules/byterover-rules.md
 .kilocode/rules/byterover-rules.md
 .roo/rules/byterover-rules.md
@@ -40,3 +41,5 @@ next-env.d.ts
 .kiro/steering/byterover-rules.md
 .qoder/rules/byterover-rules.md
 .augment/rules/byterover-rules.md
+=======
+>>>>>>> 6315968e45f9c31c7849f5ffac10195e30caa8dc

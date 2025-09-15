@@ -1,6 +1,7 @@
 "use client"
 
 import Script from "next/script"
+import { faqItems } from "@/data/faq-data"
 
 export default function StructuredData() {
   const localBusinessSchema = {
@@ -137,6 +138,19 @@ export default function StructuredData() {
     "inLanguage": "pl-PL"
   }
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  }
+
   return (
     <>
       <Script
@@ -151,6 +165,13 @@ export default function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(websiteSchema),
+        }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
         }}
       />
     </>

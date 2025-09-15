@@ -2,14 +2,13 @@ import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
-import { Headphones, Home, Clock, Users, CheckCircle, Star, Target, Brain, Volume2, Phone } from "lucide-react"
-import OptimizedImage from "@/components/optimized-image"
+import { Headphones, Home, Clock, CheckCircle, Star, Target, Brain, Volume2, Phone } from "lucide-react"
 import YouTubeEmbed from "@/components/youtube-embed"
 
 export const metadata: Metadata = {
   title: "Indywidualna Stymulacja Słuchu dr K. Johansena (IAS) | EduHustawka",
   description: "IAS to skuteczna metoda terapii słuchowej podobna do Tomatisa. Wspiera rozwój słuchu, mowy i koncentracji w warunkach domowych.",
-  keywords: "IAS, Johansen, stymulacja słuchu, terapia słuchowa, Tomatis, rozwój mowy, koncentracja, autyzm, dysleksja, ADHD, 350 zł, 280 zł, Pomigacze, terapia w domu",
+  keywords: "IAS, Johansen, stymulacja słuchu, terapia słuchowa, Tomatis, rozwój mowy, koncentracja, autyzm, dysleksja, ADHD, Pomigacze, terapia w domu",
 }
 
 export default function IASJohansenPage() {
@@ -58,11 +57,7 @@ export default function IASJohansenPage() {
                       Zadzwoń: 531 509 008
                     </button>
                   </a>
-                  <a href="#cennik" className="inline-block">
-                    <button className="w-full sm:w-auto bg-white text-purple-600 border-2 border-purple-600 hover:bg-purple-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
-                      Zobacz cennik
-                    </button>
-                  </a>
+
                 </div>
               </div>
               
@@ -374,6 +369,7 @@ export default function IASJohansenPage() {
             </div>
           </div>
         </AnimatedSection>
+<<<<<<< HEAD
 
         {/* Usunięto sekcję cennika -- <AnimatedSection id="cennik" className="py-16 px-4 bg-gray-50" delay={700}>
           <div className="max-w-5xl mx-auto text-center">
@@ -483,6 +479,8 @@ export default function IASJohansenPage() {
             </div>
           </div>
         </AnimatedSection>
+=======
+>>>>>>> 6315968e45f9c31c7849f5ffac10195e30caa8dc
       </main>
 
       <Footer />
