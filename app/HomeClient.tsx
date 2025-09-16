@@ -8,16 +8,14 @@ import FaqSection from "@/components/faq-section"
 import ContactForm from "@/components/contact-form"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { Button } from "@/components/ui/button"
+
 import { EnhancedButton } from "@/components/ui/enhanced-button"
 import {
   ArrowRight,
-  Brain,
   Users,
   Hand,
   BookOpen,
   Headphones,
-  Zap,
   Phone,
   MessageCircle,
   MessageSquare,
@@ -177,7 +175,7 @@ export default function HomeClient() {
                     </p>
                     <div className="flex justify-center">
                       <Link
-                        href="/terapia-reki"
+                        href="/uslugi/terapia-reki"
                         className="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl"
                       >
                         <ArrowRight className="inline h-4 w-4 mr-2" />
@@ -215,7 +213,7 @@ export default function HomeClient() {
                     </p>
                     <div className="flex justify-center">
                       <Link
-                        href="/trening-umiejetnosci-spolecznych"
+                        href="/uslugi/trening-umiejetnosci-spolecznych"
                         className="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl"
                       >
                         <ArrowRight className="inline h-4 w-4 mr-2" />
@@ -253,7 +251,7 @@ export default function HomeClient() {
                     </p>
                     <div className="flex justify-center">
                       <Link
-                        href="/terapia-pedagogiczna"
+                        href="/uslugi/terapia-pedagogiczna"
                         className="bg-teal-700 text-white px-6 py-3 rounded-lg hover:bg-teal-800 transition-colors font-medium shadow-lg hover:shadow-xl"
                       >
                         <ArrowRight className="inline h-4 w-4 mr-2" />
@@ -297,7 +295,7 @@ export default function HomeClient() {
                     </p>
                     <div className="flex justify-center">
                       <Link
-                        href="/trening-sluchowy-johansena"
+                        href="/uslugi/trening-sluchowy-johansena"
                         className="bg-teal-700 text-white px-6 py-3 rounded-lg hover:bg-teal-800 transition-colors font-medium shadow-lg hover:shadow-xl"
                       >
                         <ArrowRight className="inline h-4 w-4 mr-2" />
@@ -725,7 +723,7 @@ export default function HomeClient() {
                           <h4 className="font-semibold text-gray-800 mb-1">Komunikacja</h4>
                           <p className="text-gray-600 text-sm">
                             Autobus linia 105 z Białegostoku<br />
-                            Przystanek: "Pomigacze Centrum" (500m)
+                            Przystanek: &quot;Pomigacze Centrum&quot; (500m)
                           </p>
                         </div>
                       </div>
@@ -746,7 +744,7 @@ export default function HomeClient() {
 
                     <div className="mt-6 p-4 bg-teal-50 rounded-lg">
                       <p className="text-teal-700 text-sm mb-4">
-                        <strong>Wskazówka:</strong> Gabinet w domu prywatnym. Wejście od strony ogrodu, z prawej strony budynku. Tabliczka "EDU HUSTAWKA" na bramie.
+                        <strong>Wskazówka:</strong> Gabinet w domu prywatnym. Wejście od strony ogrodu, z prawej strony budynku. Tabliczka &quot;EDU HUSTAWKA&quot; na bramie.
                       </p>
                       <EnhancedButton
                         size="sm"

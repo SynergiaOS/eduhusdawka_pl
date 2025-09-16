@@ -8,7 +8,11 @@ interface AnimatedPageSectionProps {
   delay?: number
   className?: string
   animation?: "fade" | "slide" | "scale" | "rotate" | "custom"
-  customAnimation?: any
+  customAnimation?: {
+    initial: any;
+    animate: any;
+    transition: any;
+  }
 }
 
 export default function AnimatedPageSection({
@@ -42,7 +46,7 @@ export default function AnimatedPageSection({
     },
   }
 
-  const animationProps = customAnimation || animations[animation]
+  const animationProps = customAnimation || animations[animation as keyof typeof animations]
 
   return (
     <motion.div

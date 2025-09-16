@@ -1,18 +1,23 @@
 "use client"
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, type Transition } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { type ReactNode, useEffect, useState } from "react"
 
 // Typy animacji dla różnych ścieżek
-const getAnimationForPath = (path: string) => {
+const getAnimationForPath = (path: string): {
+  initial: Record<string, any>;
+  animate: Record<string, any>;
+  exit: Record<string, any>;
+  transition: Transition;
+} => {
   // Strona główna
   if (path === "/") {
     return {
       initial: { opacity: 0, y: 20 },
       animate: { opacity: 1, y: 0 },
       exit: { opacity: 0, y: -20 },
-      transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.5, ease: "easeInOut" },
     }
   }
 
@@ -22,7 +27,7 @@ const getAnimationForPath = (path: string) => {
       initial: { opacity: 0, x: 100 },
       animate: { opacity: 1, x: 0 },
       exit: { opacity: 0, x: -100 },
-      transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.5, ease: "easeInOut" },
     }
   }
 
@@ -32,7 +37,7 @@ const getAnimationForPath = (path: string) => {
       initial: { opacity: 0, scale: 0.95 },
       animate: { opacity: 1, scale: 1 },
       exit: { opacity: 0, scale: 1.05 },
-      transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.5, ease: "easeInOut" },
     }
   }
 
@@ -43,7 +48,7 @@ const getAnimationForPath = (path: string) => {
       animate: { opacity: 1, y: 0, scale: 1 },
       transition: {
         duration: 0.6,
-        ease: [0.22, 1, 0.36, 1],
+        ease: "easeInOut",
         staggerChildren: 0.1,
       },
       exit: { opacity: 0, scale: 0.95 },
@@ -56,7 +61,7 @@ const getAnimationForPath = (path: string) => {
       initial: { opacity: 0, rotateY: 10, scale: 0.95 },
       animate: { opacity: 1, rotateY: 0, scale: 1 },
       exit: { opacity: 0, rotateY: -10, scale: 0.95 },
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.6, ease: "easeInOut" },
     }
   }
 
@@ -68,7 +73,7 @@ const getAnimationForPath = (path: string) => {
       exit: { opacity: 0, y: 30 },
       transition: {
         duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
+        ease: "easeInOut",
         staggerChildren: 0.05,
       },
     }
@@ -79,7 +84,7 @@ const getAnimationForPath = (path: string) => {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
     exit: { opacity: 0 },
-    transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.4, ease: "easeInOut" },
   }
 }
 

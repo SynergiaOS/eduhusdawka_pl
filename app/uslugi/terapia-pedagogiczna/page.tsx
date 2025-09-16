@@ -7,13 +7,8 @@ import { PageMain, Container, Section, H1, H2, H3, presets } from "@/components/
 
 export const metadata: Metadata = {
   title: "Terapia Pedagogiczna | EduHustawka",
-<<<<<<< HEAD
-  description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Indywidualne podejście, nowoczesne metody terapii pedagogicznej.",
-  keywords: "terapia pedagogiczna, trudności w nauce, czytanie, pisanie, liczenie, dysleksja, ADHD, koncentracja, 120 zł, Pomigacze",
-=======
   description: "Skuteczne wsparcie dla dzieci z trudnościami w nauce. Terapia pedagogiczna w Pomigaczach. Indywidualne podejście, nowoczesne metody.",
-  keywords: "terapia pedagogiczna, trudności w nauce, czytanie, pisanie, liczenie, dysleksja, ADHD, koncentracja, Pomigacze",
->>>>>>> 6315968e45f9c31c7849f5ffac10195e30caa8dc
+  keywords: "terapia pedagogiczna, trudności w nauce, czytanie, pisanie, liczenie, dysleksja, ADHD, koncentracja, 120 zł, Pomigacze",
 }
 
 export default function TerapiaPedagogicznaPage() {
@@ -138,18 +133,12 @@ export default function TerapiaPedagogicznaPage() {
                 </div>
               ))}
             </div>
-<<<<<<< HEAD
-          </div>
-        </AnimatedSection>
+          </Container>
+        </Section>
 
         {/* Cennik */}
         {/* Usunięto sekcję cennika */}
-      </main>
-=======
-          </Container>
-        </Section>
       </PageMain>
->>>>>>> 6315968e45f9c31c7849f5ffac10195e30caa8dc
       
       <Footer />
     </div>

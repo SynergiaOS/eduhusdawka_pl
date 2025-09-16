@@ -38,7 +38,7 @@ export default function Icon() {
           color: "#0d9488", // Teal color from the logo
           fontFamily: "serif",
           position: "relative",
-          zIndex: "2",
+          zIndex: 2,
         }}
       >
         E
@@ -53,7 +53,7 @@ export default function Icon() {
           height: 8,
           borderRadius: "50%",
           background: "#f59e0b", // Amber color for the puzzle piece
-          zIndex: "1",
+          zIndex: 1,
         }}
       />
     </div>,

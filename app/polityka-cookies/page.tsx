@@ -25,7 +25,7 @@ export default function CookiePolicyPage() {
 
                 <h2>1. Czym są pliki cookies?</h2>
                 <p>
-                  Pliki cookies (tzw. "ciasteczka") to małe pliki tekstowe, które są zapisywane na urządzeniu
+                  Pliki cookies (tzw. &quot;ciasteczka&quot;) to małe pliki tekstowe, które są zapisywane na urządzeniu
                   użytkownika (komputerze, tablecie, smartfonie) podczas przeglądania stron internetowych. Zawierają one
                   różne informacje, które są niezbędne do prawidłowego funkcjonowania serwisu internetowego lub pomagają
                   dostosować treści do preferencji użytkownika.

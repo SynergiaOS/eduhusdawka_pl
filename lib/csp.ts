@@ -11,9 +11,9 @@ export function generateNonce(): string {
 /**
  * Get CSP nonce from headers (if available)
  */
-export function getCSPNonce(): string | undefined {
+export async function getCSPNonce(): Promise<string | undefined> {
   try {
-    const headersList = headers()
+    const headersList = await headers()
     const cspHeader = headersList.get('content-security-policy')
     
     if (!cspHeader) return undefined

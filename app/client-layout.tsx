@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "next-themes"
 import { UserPreferencesProvider } from "@/contexts/user-preferences-context"
 import { ConsentProvider } from "@/contexts/consent-context"
 import CookieBanner from "@/components/cookie-banner"

@@ -38,7 +38,7 @@ export default function Icon() {
           color: "#0d9488", // Teal color
           fontFamily: "serif",
           position: "relative",
-          zIndex: "2",
+          zIndex: 2,
         }}
       >
         E
@@ -53,7 +53,7 @@ export default function Icon() {
           height: 40,
           borderRadius: "50%",
           background: "#f59e0b", // Amber color
-          zIndex: "1",
+          zIndex: 1,
         }}
       />
       {/* Second puzzle piece accent */}
@@ -66,7 +66,7 @@ export default function Icon() {
           height: 30,
           borderRadius: "50%",
           background: "#ec4899", // Pink color
-          zIndex: "1",
+          zIndex: 1,
         }}
       />
     </div>,

@@ -44,7 +44,8 @@ export class TwilioSMSProvider implements SMSProvider {
       // Próba rzeczywistego wysłania przez Twilio API
       try {
         // Dynamiczny import Twilio (tylko gdy potrzebny)
-        const twilio = await import('twilio')
+        // @ts-expect-error - twilio może nie być zainstalowane w dev
+        const twilio = await import('twilio') as any
         const client = twilio.default(this.accountSid, this.authToken)
 
         const result = await client.messages.create({

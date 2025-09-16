@@ -88,3 +88,24 @@ export function Toaster({ toasts = [], dismiss }: { toasts?: any[]; dismiss?: (i
     </div>
   )
 }
+
+// Export additional components for compatibility
+export const ToastClose = ({ onClick }: { onClick: () => void }) => (
+  <button onClick={onClick} className="absolute right-2 top-2 rounded-md p-1 text-foreground/50 opacity-0 transition-opacity hover:text-foreground focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600">
+    <X className="h-4 w-4" />
+  </button>
+)
+
+export const ToastDescription = ({ children }: { children: React.ReactNode }) => (
+  <div className="text-sm opacity-90">{children}</div>
+)
+
+export const ToastProvider = ({ children }: { children: React.ReactNode }) => <>{children}</>
+export const ToastTitle = ({ children }: { children: React.ReactNode }) => (
+  <div className="text-sm font-semibold">{children}</div>
+)
+export const ToastViewport = ({ children }: { children: React.ReactNode }) => <>{children}</>
+
+// Export types
+export type ToastActionElement = React.ReactElement
+export { type ToastProps }

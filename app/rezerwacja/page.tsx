@@ -28,11 +28,7 @@ export default function RezerwacjaPage() {
       name: "Terapia Ręki",
       price: "120 zł",
       duration: "50 min",
-<<<<<<< HEAD
-      description: "Rozwój motoryki małej"
-=======
       description: "Rozwój motoryki małej (gabinet/dojazd)"
->>>>>>> 6315968e45f9c31c7849f5ffac10195e30caa8dc
     },
     {
       name: "IAS Johansena - Diagnoza",

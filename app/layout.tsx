@@ -74,12 +74,16 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/images/logo-eduhustawka.png" />
 
         {/* Preload critical resources */}
-        <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/images/joanna.png" as="image" />
+        <link rel="preload" href="/images/hero-children.png" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+        {/* Resource hints for better performance */}
+        <link rel="prefetch" href="/uslugi" />
+        <link rel="prefetch" href="/rezerwacja" />
 
         {/* DNS prefetch for external domains */}
         <link rel="dns-prefetch" href="//images.unsplash.com" />

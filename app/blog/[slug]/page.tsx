@@ -11,13 +11,14 @@ import { LoadingSpinner } from "@/components/loading-spinner"
 import type { Metadata } from "next"
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = blogPosts.find((post) => post.id === params.slug)
+  const { slug } = await params
+  const post = blogPosts.find((post) => post.id === slug)
 
   if (!post) {
     return {
@@ -53,8 +54,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = blogPosts.find((post) => post.id === params.slug)
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
+  const post = blogPosts.find((post) => post.id === slug)
 
   if (!post) {
     notFound()

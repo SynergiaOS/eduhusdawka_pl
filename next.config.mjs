@@ -42,6 +42,41 @@ const nextConfig = {
     ],
     unoptimized: false, // Enable image optimization for better Core Web Vitals
   },
+  async redirects() {
+    return [
+      // Redirect old service URLs to new /uslugi/{pageId} structure
+      {
+        source: '/terapia-reki',
+        destination: '/uslugi/terapia-reki',
+        permanent: true,
+      },
+      {
+        source: '/terapia-pedagogiczna',
+        destination: '/uslugi/terapia-pedagogiczna',
+        permanent: true,
+      },
+      {
+        source: '/terapia-dla-dzieci-z-autyzmem',
+        destination: '/uslugi/terapia-dla-dzieci-z-autyzmem',
+        permanent: true,
+      },
+      {
+        source: '/trening-sluchowy-johansena',
+        destination: '/uslugi/trening-sluchowy-johansena',
+        permanent: true,
+      },
+      {
+        source: '/trening-umiejetnosci-spolecznych',
+        destination: '/uslugi/trening-umiejetnosci-spolecznych',
+        permanent: true,
+      },
+      {
+        source: '/wczesna-nauka-czytania',
+        destination: '/uslugi/wczesna-nauka-czytania',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {
@@ -98,7 +133,10 @@ const nextConfig = {
       '@radix-ui/react-select',
       'framer-motion',
       'react-hook-form',
-      'zod'
+      'zod',
+      'date-fns',
+      'clsx',
+      'tailwind-merge'
     ],
     reactCompiler: true,
   },

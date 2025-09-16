@@ -37,7 +37,7 @@ export default function TerapiaDzieciZAutyzmemPage() {
                   </div>
 
                   <blockquote className="text-base sm:text-lg italic text-gray-700 border-l-4 border-blue-300 pl-4 mb-8 leading-relaxed">
-                    "Każde dziecko z autyzmem ma unikalny potencjał. Naszym celem jest odkrycie i rozwinięcie tego potencjału w bezpiecznym i wspierającym środowisku."
+                    "                    &quot;Każde dziecko z autyzmem ma unikalny potencjał. Naszym celem jest odkrycie i rozwinięcie tego potencjału w bezpiecznym i wspierającym środowisku.&quot;"
                   </blockquote>
 
                   <div className="flex flex-wrap gap-3 mb-8">
