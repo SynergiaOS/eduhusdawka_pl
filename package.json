@@ -8,12 +8,15 @@
     "dev:turbo": "next dev --turbopack",
     "dev:https-turbo": "next dev --experimental-https --turbopack",
     "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start -p ${PORT:-3000}",
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:ci": "jest --ci --coverage --watchAll=false"
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "lighthouse": "lhci autorun",
+    "lighthouse:collect": "lhci collect"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -73,11 +76,14 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "@next/bundle-analyzer": "^15.5.3",
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.4.6",
+    "lighthouse": "^12.8.2",
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"

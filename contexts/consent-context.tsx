@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
+import { createContext, useContext, useState, useEffect, useCallback, useMemo, type ReactNode } from "react"
 
 type ConsentType = "necessary" | "analytics" | "marketing"
 
@@ -44,37 +44,39 @@ export function ConsentProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  const setConsent = (type: ConsentType, value: boolean) => {
+  // Memoized handlers to prevent unnecessary re-renders
+  const setConsent = useCallback((type: ConsentType, value: boolean) => {
     setConsents((prev) => ({ ...prev, [type]: value }))
-  }
+  }, [])
 
-  const setAllConsents = (value: boolean) => {
+  const setAllConsents = useCallback((value: boolean) => {
     setConsents({
       necessary: true, // Always required
       analytics: value,
       marketing: value,
     })
-  }
+  }, [])
 
-  const saveConsents = () => {
+  const saveConsents = useCallback(() => {
     if (typeof window !== "undefined") {
       localStorage.setItem("cookie-consents", JSON.stringify(consents))
       localStorage.setItem("cookie-interaction", "true")
       setHasInteracted(true)
     }
-  }
+  }, [consents])
+
+  // Memoized context value to prevent unnecessary re-renders
+  const contextValue = useMemo(() => ({
+    consents,
+    setConsent,
+    setAllConsents,
+    hasInteracted,
+    setHasInteracted,
+    saveConsents,
+  }), [consents, setConsent, setAllConsents, hasInteracted, setHasInteracted, saveConsents])
 
   return (
-    <ConsentContext.Provider
-      value={{
-        consents,
-        setConsent,
-        setAllConsents,
-        hasInteracted,
-        setHasInteracted,
-        saveConsents,
-      }}
-    >
+    <ConsentContext.Provider value={contextValue}>
       {children}
     </ConsentContext.Provider>
   )

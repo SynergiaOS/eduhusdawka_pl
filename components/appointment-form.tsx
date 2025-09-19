@@ -1,76 +1,10 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Calendar } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
 
 export default function AppointmentForm() {
-  const { toast } = useToast()
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-    preferredDate: "",
-    preferredTime: "",
-    message: "",
-    smsConfirmation: false,
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Validate form
-    if (!formData.name || !formData.email || !formData.phone || !formData.service) {
-      toast({
-        title: "Błąd formularza",
-        description: "Proszę wypełnić wszystkie wymagane pola.",
-        variant: "destructive",
-      })
-      setIsSubmitting(false)
-      return
-    }
-
-    // Create email subject and body
-    const subject = `Prośba o umówienie wizyty: ${formData.service}`
-    const body = `
-Imię i nazwisko: ${formData.name}
-Email: ${formData.email}
-Telefon: ${formData.phone}
-Usługa: ${formData.service}
-Preferowana data: ${formData.preferredDate || "Nie określono"}
-Preferowana godzina: ${formData.preferredTime || "Nie określono"}
-Potwierdzenie SMS: ${formData.smsConfirmation ? "TAK" : "NIE"}
-
-Wiadomość:
-${formData.message || "Brak dodatkowej wiadomości"}
-    `.trim()
-
-    // Create mailto link
-    const mailtoLink = `mailto:kontakt@eduhustawka.pl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-
-    // Open email client
-    window.location.href = mailtoLink
-
-    // Show success message
-    toast({
-      title: "Formularz przygotowany",
-      description: "Otwieranie klienta poczty z wypełnionymi danymi...",
-    })
-
-    // Reset loading state after a delay
-    setTimeout(() => setIsSubmitting(false), 1000)
-  }
+  // Simplified component - just redirects to booking page
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md text-center">

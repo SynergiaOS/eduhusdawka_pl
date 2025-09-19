@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Hand, Brain, Users, Headphones, Volume2, BookOpen, Target, Stethoscope } from "lucide-react"
+import { Hand, Brain, Users, Headphones, Volume2, BookOpen } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface Service {

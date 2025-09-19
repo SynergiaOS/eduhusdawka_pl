@@ -4,7 +4,7 @@ import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
 import { Users, CheckCircle, AlertTriangle, ArrowRight, Clock, User, Heart } from "lucide-react"
 import Link from "next/link"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
 
 export const metadata: Metadata = {
   title: "Dlaczego umiejętności społeczne są kluczowe? | EduHustawka",
@@ -56,7 +56,7 @@ export default function UmiejetnosciSpolecznePage() {
               
               {/* Introduction */}
               <div className="mb-12">
-                <OptimizedImage
+                <UnifiedImage
                   src="/images/hero-children.png"
                   alt="Dzieci podczas zabawy społecznej"
                   width={800}

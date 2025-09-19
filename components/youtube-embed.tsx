@@ -57,6 +57,8 @@ export default function YouTubeEmbed({
         alt={`Miniatura filmu: ${title}`}
         className="w-full h-full object-cover rounded-xl"
         loading="lazy"
+        decoding="async"
+        fetchPriority="low"
       />
       
       {/* Overlay */}

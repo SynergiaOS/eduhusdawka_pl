@@ -4,7 +4,7 @@ import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
 import { Hand, CheckCircle, AlertTriangle, ArrowRight, Clock, User } from "lucide-react"
 import Link from "next/link"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
 
 export const metadata: Metadata = {
   title: "Kiedy dziecko potrzebuje terapii ręki? | EduHustawka",
@@ -56,7 +56,7 @@ export default function KiedyDzieckoTerapiaRekiPage() {
               
               {/* Introduction */}
               <div className="mb-12">
-                <OptimizedImage
+                <UnifiedImage
                   src="/images/hand-therapy.png"
                   alt="Dziecko podczas ćwiczeń motoryki małej"
                   width={800}

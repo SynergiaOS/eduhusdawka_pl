@@ -1,135 +1,197 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import type { Metadata } from "next"
+import { BookOpen, Eye, Brain, CheckCircle, Star, Target, Users, Lightbulb } from "lucide-react"
+import UnifiedImage from "@/components/unified-image"
 
 export const metadata: Metadata = {
   title: "Wczesna Nauka Czytania - Wsparcie Rozwoju | EduHustawka",
-  description:
-    "Wczesna nauka czytania w Białymstoku. Zajęcia wspierające rozwój umiejętności czytania u dzieci w wieku przedszkolnym i wczesnoszkolnym.",
+  description: "Wczesna nauka czytania w Białymstoku. Zajęcia wspierające rozwój umiejętności czytania u dzieci w wieku przedszkolnym i wczesnoszkolnym.",
+  keywords: "wczesna nauka czytania, czytanie dzieci, przedszkole, Białystok, Pomigacze, rozwój czytania",
 }
 
 export default function WczesnaNaukaCzytaniaPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-emerald-50">
       <Header />
 
-      <main className="flex-grow pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <AnimatedSection>
-              <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 font-heading heading-fancy pb-4">
-                Wczesna Nauka Czytania
-              </h1>
-              <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-                Zajęcia wspierające rozwój umiejętności czytania u dzieci
-              </p>
-            </AnimatedSection>
-
-            <AnimatedSection delay={200}>
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden group">
-                    <img
-                      src="/images/early-reading.png"
-                      alt="Wczesna Nauka Czytania"
-                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <main className="pt-20">
+        {/* Hero Section */}
+        <AnimatedSection className="py-16 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <BookOpen className="h-12 w-12 text-green-600" />
+                  <div>
+                    <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+                      Wczesna Nauka Czytania
+                    </h1>
+                    <p className="text-xl text-green-600">Wsparcie rozwoju umiejętności czytania</p>
+                  </div>
+                </div>
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  Specjalistyczne zajęcia wspierające rozwój umiejętności czytania u dzieci
+                  w wieku przedszkolnym i wczesnoszkolnym. Indywidualne podejście do każdego dziecka.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <div className="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <span className="text-green-700">Metody sprawdzone</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-emerald-100 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-emerald-600" />
+                    <span className="text-emerald-700">Indywidualne tempo</span>
                   </div>
                 </div>
               </div>
-            </AnimatedSection>
 
-            <AnimatedSection delay={300}>
-              <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-12">
-                <h2 className="text-2xl font-semibold mb-6 text-teal-700 font-heading">
-                  Jak przebiega Wczesna Nauka Czytania?
-                </h2>
-                <div className="prose prose-teal max-w-none">
-                  <p className="mb-4">
-                    Wczesna Nauka Czytania to zajęcia, które wspierają rozwój umiejętności czytania u dzieci w wieku
-                    przedszkolnym i wczesnoszkolnym. Wykorzystujemy różnorodne metody dostosowane do indywidualnych
-                    potrzeb i możliwości dziecka.
-                  </p>
-
-                  <h3 className="text-xl font-semibold mt-6 mb-3 text-teal-700">Etapy nauki czytania:</h3>
-                  <ul className="list-disc list-inside mb-4 space-y-2">
-                    <li>Rozpoznawanie liter i ich brzmień</li>
-                    <li>Łączenie liter w sylaby</li>
-                    <li>Czytanie prostych wyrazów</li>
-                    <li>Rozumienie czytanego tekstu</li>
-                    <li>Płynne czytanie</li>
-                    <li>Analiza i interpretacja tekstu</li>
-                  </ul>
-
-                  <h3 className="text-xl font-semibold mt-6 mb-3 text-teal-700">Metody pracy:</h3>
-                  <p className="mb-4">
-                    Podczas zajęć dzieci uczą się rozpoznawania liter, łączenia ich w sylaby i wyrazy, rozumienia
-                    czytanego tekstu. Wszystko odbywa się w formie zabawy, z wykorzystaniem gier, zabawek edukacyjnych,
-                    książeczek i innych pomocy dydaktycznych.
-                  </p>
-
-                  <ul className="list-disc list-inside mb-4 space-y-2">
-                    <li>Metoda sylabowa</li>
-                    <li>Metoda fonetyczna</li>
-                    <li>Gry i zabawy edukacyjne</li>
-                    <li>Książeczki obrazkowe</li>
-                    <li>Karty z literami i wyrazami</li>
-                    <li>Multimedialne pomoce dydaktyczne</li>
-                  </ul>
-
-                  <h3 className="text-xl font-semibold mt-6 mb-3 text-teal-700">Dla kogo?</h3>
-                  <p className="mb-4">
-                    Zajęcia są przeznaczone dla dzieci w wieku 4-8 lat, które rozpoczynają naukę czytania lub mają
-                    trudności z opanowaniem tej umiejętności. Program jest dostosowany do tempa rozwoju każdego dziecka.
-                  </p>
-
-                  <h3 className="text-xl font-semibold mt-6 mb-3 text-teal-700">Korzyści z zajęć:</h3>
-                  <ul className="list-disc list-inside mb-4 space-y-2">
-                    <li>Rozwój umiejętności czytania ze zrozumieniem</li>
-                    <li>Zwiększenie pewności siebie</li>
-                    <li>Przygotowanie do nauki szkolnej</li>
-                    <li>Rozwój koncentracji uwagi</li>
-                    <li>Wzmocnienie pamięci wzrokowej</li>
-                    <li>Poprawa koordynacji wzrokowo-ruchowej</li>
-                  </ul>
-
-                  <p className="mb-4">
-                    Każde dziecko pracuje w swoim tempie, a zajęcia są dostosowane do jego indywidualnych potrzeb i
-                    możliwości. Wykorzystujemy pozytywne wzmocnienia i zachęcamy do eksperymentowania z językiem.
-                  </p>
-                </div>
+              <div className="relative">
+                <UnifiedImage
+                  src="/images/early-reading.png"
+                  alt="Dziecko podczas nauki czytania"
+                  width={600}
+                  height={400}
+                  className="rounded-2xl shadow-2xl"
+                />
               </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={400}>
-              <div className="bg-teal-50 p-6 md:p-8 rounded-lg">
-                <h2 className="text-2xl font-semibold mb-6 text-teal-700 font-heading">Skontaktuj się</h2>
-                <div className="text-center">
-                  <p className="mb-6">
-                    Chcesz zapisać dziecko na zajęcia wczesnej nauki czytania lub masz pytania? Skontaktuj się ze mną.
-                  </p>
-                  <div className="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="tel:+48531509008">
-                      <Button className="bg-teal-600 hover:bg-teal-700 text-white">Zadzwoń: 531 509 008</Button>
-                    </a>
-                    <Link href="/kontakt">
-                      <Button
-                        variant="outline"
-                        className="text-teal-600 border-teal-600 hover:bg-teal-50 bg-transparent"
-                      >
-                        Formularz kontaktowy
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
+            </div>
           </div>
-        </div>
+        </AnimatedSection>
+        {/* Czym jest wczesna nauka czytania */}
+        <AnimatedSection className="py-16 px-4 bg-white" delay={200}>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              Czym jest wczesna nauka czytania?
+            </h2>
+            <div className="bg-green-50 p-8 rounded-2xl mb-8">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Wczesna nauka czytania to specjalistyczne zajęcia wspierające rozwój umiejętności czytania
+                u dzieci w wieku przedszkolnym i wczesnoszkolnym. Wykorzystujemy różnorodne metody dostosowane
+                do indywidualnych potrzeb i możliwości każdego dziecka.
+              </p>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Jak przebiega nauka */}
+        <AnimatedSection className="py-16 px-4" delay={300}>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+              Jak przebiega nauka czytania?
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Eye className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Rozpoznawanie</h3>
+                <p className="text-gray-600">
+                  Nauka rozpoznawania liter, ich kształtów i brzmień w formie zabawy
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Lightbulb className="w-8 h-8 text-emerald-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Łączenie</h3>
+                <p className="text-gray-600">
+                  Łączenie liter w sylaby i proste wyrazy z wykorzystaniem gier edukacyjnych
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Rozumienie</h3>
+                <p className="text-gray-600">
+                  Rozwój czytania ze zrozumieniem i płynności czytania
+                </p>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Dla kogo */}
+        <AnimatedSection className="py-16 px-4 bg-gray-50" delay={400}>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+              Dla kogo są zajęcia?
+            </h2>
+
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-green-700 mb-6 flex items-center">
+                <Target className="w-6 h-6 mr-2" />
+                Zajęcia są przeznaczone dla dzieci, które:
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Rozpoczynają naukę czytania (4-6 lat)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Mają trudności z opanowaniem czytania</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Potrzebują wsparcia przed szkołą</span>
+                  </li>
+                </ul>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Mają problemy z koncentracją</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Potrzebują indywidualnego tempa</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span>Chcą rozwijać umiejętności czytania</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Cennik */}
+        <AnimatedSection className="py-16 px-4 bg-white" delay={500}>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
+
+            <div className="bg-green-50 p-8 rounded-2xl max-w-md mx-auto">
+              <h3 className="text-2xl font-semibold mb-6 text-green-700">Wczesna Nauka Czytania</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center py-2 border-b border-green-200">
+                  <span className="text-gray-700">W gabinecie (50 min)</span>
+                  <span className="text-2xl font-bold text-green-600">120 zł</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
+                  <span className="text-2xl font-bold text-green-600">150 zł</span>
+                </div>
+              </div>
+              <div className="mt-6 text-center">
+                <p className="text-sm text-green-600 mb-4">
+                  💡 Indywidualne podejście do każdego dziecka
+                </p>
+                <a href="tel:+48531509008" className="inline-block">
+                  <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                    📞 Zadzwoń: 531 509 008
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
       </main>
 
       <Footer />

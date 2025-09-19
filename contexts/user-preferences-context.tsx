@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
+import { createContext, useContext, useState, useEffect, useCallback, useMemo, type ReactNode } from "react"
 
 interface UserPreferences {
   viewedServices: string[]
@@ -51,7 +51,8 @@ export function UserPreferencesProvider({ children }: { children: ReactNode }) {
     }
   }, [preferences, isLoaded])
 
-  const addViewedService = (serviceId: string) => {
+  // Memoized handlers to prevent unnecessary re-renders
+  const addViewedService = useCallback((serviceId: string) => {
     setPreferences((prev) => {
       // Check if the service is already in the viewedServices array
       if (prev.viewedServices.includes(serviceId)) {
@@ -64,31 +65,32 @@ export function UserPreferencesProvider({ children }: { children: ReactNode }) {
         viewedServices: [...prev.viewedServices, serviceId],
       }
     })
-  }
+  }, [])
 
-  const setPreferredCategories = (categories: string[]) => {
+  const setPreferredCategories = useCallback((categories: string[]) => {
     setPreferences((prev) => ({
       ...prev,
       preferredCategories: categories,
     }))
-  }
+  }, [])
 
-  const setFirstVisit = (value: boolean) => {
+  const setFirstVisit = useCallback((value: boolean) => {
     setPreferences((prev) => ({
       ...prev,
       firstVisit: value,
     }))
-  }
+  }, [])
+
+  // Memoized context value to prevent unnecessary re-renders
+  const contextValue = useMemo(() => ({
+    preferences,
+    addViewedService,
+    setPreferredCategories,
+    setFirstVisit,
+  }), [preferences, addViewedService, setPreferredCategories, setFirstVisit])
 
   return (
-    <UserPreferencesContext.Provider
-      value={{
-        preferences,
-        addViewedService,
-        setPreferredCategories,
-        setFirstVisit,
-      }}
-    >
+    <UserPreferencesContext.Provider value={contextValue}>
       {children}
     </UserPreferencesContext.Provider>
   )

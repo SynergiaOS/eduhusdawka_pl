@@ -2,8 +2,8 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Phone, Users, CheckCircle, ArrowRight, Heart } from "lucide-react"
+import Image from "next/image"
+import { Phone, CheckCircle, Heart, Brain, Target } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -64,10 +64,16 @@ export default function TerapiaDzieciZAutyzmemPage() {
 
                 <div className="relative">
                   <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-8 rounded-2xl shadow-2xl">
-                    <img
+                    <Image
                       src="/images/autism-therapy.png"
                       alt="Terapia dla dzieci z autyzmem"
+                      width={800}
+                      height={600}
                       className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
+                      sizes="(max-width: 768px) 100vw, 800px"
+                      priority={true}
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                     />
                     <div className="text-center mt-4">
                       <div className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
@@ -96,9 +102,70 @@ export default function TerapiaDzieciZAutyzmemPage() {
                     </div>
                   </div>
                 </div>
+            </AnimatedSection>
 
-                <h2 className="text-2xl font-semibold mb-6 text-blue-700 font-heading">
-                  Dla kogo jest terapia dla dzieci z autyzmem?
+            {/* Czym jest terapia */}
+            <AnimatedSection className="py-16 px-4 bg-white" delay={200}>
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-gray-900 mb-8">
+                  Czym jest terapia dla dzieci z autyzmem?
+                </h2>
+                <div className="bg-blue-50 p-8 rounded-2xl mb-8">
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Terapia dla dzieci z autyzmem to specjalistyczne wsparcie dostosowane do unikalnych potrzeb
+                    każdego dziecka ze spektrum autyzmu. Koncentruje się na rozwoju komunikacji, umiejętności społecznych,
+                    regulacji emocjonalnej i codziennych umiejętności życiowych.
+                  </p>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Jak przebiega terapia */}
+            <AnimatedSection className="py-16 px-4" delay={300}>
+              <div className="max-w-6xl mx-auto">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                  Jak przebiega terapia?
+                </h2>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Target className="w-8 h-8 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Ocena</h3>
+                    <p className="text-gray-600">
+                      Kompleksowa diagnoza rozwoju dziecka i identyfikacja obszarów wymagających wsparcia
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Brain className="w-8 h-8 text-purple-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Plan</h3>
+                    <p className="text-gray-600">
+                      Opracowanie indywidualnego programu terapeutycznego dostosowanego do potrzeb dziecka
+                    </p>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Heart className="w-8 h-8 text-green-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Terapia</h3>
+                    <p className="text-gray-600">
+                      Systematyczna praca nad rozwojem umiejętności z uwzględnieniem zainteresowań dziecka
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Dla kogo */}
+            <AnimatedSection className="py-16 px-4 bg-gray-50" delay={400}>
+              <div className="max-w-6xl mx-auto">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                  Dla kogo jest terapia?
                 </h2>
 
                 <div className="prose prose-blue max-w-none">
@@ -260,20 +327,33 @@ export default function TerapiaDzieciZAutyzmemPage() {
               </div>
             </AnimatedSection>
 
-            {/* CTA Section */}
-            <AnimatedSection>
-              <div className="bg-blue-50 p-6 md:p-8 rounded-lg text-center">
-                <h2 className="text-2xl font-semibold mb-4 text-blue-700 font-heading">Umów się na terapię dla dziecka z autyzmem</h2>
-                <p className="text-gray-600 mb-6">
-                  Chcesz pomóc swojemu dziecku rozwijać swoje umiejętności i potencjał? Skontaktuj się ze mną.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <a href="tel:+48531509008">
-                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                      <Phone className="h-4 w-4 mr-2" />
-                      Zadzwoń: 531 509 008
-                    </Button>
-                  </a>
+            {/* Cennik */}
+            <AnimatedSection className="py-16 px-4 bg-white" delay={600}>
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
+
+                <div className="bg-blue-50 p-8 rounded-2xl max-w-md mx-auto">
+                  <h3 className="text-2xl font-semibold mb-6 text-blue-700">Terapia dla dzieci z autyzmem</h3>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center py-2 border-b border-blue-200">
+                      <span className="text-gray-700">W gabinecie (50 min)</span>
+                      <span className="text-2xl font-bold text-blue-600">150 zł</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
+                      <span className="text-2xl font-bold text-blue-600">180 zł</span>
+                    </div>
+                  </div>
+                  <div className="mt-6 text-center">
+                    <p className="text-sm text-blue-600 mb-4">
+                      💡 Indywidualne podejście do każdego dziecka
+                    </p>
+                    <a href="tel:+48531509008" className="inline-block">
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        📞 Zadzwoń: 531 509 008
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </AnimatedSection>

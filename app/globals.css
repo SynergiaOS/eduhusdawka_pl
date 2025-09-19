@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import optimized animations */
+@import '../styles/animations.css';
+
+/* Import mobile optimizations */
+@import '../styles/mobile-optimizations.css';
+
 @layer base {
   :root {
     --background: 0 0% 100%;

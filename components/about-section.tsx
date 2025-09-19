@@ -1,7 +1,7 @@
 "use client"
 
 import AnimatedSection from "@/components/animated-section"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
 import { Button } from "@/components/ui/button"
 import { Award, BookOpen, Users, Heart, Phone } from "lucide-react"
 
@@ -12,7 +12,7 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <AnimatedSection animation="slide" direction="left">
             <div className="relative">
-              <OptimizedImage
+              <UnifiedImage
                 src="/images/joanna.png"
                 alt="Joanna Świrydowicz - Pedagog Specjalny"
                 width={500}

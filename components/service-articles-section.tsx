@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { ArrowRight, Clock, User, Brain, Hand } from "lucide-react"
 import AnimatedSection from "@/components/animated-section"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
 
 interface Article {
   id: string
@@ -72,7 +72,7 @@ export default function ServiceArticlesSection() {
                   <article className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-teal-200 h-full">
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden">
-                      <OptimizedImage
+                      <UnifiedImage
                         src={article.imageUrl}
                         alt={article.title}
                         width={400}

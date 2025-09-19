@@ -2,8 +2,9 @@
 
 import type React from "react"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, memo } from "react"
 import { cn } from "@/lib/utils"
+import { useReducedMotion } from "@/hooks/use-reduced-motion"
 
 interface AnimatedSectionProps {
   children: React.ReactNode
@@ -15,7 +16,7 @@ interface AnimatedSectionProps {
   once?: boolean
 }
 
-export default function AnimatedSection({
+const AnimatedSection = memo(({
   children,
   className,
   delay = 0,
@@ -23,41 +24,60 @@ export default function AnimatedSection({
   direction = "up",
   threshold = 0.1,
   once = true,
-}: AnimatedSectionProps) {
+}: AnimatedSectionProps) => {
   const [isVisible, setIsVisible] = useState(false)
   const [hasAnimated, setHasAnimated] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
+  const prefersReducedMotion = useReducedMotion()
 
   useEffect(() => {
+    const currentRef = ref.current // Capture ref value for cleanup
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && (!once || !hasAnimated)) {
-          setTimeout(() => {
+          // If user prefers reduced motion, show immediately
+          const animationDelay = prefersReducedMotion ? 0 : delay
+
+          const timeoutId = setTimeout(() => {
             setIsVisible(true)
             if (once) setHasAnimated(true)
-          }, delay)
+          }, animationDelay)
+
+          return () => clearTimeout(timeoutId)
         } else if (!once && !entry.isIntersecting) {
           setIsVisible(false)
         }
       },
-      { threshold },
+      {
+        threshold,
+        rootMargin: prefersReducedMotion ? '0px' : '50px', // Reduce rootMargin for reduced motion
+      },
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
+      observer.disconnect()
     }
-  }, [delay, threshold, once, hasAnimated])
+  }, [delay, threshold, once, hasAnimated, prefersReducedMotion])
 
   const getAnimationClasses = () => {
-    const baseClasses = "transition-all duration-700 ease-out"
+    // If user prefers reduced motion, use minimal transitions
+    const baseClasses = prefersReducedMotion
+      ? "transition-opacity duration-100"
+      : "transition-all duration-700 ease-out animate-optimized"
 
     if (!isVisible) {
+      if (prefersReducedMotion) {
+        return `${baseClasses} opacity-0`
+      }
+
       switch (animation) {
         case "fade":
           return `${baseClasses} opacity-0`
@@ -83,6 +103,10 @@ export default function AnimatedSection({
       }
     }
 
+    if (prefersReducedMotion) {
+      return `${baseClasses} opacity-100`
+    }
+
     switch (animation) {
       case "fade":
         return `${baseClasses} opacity-100`
@@ -91,7 +115,7 @@ export default function AnimatedSection({
       case "scale":
         return `${baseClasses} opacity-100 scale-100`
       case "bounce":
-        return `${baseClasses} opacity-100 scale-100 animate-bounce-once`
+        return `${baseClasses} opacity-100 scale-100 bounce-once-optimized`
       default:
         return `${baseClasses} opacity-100`
     }
@@ -102,4 +126,8 @@ export default function AnimatedSection({
       {children}
     </div>
   )
-}
+})
+
+AnimatedSection.displayName = "AnimatedSection"
+
+export default AnimatedSection

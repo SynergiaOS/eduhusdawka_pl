@@ -2,7 +2,7 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, Award, Users, GraduationCap, BadgeIcon as Certificate } from "lucide-react"
 
@@ -27,7 +27,7 @@ export default function AboutPageClient() {
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <AnimatedSection animation="slide" direction="left">
               <div className="relative">
-                <OptimizedImage
+                <UnifiedImage
                   src="/images/joanna.png"
                   alt="Joanna Świrydowicz - Pedagog Specjalny"
                   width={500}

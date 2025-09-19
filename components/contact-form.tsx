@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useCallback, useMemo, memo } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -12,7 +12,7 @@ import { Phone, Mail, MapPin, Clock, Send } from "lucide-react"
 import AnimatedSection from "@/components/animated-section"
 import { useAnalytics } from "@/hooks/use-analytics"
 
-export default function ContactForm() {
+const ContactForm = memo(() => {
   const { trackEvent } = useAnalytics()
   const [formData, setFormData] = useState({
     name: "",
@@ -24,7 +24,18 @@ export default function ContactForm() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  // Memoized form reset data
+  const initialFormData = useMemo(() => ({
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+    childAge: "",
+    message: "",
+  }), [])
+
+  // Optimized submit handler with useCallback
+  const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
@@ -35,22 +46,57 @@ export default function ContactForm() {
     await new Promise((resolve) => setTimeout(resolve, 1000))
 
     // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      childAge: "",
-      message: "",
-    })
+    setFormData(initialFormData)
     setIsSubmitting(false)
 
     alert("Dziękuję za wiadomość! Skontaktuję się z Tobą w ciągu 24 godzin.")
-  }
+  }, [trackEvent, initialFormData])
 
-  const handleChange = (field: string, value: string) => {
+  // Optimized change handler with useCallback
+  const handleChange = useCallback((field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
-  }
+  }, [])
+
+  // Memoized services data
+  const services = useMemo(() => [
+    { value: "terapia-pedagogiczna", label: "Terapia pedagogiczna" },
+    { value: "terapia-reki", label: "Terapia ręki" },
+    { value: "wsparcie-autyzm", label: "Wsparcie dzieci ze spektrum autyzmu" },
+    { value: "trening-sluchowy", label: "Trening słuchowy Johansena" },
+    { value: "integracja-sensoryczna", label: "Terapia integracji sensorycznej" },
+    { value: "trening-spoleczny", label: "Trening Umiejętności Społecznych" },
+    { value: "wsparcie-emocjonalne", label: "Wsparcie emocjonalne" },
+    { value: "wczesne-wspomaganie", label: "Wczesne wspomaganie rozwoju" },
+    { value: "konsultacje", label: "Konsultacje dla rodziców" }
+  ], [])
+
+  // Memoized contact info
+  const contactInfo = useMemo(() => [
+    {
+      icon: Phone,
+      title: "Telefon",
+      content: "531 509 008",
+      subtitle: "Pon-Pt: 8:00-16:00"
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      content: "kontakt@eduhustawka.pl",
+      subtitle: "Odpowiem w ciągu 24h"
+    },
+    {
+      icon: MapPin,
+      title: "Adres",
+      content: "Polna 17",
+      subtitle: "Pomigacze"
+    },
+    {
+      icon: Clock,
+      title: "Godziny pracy",
+      content: "Pon-Pt: 8:00-16:00",
+      subtitle: "Sob: na umówienie"
+    }
+  ], [])
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -61,49 +107,22 @@ export default function ContactForm() {
             <h3 className="text-2xl font-bold mb-6 text-gray-800">Informacje kontaktowe</h3>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="h-6 w-6 text-teal-600" />
+              {contactInfo.map((info, index) => (
+                <div key={index} className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <info.icon className="h-6 w-6 text-teal-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">{info.title}</h4>
+                    <p className={`text-gray-600 ${info.title === 'Email' ? 'break-all' : ''}`}>
+                      {info.content}
+                    </p>
+                    {info.subtitle && (
+                      <p className="text-sm text-gray-500">{info.subtitle}</p>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Telefon</h4>
-                  <p className="text-gray-600">531 509 008</p>
-                  <p className="text-sm text-gray-500">Pon-Pt: 8:00-16:00</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="h-6 w-6 text-teal-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Email</h4>
-                  <p className="text-gray-600 break-all">kontakt@eduhustawka.pl</p>
-                  <p className="text-sm text-gray-500">Odpowiem w ciągu 24h</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="h-6 w-6 text-teal-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Adres</h4>
-                  <p className="text-gray-600">Polna 17</p>
-                  <p className="text-gray-600">Pomigacze</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-6 w-6 text-teal-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Godziny pracy</h4>
-                  <p className="text-gray-600">Poniedziałek - Piątek</p>
-                  <p className="text-gray-600">8:00 - 16:00</p>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="mt-8 p-6 text-teal-50 rounded-lg">
@@ -174,13 +193,11 @@ export default function ContactForm() {
                       <SelectValue placeholder="Wybierz usługę" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="terapia-pedagogiczna">Terapia pedagogiczna</SelectItem>
-                      <SelectItem value="wsparcie-autyzm">Wsparcie dzieci ze spektrum autyzmu</SelectItem>
-                      <SelectItem value="trening-sluchowy">Trening słuchowy Johansena</SelectItem>
-                      <SelectItem value="integracja-sensoryczna">Terapia integracji sensorycznej</SelectItem>
-                      <SelectItem value="wsparcie-emocjonalne">Wsparcie emocjonalne</SelectItem>
-                      <SelectItem value="wczesne-wspomaganie">Wczesne wspomaganie rozwoju</SelectItem>
-                      <SelectItem value="konsultacje">Konsultacje dla rodziców</SelectItem>
+                      {services.map((service) => (
+                        <SelectItem key={service.value} value={service.value}>
+                          {service.label}
+                        </SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                 </div>
@@ -233,4 +250,8 @@ export default function ContactForm() {
       </div>
     </div>
   )
-}
+})
+
+ContactForm.displayName = "ContactForm"
+
+export default ContactForm

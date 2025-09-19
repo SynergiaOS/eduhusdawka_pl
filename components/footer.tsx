@@ -1,10 +1,11 @@
 "use client"
 
+import React from "react"
 import Link from "next/link"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
 
-export default function Footer() {
+const Footer = React.memo(() => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -12,7 +13,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <OptimizedImage
+              <UnifiedImage
                 src="/images/logo-eduhustawka.png"
                 alt="EduHustawka Logo"
                 width={50}
@@ -116,4 +117,8 @@ export default function Footer() {
       </div>
     </footer>
   )
-}
+})
+
+Footer.displayName = "Footer"
+
+export default Footer

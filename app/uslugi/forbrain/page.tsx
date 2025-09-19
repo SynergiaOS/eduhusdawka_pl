@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AnimatedSection from "@/components/animated-section"
-import { Brain, Headphones, Users, CheckCircle, Star, Target, Volume2, Mic } from "lucide-react"
-import OptimizedImage from "@/components/optimized-image"
+import { Brain, Headphones, CheckCircle, Star, Target, Volume2, Mic } from "lucide-react"
+import UnifiedImage from "@/components/unified-image"
 
 export const metadata: Metadata = {
   title: "Forbrain - Trening Słuchowo-Głosowy | EduHustawka",
@@ -48,7 +48,7 @@ export default function ForbrainPage() {
               </div>
               
               <div className="relative">
-                <OptimizedImage
+                <UnifiedImage
                   src="/placeholder.jpg"
                   alt="Urządzenie Forbrain - słuchawki do treningu słuchowo-głosowego"
                   width={600}

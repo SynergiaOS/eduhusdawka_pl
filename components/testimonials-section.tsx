@@ -1,11 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useCallback, useMemo, memo } from "react"
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import AnimatedSection from "@/components/animated-section"
 
-const testimonials = [
+// Static testimonials data - moved outside component for better performance
+const TESTIMONIALS_DATA = [
   {
     id: 1,
     name: "Anna Kowalska",
@@ -42,20 +43,25 @@ const testimonials = [
     rating: 5,
     service: "Integracja sensoryczna",
   },
-]
+] as const
 
-export default function TestimonialsSection() {
+const TestimonialsSection = memo(() => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const nextTestimonial = () => {
+  // Memoized testimonials data
+  const testimonials = useMemo(() => TESTIMONIALS_DATA, [])
+
+  // Optimized navigation handlers with useCallback
+  const nextTestimonial = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length)
-  }
+  }, [testimonials.length])
 
-  const prevTestimonial = () => {
+  const prevTestimonial = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
-  }
+  }, [testimonials.length])
 
-  const currentTestimonial = testimonials[currentIndex]
+  // Memoized current testimonial
+  const currentTestimonial = useMemo(() => testimonials[currentIndex], [testimonials, currentIndex])
 
   return (
     <section className="py-16 bg-gradient-to-br from-teal-50 to-blue-50">
@@ -150,4 +156,8 @@ export default function TestimonialsSection() {
       </div>
     </section>
   )
-}
+})
+
+TestimonialsSection.displayName = "TestimonialsSection"
+
+export default TestimonialsSection

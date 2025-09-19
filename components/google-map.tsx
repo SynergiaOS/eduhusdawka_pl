@@ -16,7 +16,7 @@ interface LocationInfo {
 interface GoogleMapProps {
   address?: string
   height?: string
-  zoom?: number
+
   showNavigationButton?: boolean
   className?: string
   locationName?: string
@@ -26,7 +26,7 @@ interface GoogleMapProps {
 export default function GoogleMap({
   address = "Polna 17, 18-106 Pomigacze, Polska",
   height = "300px",
-  zoom = 15,
+
   showNavigationButton = true,
   className = "",
   locationName = "EDU HUSTAWKA - Joanna Świrydowicz",
@@ -46,8 +46,7 @@ export default function GoogleMap({
   const latitude = 53.1167
   const longitude = 23.0667
 
-  // Enkoduj adres dla URL - używamy dokładnych współrzędnych GPS
-  const encodedAddress = encodeURIComponent(address)
+  // Using exact GPS coordinates instead of encoded address
 
   // URL do nawigacji Google Maps - używamy współrzędnych zamiast adresu dla większej dokładności
   const navigationUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`
@@ -70,9 +69,7 @@ export default function GoogleMap({
     setShowInfoWindow(!showInfoWindow)
   }
 
-  const toggleFullscreen = () => {
-    setIsFullscreenOpen(!isFullscreenOpen)
-  }
+  // Fullscreen functionality removed for simplicity
 
   // Używamy OpenStreetMap z dokładnymi współrzędnymi
   const osmMapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude - 0.01},${latitude - 0.01},${longitude + 0.01},${latitude + 0.01}&layer=mapnik&marker=${latitude},${longitude}`

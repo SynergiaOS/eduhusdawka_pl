@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Printer, Download, MapPin, Car, Bus, Clock, Phone } from "lucide-react"
@@ -36,7 +37,16 @@ export default function PrintableDirections() {
             <div className="flex items-center justify-between border-b pb-4">
               <div className="flex items-center">
                 <div className="mr-4">
-                  <img src="/images/logo-eduhustawka.png" alt="Logo EDU HUSTAWKA" className="h-16 w-auto" />
+                  <Image
+                    src="/images/logo-eduhustawka.png"
+                    alt="Logo EDU HUSTAWKA"
+                    width={128}
+                    height={64}
+                    className="h-16 w-auto"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  />
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold text-teal-700">EDU HUSTAWKA</h2>

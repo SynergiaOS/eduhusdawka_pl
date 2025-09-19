@@ -2,6 +2,7 @@
 
 import { useServiceRecommendations } from "@/hooks/use-service-recommendations"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import PreferencesCollector from "./preferences-collector"
@@ -21,10 +22,16 @@ export default function RecommendedServices({ limit = 3, showPreferencesButton =
         {recommendedServices.map((service) => (
           <div key={service.id} className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="h-40 relative">
-              <img
+              <Image
                 src={service.image || "/placeholder.svg"}
                 alt={service.name}
+                width={400}
+                height={160}
                 className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
             </div>
             <div className="p-4">

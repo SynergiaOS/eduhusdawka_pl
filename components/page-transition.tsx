@@ -3,9 +3,15 @@
 import { motion, AnimatePresence, type Transition } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { type ReactNode, useEffect, useState } from "react"
+import { useAnimationConfig } from "@/hooks/use-reduced-motion"
 
-// Typy animacji dla różnych ścieżek
-const getAnimationForPath = (path: string): {
+// Typy animacji dla różnych ścieżek z obsługą reduced motion
+const getAnimationForPath = (
+  path: string,
+  prefersReducedMotion: boolean,
+  duration: { fast: number; normal: number; slow: number },
+  easing: { ease: string; easeIn: string; easeOut: string }
+): {
   initial: Record<string, any>;
   animate: Record<string, any>;
   exit: Record<string, any>;
@@ -14,20 +20,20 @@ const getAnimationForPath = (path: string): {
   // Strona główna
   if (path === "/") {
     return {
-      initial: { opacity: 0, y: 20 },
+      initial: { opacity: 0, y: prefersReducedMotion ? 0 : 20 },
       animate: { opacity: 1, y: 0 },
-      exit: { opacity: 0, y: -20 },
-      transition: { duration: 0.5, ease: "easeInOut" },
+      exit: { opacity: 0, y: prefersReducedMotion ? 0 : -20 },
+      transition: { duration: duration.normal / 1000, ease: "easeInOut" },
     }
   }
 
   // Podstrony usług
   if (path.startsWith("/uslugi")) {
     return {
-      initial: { opacity: 0, x: 100 },
+      initial: { opacity: 0, x: prefersReducedMotion ? 0 : 100 },
       animate: { opacity: 1, x: 0 },
-      exit: { opacity: 0, x: -100 },
-      transition: { duration: 0.5, ease: "easeInOut" },
+      exit: { opacity: 0, x: prefersReducedMotion ? 0 : -100 },
+      transition: { duration: duration.normal / 1000, ease: "easeInOut" },
     }
   }
 
@@ -91,18 +97,23 @@ const getAnimationForPath = (path: string): {
 export default function PageTransition({ children }: { children: ReactNode }) {
   const pathname = usePathname()
   const [isFirstRender, setIsFirstRender] = useState(true)
+  const { prefersReducedMotion, duration, easing } = useAnimationConfig()
 
-  // Pomijamy animację przy pierwszym renderowaniu
+  // Pomijamy animację przy pierwszym renderowaniu lub gdy użytkownik preferuje reduced motion
   useEffect(() => {
     setIsFirstRender(false)
   }, [])
 
   // Przewijamy na górę strony przy zmianie ścieżki
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    if (!prefersReducedMotion) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, prefersReducedMotion])
 
-  const animation = getAnimationForPath(pathname)
+  const animation = getAnimationForPath(pathname, prefersReducedMotion, duration, easing)
 
   return (
     <AnimatePresence mode="wait">

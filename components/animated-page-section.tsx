@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import type { ReactNode } from "react"
+import { useAnimationConfig } from "@/hooks/use-reduced-motion"
 
 interface AnimatedPageSectionProps {
   children: ReactNode
@@ -22,27 +23,49 @@ export default function AnimatedPageSection({
   animation = "fade",
   customAnimation,
 }: AnimatedPageSectionProps) {
-  // Predefiniowane animacje
+  const { prefersReducedMotion, duration, easing } = useAnimationConfig()
+
+  // Optimized animations with reduced motion support
   const animations = {
     fade: {
       initial: { opacity: 0 },
       animate: { opacity: 1 },
-      transition: { delay, duration: 0.5 },
+      transition: {
+        delay: prefersReducedMotion ? 0 : delay,
+        duration: duration.normal / 1000,
+        ease: easing.ease
+      },
     },
     slide: {
-      initial: { opacity: 0, y: 30 },
+      initial: { opacity: 0, y: prefersReducedMotion ? 0 : 30 },
       animate: { opacity: 1, y: 0 },
-      transition: { delay, duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+      transition: {
+        delay: prefersReducedMotion ? 0 : delay,
+        duration: duration.slow / 1000,
+        ease: easing.easeOut
+      },
     },
     scale: {
-      initial: { opacity: 0, scale: 0.9 },
+      initial: { opacity: 0, scale: prefersReducedMotion ? 1 : 0.9 },
       animate: { opacity: 1, scale: 1 },
-      transition: { delay, duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+      transition: {
+        delay: prefersReducedMotion ? 0 : delay,
+        duration: duration.normal / 1000,
+        ease: easing.ease
+      },
     },
     rotate: {
-      initial: { opacity: 0, rotateX: 10, y: 20 },
+      initial: {
+        opacity: 0,
+        rotateX: prefersReducedMotion ? 0 : 10,
+        y: prefersReducedMotion ? 0 : 20
+      },
       animate: { opacity: 1, rotateX: 0, y: 0 },
-      transition: { delay, duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+      transition: {
+        delay: prefersReducedMotion ? 0 : delay,
+        duration: duration.slow / 1000,
+        ease: easing.bounce
+      },
     },
   }
 

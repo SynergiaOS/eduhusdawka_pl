@@ -1,11 +1,11 @@
 "use client"
 
-import { useState } from "react"
+
 import { Calendar, Clock, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import AnimatedSection from "@/components/animated-section"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
 
 const blogPosts = [
   {
@@ -41,7 +41,7 @@ const blogPosts = [
 ]
 
 export default function BlogSection() {
-  const [selectedPost, setSelectedPost] = useState<number | null>(null)
+  // Component simplified - no modal functionality needed
 
   return (
     <section className="py-16 bg-white">
@@ -60,7 +60,7 @@ export default function BlogSection() {
             <AnimatedSection key={post.id} delay={index * 100}>
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 cursor-pointer group">
                 <div className="relative overflow-hidden">
-                  <OptimizedImage
+                  <UnifiedImage
                     src={post.image}
                     alt={post.title}
                     width={400}

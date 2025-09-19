@@ -1,31 +1,38 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback, useMemo } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, ChevronDown } from "lucide-react"
-import OptimizedImage from "@/components/optimized-image"
+import UnifiedImage from "@/components/unified-image"
+import { throttle } from "@/lib/performance-utils"
 
-export default function Header() {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
+  // Memoized and throttled scroll handler for better performance
+  const handleScroll = useCallback(
+    throttle(() => {
       setIsScrolled(window.scrollY > 10)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    }, 100),
+    []
+  )
 
-  const services = [
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [handleScroll])
+
+  // Memoized services array to prevent unnecessary re-renders
+  const services = useMemo(() => [
     { name: "Terapia ręki", href: "/uslugi/terapia-reki" },
     { name: "Terapia pedagogiczna", href: "/uslugi/terapia-pedagogiczna" },
     { name: "Trening Umiejętności Społecznych", href: "/trening-umiejetnosci-spolecznych" },
     { name: "IAS Johansena", href: "/uslugi/indywidualna-stymulacja-sluchu-johansena" },
     { name: "Forbrain", href: "/uslugi/forbrain" },
-  ]
+  ], [])
 
   return (
     <header
@@ -38,7 +45,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <OptimizedImage
+              <UnifiedImage
                 src="/images/logo-eduhustawka.png"
                 alt="EduHustawka Logo"
                 width={50}
@@ -231,3 +238,6 @@ export default function Header() {
     </header>
   )
 }
+
+// Memoized export to prevent unnecessary re-renders
+export default React.memo(Header)

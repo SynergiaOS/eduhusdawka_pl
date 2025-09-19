@@ -1,0 +1,35 @@
+[
+  {
+    "name": "minScore",
+    "expected": 0.8,
+    "actual": 0.48,
+    "values": [
+      0.39,
+      0.48,
+      0.48
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditProperty": "performance",
+    "auditId": "categories",
+    "level": "warn",
+    "url": "http://localhost:3001/"
+  },
+  {
+    "name": "maxNumericValue",
+    "expected": 3000,
+    "actual": 34877.18419999999,
+    "values": [
+      34877.18419999999,
+      35585.800749999995,
+      35596.26707499999
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "largest-contentful-paint",
+    "level": "warn",
+    "url": "http://localhost:3001/",
+    "auditTitle": "Largest Contentful Paint",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/"
+  }
+]
