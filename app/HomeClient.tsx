@@ -127,205 +127,315 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* Services Section - Grid Layout */}
-      <section id="services" className="py-20 bg-gradient-to-br from-teal-50 to-teal-50 gradient-mesh-subtle" aria-labelledby="services-heading">
-        <div className="container mx-auto px-4">
+      {/* Services Section - Modern Grid Layout */}
+      <section id="services" className="py-20 bg-gradient-to-br from-teal-50 via-white to-teal-50 relative overflow-hidden" aria-labelledby="services-heading">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-teal-200 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-green-100 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <AnimatedSection>
-            <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-center mb-16 font-heading text-teal-800 heading-enhanced center">Moje Usługi</h2>
+            <div className="text-center mb-16">
+              <h2 id="services-heading" className="text-4xl md:text-5xl font-bold mb-6 font-heading text-gray-900">
+                <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
+                  Moje Usługi
+                </span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Profesjonalne wsparcie rozwoju dzieci z wykorzystaniem nowoczesnych metod terapeutycznych
+              </p>
+            </div>
           </AnimatedSection>
 
-          <div className="max-w-6xl mx-auto">
-            {/* Główna usługa - Terapia ręki */}
+          <div className="max-w-7xl mx-auto">
+            {/* Główna usługa - Terapia ręki - Hero Card */}
             <AnimatedSection delay={100}>
-              <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow mb-8">
-                <div className="grid md:grid-cols-2 gap-0">
-                  <div className="relative h-64 md:h-80 overflow-hidden">
-                    <UnifiedImage
-                      src="/images/hand-therapy.png"
-                      alt="Terapia ręki - usprawnianie motoryki małej"
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-                        <Hand className="inline h-4 w-4 mr-2" />
-                        Najczęściej wybierana
+              <div className="relative mb-12 group">
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-blue-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group-hover:shadow-3xl transition-all duration-500">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="relative h-80 lg:h-96 overflow-hidden">
+                      <UnifiedImage
+                        src="/images/hand-therapy.png"
+                        alt="Terapia ręki - usprawnianie motoryki małej"
+                        width={700}
+                        height={500}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                      <div className="absolute top-6 left-6">
+                        <div className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg">
+                          <Hand className="inline h-5 w-5 mr-2" />
+                          Najczęściej wybierana
+                        </div>
+                      </div>
+                      <div className="absolute bottom-6 left-6 text-white">
+                        <div className="text-3xl font-bold mb-2">120 zł</div>
+                        <div className="text-sm opacity-90">50 minut sesji</div>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-8 md:p-10 flex flex-col justify-center">
-                    <h3 className="text-3xl font-bold mb-4 text-teal-800">Terapia ręki</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                      Specjalistyczna terapia usprawniająca motorykę małą, koordynację wzrokowo-ruchową oraz
-                      przygotowująca do nauki pisania. Najczęściej wybierana przez rodziców.
-                    </p>
-                    <div>
-                      <Link
-                        href="/uslugi/terapia-reki"
-                        className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-lg group transition-colors"
-                      >
-                        Dowiedz się więcej
-                        <ArrowRight className="inline h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Link>
+                    <div className="p-8 lg:p-12 flex flex-col justify-center">
+                      <div className="mb-6">
+                        <h3 className="text-4xl font-bold mb-4 text-gray-900">Terapia ręki</h3>
+                        <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+                          Specjalistyczna terapia usprawniająca motorykę małą, koordynację wzrokowo-ruchową oraz
+                          przygotowująca do nauki pisania. Najczęściej wybierana przez rodziców.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          <span className="px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-medium">Motoryka mała</span>
+                          <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Grafomotoryka</span>
+                          <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Koordynacja</span>
+                        </div>
+                      </div>
+                      <div>
+                        <Link
+                          href="/uslugi/terapia-reki"
+                          className="inline-flex items-center bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:from-teal-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl group"
+                        >
+                          Dowiedz się więcej
+                          <ArrowRight className="inline h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </AnimatedSection>
 
-            {/* Pozostałe usługi w siatce 2x2 */}
-            <div className="grid md:grid-cols-2 gap-6">
+            {/* Pozostałe usługi - Modern Card Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
               {/* Trening Umiejętności Społecznych */}
               <AnimatedSection delay={200}>
-                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow h-full">
-                  <div className="relative h-48 overflow-hidden">
-                    <UnifiedImage
-                      src="/focused-mind-training.png"
-                      alt="Trening Umiejętności Społecznych"
-                      width={400}
-                      height={200}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-3 left-3">
-                      <div className="bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                        <Users className="inline h-3 w-3 mr-1" />
-                        TUS
+                <div className="relative group h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+                    <div className="relative h-48 overflow-hidden">
+                      <UnifiedImage
+                        src="/focused-mind-training.png"
+                        alt="Trening Umiejętności Społecznych"
+                        width={400}
+                        height={200}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-purple-900/20 to-transparent"></div>
+                      <div className="absolute top-4 left-4">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                          <Users className="inline h-4 w-4 mr-1" />
+                          TUS
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <div className="text-xl font-bold">80 zł</div>
+                        <div className="text-xs opacity-90">50 min</div>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-teal-800">Trening Umiejętności Społecznych</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                      Program rozwijający umiejętności społeczne i komunikację interpersonalną.
-                    </p>
-                    <Link
-                      href="/uslugi/trening-umiejetnosci-spolecznych"
-                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
-                    >
-                      Dowiedz się więcej
-                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">Trening Umiejętności Społecznych</h3>
+                      <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
+                        Program rozwijający umiejętności społeczne i komunikację interpersonalną.
+                      </p>
+                      <div className="flex flex-wrap gap-1 mb-4">
+                        <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Komunikacja</span>
+                        <span className="px-2 py-1 bg-pink-100 text-pink-700 rounded-full text-xs">Empatia</span>
+                      </div>
+                      <Link
+                        href="/uslugi/trening-umiejetnosci-spolecznych"
+                        className="inline-flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-purple-700 hover:to-pink-700 transition-all duration-300 group"
+                      >
+                        Dowiedz się więcej
+                        <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               {/* Terapia pedagogiczna */}
               <AnimatedSection delay={300}>
-                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow h-full">
-                  <div className="relative h-48 overflow-hidden">
-                    <UnifiedImage
-                      src="/colorful-learning-tools.png"
-                      alt="Terapia pedagogiczna"
-                      width={400}
-                      height={200}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-3 left-3">
-                      <div className="bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                        <BookOpen className="inline h-3 w-3 mr-1" />
-                        Terapia
+                <div className="relative group h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+                    <div className="relative h-48 overflow-hidden">
+                      <UnifiedImage
+                        src="/colorful-learning-tools.png"
+                        alt="Terapia pedagogiczna"
+                        width={400}
+                        height={200}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-blue-900/20 to-transparent"></div>
+                      <div className="absolute top-4 left-4">
+                        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                          <BookOpen className="inline h-4 w-4 mr-1" />
+                          Terapia
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <div className="text-xl font-bold">120 zł</div>
+                        <div className="text-xs opacity-90">50 min</div>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-teal-800">Terapia pedagogiczna</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                      Wsparcie w nauce i rozwoju umiejętności edukacyjnych.
-                    </p>
-                    <Link
-                      href="/uslugi/terapia-pedagogiczna"
-                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
-                    >
-                      Dowiedz się więcej
-                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">Terapia pedagogiczna</h3>
+                      <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
+                        Wsparcie w nauce i rozwoju umiejętności edukacyjnych.
+                      </p>
+                      <div className="flex flex-wrap gap-1 mb-4">
+                        <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Nauka</span>
+                        <span className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs">Rozwój</span>
+                      </div>
+                      <Link
+                        href="/uslugi/terapia-pedagogiczna"
+                        className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 group"
+                      >
+                        Dowiedz się więcej
+                        <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               {/* IAS Johansena */}
               <AnimatedSection delay={400}>
-                <div className="glass-card rounded-2xl overflow-hidden group h-full">
-                  <div className="relative h-48 overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center p-4">
-                      <div className="aspect-video w-full max-w-xs">
-                        <iframe
-                          width="100%"
-                          height="100%"
-                          src="https://www.youtube.com/embed/uxCj7pgGD7M"
-                          title="JIAS-trening słuchowy"
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          className="rounded-lg"
-                        ></iframe>
+                <div className="relative group h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+                    <div className="relative h-48 overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-emerald-100 to-teal-200 flex items-center justify-center p-4">
+                        <div className="aspect-video w-full max-w-xs">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/uxCj7pgGD7M"
+                            title="JIAS-trening słuchowy"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="rounded-lg shadow-lg"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div className="absolute top-4 left-4">
+                        <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                          <Headphones className="inline h-4 w-4 mr-1" />
+                          IAS
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 text-white bg-black/50 px-3 py-1 rounded-lg">
+                        <div className="text-xl font-bold">350 zł</div>
+                        <div className="text-xs opacity-90">diagnoza</div>
                       </div>
                     </div>
-                    <div className="absolute top-3 left-3">
-                      <div className="bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                        <Headphones className="inline h-3 w-3 mr-1" />
-                        IAS
+                    <div className="p-6 flex-1 flex flex-col">
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">IAS Johansena</h3>
+                      <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
+                        Innowacyjna metoda terapii słuchowej wspierająca rozwój mowy i koncentracji.
+                      </p>
+                      <div className="flex flex-wrap gap-1 mb-4">
+                        <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs">Słuch</span>
+                        <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Mowa</span>
                       </div>
+                      <Link
+                        href="/uslugi/trening-sluchowy-johansena"
+                        className="inline-flex items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 group"
+                      >
+                        Dowiedz się więcej
+                        <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </Link>
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-teal-800">IAS Johansena</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                      Innowacyjna metoda terapii słuchowej wspierająca rozwój mowy i koncentracji.
-                    </p>
-                    <Link
-                      href="/uslugi/trening-sluchowy-johansena"
-                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
-                    >
-                      Dowiedz się więcej
-                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </Link>
                   </div>
                 </div>
               </AnimatedSection>
 
-
               {/* Forbrain */}
               <AnimatedSection delay={500}>
-                <div className="glass-card rounded-2xl overflow-hidden group hover-lift-subtle hover-glow h-full">
-                  <div className="relative h-48 overflow-hidden">
-                    <UnifiedImage
-                      src="/images/early-reading.png"
-                      alt="Forbrain - nauka czytania"
-                      width={400}
-                      height={200}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-3 left-3">
-                      <div className="bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                        <BookOpen className="inline h-3 w-3 mr-1" />
-                        Forbrain
+                <div className="relative group h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+                    <div className="relative h-48 overflow-hidden">
+                      <UnifiedImage
+                        src="/images/early-reading.png"
+                        alt="Forbrain - nauka czytania"
+                        width={400}
+                        height={200}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-orange-900/60 via-orange-900/20 to-transparent"></div>
+                      <div className="absolute top-4 left-4">
+                        <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                          <BookOpen className="inline h-4 w-4 mr-1" />
+                          Forbrain
+                        </div>
+                      </div>
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <div className="text-xl font-bold">150 zł</div>
+                        <div className="text-xs opacity-90">50 min</div>
                       </div>
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-teal-800">Czytanie z Forbrain</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                      Innowacyjna metoda nauki czytania z technologią Forbrain.
-                    </p>
-                    <Link
-                      href="/uslugi/forbrain"
-                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
-                    >
-                      Dowiedz się więcej
-                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <h3 className="text-xl font-bold mb-3 text-gray-900">Czytanie z Forbrain</h3>
+                      <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
+                        Innowacyjna metoda nauki czytania z technologią Forbrain.
+                      </p>
+                      <div className="flex flex-wrap gap-1 mb-4">
+                        <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Czytanie</span>
+                        <span className="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs">Technologia</span>
+                      </div>
+                      <Link
+                        href="/uslugi/forbrain"
+                        className="inline-flex items-center justify-center bg-gradient-to-r from-orange-600 to-red-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-orange-700 hover:to-red-700 transition-all duration-300 group"
+                      >
+                        Dowiedz się więcej
+                        <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
 
             </div>
+
+            {/* Call to Action Section */}
+            <AnimatedSection delay={600}>
+              <div className="mt-16 text-center">
+                <div className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <div className="relative z-10">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                      Nie wiesz, która terapia będzie najlepsza dla Twojego dziecka?
+                    </h3>
+                    <p className="text-lg md:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                      Umów się na bezpłatną konsultację. Wspólnie znajdziemy najlepsze rozwiązanie dostosowane do indywidualnych potrzeb Twojego dziecka.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <EnhancedButton
+                        size="lg"
+                        variant="secondary"
+                        className="bg-white text-teal-600 hover:bg-gray-50 border-0"
+                        onClick={() => { trackEvent("call_click", "CTA", "services_cta"); window.location.href = "tel:+48531509008"; }}
+                      >
+                        <Phone className="mr-2 h-5 w-5" />
+                        Zadzwoń teraz: 531 509 008
+                      </EnhancedButton>
+                      <EnhancedButton
+                        size="lg"
+                        variant="outline"
+                        className="border-white text-white hover:bg-white hover:text-teal-600"
+                        onClick={() => { trackEvent("scroll_to_form", "CTA", "services_cta"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
+                      >
+                        <MessageCircle className="mr-2 h-5 w-5" />
+                        Bezpłatna konsultacja
+                      </EnhancedButton>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
