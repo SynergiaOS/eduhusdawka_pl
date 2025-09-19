@@ -102,6 +102,7 @@ export default function TerapiaDzieciZAutyzmemPage() {
                     </div>
                   </div>
                 </div>
+              </div>
             </AnimatedSection>
 
             {/* Czym jest terapia */}

@@ -84,21 +84,11 @@ export default function HomeClient() {
                     size="lg"
                     variant="secondary"
                     glow="strong"
-                    onClick={() => { trackEvent("whatsapp_click", "CTA", "hero"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
-                    aria-label="Napisz wiadomość na WhatsApp w sprawie konsultacji"
-                  >
-                    <MessageSquare className="mr-2 h-6 w-6" />
-                    WhatsApp
-                  </EnhancedButton>
-                  <EnhancedButton
-                    size="lg"
-                    variant="outline"
-                    glow="subtle"
                     onClick={() => { trackEvent("scroll_to_form", "CTA", "hero"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
-                    aria-label="Przewiń do formularza kontaktowego"
+                    aria-label="Przewiń do formularza kontaktowego - bezpłatna konsultacja"
                   >
                     <MessageCircle className="mr-2 h-6 w-6" />
-                    Formularz
+                    Bezpłatna konsultacja
                   </EnhancedButton>
                 </div>
 
@@ -174,10 +164,10 @@ export default function HomeClient() {
                     <div>
                       <Link
                         href="/uslugi/terapia-reki"
-                        className="inline-flex items-center bg-teal-600 text-white px-8 py-4 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl text-lg"
+                        className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-lg group transition-colors"
                       >
-                        <ArrowRight className="inline h-5 w-5 mr-2" />
                         Dowiedz się więcej
+                        <ArrowRight className="inline h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
                   </div>
@@ -214,10 +204,10 @@ export default function HomeClient() {
                     </p>
                     <Link
                       href="/uslugi/trening-umiejetnosci-spolecznych"
-                      className="inline-flex items-center bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl text-sm"
+                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
                     >
-                      <ArrowRight className="inline h-3 w-3 mr-1" />
                       Dowiedz się więcej
+                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>
                 </div>
@@ -249,10 +239,10 @@ export default function HomeClient() {
                     </p>
                     <Link
                       href="/uslugi/terapia-pedagogiczna"
-                      className="inline-flex items-center bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl text-sm"
+                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
                     >
-                      <ArrowRight className="inline h-3 w-3 mr-1" />
                       Dowiedz się więcej
+                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>
                 </div>
@@ -290,10 +280,10 @@ export default function HomeClient() {
                     </p>
                     <Link
                       href="/uslugi/trening-sluchowy-johansena"
-                      className="inline-flex items-center bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl text-sm"
+                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
                     >
-                      <ArrowRight className="inline h-3 w-3 mr-1" />
                       Dowiedz się więcej
+                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>
                 </div>
@@ -326,10 +316,10 @@ export default function HomeClient() {
                     </p>
                     <Link
                       href="/uslugi/forbrain"
-                      className="inline-flex items-center bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 transition-colors font-medium shadow-lg hover:shadow-xl text-sm"
+                      className="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium text-sm group transition-colors"
                     >
-                      <ArrowRight className="inline h-3 w-3 mr-1" />
                       Dowiedz się więcej
+                      <ArrowRight className="inline h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>
                 </div>
