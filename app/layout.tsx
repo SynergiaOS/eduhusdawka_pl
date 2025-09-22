@@ -1,6 +1,6 @@
 import type React from "react"
 import ClientLayout from "./client-layout"
-import StructuredData from "@/components/structured-data"
+import StructuredData from "@/components/common/structured-data"
 import './globals.css'
 
 export const metadata = {

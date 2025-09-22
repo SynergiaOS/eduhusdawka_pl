@@ -1,12 +1,12 @@
 "use client"
 
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
-import UnifiedImage from "@/components/unified-image"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
+import UnifiedImage from "@/components/media/unified-image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Phone, MessageCircle, CheckCircle, Clock, Star, Heart, Brain } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Users, Phone, MessageCircle, CheckCircle, Star, Heart, Brain } from "lucide-react"
 
 export default function TreningUmiejetnosciSpolecznychClientPage() {
   return (

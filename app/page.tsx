@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 import HomeClient from "./HomeClient"
-import { LoadingSpinner } from "@/components/loading-spinner"
+import { LoadingSpinner } from "@/components/loading/loading-spinner"
 
 export default function HomePage() {
   return (

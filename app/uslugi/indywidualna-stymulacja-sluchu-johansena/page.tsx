@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
 import { Headphones, Home, Clock, CheckCircle, Star, Target, Brain, Volume2, Phone } from "lucide-react"
-import YouTubeEmbed from "@/components/youtube-embed"
+import YouTubeEmbed from "@/components/media/youtube-embed"
 
 export const metadata: Metadata = {
   title: "Indywidualna Stymulacja Słuchu dr K. Johansena (IAS) | EduHustawka",

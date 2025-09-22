@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
-import { BookOpen, Eye, Brain, CheckCircle, Star, Target, Users, Lightbulb } from "lucide-react"
-import UnifiedImage from "@/components/unified-image"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
+import { BookOpen, Eye, Brain, CheckCircle, Star, Target, Lightbulb } from "lucide-react"
+import UnifiedImage from "@/components/media/unified-image"
 
 export const metadata: Metadata = {
   title: "Wczesna Nauka Czytania - Wsparcie Rozwoju | EduHustawka",

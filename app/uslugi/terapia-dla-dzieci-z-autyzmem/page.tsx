@@ -1,7 +1,7 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
-import { Button } from "@/components/ui/button"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
+
 import Image from "next/image"
 import { Phone, CheckCircle, Heart, Brain, Target } from "lucide-react"
 import type { Metadata } from "next"

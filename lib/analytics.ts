@@ -4,10 +4,10 @@ type WindowWithGA = Window & {
     action: string,
     params?: {
       page_path?: string
-      [key: string]: any
+      [key: string]: unknown
     },
   ) => void
-  dataLayer: any[]
+  dataLayer: unknown[]
 }
 
 declare const window: WindowWithGA
@@ -19,7 +19,7 @@ export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""
 export const initGA = () => {
   if (typeof window !== "undefined" && GA_MEASUREMENT_ID) {
     window.dataLayer = window.dataLayer || []
-    function gtag(...args: any[]) {
+    function gtag(...args: unknown[]) {
       window.dataLayer.push(args)
     }
     gtag("js", new Date())

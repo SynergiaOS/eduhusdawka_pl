@@ -1,13 +1,17 @@
 "use client"
 
-import AnimatedSection from "@/components/animated-section"
-import UnifiedImage from "@/components/unified-image"
-import TestimonialsSection from "@/components/testimonials-section"
-import ServiceArticlesSection from "@/components/service-articles-section"
-import FaqSection from "@/components/faq-section"
-import ContactForm from "@/components/contact-form"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import AnimatedSection from "@/components/animations/animated-section"
+import UnifiedImage from "@/components/media/unified-image"
+import {
+  LazyTestimonialsSection,
+  LazyServiceArticlesSection,
+  LazyFAQSection,
+  LazyContactForm,
+  LazyDevelopmentTimeline,
+  LazyPricingSection
+} from "@/components/loading/lazy-components"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 import { EnhancedButton } from "@/components/ui/enhanced-button"
 import {
@@ -21,15 +25,13 @@ import {
   MessageSquare,
   Star,
   Award,
-  Mail,
   MapPin,
   Clock,
+  CheckCircle,
 } from "lucide-react"
 import Link from "next/link"
 import { useAnalytics } from "@/hooks/use-analytics"
-import AnimatedStats from "@/components/animated-stats"
 
-import DevelopmentTimeline from "@/components/development-timeline"
 
 export default function HomeClient() {
   const { trackEvent } = useAnalytics()
@@ -195,7 +197,7 @@ export default function HomeClient() {
                           href="/uslugi/terapia-reki"
                           className="inline-flex items-center bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:from-teal-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl group"
                         >
-                          Dowiedz się więcej
+                          Umów terapię ręki
                           <ArrowRight className="inline h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                         </Link>
                       </div>
@@ -221,9 +223,9 @@ export default function HomeClient() {
                         height={200}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-purple-900/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 via-teal-900/20 to-transparent"></div>
                       <div className="absolute top-4 left-4">
-                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                        <div className="bg-teal-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
                           <Users className="inline h-4 w-4 mr-1" />
                           TUS
                         </div>
@@ -239,14 +241,14 @@ export default function HomeClient() {
                         Program rozwijający umiejętności społeczne i komunikację interpersonalną.
                       </p>
                       <div className="flex flex-wrap gap-1 mb-4">
-                        <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Komunikacja</span>
-                        <span className="px-2 py-1 bg-pink-100 text-pink-700 rounded-full text-xs">Empatia</span>
+                        <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Komunikacja</span>
+                        <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Empatia</span>
                       </div>
                       <Link
                         href="/uslugi/trening-umiejetnosci-spolecznych"
-                        className="inline-flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-purple-700 hover:to-pink-700 transition-all duration-300 group"
+                        className="inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 group"
                       >
-                        Dowiedz się więcej
+                        Umów TUS
                         <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
@@ -269,7 +271,7 @@ export default function HomeClient() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-blue-900/20 to-transparent"></div>
                       <div className="absolute top-4 left-4">
-                        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                        <div className="bg-blue-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
                           <BookOpen className="inline h-4 w-4 mr-1" />
                           Terapia
                         </div>
@@ -290,9 +292,9 @@ export default function HomeClient() {
                       </div>
                       <Link
                         href="/uslugi/terapia-pedagogiczna"
-                        className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 group"
+                        className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 group"
                       >
-                        Dowiedz się więcej
+                        Zarezerwuj terapię
                         <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
@@ -321,7 +323,7 @@ export default function HomeClient() {
                         </div>
                       </div>
                       <div className="absolute top-4 left-4">
-                        <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                        <div className="bg-teal-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
                           <Headphones className="inline h-4 w-4 mr-1" />
                           IAS
                         </div>
@@ -337,14 +339,14 @@ export default function HomeClient() {
                         Innowacyjna metoda terapii słuchowej wspierająca rozwój mowy i koncentracji.
                       </p>
                       <div className="flex flex-wrap gap-1 mb-4">
-                        <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs">Słuch</span>
-                        <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Mowa</span>
+                        <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Słuch</span>
+                        <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Mowa</span>
                       </div>
                       <Link
                         href="/uslugi/trening-sluchowy-johansena"
-                        className="inline-flex items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 group"
+                        className="inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 group"
                       >
-                        Dowiedz się więcej
+                        Umów diagnozę IAS
                         <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
@@ -365,9 +367,9 @@ export default function HomeClient() {
                         height={200}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-orange-900/60 via-orange-900/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-blue-900/20 to-transparent"></div>
                       <div className="absolute top-4 left-4">
-                        <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
+                        <div className="bg-blue-600 text-white px-3 py-2 rounded-full text-xs font-semibold">
                           <BookOpen className="inline h-4 w-4 mr-1" />
                           Forbrain
                         </div>
@@ -383,14 +385,14 @@ export default function HomeClient() {
                         Innowacyjna metoda nauki czytania z technologią Forbrain.
                       </p>
                       <div className="flex flex-wrap gap-1 mb-4">
-                        <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Czytanie</span>
-                        <span className="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs">Technologia</span>
+                        <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Czytanie</span>
+                        <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Technologia</span>
                       </div>
                       <Link
                         href="/uslugi/forbrain"
-                        className="inline-flex items-center justify-center bg-gradient-to-r from-orange-600 to-red-600 text-white px-4 py-2 rounded-xl font-medium text-sm hover:from-orange-700 hover:to-red-700 transition-all duration-300 group"
+                        className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 group"
                       >
-                        Dowiedz się więcej
+                        Rozpocznij naukę
                         <ArrowRight className="inline h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
@@ -400,309 +402,104 @@ export default function HomeClient() {
 
             </div>
 
-            {/* Call to Action Section */}
-            <AnimatedSection delay={600}>
-              <div className="mt-16 text-center">
-                <div className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
-                  <div className="relative z-10">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                      Nie wiesz, która terapia będzie najlepsza dla Twojego dziecka?
-                    </h3>
-                    <p className="text-lg md:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-                      Umów się na bezpłatną konsultację. Wspólnie znajdziemy najlepsze rozwiązanie dostosowane do indywidualnych potrzeb Twojego dziecka.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <EnhancedButton
-                        size="lg"
-                        variant="secondary"
-                        className="bg-white text-teal-600 hover:bg-gray-50 border-0"
-                        onClick={() => { trackEvent("call_click", "CTA", "services_cta"); window.location.href = "tel:+48531509008"; }}
-                      >
-                        <Phone className="mr-2 h-5 w-5" />
-                        Zadzwoń teraz: 531 509 008
-                      </EnhancedButton>
-                      <EnhancedButton
-                        size="lg"
-                        variant="outline"
-                        className="border-white text-white hover:bg-white hover:text-teal-600"
-                        onClick={() => { trackEvent("scroll_to_form", "CTA", "services_cta"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
-                      >
-                        <MessageCircle className="mr-2 h-5 w-5" />
-                        Bezpłatna konsultacja
-                      </EnhancedButton>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
+
           </div>
         </div>
       </section>
 
-      <div className="section-divider wide" />
-
-      {/* Simple Contact Section */}
-      <section className="py-20 bg-white gradient-mesh-subtle">
+      {/* Modern Consultation CTA Section - 2025 Design */}
+      <section className="py-20 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Gotowy na pierwszą konsultację?</h2>
-            <p className="text-xl text-gray-600 mb-12">
-              Zadzwoń lub napisz do nas, aby umówić się na bezpłatną konsultację. Wspólnie znajdziemy najlepsze
-              rozwiązanie dla Twojego dziecka.
-            </p>
+          <AnimatedSection>
+            <div className="max-w-4xl mx-auto">
+              {/* Modern Card Design */}
+              <div className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-3xl p-8 md:p-12 border border-teal-100 shadow-sm">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-600 rounded-2xl mb-6">
+                    <MessageCircle className="h-8 w-8 text-white" />
+                  </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              <div className="text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4 mx-auto hover-glow">
-                  <Phone className="h-8 w-8 text-teal-600 float-gentle" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Zadzwoń</h3>
-                <p className="text-gray-600 mb-4 flex-grow">Porozmawiajmy o potrzebach Twojego dziecka</p>
-                <EnhancedButton
-                  variant="primary"
-                  className="mt-auto"
-                  onClick={() => { trackEvent("call_click", "CTA", "cards"); window.location.href = "tel:+48531509008"; }}
-                  aria-label="Zadzwoń na numer 531 509 008"
-                >
-                  531 509 008
-                </EnhancedButton>
-              </div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                    Nie wiesz, która terapia będzie najlepsza?
+                  </h2>
 
-              <div className="text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4 mx-auto">
-                  <MessageSquare className="h-8 w-8 text-green-600" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">WhatsApp</h3>
-                <p className="text-gray-600 mb-4 flex-grow">Szybka wiadomość przez WhatsApp</p>
-                <EnhancedButton
-                  variant="secondary"
-                  className="mt-auto"
-                  onClick={() => { trackEvent("whatsapp_click", "CTA", "cards"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
-                  aria-label="Napisz wiadomość na WhatsApp w sprawie konsultacji"
-                >
-                  Napisz na WhatsApp
-                </EnhancedButton>
-              </div>
-
-              <div className="text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4 mx-auto">
-                  <Mail className="h-8 w-8 text-teal-600" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                <p className="text-gray-600 mb-4 flex-grow">Wypełnij formularz kontaktowy</p>
-                <EnhancedButton
-                  variant="outline"
-                  className="mt-auto"
-                  onClick={() => { trackEvent("scroll_to_form", "CTA", "cards"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
-                  aria-label="Przejdź do formularza kontaktowego"
-                >
-                  Formularz
-                </EnhancedButton>
-              </div>
-
-              <div className="text-center flex flex-col h-full">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4 mx-auto">
-                  <MapPin className="h-8 w-8 text-teal-600" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Odwiedź</h3>
-                <p className="text-gray-600 mb-4 flex-grow">Umów się na wizytę w gabinecie</p>
-                <EnhancedButton
-                  variant="outline"
-                  className="mt-auto"
-                  onClick={() => document.getElementById("lokalizacja")?.scrollIntoView({ behavior: "smooth" })}
-                  aria-label="Przewiń do sekcji z mapą dojazdu"
-                >
-                  Lokalizacja
-                </EnhancedButton>
-              </div>
-            </div>
-
-            <div className="bg-teal-50 rounded-lg p-8">
-              <div className="flex items-center justify-center mb-4">
-                <Clock className="h-6 w-6 text-teal-600 mr-2" />
-                <h3 className="text-lg font-semibold text-gray-900">Godziny pracy</h3>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4 text-gray-600">
-                <div>
-                  <p>
-                    <strong>Poniedziałek - Piątek:</strong> 9:00 - 18:00
+                  <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Umów się na <strong className="text-teal-600">bezpłatną konsultację</strong>. Wspólnie znajdziemy najlepsze rozwiązanie dla Twojego dziecka.
                   </p>
-                  <p>
-                    <strong>Sobota:</strong> 9:00 - 14:00
-                  </p>
-                </div>
-                <div>
-                  <p>
-                    <strong>Niedziela:</strong> Zamknięte
-                  </p>
-                  <p>
-                    <strong>Konsultacje telefoniczne:</strong> Codziennie 8:00 - 20:00
-                  </p>
+
+                  {/* Single Primary CTA */}
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <EnhancedButton
+                      size="lg"
+                      className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                      onClick={() => { trackEvent("consultation_call_click", "CTA", "free_consultation"); window.location.href = "tel:+48531509008"; }}
+                      aria-label="Zadzwoń w sprawie bezpłatnej konsultacji"
+                    >
+                      <Phone className="mr-3 h-5 w-5" />
+                      Zadzwoń: 531 509 008
+                    </EnhancedButton>
+
+                    <EnhancedButton
+                      size="lg"
+                      variant="outline"
+                      className="border-2 border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
+                      onClick={() => { trackEvent("consultation_whatsapp_click", "CTA", "free_consultation"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20bezpłatną%20konsultację"; }}
+                      aria-label="Napisz na WhatsApp w sprawie bezpłatnej konsultacji"
+                    >
+                      <MessageSquare className="mr-3 h-5 w-5" />
+                      WhatsApp
+                    </EnhancedButton>
+                  </div>
+
+                  {/* Benefits - Clean Design */}
+                  <div className="grid md:grid-cols-3 gap-6 text-center">
+                    <div className="flex flex-col items-center">
+                      <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-3">
+                        <CheckCircle className="h-6 w-6 text-green-600" />
+                      </div>
+                      <span className="text-sm font-medium text-gray-700">Bezpłatna konsultacja</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-3">
+                        <Clock className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <span className="text-sm font-medium text-gray-700">30 minut rozmowy</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-3">
+                        <Users className="h-6 w-6 text-purple-600" />
+                      </div>
+                      <span className="text-sm font-medium text-gray-700">Indywidualne podejście</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Development Timeline */}
-      <DevelopmentTimeline />
+      <LazyDevelopmentTimeline />
 
-      <TestimonialsSection />
+      <div className="section-divider" />
+
+      {/* Pricing Section */}
+      <LazyPricingSection />
+
+      <div className="section-divider" />
+
+      <LazyTestimonialsSection />
 
       <div className="section-divider wide" />
 
-      <ServiceArticlesSection />
+      <LazyServiceArticlesSection />
 
       <div className="section-divider" />
 
-      <FaqSection />
-
-      {/* Pricing Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800 heading-enhanced center">
-              Cennik usług
-            </h2>
-          </AnimatedSection>
-
-          <div className="max-w-4xl mx-auto">
-            <AnimatedSection delay={200}>
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead className="bg-teal-600 text-white">
-                      <tr>
-                        <th className="px-6 py-4 text-left font-semibold">Usługa</th>
-                        <th className="px-6 py-4 text-center font-semibold">Czas trwania</th>
-                        <th className="px-6 py-4 text-center font-semibold">Cena</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-teal-600 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">Terapia ręki</div>
-                              <div className="text-sm text-gray-500">Usprawnianie motoryki małej</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">50 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">120 zł</span>
-                        </td>
-                      </tr>
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-teal-600 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">Trening Umiejętności Społecznych</div>
-                              <div className="text-sm text-gray-500">Rozwój kompetencji społecznych</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">50 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">80 zł</span>
-                        </td>
-                      </tr>
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-teal-700 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">Terapia pedagogiczna</div>
-                              <div className="text-sm text-gray-500">Wsparcie w nauce</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">50 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">120 zł</span>
-                        </td>
-                      </tr>
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-teal-700 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">IAS Johansena</div>
-                              <div className="text-sm text-gray-500">Diagnoza słuchowa</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">diagnoza</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-teal-600">350 zł</span>
-                        </td>
-                      </tr>
+      <LazyFAQSection />
 
 
-
-                      <tr className="hover:bg-teal-50 transition-colors">
-                        <td className="px-6 py-4">
-                          <div className="flex items-center">
-                            <div className="w-3 h-3 bg-orange-600 rounded-full mr-3"></div>
-                            <div>
-                              <div className="font-medium text-gray-900">Czytanie z Forbrain</div>
-                              <div className="text-sm text-gray-500">Nauka czytania z technologią Forbrain</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 text-center text-gray-600">50 min</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-lg font-semibold text-orange-600">150 zł</span>
-                        </td>
-                      </tr>
-
-
-
-                    </tbody>
-                  </table>
-                </div>
-
-                <div className="bg-teal-50 px-6 py-4 border-t border-teal-100">
-                  <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <div className="text-sm text-teal-700">
-                      <p className="font-medium">💡 Informacje dodatkowe:</p>
-                      <p>• Pierwsza konsultacja bezpłatna (15 min)</p>
-                      <p>• Możliwość pakietów terapeutycznych</p>
-                    </div>
-                    <div className="flex gap-2">
-                      <EnhancedButton
-                        size="sm"
-                        variant="primary"
-                        onClick={() => (window.location.href = "tel:+48531509008")}
-                        aria-label="Zadzwoń, aby zapytać o cenę"
-                      >
-                        <Phone className="mr-2 h-4 w-4" />
-                        Zapytaj o cenę
-                      </EnhancedButton>
-                      <EnhancedButton
-                        size="sm"
-                        variant="secondary"
-                        onClick={() => (window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20zapytać%20o%20cennik%20usług")}
-                        aria-label="Napisz na WhatsApp w sprawie cennika"
-                      >
-                        <MessageSquare className="mr-2 h-4 w-4" />
-                        WhatsApp
-                      </EnhancedButton>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider" />
 
       {/* Location Section */}
       <section id="lokalizacja" className="py-16 bg-gray-50">
@@ -854,8 +651,7 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* Animated Stats Section */}
-      <AnimatedStats />
+
 
       {/* Contact Section */}
       <section id="kontakt" className="py-16 bg-white gradient-mesh-subtle">
@@ -865,7 +661,7 @@ export default function HomeClient() {
               Formularz kontaktowy
             </h2>
           </AnimatedSection>
-          <ContactForm />
+          <LazyContactForm />
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import SMSQueueStats from "@/components/sms-queue-stats"
+import SMSQueueStats from "@/components/admin/sms-queue-stats"
 
 export const metadata: Metadata = {
   title: "Panel administracyjny SMS | EduHustawka",

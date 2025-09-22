@@ -1,5 +1,5 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"

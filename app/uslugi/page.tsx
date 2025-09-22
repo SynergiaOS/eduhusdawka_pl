@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
 import { Brain, Hand, BookOpen, Headphones, Users, ArrowRight } from "lucide-react"
 import Link from "next/link"
 

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 import { getSMSQueue } from "@/lib/sms-queue"
 
 // Endpoint API do pobierania statystyk kolejki SMS
-export async function GET(request: Request) {
+export async function GET(_request: Request) {
   try {
     const queue = getSMSQueue()
     const stats = queue.getStats()

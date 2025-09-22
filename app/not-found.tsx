@@ -2,9 +2,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { MapPin, Home, Search, ArrowLeft } from "lucide-react"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

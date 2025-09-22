@@ -1,8 +1,8 @@
 "use client"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
-import UnifiedImage from "@/components/unified-image"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
+import UnifiedImage from "@/components/media/unified-image"
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, Award, Users, GraduationCap, BadgeIcon as Certificate } from "lucide-react"
 
@@ -27,15 +27,21 @@ export default function AboutPageClient() {
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <AnimatedSection animation="slide" direction="left">
               <div className="relative">
-                <UnifiedImage
-                  src="/images/joanna.png"
-                  alt="Joanna Świrydowicz - Pedagog Specjalny"
-                  width={500}
-                  height={600}
-                  className="rounded-2xl shadow-xl"
-                  objectFit="contain"
-                  objectPosition="center"
-                />
+                <div className="aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none">
+                  <UnifiedImage
+                    src="/images/joanna.png"
+                    alt="Joanna Świrydowicz - Pedagog Specjalny"
+                    width={500}
+                    height={600}
+                    className="rounded-2xl shadow-xl w-full h-full object-cover"
+                    objectFit="cover"
+                    objectPosition="center top"
+                    priority
+                  />
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-teal-100 rounded-full opacity-60 -z-10"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-100 rounded-full opacity-40 -z-10"></div>
               </div>
             </AnimatedSection>
 

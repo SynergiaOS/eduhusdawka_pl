@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
-import { Hand, Scissors, Paintbrush, CheckCircle, Star, Target, Users, Puzzle } from "lucide-react"
-import UnifiedImage from "@/components/unified-image"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
+import { Hand, Paintbrush, CheckCircle, Star, Target, Users, Puzzle } from "lucide-react"
+import UnifiedImage from "@/components/media/unified-image"
 
 export const metadata: Metadata = {
   title: "Terapia Ręki - 120 zł gabinet, 150 zł dojazd | EduHustawka",

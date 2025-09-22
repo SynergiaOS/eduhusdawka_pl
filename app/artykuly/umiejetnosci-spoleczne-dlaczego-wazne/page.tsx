@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import AnimatedSection from "@/components/animated-section"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+import AnimatedSection from "@/components/animations/animated-section"
 import { Users, CheckCircle, AlertTriangle, ArrowRight, Clock, User, Heart } from "lucide-react"
 import Link from "next/link"
-import UnifiedImage from "@/components/unified-image"
+import UnifiedImage from "@/components/media/unified-image"
 
 export const metadata: Metadata = {
   title: "Dlaczego umiejętności społeczne są kluczowe? | EduHustawka",

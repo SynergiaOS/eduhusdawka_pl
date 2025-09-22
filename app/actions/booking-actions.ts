@@ -58,7 +58,7 @@ export async function createBooking(data: BookingData) {
 }
 
 // Funkcja do sprawdzania dostępności terminu
-export async function checkAvailability(date: string, time: string) {
+export async function checkAvailability(_date: string, _time: string) {
   try {
     // W rzeczywistej aplikacji tutaj byłoby sprawdzenie w bazie danych
     // Symulacja opóźnienia serwera
