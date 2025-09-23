@@ -4,11 +4,8 @@ import AnimatedSection from "@/components/animations/animated-section"
 import UnifiedImage from "@/components/media/unified-image"
 import {
   LazyTestimonialsSection,
-  LazyServiceArticlesSection,
   LazyFAQSection,
-  LazyContactForm,
-  LazyDevelopmentTimeline,
-  LazyPricingSection
+  LazyContactForm
 } from "@/components/loading/lazy-components"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
@@ -129,22 +126,13 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* Services Section - Modern Grid Layout */}
-      <section id="services" className="py-20 bg-gradient-to-br from-teal-50 via-white to-teal-50 relative overflow-hidden" aria-labelledby="services-heading">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-teal-200 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-blue-200 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-green-100 rounded-full blur-3xl"></div>
-        </div>
-
+      {/* Services & Pricing Section - Unified 2025 Design */}
+      <section id="services" className="py-12 bg-white relative overflow-hidden" aria-labelledby="services-heading">
         <div className="container mx-auto px-4 relative z-10">
           <AnimatedSection>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 id="services-heading" className="text-4xl md:text-5xl font-bold mb-6 font-heading text-gray-900">
-                <span className="bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
-                  Moje Usługi
-                </span>
+                Moje <span className="text-teal-600">Usługi</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Profesjonalne wsparcie rozwoju dzieci z wykorzystaniem nowoczesnych metod terapeutycznych
@@ -155,7 +143,7 @@ export default function HomeClient() {
           <div className="max-w-7xl mx-auto">
             {/* Główna usługa - Terapia ręki - Hero Card */}
             <AnimatedSection delay={100}>
-              <div className="relative mb-12 group">
+              <div className="relative mb-8 group">
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-blue-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                 <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group-hover:shadow-3xl transition-all duration-500">
                   <div className="grid lg:grid-cols-2 gap-0">
@@ -174,10 +162,7 @@ export default function HomeClient() {
                           Najczęściej wybierana
                         </div>
                       </div>
-                      <div className="absolute bottom-6 left-6 text-white">
-                        <div className="text-3xl font-bold mb-2">120 zł</div>
-                        <div className="text-sm opacity-90">50 minut sesji</div>
-                      </div>
+
                     </div>
                     <div className="p-8 lg:p-12 flex flex-col justify-center">
                       <div className="mb-6">
@@ -195,7 +180,7 @@ export default function HomeClient() {
                       <div>
                         <Link
                           href="/uslugi/terapia-reki"
-                          className="inline-flex items-center bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:from-teal-700 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl group"
+                          className="inline-flex items-center bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl group"
                         >
                           Umów terapię ręki
                           <ArrowRight className="inline h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -230,16 +215,14 @@ export default function HomeClient() {
                           TUS
                         </div>
                       </div>
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <div className="text-xl font-bold">80 zł</div>
-                        <div className="text-xs opacity-90">50 min</div>
-                      </div>
+
                     </div>
-                    <div className="p-6 flex-1 flex flex-col">
+                    <div className="p-4 flex-1 flex flex-col">
                       <h3 className="text-xl font-bold mb-3 text-gray-900">Trening Umiejętności Społecznych</h3>
                       <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
                         Program rozwijający umiejętności społeczne i komunikację interpersonalną.
                       </p>
+
                       <div className="flex flex-wrap gap-1 mb-4">
                         <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Komunikacja</span>
                         <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Empatia</span>
@@ -276,19 +259,17 @@ export default function HomeClient() {
                           Terapia
                         </div>
                       </div>
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <div className="text-xl font-bold">120 zł</div>
-                        <div className="text-xs opacity-90">50 min</div>
-                      </div>
+
                     </div>
-                    <div className="p-6 flex-1 flex flex-col">
+                    <div className="p-4 flex-1 flex flex-col">
                       <h3 className="text-xl font-bold mb-3 text-gray-900">Terapia pedagogiczna</h3>
                       <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
                         Wsparcie w nauce i rozwoju umiejętności edukacyjnych.
                       </p>
+
                       <div className="flex flex-wrap gap-1 mb-4">
                         <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Nauka</span>
-                        <span className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs">Rozwój</span>
+                        <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Rozwój</span>
                       </div>
                       <Link
                         href="/uslugi/terapia-pedagogiczna"
@@ -328,16 +309,14 @@ export default function HomeClient() {
                           IAS
                         </div>
                       </div>
-                      <div className="absolute bottom-4 left-4 text-white bg-black/50 px-3 py-1 rounded-lg">
-                        <div className="text-xl font-bold">350 zł</div>
-                        <div className="text-xs opacity-90">diagnoza</div>
-                      </div>
+
                     </div>
-                    <div className="p-6 flex-1 flex flex-col">
+                    <div className="p-4 flex-1 flex flex-col">
                       <h3 className="text-xl font-bold mb-3 text-gray-900">IAS Johansena</h3>
                       <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
                         Innowacyjna metoda terapii słuchowej wspierająca rozwój mowy i koncentracji.
                       </p>
+
                       <div className="flex flex-wrap gap-1 mb-4">
                         <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Słuch</span>
                         <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Mowa</span>
@@ -374,16 +353,14 @@ export default function HomeClient() {
                           Forbrain
                         </div>
                       </div>
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <div className="text-xl font-bold">150 zł</div>
-                        <div className="text-xs opacity-90">50 min</div>
-                      </div>
+
                     </div>
-                    <div className="p-6 flex-1 flex flex-col">
+                    <div className="p-4 flex-1 flex flex-col">
                       <h3 className="text-xl font-bold mb-3 text-gray-900">Czytanie z Forbrain</h3>
                       <p className="text-gray-600 mb-4 leading-relaxed text-sm flex-1">
                         Innowacyjna metoda nauki czytania z technologią Forbrain.
                       </p>
+
                       <div className="flex flex-wrap gap-1 mb-4">
                         <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Czytanie</span>
                         <span className="px-2 py-1 bg-teal-100 text-teal-700 rounded-full text-xs">Technologia</span>
@@ -406,6 +383,8 @@ export default function HomeClient() {
           </div>
         </div>
       </section>
+
+
 
       {/* Modern Consultation CTA Section - 2025 Design */}
       <section className="py-20 bg-white border-t border-gray-100">
@@ -479,43 +458,235 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* Development Timeline */}
-      <LazyDevelopmentTimeline />
-
-      <div className="section-divider" />
-
-      {/* Pricing Section */}
-      <LazyPricingSection />
-
-      <div className="section-divider" />
-
       <LazyTestimonialsSection />
 
-      <div className="section-divider wide" />
 
-      <LazyServiceArticlesSection />
 
       <div className="section-divider" />
 
       <LazyFAQSection />
 
-
-
-      {/* Location Section */}
-      <section id="lokalizacja" className="py-16 bg-gray-50">
+      {/* Modern Pricing Section - 2025 Design */}
+      <section id="cennik" className="py-12 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800 heading-enhanced center">
-              Jak do nas dojechać
-            </h2>
+            <div className="text-center mb-10">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-heading text-gray-900">
+                <span className="text-teal-600">Cennik</span> Usług
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Przejrzyste ceny, bez ukrytych kosztów. Pierwsza konsultacja bezpłatna.
+              </p>
+            </div>
           </AnimatedSection>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-3 gap-8 items-start">
+          {/* Compact Pricing Table with Collapsible Sections */}
+          <div className="max-w-5xl mx-auto">
+            <AnimatedSection delay={200}>
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+
+                {/* Terapie Podstawowe */}
+                <div className="border-b border-gray-200">
+                  <div className="bg-gradient-to-r from-teal-600 to-blue-600 px-4 py-3">
+                    <h3 className="text-white font-semibold text-lg">Terapie Podstawowe</h3>
+                  </div>
+                  <div className="divide-y divide-gray-100">
+                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-gray-900">Terapia Ręki</h4>
+                          <p className="text-sm text-gray-600">Motoryka mała, grafomotoryka</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <div className="text-center">
+                            <div className="text-sm text-gray-500">50 min</div>
+                            <div className="font-bold text-teal-600">120 zł</div>
+                            <div className="text-xs text-gray-400">150 zł z dojazdem</div>
+                          </div>
+                          <Link
+                            href="/uslugi/terapia-reki"
+                            className="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
+                          >
+                            Szczegóły
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-gray-900">Terapia Pedagogiczna</h4>
+                          <p className="text-sm text-gray-600">Wsparcie w nauce i rozwoju</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <div className="text-center">
+                            <div className="text-sm text-gray-500">50 min</div>
+                            <div className="font-bold text-blue-600">120 zł</div>
+                            <div className="text-xs text-gray-400">150 zł z dojazdem</div>
+                          </div>
+                          <Link
+                            href="/uslugi/terapia-pedagogiczna"
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
+                          >
+                            Szczegóły
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Terapie Specjalistyczne */}
+                <div className="border-b border-gray-200">
+                  <div className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-3">
+                    <h3 className="text-white font-semibold text-lg">Terapie Specjalistyczne</h3>
+                  </div>
+                  <div className="divide-y divide-gray-100">
+                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors bg-teal-50/30">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2">
+                            <h4 className="font-semibold text-gray-900">Trening Umiejętności Społecznych</h4>
+                            <span className="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">Popularne</span>
+                          </div>
+                          <p className="text-sm text-gray-600">Zajęcia grupowe, komunikacja</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <div className="text-center">
+                            <div className="text-sm text-gray-500">50 min</div>
+                            <div className="font-bold text-teal-600">80 zł</div>
+                            <div className="text-xs text-gray-400">za zajęcia</div>
+                          </div>
+                          <Link
+                            href="/uslugi/trening-umiejetnosci-spolecznych"
+                            className="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
+                          >
+                            Szczegóły
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-gray-900">Czytanie z Forbrain</h4>
+                          <p className="text-sm text-gray-600">Trening słuchowo-głosowy z technologią</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <div className="text-center">
+                            <div className="text-sm text-gray-500">50 min</div>
+                            <div className="font-bold text-blue-600">150 zł</div>
+                            <div className="text-xs text-gray-400">za sesję</div>
+                          </div>
+                          <Link
+                            href="/uslugi/forbrain"
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
+                          >
+                            Szczegóły
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* IAS Johansena */}
+                <div className="border-b border-gray-200">
+                  <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-3">
+                    <h3 className="text-white font-semibold text-lg">IAS Johansena - Trening Słuchowy</h3>
+                  </div>
+                  <div className="divide-y divide-gray-100">
+                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-gray-900">Diagnoza pełna</h4>
+                          <p className="text-sm text-gray-600">Kompleksowa diagnoza przed treningiem</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <div className="text-center">
+                            <div className="text-sm text-gray-500">120 min</div>
+                            <div className="font-bold text-teal-600">500 zł</div>
+                            <div className="text-xs text-gray-400">jednorazowo</div>
+                          </div>
+                          <Link
+                            href="/uslugi/trening-sluchowy-johansena"
+                            className="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
+                          >
+                            Szczegóły
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-gray-900">Program indywidualny</h4>
+                          <p className="text-sm text-gray-600">Przygotowanie spersonalizowanego programu</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <div className="text-center">
+                            <div className="text-sm text-gray-500">-</div>
+                            <div className="font-bold text-blue-600">250 zł</div>
+                            <div className="text-xs text-gray-400">jednorazowo</div>
+                          </div>
+                          <Link
+                            href="/uslugi/trening-sluchowy-johansena"
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
+                          >
+                            Szczegóły
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Footer */}
+                <div className="bg-gray-50 px-4 py-3">
+                  <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+                    <div className="flex items-center gap-1">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>Pierwsza konsultacja bezpłatna</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="h-4 w-4 text-blue-600" />
+                      <span>Anulowanie 24h wcześniej</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Users className="h-4 w-4 text-purple-600" />
+                      <span>Rabaty dla rodzin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact & Location Section - Unified */}
+      <section id="kontakt" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-heading text-gray-900">
+                Kontakt i <span className="text-teal-600">Lokalizacja</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Skontaktuj się ze mną lub odwiedź gabinet w Pomigaczach
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="w-full">
+            <div className="grid lg:grid-cols-4 gap-8 items-stretch">
               {/* Map */}
-              <AnimatedSection animation="slide" direction="left" className="lg:col-span-2">
+              <AnimatedSection animation="slide" direction="left" className="lg:col-span-3">
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
-                  <div className="h-96 lg:h-[450px]">
+                  <div className="h-[500px] lg:h-[600px]">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.8!2d23.0667!3d53.1167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471f7b8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2s23QQ%2B5C%20Pomigacze!5e0!3m2!1spl!2spl!4v1234567890"
                       width="100%"
@@ -648,20 +819,21 @@ export default function HomeClient() {
               </AnimatedSection>
             </div>
           </div>
-        </div>
-      </section>
 
-
-
-      {/* Contact Section */}
-      <section id="kontakt" className="py-16 bg-white gradient-mesh-subtle">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-heading text-teal-800 heading-enhanced center">
-              Formularz kontaktowy
-            </h2>
-          </AnimatedSection>
-          <LazyContactForm />
+          {/* Contact Form */}
+          <div className="mt-16">
+            <AnimatedSection>
+              <div className="text-center mb-12">
+                <h3 className="text-3xl font-bold mb-4 text-gray-900">
+                  Formularz kontaktowy
+                </h3>
+                <p className="text-gray-600">
+                  Napisz do mnie - odpowiem w ciągu 24 godzin
+                </p>
+              </div>
+            </AnimatedSection>
+            <LazyContactForm />
+          </div>
         </div>
       </section>
 
