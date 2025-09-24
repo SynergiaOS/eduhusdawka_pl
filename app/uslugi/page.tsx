@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import AnimatedSection from "@/components/animations/animated-section"
-import { Brain, Hand, BookOpen, Headphones, Users, ArrowRight } from "lucide-react"
+import { Brain, Hand, BookOpen, Headphones, Users, ArrowRight, Target } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -75,6 +75,14 @@ const services = [
     icon: BookOpen,
     color: "bg-emerald-500",
     href: "/uslugi/wczesna-nauka-czytania"
+  },
+  {
+    id: "korp",
+    title: "KORP - Diagnostyka Rozwoju",
+    description: "Karty Oceny Rozwoju Psychoruchowego - kompleksowa diagnoza dzieci od 1 m.ż. do 9 r.ż.",
+    icon: Target,
+    color: "bg-red-500",
+    href: "/uslugi/korp"
   }
 ]
 

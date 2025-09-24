@@ -388,14 +388,18 @@ export default function IASJohansenPage() {
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
                   <span className="text-gray-700">Program indywidualny</span>
-                  <span className="text-2xl font-bold text-purple-600">250 zł</span>
+                  <span className="text-2xl font-bold text-purple-600">280–300 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
                   <span className="text-gray-700">Diagnoza kontrolna pełna</span>
                   <span className="text-2xl font-bold text-purple-600">350 zł</span>
                 </div>
-                <div className="flex justify-between items-center py-2">
+                <div className="flex justify-between items-center py-2 border-b border-purple-200">
                   <span className="text-gray-700">Diagnoza kontrolna uproszczona</span>
+                  <span className="text-2xl font-bold text-purple-600">200 zł</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">Sesja z dojazdem do ucznia</span>
                   <span className="text-2xl font-bold text-purple-600">300 zł</span>
                 </div>
               </div>

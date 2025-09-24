@@ -167,22 +167,49 @@ export default function WczesnaNaukaCzytaniaPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
 
-            <div className="bg-green-50 p-8 rounded-2xl max-w-md mx-auto">
-              <h3 className="text-2xl font-semibold mb-6 text-green-700">Wczesna Nauka Czytania</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-green-200">
-                  <span className="text-gray-700">W gabinecie (50 min)</span>
-                  <span className="text-2xl font-bold text-green-600">120 zł</span>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-green-50 p-8 rounded-2xl">
+                <h3 className="text-2xl font-semibold mb-6 text-green-700">Wczesna Nauka Czytania</h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-2 border-b border-green-200">
+                    <span className="text-gray-700">W gabinecie (50 min)</span>
+                    <span className="text-2xl font-bold text-green-600">120 zł</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
+                    <span className="text-2xl font-bold text-green-600">150 zł</span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
-                  <span className="text-2xl font-bold text-green-600">150 zł</span>
+                <div className="mt-6 text-center">
+                  <p className="text-sm text-green-600 mb-4">
+                    💡 Metoda symultaniczno-sekwencyjna
+                  </p>
                 </div>
               </div>
-              <div className="mt-6 text-center">
-                <p className="text-sm text-green-600 mb-4">
-                  💡 Indywidualne podejście do każdego dziecka
-                </p>
+
+              <div className="bg-blue-50 p-8 rounded-2xl">
+                <h3 className="text-2xl font-semibold mb-6 text-blue-700">Czytanie Sylabowe</h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-2 border-b border-blue-200">
+                    <span className="text-gray-700">W gabinecie (50 min)</span>
+                    <span className="text-2xl font-bold text-blue-600">120 zł</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2">
+                    <span className="text-gray-700">Z dojazdem do ucznia (50 min)</span>
+                    <span className="text-2xl font-bold text-blue-600">150 zł</span>
+                  </div>
+                </div>
+                <div className="mt-6 text-center">
+                  <p className="text-sm text-blue-600 mb-4">
+                    💡 Nauka czytania metodą sylabową
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <p className="text-gray-600">
+                Indywidualne podejście do każdego dziecka
                 <a href="tel:+48531509008" className="inline-block">
                   <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                     📞 Zadzwoń: 531 509 008

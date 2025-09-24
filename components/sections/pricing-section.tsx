@@ -61,18 +61,55 @@ const pricingItems: PricingItem[] = [
     popular: true
   },
   {
-    id: "forbrain",
-    serviceName: "Forbrain",
-    itemName: "Czytanie z Forbrain",
-    description: "Trening słuchowo-głosowy wspierający rozwój mowy (50 min)",
+    id: "forbrain-gabinet",
+    serviceName: "Czytanie sylabowe z Forbrain",
+    itemName: "Sesja w gabinecie",
+    description: "Nauka czytania z wykorzystaniem słuchawek Forbrain (50 min)",
     price: "150 zł"
   },
   {
-    id: "wczesna-nauka-czytania",
+    id: "forbrain-dojazd",
+    serviceName: "Czytanie sylabowe z Forbrain",
+    itemName: "Sesja z dojazdem",
+    description: "Terapia w domu klienta (50 min)",
+    price: "180 zł"
+  },
+  {
+    id: "wczesna-nauka-gabinet",
     serviceName: "Wczesna Nauka Czytania",
-    itemName: "Sesja nauki czytania",
-    description: "Nauka czytania metodą sylabową dla najmłodszych",
+    itemName: "Sesja w gabinecie",
+    description: "Metoda symultaniczno-sekwencyjna (50 min)",
     price: "120 zł"
+  },
+  {
+    id: "wczesna-nauka-dojazd",
+    serviceName: "Wczesna Nauka Czytania",
+    itemName: "Sesja z dojazdem",
+    description: "Terapia w domu klienta (50 min)",
+    price: "150 zł"
+  },
+  {
+    id: "czytanie-sylabowe-gabinet",
+    serviceName: "Czytanie Sylabowe",
+    itemName: "Sesja w gabinecie",
+    description: "Nauka czytania metodą sylabową (50 min)",
+    price: "120 zł"
+  },
+  {
+    id: "czytanie-sylabowe-dojazd",
+    serviceName: "Czytanie Sylabowe",
+    itemName: "Sesja z dojazdem",
+    description: "Nauka czytania w domu ucznia (50 min)",
+    price: "150 zł"
+  },
+  // Diagnostyka
+  {
+    id: "korp-badanie",
+    serviceName: "KORP",
+    itemName: "Badanie + opinia",
+    description: "Karty Oceny Rozwoju Psychoruchowego (1 m.ż.–9 r.ż.)",
+    price: "350 zł",
+    popular: true
   },
   // Trening Słuchowy Johansena
   {
@@ -94,7 +131,14 @@ const pricingItems: PricingItem[] = [
     serviceName: "IAS Johansena",
     itemName: "Program indywidualny",
     description: "Przygotowanie indywidualnego programu treningowego",
-    price: "250 zł"
+    price: "280–300 zł"
+  },
+  {
+    id: "ias-dojazd",
+    serviceName: "IAS Johansena",
+    itemName: "Sesja z dojazdem do ucznia",
+    description: "Trening słuchowy w domu ucznia",
+    price: "300 zł"
   },
   {
     id: "ias-kontrolna-pelna",
@@ -108,6 +152,49 @@ const pricingItems: PricingItem[] = [
     serviceName: "IAS Johansena",
     itemName: "Diagnoza kontrolna uproszczona",
     description: "Podstawowa kontrola postępów",
+    price: "200 zł"
+  },
+  // Treningi specjalistyczne Neuroflow
+  {
+    id: "neuroflow-diagnoza",
+    serviceName: "Trening Neuroflow",
+    itemName: "Diagnoza wstępna",
+    description: "Ocena przed rozpoczęciem treningu słuchowego",
+    price: "350 zł"
+  },
+  {
+    id: "neuroflow-badanie-etap",
+    serviceName: "Trening Neuroflow",
+    itemName: "Badanie przed kolejnym etapem",
+    description: "Kontrola postępów między etapami",
+    price: "350 zł"
+  },
+  {
+    id: "neuroflow-etap1",
+    serviceName: "Trening Neuroflow",
+    itemName: "I etap terapii",
+    description: "Pierwszy etap aktywnego treningu słuchowego",
+    price: "470 zł"
+  },
+  {
+    id: "neuroflow-etap2",
+    serviceName: "Trening Neuroflow",
+    itemName: "II etap terapii",
+    description: "Drugi etap aktywnego treningu słuchowego",
+    price: "460 zł"
+  },
+  {
+    id: "neuroflow-etap3",
+    serviceName: "Trening Neuroflow",
+    itemName: "III etap i kolejne",
+    description: "Trzeci i kolejne etapy treningu słuchowego",
+    price: "450 zł"
+  },
+  {
+    id: "neuroflow-dojazd",
+    serviceName: "Trening Neuroflow",
+    itemName: "Sesja z dojazdem do ucznia",
+    description: "Trening Neuroflow w domu ucznia",
     price: "300 zł"
   }
 ]
@@ -132,9 +219,9 @@ export default function PricingSection() {
     if (activeFilter === "popular" && item.popular) return true
     if (activeFilter === "terapie" && (item.serviceName.includes("Terapia") || item.serviceName.includes("Trening Umiejętności")))
       return true
-    if (activeFilter === "diagnostyka" && (item.serviceName.includes("IAS") && item.itemName.includes("Diagnoza")))
+    if (activeFilter === "diagnostyka" && (item.serviceName.includes("KORP") || (item.serviceName.includes("IAS") && item.itemName.includes("Diagnoza")) || (item.serviceName.includes("Neuroflow") && item.itemName.includes("Diagnoza"))))
       return true
-    if (activeFilter === "treningi" && (item.serviceName.includes("Forbrain") || item.serviceName.includes("IAS") || item.serviceName.includes("Wczesna")))
+    if (activeFilter === "treningi" && (item.serviceName.includes("Forbrain") || item.serviceName.includes("IAS") || item.serviceName.includes("Wczesna") || item.serviceName.includes("Czytanie") || item.serviceName.includes("Neuroflow")))
       return true
     return false
   })
@@ -146,14 +233,15 @@ export default function PricingSection() {
 
   const getServiceSlug = (serviceName: string) => {
     const slugMap: { [key: string]: string } = {
-
       "Trening Umiejętności Społecznych": "trening-umiejetnosci-spolecznych",
       "Terapia Ręki": "terapia-reki",
       "Terapia Pedagogiczna": "terapia-pedagogiczna",
-      "Trening Słuchowy Johansena": "indywidualna-stymulacja-sluchu-johansena",
+      "IAS Johansena": "indywidualna-stymulacja-sluchu-johansena",
       "Trening Neuroflow": "trening-neuroflow",
       "Wczesna Nauka Czytania": "wczesna-nauka-czytania",
-      "Czytanie sylabowe z Forbrain": "wczesna-nauka-czytania",
+      "Czytanie Sylabowe": "wczesna-nauka-czytania",
+      "Czytanie sylabowe z Forbrain": "forbrain",
+      "KORP": "korp",
     }
     return slugMap[serviceName] || serviceName.toLowerCase().replace(/\s+/g, "-")
   }

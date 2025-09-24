@@ -173,7 +173,7 @@ export default function TreningSluchowyJohansenaPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-indigo-200">
                   <span className="text-gray-700">Diagnoza pełna</span>
-                  <span className="text-2xl font-bold text-indigo-600">500 zł</span>
+                  <span className="text-2xl font-bold text-indigo-600">350 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-indigo-200">
                   <span className="text-gray-700">Diagnoza uproszczona</span>
@@ -181,14 +181,18 @@ export default function TreningSluchowyJohansenaPage() {
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-indigo-200">
                   <span className="text-gray-700">Program indywidualny</span>
-                  <span className="text-2xl font-bold text-indigo-600">250 zł</span>
+                  <span className="text-2xl font-bold text-indigo-600">280–300 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-indigo-200">
                   <span className="text-gray-700">Diagnoza kontrolna pełna</span>
                   <span className="text-2xl font-bold text-indigo-600">350 zł</span>
                 </div>
-                <div className="flex justify-between items-center py-2">
+                <div className="flex justify-between items-center py-2 border-b border-indigo-200">
                   <span className="text-gray-700">Diagnoza kontrolna uproszczona</span>
+                  <span className="text-2xl font-bold text-indigo-600">200 zł</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">Sesja z dojazdem do ucznia</span>
                   <span className="text-2xl font-bold text-indigo-600">300 zł</span>
                 </div>
               </div>
