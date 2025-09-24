@@ -208,14 +208,14 @@ export default function WczesnaNaukaCzytaniaPage() {
             </div>
 
             <div className="mt-8 text-center">
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-6">
                 Indywidualne podejście do każdego dziecka
-                <a href="tel:+48531509008" className="inline-block">
-                  <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                    📞 Zadzwoń: 531 509 008
-                  </button>
-                </a>
-              </div>
+              </p>
+              <a href="tel:+48531509008" className="inline-block">
+                <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                  📞 Zadzwoń: 531 509 008
+                </button>
+              </a>
             </div>
           </div>
         </AnimatedSection>

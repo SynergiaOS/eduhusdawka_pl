@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import AnimatedSection from "@/components/animations/animated-section"
-import { Target, CheckCircle, Clock, User, ArrowRight, Brain, Heart, Eye, MessageCircle, Users, Zap, BookOpen } from "lucide-react"
+import { Target, CheckCircle, User, ArrowRight, Brain, Heart, Eye, MessageCircle, Zap, BookOpen } from "lucide-react"
 import Link from "next/link"
 import UnifiedImage from "@/components/media/unified-image"
 
