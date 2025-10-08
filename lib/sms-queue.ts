@@ -36,7 +36,7 @@ class SMSQueue {
     this.smsProvider = getSMSProvider()
   }
 
-  enqueue(phoneNumber: string, message: string, options: { priority: number } = { priority: 1 }): string {
+  enqueue(phoneNumber: string, message: string): string {
     const id = `sms_${Date.now()}_${Math.random()}`
     const newMessage: QueuedSMS = {
       id,
@@ -56,19 +56,13 @@ class SMSQueue {
 
   private sortQueue(): void {
     // Sort by priority (lower value means higher priority)
-    this.queue.sort((a, b) => {
-      // Assuming higher priority messages have a 'priority' property with a lower numerical value
-      const priorityA = this.getMessagePriority(a)
-      const priorityB = this.getMessagePriority(b)
-      return priorityA - priorityB
+    this.queue.sort(() => {
+      // Fixed priority for all messages currently
+      return 0
     })
   }
 
-  private getMessagePriority(message: QueuedSMS): number {
-    // Default priority if not explicitly defined (lower number = higher priority)
-    return 1 // Adjust as needed
-  }
-
+  
   async processQueue(): Promise<void> {
     if (this.processing) return
     if (this.queue.length === 0) return

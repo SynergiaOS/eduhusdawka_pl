@@ -121,7 +121,7 @@ class EnhancedErrorBoundary extends Component<
 
   private renderDefaultFallback() {
     const { level = 'component', name } = this.props
-    const { error, errorId: _errorId } = this.state
+    const { error } = this.state
 
     switch (level) {
       case 'page':

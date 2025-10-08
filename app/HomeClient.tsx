@@ -5,7 +5,9 @@ import UnifiedImage from "@/components/media/unified-image"
 import {
   LazyTestimonialsSection,
   LazyFAQSection,
-  LazyContactForm
+  LazyContactForm,
+  LazyPricingSection,
+  LazyMobileCTAButtons
 } from "@/components/loading/lazy-components"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
@@ -466,206 +468,7 @@ export default function HomeClient() {
 
       <LazyFAQSection />
 
-      {/* Modern Pricing Section - 2025 Design */}
-      <section id="cennik" className="py-12 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="text-center mb-10">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-heading text-gray-900">
-                <span className="text-teal-600">Cennik</span> Usług
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Przejrzyste ceny, bez ukrytych kosztów. Pierwsza konsultacja bezpłatna.
-              </p>
-            </div>
-          </AnimatedSection>
-
-          {/* Compact Pricing Table with Collapsible Sections */}
-          <div className="max-w-5xl mx-auto">
-            <AnimatedSection delay={200}>
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-
-                {/* Terapie Podstawowe */}
-                <div className="border-b border-gray-200">
-                  <div className="bg-gradient-to-r from-teal-600 to-blue-600 px-4 py-3">
-                    <h3 className="text-white font-semibold text-lg">Terapie Podstawowe</h3>
-                  </div>
-                  <div className="divide-y divide-gray-100">
-                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900">Terapia Ręki</h4>
-                          <p className="text-sm text-gray-600">Motoryka mała, grafomotoryka</p>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <div className="text-center">
-                            <div className="text-sm text-gray-500">50 min</div>
-                            <div className="font-bold text-teal-600">120 zł</div>
-                            <div className="text-xs text-gray-400">150 zł z dojazdem</div>
-                          </div>
-                          <Link
-                            href="/uslugi/terapia-reki"
-                            className="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
-                          >
-                            Szczegóły
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900">Terapia Pedagogiczna</h4>
-                          <p className="text-sm text-gray-600">Wsparcie w nauce i rozwoju</p>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <div className="text-center">
-                            <div className="text-sm text-gray-500">50 min</div>
-                            <div className="font-bold text-blue-600">120 zł</div>
-                            <div className="text-xs text-gray-400">150 zł z dojazdem</div>
-                          </div>
-                          <Link
-                            href="/uslugi/terapia-pedagogiczna"
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
-                          >
-                            Szczegóły
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Terapie Specjalistyczne */}
-                <div className="border-b border-gray-200">
-                  <div className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-3">
-                    <h3 className="text-white font-semibold text-lg">Terapie Specjalistyczne</h3>
-                  </div>
-                  <div className="divide-y divide-gray-100">
-                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors bg-teal-50/30">
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2">
-                            <h4 className="font-semibold text-gray-900">Trening Umiejętności Społecznych</h4>
-                            <span className="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">Popularne</span>
-                          </div>
-                          <p className="text-sm text-gray-600">Zajęcia grupowe, komunikacja</p>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <div className="text-center">
-                            <div className="text-sm text-gray-500">50 min</div>
-                            <div className="font-bold text-teal-600">80 zł</div>
-                            <div className="text-xs text-gray-400">za zajęcia</div>
-                          </div>
-                          <Link
-                            href="/uslugi/trening-umiejetnosci-spolecznych"
-                            className="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
-                          >
-                            Szczegóły
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900">Czytanie z Forbrain</h4>
-                          <p className="text-sm text-gray-600">Trening słuchowo-głosowy z technologią</p>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <div className="text-center">
-                            <div className="text-sm text-gray-500">50 min</div>
-                            <div className="font-bold text-blue-600">150 zł</div>
-                            <div className="text-xs text-gray-400">za sesję</div>
-                          </div>
-                          <Link
-                            href="/uslugi/forbrain"
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
-                          >
-                            Szczegóły
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* IAS Johansena */}
-                <div className="border-b border-gray-200">
-                  <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-3">
-                    <h3 className="text-white font-semibold text-lg">IAS Johansena - Trening Słuchowy</h3>
-                  </div>
-                  <div className="divide-y divide-gray-100">
-                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900">Diagnoza pełna</h4>
-                          <p className="text-sm text-gray-600">Kompleksowa diagnoza przed treningiem</p>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <div className="text-center">
-                            <div className="text-sm text-gray-500">120 min</div>
-                            <div className="font-bold text-teal-600">500 zł</div>
-                            <div className="text-xs text-gray-400">jednorazowo</div>
-                          </div>
-                          <Link
-                            href="/uslugi/trening-sluchowy-johansena"
-                            className="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
-                          >
-                            Szczegóły
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="px-4 py-3 hover:bg-gray-50 transition-colors">
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900">Program indywidualny</h4>
-                          <p className="text-sm text-gray-600">Przygotowanie spersonalizowanego programu</p>
-                        </div>
-                        <div className="flex items-center gap-4">
-                          <div className="text-center">
-                            <div className="text-sm text-gray-500">-</div>
-                            <div className="font-bold text-blue-600">250 zł</div>
-                            <div className="text-xs text-gray-400">jednorazowo</div>
-                          </div>
-                          <Link
-                            href="/uslugi/trening-sluchowy-johansena"
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm font-medium transition-colors"
-                          >
-                            Szczegóły
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Footer */}
-                <div className="bg-gray-50 px-4 py-3">
-                  <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-                    <div className="flex items-center gap-1">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      <span>Pierwsza konsultacja bezpłatna</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="h-4 w-4 text-blue-600" />
-                      <span>Anulowanie 24h wcześniej</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Users className="h-4 w-4 text-purple-600" />
-                      <span>Rabaty dla rodzin</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
+      <LazyPricingSection />
 
       {/* Contact & Location Section - Unified */}
       <section id="kontakt" className="py-20 bg-gray-50">
@@ -780,7 +583,7 @@ export default function HomeClient() {
                           <h4 className="font-semibold text-gray-800 mb-1">Komunikacja</h4>
                           <p className="text-gray-600 text-sm">
                             Autobus linia 105 z Białegostoku<br />
-                            Przystanek: &quot;Pomigacze Centrum&quot; (500m)
+                            Przystanek: &ldquo;Pomigacze Centrum&rdquo; (500m)
                           </p>
                         </div>
                       </div>
@@ -801,7 +604,7 @@ export default function HomeClient() {
 
                     <div className="mt-6 p-4 bg-teal-50 rounded-lg">
                       <p className="text-teal-700 text-sm mb-4">
-                        <strong>Wskazówka:</strong> Gabinet w domu prywatnym. Wejście od strony ogrodu, z prawej strony budynku. Tabliczka &quot;EDU HUSTAWKA&quot; na bramie.
+                        <strong>Wskazówka:</strong> Gabinet w domu prywatnym. Wejście od strony ogrodu, z prawej strony budynku. Tabliczka &ldquo;EDU HUSTAWKA&rdquo; na bramie.
                       </p>
                       <EnhancedButton
                         size="sm"
@@ -837,57 +640,7 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* Floating Action Button for quick call */}
-      <div className="fixed bottom-20 right-5 z-50 lg:hidden">
-        <EnhancedButton
-          size="icon"
-          variant="primary"
-          glow="strong"
-          className="h-14 w-14 rounded-full shadow-lg pulse-ring"
-          onClick={() => { trackEvent("call_click", "CTA", "fab"); window.location.href = "tel:+48531509008"; }}
-          aria-label="Zadzwoń teraz"
-        >
-          <Phone className="h-6 w-6" />
-        </EnhancedButton>
-      </div>
-
-      {/* Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 lg:hidden">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex gap-2">
-            <EnhancedButton
-              size="sm"
-              variant="primary"
-              className="flex-1"
-              onClick={() => { trackEvent("call_click", "CTA", "sticky"); window.location.href = "tel:+48531509008"; }}
-              aria-label="Zadzwoń teraz"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              Zadzwoń
-            </EnhancedButton>
-            <EnhancedButton
-              size="sm"
-              variant="secondary"
-              className="flex-1"
-              onClick={() => { trackEvent("whatsapp_click", "CTA", "sticky"); window.location.href = "https://wa.me/48531509008?text=Dzień%20dobry,%20chciałbym%20umówić%20się%20na%20konsultację"; }}
-              aria-label="Napisz na WhatsApp"
-            >
-              <MessageSquare className="mr-2 h-4 w-4" />
-              WhatsApp
-            </EnhancedButton>
-            <EnhancedButton
-              size="sm"
-              variant="outline"
-              className="flex-1"
-              onClick={() => { trackEvent("scroll_to_form", "CTA", "sticky"); document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" }); }}
-              aria-label="Przejdź do formularza"
-            >
-              <MessageCircle className="mr-2 h-4 w-4" />
-              Formularz
-            </EnhancedButton>
-          </div>
-        </div>
-      </div>
+      <LazyMobileCTAButtons />
       </main>
 
       <Footer />

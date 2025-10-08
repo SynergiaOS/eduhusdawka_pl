@@ -109,7 +109,7 @@ export async function sendBookingConfirmationSMS(booking: Booking): Promise<SMSR
   }. Potwierdzenie zostało wysłane na adres email: ${booking.email}.`
 
   // Dodaj do kolejki z wysokim priorytetem
-  queue.enqueue(booking.phone, message, { priority: 2 })
+  queue.enqueue(booking.phone, message)
 
   // Zwróć sukces, ponieważ wiadomość została dodana do kolejki
   return {
@@ -127,7 +127,7 @@ export async function sendBookingReminderSMS(booking: Booking): Promise<SMSResul
   }. W razie pytań prosimy o kontakt.`
 
   // Dodaj do kolejki z normalnym priorytetem
-  queue.enqueue(booking.phone, message, { priority: 1 })
+  queue.enqueue(booking.phone, message)
 
   // Zwróć sukces, ponieważ wiadomość została dodana do kolejki
   return {
@@ -143,7 +143,7 @@ export async function sendBookingCancellationSMS(booking: Booking): Promise<SMSR
   const message = `EduHustawka: Twoja rezerwacja na dzień ${booking.date} została anulowana. W razie pytań prosimy o kontakt.`
 
   // Dodaj do kolejki z wysokim priorytetem
-  queue.enqueue(booking.phone, message, { priority: 2 })
+  queue.enqueue(booking.phone, message)
 
   // Zwróć sukces, ponieważ wiadomość została dodana do kolejki
   return {

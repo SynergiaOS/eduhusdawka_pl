@@ -24,7 +24,6 @@ interface GoogleMapProps {
 }
 
 const GoogleMap = memo(({
-  address: _address = "Polna 17, 18-106 Pomigacze, Polska",
   height = "300px",
 
   showNavigationButton = true,

@@ -5,11 +5,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 interface ErrorFallbackProps {
-  error?: Error
   reset?: () => void
 }
 
-export function ContactFormError({ error: _error, reset }: ErrorFallbackProps) {
+export function ContactFormError({ reset }: ErrorFallbackProps) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-red-200">
       <div className="text-center">
@@ -42,7 +41,7 @@ export function ContactFormError({ error: _error, reset }: ErrorFallbackProps) {
   )
 }
 
-export function BookingFormError({ error: _error, reset }: ErrorFallbackProps) {
+export function BookingFormError({ reset }: ErrorFallbackProps) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-red-200">
       <div className="text-center">
@@ -70,7 +69,7 @@ export function BookingFormError({ error: _error, reset }: ErrorFallbackProps) {
   )
 }
 
-export function ServicesError({ error: _error, reset }: ErrorFallbackProps) {
+export function ServicesError({ reset }: ErrorFallbackProps) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-red-200">
       <div className="text-center">
@@ -98,7 +97,7 @@ export function ServicesError({ error: _error, reset }: ErrorFallbackProps) {
   )
 }
 
-export function MapError({ error: _error, reset }: ErrorFallbackProps) {
+export function MapError({ reset }: ErrorFallbackProps) {
   return (
     <div className="bg-gray-100 p-6 rounded-lg border border-gray-200 h-64 flex items-center justify-center">
       <div className="text-center">

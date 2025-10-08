@@ -2,6 +2,9 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 
+// Type definition for form field values
+export type FormFieldValue = string | number | boolean | null | undefined | Date | File | FileList
+
 /**
  * Custom hook for managing toggle state with optional auto-close
  */
@@ -130,18 +133,18 @@ export function useCarousel<T>(items: T[], options: {
 /**
  * Custom hook for managing form state with validation
  */
-export function useFormState<T extends Record<string, any>>(
+export function useFormState<T extends Record<string, FormFieldValue>>(
   initialValues: T,
-  validationRules?: Partial<Record<keyof T, (value: any) => string | null>>
+  validationRules?: Partial<Record<keyof T, (value: T[keyof T]) => string | null>>
 ) {
   const [values, setValues] = useState<T>(initialValues)
   const [errors, setErrors] = useState<Partial<Record<keyof T, string>>>({})
   const [touched, setTouched] = useState<Partial<Record<keyof T, boolean>>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const setValue = useCallback((field: keyof T, value: any) => {
+  const setValue = useCallback(<K extends keyof T>(field: K, value: T[K]) => {
     setValues(prev => ({ ...prev, [field]: value }))
-    
+
     // Clear error when user starts typing
     if (errors[field]) {
       setErrors(prev => ({ ...prev, [field]: undefined }))

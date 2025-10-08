@@ -76,7 +76,7 @@ export default function PrintableDirections() {
                   </p>
                   <p className="mt-2 text-sm text-teal-600">
                     <strong>Uwaga:</strong> Gabinet znajduje się w domu prywatnym. Wejście od strony ogrodu, z prawej
-                    strony budynku. Na bramie znajduje się tabliczka "EDU HUSTAWKA".
+                    strony budynku. Na bramie znajduje się tabliczka &ldquo;EDU HUSTAWKA&rdquo;.
                   </p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function PrintableDirections() {
                     <h4 className="font-medium text-gray-800">Komunikacją publiczną</h4>
                     <p className="text-gray-600">
                       Z Białegostoku możesz dojechać autobusem linii 105, który kursuje co godzinę. Wysiądź na
-                      przystanku "Pomigacze Centrum" (przy sklepie spożywczym), a następnie idź pieszo około 500 metrów
+                      przystanku &ldquo;Pomigacze Centrum&rdquo; (przy sklepie spożywczym), a następnie idź pieszo około 500 metrów
                       w kierunku ul. Polnej. Na rozwidleniu dróg skręć w lewo i idź prosto aż do numeru 17.
                     </p>
                   </div>
@@ -117,9 +117,9 @@ export default function PrintableDirections() {
               <h3 className="text-lg font-medium text-teal-700 mb-3">Charakterystyczne punkty:</h3>
               <ul className="list-disc pl-5 text-gray-600 space-y-1">
                 <li>Biały dom z zielonym dachem i drewnianym płotem</li>
-                <li>Tabliczka "EDU HUSTAWKA" na bramie</li>
-                <li>Sklep spożywczy "U Marka" na rogu ul. Głównej i Polnej</li>
-                <li>Przystanek autobusowy "Pomigacze Centrum" w odległości około 500m</li>
+                <li>Tabliczka &ldquo;EDU HUSTAWKA&rdquo; na bramie</li>
+                <li>Sklep spożywczy &ldquo;U Marka&rdquo; na rogu ul. Głównej i Polnej</li>
+                <li>Przystanek autobusowy &ldquo;Pomigacze Centrum&rdquo; w odległości około 500m</li>
               </ul>
             </div>
 

@@ -14,14 +14,14 @@ const Footer = React.memo(() => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <UnifiedImage
-                src="/images/logo-eduhustawka.png"
+                src="/images/logo-new.svg"
                 alt="EduHustawka Logo"
                 width={50}
                 height={50}
                 className="w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg"
               />
               <div className="hidden sm:block">
-                <span className="font-bold text-lg bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent">EduHustawka</span>
+                <span className="font-bold text-lg bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">EduHustawka</span>
                 <p className="text-xs text-gray-400 -mt-1">Pedagog specjalny</p>
               </div>
             </div>

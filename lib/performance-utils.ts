@@ -2,7 +2,7 @@
  * Performance utilities for optimizing React components
  */
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 
 /**
  * Throttle function to limit the frequency of function calls
@@ -80,19 +80,16 @@ export function useScrollPosition(threshold: number = 10, delay: number = 100) {
   const [scrollY, setScrollY] = useState(0)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  const handleScroll = useCallback(
-    throttle(() => {
+  useEffect(() => {
+    const throttledHandleScroll = throttle(() => {
       const currentScrollY = window.scrollY
       setScrollY(currentScrollY)
       setIsScrolled(currentScrollY > threshold)
-    }, delay),
-    [threshold, delay]
-  )
+    }, delay)
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [handleScroll])
+    window.addEventListener('scroll', throttledHandleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', throttledHandleScroll)
+  }, [threshold, delay])
 
   return { scrollY, isScrolled }
 }

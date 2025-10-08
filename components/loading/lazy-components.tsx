@@ -1,10 +1,10 @@
 import dynamic from 'next/dynamic'
-import { LoadingSpinner } from './loading-spinner'
 import {
   FormLoadingSkeleton,
   TestimonialsLoadingSkeleton,
   BlogLoadingSkeleton,
-  SectionFallback
+  SectionFallback,
+  OptimizedSpinner
 } from './optimized-loading-states'
 
 // Lazy load heavy components
@@ -19,7 +19,8 @@ export const LazyAppointmentForm = dynamic(() => import('../forms/appointment-fo
 })
 
 export const LazyPricingSection = dynamic(() => import('../sections/pricing-section'), {
-  loading: () => <LoadingSpinner />
+  loading: () => <SectionFallback height="h-96" title="Ładowanie cennika..." />,
+  ssr: false
 })
 
 export const LazyGoogleMap = dynamic(() => import('../media/google-map'), {
@@ -28,11 +29,11 @@ export const LazyGoogleMap = dynamic(() => import('../media/google-map'), {
 })
 
 export const LazyFAQSection = dynamic(() => import('../sections/faq-section'), {
-  loading: () => <LoadingSpinner />
+  loading: () => <SectionFallback height="h-64" title="Ładowanie FAQ..." />
 })
 
 export const LazyTestimonials = dynamic(() => import('../feedback/testimonials'), {
-  loading: () => <LoadingSpinner />
+  loading: () => <TestimonialsLoadingSkeleton />
 })
 
 // Lazy load analytics components
@@ -85,7 +86,7 @@ export const LazyWelcomeNotification = dynamic(() => import('../mobile/welcome-n
 
 // Lazy load admin components
 export const LazySMSQueueStats = dynamic(() => import('../admin/sms-queue-stats'), {
-  loading: () => <LoadingSpinner />,
+  loading: () => <SectionFallback height="h-64" title="Ładowanie statystyk SMS..." />,
   ssr: false
 })
 
@@ -106,6 +107,12 @@ export const LazyBlogCard = dynamic(() => import('../blog/blog-card'), {
 })
 
 export const LazyBlogPostModal = dynamic(() => import('../blog/blog-post-modal'), {
-  loading: () => <LoadingSpinner />,
+  loading: () => <SectionFallback height="h-96" title="Ładowanie wpisu..." />,
+  ssr: false
+})
+
+// Lazy load mobile components
+export const LazyMobileCTAButtons = dynamic(() => import('../mobile/mobile-cta-buttons'), {
+  loading: () => <OptimizedSpinner size="sm" className="fixed bottom-20 right-4" />,
   ssr: false
 })

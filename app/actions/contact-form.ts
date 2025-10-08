@@ -90,7 +90,7 @@ export async function submitContactForm(prevState: ContactFormState, formData: F
         const queue = getSMSQueue()
         const preview = message.length > 120 ? message.slice(0, 117) + "..." : message
         const sms = `Nowe zapytanie (EduHustawka)\nImię: ${name}\nEmail: ${email}${phone ? `\nTel: ${phone}` : ""}\nWiadomość: ${preview}`
-        queue.enqueue(adminPhone, sms, { priority: 1 })
+        queue.enqueue(adminPhone, sms)
       }
     } catch (e) {
       console.error("Błąd podczas dodawania SMS do kolejki:", e)

@@ -30,7 +30,7 @@ export default function CookieBanner() {
           </div>
 
           <p className="text-sm text-gray-600">
-                        Nasza strona używa plików cookie, aby zapewnić najlepsze doświadczenia. Klikając &quot;Akceptuj wszystkie&quot;,
+                        Nasza strona używa plików cookie, aby zapewnić najlepsze doświadczenia. Klikając &ldquo;Akceptuj wszystkie&rdquo;,
             zgadzasz się na używanie wszystkich plików cookie. Możesz również dostosować swoje preferencje.
           </p>
 

@@ -58,6 +58,7 @@ export async function createBooking(data: BookingData) {
 }
 
 // Funkcja do sprawdzania dostępności terminu
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function checkAvailability(_date: string, _time: string) {
   try {
     // W rzeczywistej aplikacji tutaj byłoby sprawdzenie w bazie danych

@@ -41,6 +41,11 @@ pnpm start            # Serwer produkcyjny
 
 # Narzędzia
 pnpm lint             # Sprawdzanie kodu
+
+# Testowanie
+pnpm test             # Uruchom testy
+pnpm test:watch       # Testy w trybie watch
+pnpm test:coverage    # Testy z pokryciem kodu
 ```
 
 ### 🔐 HTTPS w developmencie
@@ -54,6 +59,37 @@ pnpm dev:https-turbo
 ```
 
 Aplikacja będzie dostępna na `https://localhost:3000`. Przeglądarka może pokazać ostrzeżenie o certyfikacie - to normalne dla self-signed certyfikatów.
+
+## 📊 Performance Measurement
+
+Zautomatyzowana analiza wydajności z Lighthouse i Core Web Vitals:
+
+```bash
+# Pełna analiza wydajności (build + testy + raport)
+npm run perf:full
+
+# Kolejne kroki
+npm run perf:collect    # Zbierz dane Lighthouse
+npm run perf:report     # Wygeneruj raport
+npm run perf:verify     # Sprawdź rozmiar bundle
+npm run perf:compare    # Porównaj z poprzednimi wynikami
+```
+
+### Celowe metryki wydajności
+
+| Metryka | Cel | Aktualny |
+|---------|-----|----------|
+| First Contentful Paint | ≤800ms | ⏳ |
+| Largest Contentful Paint | ≤1300ms | ⏳ |
+| Cumulative Layout Shift | ≤0.05 | ⏳ |
+| Total Blocking Time | ≤300ms | ⏳ |
+| Bundle (shared JS) | ≤99.7KB | ⏳ |
+
+### Raporty
+
+- **[Wyniki wydajności](./docs/PHASE-7-PERFORMANCE-RESULTS.md)** - Aktualne wyniki testów
+- **[Przewodnik pomiaru](./docs/PERFORMANCE-MEASUREMENT-GUIDE.md)** - Szczegółowy poradnik
+- **[Bundle Analyzer](./bundle-analyzer-report.html)** - Analiza rozmiaru pakietów
 
 ## 🌐 Deployment
 

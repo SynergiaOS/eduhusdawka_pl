@@ -146,6 +146,44 @@ const nextConfig = {
     ],
     reactCompiler: true,
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          // Heavy vendor libraries - framer-motion and @radix-ui
+          'vendor-heavy': {
+            test: /[\\/]node_modules[\\/](framer-motion|@radix-ui)[\\/]/,
+            name: 'vendor-heavy',
+            priority: 20,
+            chunks: 'all',
+            enforce: true,
+          },
+          // Common utilities and smaller libraries
+          'vendor-commons': {
+            test: /[\\/]node_modules[\\/](lucide-react|clsx|tailwind-merge|date-fns)[\\/]/,
+            name: 'vendor-commons',
+            priority: 10,
+            chunks: 'all',
+            minChunks: 2,
+          },
+          // Default vendor group for other libraries
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendor',
+            priority: 5,
+            chunks: 'all',
+            minChunks: 1,
+          },
+        },
+        maxInitialRequests: 25,
+        maxAsyncRequests: 25,
+        minSize: 20000, // 20KB minimum chunk size
+        maxSize: 244000, // 244KB maximum chunk size to force splitting
+      }
+    }
+    return config
+  },
 }
 
 export default withBundleAnalyzer(nextConfig)

@@ -40,3 +40,14 @@ next-env.d.ts
 .kiro/steering/byterover-rules.md
 .qoder/rules/byterover-rules.md
 .augment/rules/byterover-rules.md
+
+# Performance measurement artifacts
+.lighthouseci/*.html
+.lighthouseci/*.json
+!.lighthouseci/lighthouserc.json
+.lighthouseci/phase-7-results/
+.bundle-analyzer-report/
+bundle-analyzer-report.html
+.next/bundle-verification.json
+scripts/logs/
+*.lhr.json

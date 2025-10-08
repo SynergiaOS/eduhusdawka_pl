@@ -1,10 +1,10 @@
 import { Suspense } from "react"
 import HomeClient from "./HomeClient"
-import { LoadingSpinner } from "@/components/loading/loading-spinner"
+import { OptimizedSpinner } from "@/components/loading/optimized-loading-states"
 
 export default function HomePage() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
+    <Suspense fallback={<OptimizedSpinner />}>
       <HomeClient />
     </Suspense>
   )

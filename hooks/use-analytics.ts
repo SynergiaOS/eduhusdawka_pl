@@ -3,6 +3,13 @@
 import { event } from "@/lib/analytics"
 
 export function useAnalytics() {
+  /**
+   * Track a custom analytics event
+   * @param action - The event action
+   * @param category - The event category
+   * @param label - Optional event label
+   * @param value - Optional numeric value
+   */
   const trackEvent = (action: string, category: string, label?: string, value?: number) => {
     event({ action, category, label, value })
   }

@@ -18,7 +18,7 @@ export default function DirectionsInfo() {
             <h4 className="font-medium text-teal-800">Gabinet w domu prywatnym</h4>
             <p className="text-sm text-teal-700">
               Gabinet terapeutyczny znajduje się w moim domu prywatnym. Wejście znajduje się od strony ogrodu, z prawej
-                            strony budynku. Na bramie znajduje się tabliczka &quot;EDU HUSTAWKA&quot;.
+                            strony budynku. Na bramie znajduje się tabliczka &ldquo;EDU HUSTAWKA&rdquo;.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function DirectionsInfo() {
             <h4 className="font-medium text-gray-800">Komunikacją publiczną</h4>
             <p className="text-gray-600 text-sm">
                             Z Białegostoku możesz dojechać autobusem linii 105, który kursuje co godzinę. Wysiądź na przystanku
-              &quot;Pomigacze Centrum&quot; (przy sklepie spożywczym), a następnie idź pieszo około 500 metrów w kierunku ul.
+              &ldquo;Pomigacze Centrum&rdquo; (przy sklepie spożywczym), a następnie idź pieszo około 500 metrów w kierunku ul.
               Polnej. Na rozwidleniu dróg skręć w lewo i idź prosto aż do numeru 17.
             </p>
           </div>

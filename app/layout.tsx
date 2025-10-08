@@ -67,11 +67,11 @@ export default function RootLayout({
 
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0d9488" />
+        <meta name="theme-color" content="#2564bc" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="EduHustawka" />
-        <link rel="apple-touch-icon" href="/images/logo-eduhustawka.png" />
+        <link rel="apple-touch-icon" href="/images/logo-new.svg" />
 
         {/* Preload critical resources */}
         <link rel="preload" href="/images/joanna.png" as="image" />
@@ -82,7 +82,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
 
         {/* Resource hints for better performance */}
-        <link rel="preload" href="/images/logo-eduhustawka.png" as="image" />
+        <link rel="preload" href="/images/logo-new.svg" as="image" />
         <link rel="preload" href="/images/autism-therapy.png" as="image" />
         <link rel="prefetch" href="/uslugi" />
         <link rel="prefetch" href="/rezerwacja" />

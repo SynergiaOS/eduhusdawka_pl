@@ -1,21 +1,40 @@
 {
   "ci": {
     "collect": {
-      "url": ["http://localhost:3001"],
-      "numberOfRuns": 3,
+      "url": [
+        "http://localhost:3000",
+        "http://localhost:3000/terapia-sensoryczna",
+        "http://localhost:3000/terapia-reki",
+        "http://localhost:3000/terapeuta",
+        "http://localhost:3000/kontakt"
+      ],
+      "numberOfRuns": 5,
       "settings": {
-        "chromeFlags": "--no-sandbox --headless --disable-gpu"
-      }
+        "chromeFlags": "--no-sandbox --headless --disable-gpu",
+        "preset": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "cpuSlowdownMultiplier": 1,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0
+        }
+      },
+      "startServerCommand": "npm start",
+      "startServerReadyPattern": "ready on"
     },
     "assert": {
       "assertions": {
-        "categories:performance": ["warn", {"minScore": 0.8}],
+        "categories:performance": ["warn", {"minScore": 0.9}],
         "categories:accessibility": ["warn", {"minScore": 0.9}],
         "categories:best-practices": ["warn", {"minScore": 0.9}],
         "categories:seo": ["warn", {"minScore": 0.9}],
-        "first-contentful-paint": ["warn", {"maxNumericValue": 2000}],
-        "largest-contentful-paint": ["warn", {"maxNumericValue": 3000}],
-        "cumulative-layout-shift": ["warn", {"maxNumericValue": 0.1}]
+        "first-contentful-paint": ["warn", {"maxNumericValue": 800}],
+        "largest-contentful-paint": ["warn", {"maxNumericValue": 1300}],
+        "cumulative-layout-shift": ["warn", {"maxNumericValue": 0.05}],
+        "total-blocking-time": ["warn", {"maxNumericValue": 300}],
+        "speed-index": ["warn", {"maxNumericValue": 3000}]
       }
     },
     "upload": {

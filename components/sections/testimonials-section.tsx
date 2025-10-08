@@ -88,7 +88,7 @@ const TestimonialsSection = memo(() => {
                 </div>
 
                 <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 italic">
-                  "                  &quot;{currentTestimonial.content}&quot;"
+                  &ldquo;{currentTestimonial.content}&rdquo;
                 </blockquote>
 
                 <div className="border-t border-gray-200 pt-6">
@@ -107,6 +107,7 @@ const TestimonialsSection = memo(() => {
                   size="sm"
                   onClick={prevTestimonial}
                   className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                  aria-label="Poprzednia opinia"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
@@ -119,6 +120,8 @@ const TestimonialsSection = memo(() => {
                       className={`w-3 h-3 rounded-full transition-colors ${
                         index === currentIndex ? "bg-teal-600" : "bg-gray-300"
                       }`}
+                      aria-label={`Przejdź do opinii ${index + 1}`}
+                      aria-current={index === currentIndex ? "true" : "false"}
                     />
                   ))}
                 </div>
@@ -128,6 +131,7 @@ const TestimonialsSection = memo(() => {
                   size="sm"
                   onClick={nextTestimonial}
                   className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                  aria-label="Następna opinia"
                 >
                   <ChevronRight className="h-4 w-4" />
                 </Button>

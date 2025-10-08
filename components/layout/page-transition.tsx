@@ -1,21 +1,28 @@
 "use client"
 
-import { motion, AnimatePresence, type Transition } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { type ReactNode, useEffect, useState } from "react"
 import { useAnimationConfig } from "@/hooks/use-reduced-motion"
+
+// Types for dynamically loaded framer-motion
+interface MotionComponents {
+  motion: {
+    div: React.ComponentType<any>
+  }
+  AnimatePresence: React.ComponentType<any>
+  Transition: any
+}
 
 // Typy animacji dla różnych ścieżek z obsługą reduced motion
 const getAnimationForPath = (
   path: string,
   prefersReducedMotion: boolean,
-  duration: { fast: number; normal: number; slow: number },
-  _easing: { ease: string; easeIn: string; easeOut: string }
+  duration: { fast: number; normal: number; slow: number }
 ): {
   initial: Record<string, unknown>;
   animate: Record<string, unknown>;
   exit: Record<string, unknown>;
-  transition: Transition;
+  transition: Record<string, unknown>;
 } => {
   // Strona główna
   if (path === "/") {
@@ -97,12 +104,37 @@ const getAnimationForPath = (
 export default function PageTransition({ children }: { children: ReactNode }) {
   const pathname = usePathname()
   const [isFirstRender, setIsFirstRender] = useState(true)
-  const { prefersReducedMotion, duration, easing } = useAnimationConfig()
+  const [motionComponents, setMotionComponents] = useState<MotionComponents | null>(null)
+  const { prefersReducedMotion, duration } = useAnimationConfig()
 
   // Pomijamy animację przy pierwszym renderowaniu lub gdy użytkownik preferuje reduced motion
   useEffect(() => {
     setIsFirstRender(false)
   }, [])
+
+  // Dynamicznie ładuj framer-motion tylko gdy potrzebne
+  useEffect(() => {
+    if (prefersReducedMotion) return
+
+    const loadMotionComponents = async () => {
+      try {
+        const FM = await import('framer-motion')
+        setMotionComponents({
+          motion: {
+            div: FM.motion.div
+          },
+          AnimatePresence: FM.AnimatePresence,
+          Transition: {} as any // Transition is not used directly in the component
+        })
+      } catch (error) {
+        console.warn('Failed to load framer-motion:', error)
+        // W przypadku błędu renderuj bez animacji
+        setMotionComponents(null)
+      }
+    }
+
+    loadMotionComponents()
+  }, [prefersReducedMotion])
 
   // Przewijamy na górę strony przy zmianie ścieżki
   useEffect(() => {
@@ -113,7 +145,19 @@ export default function PageTransition({ children }: { children: ReactNode }) {
     }
   }, [pathname, prefersReducedMotion])
 
-  const animation = getAnimationForPath(pathname, prefersReducedMotion, duration, easing)
+  // Jeśli użytkownik preferuje reduced motion, renderuj bezpośrednio bez animacji
+  if (prefersReducedMotion) {
+    return <>{children}</>
+  }
+
+  // Jeśli komponenty animacji nie są jeszcze załadowane, renderuj bez animacji
+  if (!motionComponents) {
+    return <>{children}</>
+  }
+
+  const { motion, AnimatePresence } = motionComponents
+
+  const animation = getAnimationForPath(pathname, prefersReducedMotion, duration)
 
   return (
     <AnimatePresence mode="wait">

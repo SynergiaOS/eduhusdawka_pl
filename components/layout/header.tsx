@@ -46,7 +46,7 @@ function Header() {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
               <UnifiedImage
-                src="/images/logo-eduhustawka.png"
+                src="/images/logo-new.svg"
                 alt="EduHustawka Logo"
                 width={50}
                 height={50}
@@ -54,7 +54,7 @@ function Header() {
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-teal-600 to-teal-600 bg-clip-text text-transparent">
+              <h1 className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
                 EduHustawka
               </h1>
               <p className="text-xs text-gray-600 -mt-1">Pedagog specjalny</p>
@@ -65,10 +65,10 @@ function Header() {
           <nav className="hidden lg:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group"
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
             >
               Strona główna
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-200 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
             </Link>
 
             {/* Services Dropdown */}
@@ -77,12 +77,12 @@ function Header() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group">
+              <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
                 Usługi
                 <ChevronDown
                   className={`ml-1 h-4 w-4 transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""}`}
                 />
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-200 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
               </button>
 
               {/* Dropdown Menu */}
@@ -95,7 +95,7 @@ function Header() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors duration-200 text-sm"
+                    className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm"
                   >
                     {service.name}
                   </Link>
@@ -105,26 +105,26 @@ function Header() {
 
             <Link
               href="/o-mnie"
-              className="text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group"
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
             >
               O mnie
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-200 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
             </Link>
 
             <Link
               href="/rezerwacja"
-              className="text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group"
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
             >
               Rezerwacja
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-200 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
             </Link>
 
             <Link
               href="/#lokalizacja"
-              className="text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200 relative group"
+              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
             >
               Kontakt
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all duration-200 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
             </Link>
           </nav>
 
@@ -133,7 +133,7 @@ function Header() {
             {/* Phone Button */}
             <Button
               size="sm"
-              className="bg-teal-600 hover:bg-teal-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hidden sm:flex"
+              className="bg-blue-600 hover:bg-teal-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hidden sm:flex"
               onClick={() => (window.location.href = "tel:+48531509008")}
             >
               <Phone className="h-4 w-4 mr-2" />
@@ -142,7 +142,7 @@ function Header() {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 text-gray-700 hover:text-teal-600 transition-colors duration-200"
+              className="lg:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -160,7 +160,7 @@ function Header() {
           <nav className="py-4 space-y-2 border-t border-gray-100">
             <Link
               href="/"
-              className="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors duration-200"
+              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Strona główna
@@ -169,7 +169,7 @@ function Header() {
             {/* Mobile Services */}
             <div className="px-4">
               <button
-                className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-teal-600 transition-colors duration-200"
+                className="flex items-center justify-between w-full py-3 text-gray-700 hover:text-blue-600 transition-colors duration-200"
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
               >
                 Usługi
@@ -185,7 +185,7 @@ function Header() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="block py-2 text-sm text-gray-600 hover:text-teal-600 transition-colors duration-200"
+                    className="block py-2 text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {service.name}
@@ -196,7 +196,7 @@ function Header() {
 
             <Link
               href="/o-mnie"
-              className="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors duration-200"
+              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               O mnie
@@ -204,7 +204,7 @@ function Header() {
 
             <Link
               href="/rezerwacja"
-              className="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors duration-200"
+              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Rezerwacja
@@ -212,7 +212,7 @@ function Header() {
 
             <Link
               href="/#lokalizacja"
-              className="block px-4 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-colors duration-200"
+              className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Kontakt
@@ -222,7 +222,7 @@ function Header() {
             <div className="px-4 pt-4 border-t border-gray-100">
               <Button
                 size="sm"
-                className="w-full bg-teal-600 hover:bg-teal-700 text-white shadow-lg"
+                className="w-full bg-blue-600 hover:bg-teal-700 text-white shadow-lg"
                 onClick={() => {
                   window.location.href = "tel:+48531509008"
                   setIsMenuOpen(false)

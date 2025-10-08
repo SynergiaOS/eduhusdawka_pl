@@ -16,7 +16,12 @@
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage --watchAll=false",
     "lighthouse": "lhci autorun",
-    "lighthouse:collect": "lhci collect"
+    "lighthouse:collect": "lhci collect",
+    "perf:collect": "lhci autorun --config=lighthouserc.json",
+    "perf:report": "node scripts/generate-performance-report.js",
+    "perf:compare": "node scripts/compare-lighthouse-results.js",
+    "perf:verify": "node scripts/verify-bundle-size.js",
+    "perf:full": "npm run perf:collect && npm run perf:report && npm run perf:verify"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
@@ -78,8 +83,10 @@
   "devDependencies": {
     "@lhci/cli": "^0.15.1",
     "@next/bundle-analyzer": "^15.5.3",
-    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",

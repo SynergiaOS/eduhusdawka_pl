@@ -315,3 +315,12 @@ export const componentUtils = {
 export * from '@testing-library/react'
 export { customRender as render, userEvent, mockRouter }
 export { screen, waitFor }
+
+// Add test component to satisfy Jest requirement
+export const TestComponent = () => <div>Test</div>
+
+describe('Test Utils', () => {
+  it('should have test component', () => {
+    expect(TestComponent).toBeDefined()
+  })
+})

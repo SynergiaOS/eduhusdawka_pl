@@ -40,7 +40,7 @@ export function useErrorHandler(options: UseErrorHandlerOptions = {}) {
   }, [])
 
   const executeAsync = useCallback(
-    async (asyncFn: () => Promise<any>, context?: string): Promise<any | null> => {
+    async <T>(asyncFn: () => Promise<T>, context?: string): Promise<T | null> => {
       try {
         setIsLoading(true)
         setError(null)
