@@ -44,8 +44,8 @@ const services: Service[] = [
     price: "80 zł",
     description: "Trening Umiejętności Społecznych",
     href: "/trening-umiejetnosci-spolecznych",
-    color: "text-green-600",
-    bgColor: "bg-green-50 hover:bg-green-100"
+    color: "text-eduhus-accent",
+    bgColor: "bg-orange-50 hover:bg-orange-50"
   },
   {
     id: "ias-johansena",

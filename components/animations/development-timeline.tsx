@@ -47,8 +47,8 @@ const timelineData: TimelineItem[] = [
     description: "Wsparcie w nauce szkolnej i rozwoju umiejętności akademickich",
     services: ["Terapia pedagogiczna", "Forbrain", "Neuroflow"],
     color: "border-green-400",
-    bgColor: "bg-green-50",
-    textColor: "text-green-700",
+    bgColor: "bg-orange-50",
+    textColor: "text-eduhus-accent",
     position: 'left'
   },
   {
@@ -72,7 +72,7 @@ export default function DevelopmentTimeline() {
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 bg-eduhus-accent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-green-600 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-eduhus-accent rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-600 rounded-full blur-2xl"></div>
       </div>
 

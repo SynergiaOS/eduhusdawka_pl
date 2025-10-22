@@ -45,7 +45,7 @@ export function Toast({ id, title, description, variant = "default", onDismiss }
               className={cn(
                 "h-5 w-5",
                 variant === "destructive" && "text-red-600",
-                variant === "success" && "text-green-600",
+                variant === "success" && "text-eduhus-accent",
                 variant === "default" && "text-eduhus-accent",
               )}
             />

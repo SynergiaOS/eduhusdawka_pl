@@ -97,7 +97,7 @@ export default function SMSQueueStats() {
         )
       case "completed":
         return (
-          <Badge variant="outline" className="bg-green-100 text-green-800">
+          <Badge variant="outline" className="bg-orange-50 text-eduhus-accent">
             Wysłano
           </Badge>
         )
@@ -141,8 +141,8 @@ export default function SMSQueueStats() {
               <div className="text-sm text-yellow-600">Oczekujące</div>
               <div className="text-2xl font-bold">{stats.pending}</div>
             </div>
-            <div className="bg-green-50 p-3 rounded-md">
-              <div className="text-sm text-green-600">Wysłane</div>
+            <div className="bg-orange-50 p-3 rounded-md">
+              <div className="text-sm text-eduhus-accent">Wysłane</div>
               <div className="text-2xl font-bold">{stats.completed}</div>
             </div>
             <div className="bg-red-50 p-3 rounded-md">

@@ -73,8 +73,8 @@ const AboutSection = memo(() => {
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                    <Users className="h-6 w-6 text-green-600" />
+                  <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center">
+                    <Users className="h-6 w-6 text-eduhus-accent" />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">500+</div>
