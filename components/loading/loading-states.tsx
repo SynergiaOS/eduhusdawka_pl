@@ -18,7 +18,7 @@ export function LoadingSpinner({ size = "md", className, text }: LoadingSpinnerP
 
   return (
     <div className={cn("flex flex-col items-center justify-center p-8", className)}>
-      <Loader2 className={cn("animate-spin text-teal-600", sizeClasses[size])} />
+      <Loader2 className={cn("animate-spin text-eduhus-accent", sizeClasses[size])} />
       {text && <p className="mt-2 text-sm text-gray-600">{text}</p>}
     </div>
   )
@@ -33,10 +33,10 @@ export function TherapyLoadingAnimation() {
             <Brain className="h-8 w-8 text-teal-500" />
           </div>
           <div className="animate-bounce" style={{ animationDelay: "150ms" }}>
-            <Hand className="h-8 w-8 text-teal-600" />
+            <Hand className="h-8 w-8 text-eduhus-accent" />
           </div>
           <div className="animate-bounce" style={{ animationDelay: "300ms" }}>
-            <Heart className="h-8 w-8 text-teal-700" />
+            <Heart className="h-8 w-8 text-eduhus-accent" />
           </div>
         </div>
         <p className="text-center mt-4 text-sm text-gray-600">Ładowanie...</p>

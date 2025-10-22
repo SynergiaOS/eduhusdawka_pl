@@ -30,7 +30,7 @@ export default function PrintableDirections() {
             Szczegółowe wskazówki dojazdu do gabinetu EDU HUSTAWKA, które można wydrukować lub pobrać jako PDF
           </DialogDescription>
           <DialogHeader>
-            <DialogTitle className="text-2xl font-heading text-teal-700">Wskazówki dojazdu</DialogTitle>
+            <DialogTitle className="text-2xl font-heading text-eduhus-accent">Wskazówki dojazdu</DialogTitle>
           </DialogHeader>
 
           <div className="printable-content space-y-6 my-4">
@@ -49,7 +49,7 @@ export default function PrintableDirections() {
                   />
                 </div>
                 <div>
-                  <h2 className="text-xl font-semibold text-teal-700">EDU HUSTAWKA</h2>
+                  <h2 className="text-xl font-semibold text-eduhus-accent">EDU HUSTAWKA</h2>
                   <p className="text-gray-600">Joanna Świrydowicz</p>
                 </div>
               </div>
@@ -63,18 +63,18 @@ export default function PrintableDirections() {
 
             <div className="bg-teal-50 p-4 rounded-lg">
               <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-teal-600 mt-1 mr-2 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-eduhus-accent mt-1 mr-2 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium text-teal-800">Adres gabinetu</h3>
-                  <p className="text-teal-700">
+                  <p className="text-eduhus-accent">
                     Polna 17
                     <br />
                     18-106 Pomigacze
                   </p>
-                  <p className="text-teal-700 text-sm mt-1">
+                  <p className="text-eduhus-accent text-sm mt-1">
                     <strong>GPS:</strong> {latitude}, {longitude}
                   </p>
-                  <p className="mt-2 text-sm text-teal-600">
+                  <p className="mt-2 text-sm text-eduhus-accent">
                     <strong>Uwaga:</strong> Gabinet znajduje się w domu prywatnym. Wejście od strony ogrodu, z prawej
                     strony budynku. Na bramie znajduje się tabliczka &ldquo;EDU HUSTAWKA&rdquo;.
                   </p>
@@ -83,11 +83,11 @@ export default function PrintableDirections() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-teal-700 mb-3">Jak do nas dojechać:</h3>
+              <h3 className="text-lg font-medium text-eduhus-accent mb-3">Jak do nas dojechać:</h3>
 
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <Car className="h-5 w-5 text-teal-600 mt-1 mr-3 flex-shrink-0" />
+                  <Car className="h-5 w-5 text-eduhus-accent mt-1 mr-3 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-800">Z Białegostoku</h4>
                     <p className="text-gray-600">
@@ -100,7 +100,7 @@ export default function PrintableDirections() {
                 </div>
 
                 <div className="flex items-start">
-                  <Bus className="h-5 w-5 text-teal-600 mt-1 mr-3 flex-shrink-0" />
+                  <Bus className="h-5 w-5 text-eduhus-accent mt-1 mr-3 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-gray-800">Komunikacją publiczną</h4>
                     <p className="text-gray-600">
@@ -114,7 +114,7 @@ export default function PrintableDirections() {
             </div>
 
             <div>
-              <h3 className="text-lg font-medium text-teal-700 mb-3">Charakterystyczne punkty:</h3>
+              <h3 className="text-lg font-medium text-eduhus-accent mb-3">Charakterystyczne punkty:</h3>
               <ul className="list-disc pl-5 text-gray-600 space-y-1">
                 <li>Biały dom z zielonym dachem i drewnianym płotem</li>
                 <li>Tabliczka &ldquo;EDU HUSTAWKA&rdquo; na bramie</li>
@@ -124,7 +124,7 @@ export default function PrintableDirections() {
             </div>
 
             <div className="flex items-start">
-              <Clock className="h-5 w-5 text-teal-600 mt-1 mr-3 flex-shrink-0" />
+              <Clock className="h-5 w-5 text-eduhus-accent mt-1 mr-3 flex-shrink-0" />
               <div>
                 <h4 className="font-medium text-gray-800">Godziny otwarcia</h4>
                 <ul className="text-gray-600">

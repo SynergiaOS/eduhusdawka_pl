@@ -9,14 +9,14 @@ export default function DirectionsInfo() {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md h-full mb-4">
-      <h3 className="text-xl font-semibold mb-4 text-teal-700 font-heading">Wskazówki dojazdu</h3>
+      <h3 className="text-xl font-semibold mb-4 text-eduhus-accent font-heading">Wskazówki dojazdu</h3>
 
       <div className="mb-4 p-3 bg-teal-50 rounded-lg border border-teal-100">
         <div className="flex items-start">
-          <Home className="h-5 w-5 text-teal-600 mt-1 mr-2 flex-shrink-0" />
+          <Home className="h-5 w-5 text-eduhus-accent mt-1 mr-2 flex-shrink-0" />
           <div>
             <h4 className="font-medium text-teal-800">Gabinet w domu prywatnym</h4>
-            <p className="text-sm text-teal-700">
+            <p className="text-sm text-eduhus-accent">
               Gabinet terapeutyczny znajduje się w moim domu prywatnym. Wejście znajduje się od strony ogrodu, z prawej
                             strony budynku. Na bramie znajduje się tabliczka &ldquo;EDU HUSTAWKA&rdquo;.
             </p>
@@ -26,7 +26,7 @@ export default function DirectionsInfo() {
 
       <div className="space-y-4">
         <div className="flex items-start">
-          <Car className="h-5 w-5 text-teal-600 mt-1 mr-3 flex-shrink-0" />
+          <Car className="h-5 w-5 text-eduhus-accent mt-1 mr-3 flex-shrink-0" />
           <div>
             <h4 className="font-medium text-gray-800">Z Białegostoku</h4>
             <p className="text-gray-600 text-sm">
@@ -38,7 +38,7 @@ export default function DirectionsInfo() {
           </div>
         </div>
         <div className="flex items-start">
-          <Bus className="h-5 w-5 text-teal-600 mt-1 mr-3 flex-shrink-0" />
+          <Bus className="h-5 w-5 text-eduhus-accent mt-1 mr-3 flex-shrink-0" />
           <div>
             <h4 className="font-medium text-gray-800">Komunikacją publiczną</h4>
             <p className="text-gray-600 text-sm">
@@ -49,7 +49,7 @@ export default function DirectionsInfo() {
           </div>
         </div>
         <div className="flex items-start">
-          <MapPin className="h-5 w-5 text-teal-600 mt-1 mr-3 flex-shrink-0" />
+          <MapPin className="h-5 w-5 text-eduhus-accent mt-1 mr-3 flex-shrink-0" />
           <div>
             <h4 className="font-medium text-gray-800">Parking</h4>
             <p className="text-gray-600 text-sm">
@@ -59,7 +59,7 @@ export default function DirectionsInfo() {
           </div>
         </div>
         <div className="flex items-start">
-          <MapPin className="h-5 w-5 text-teal-600 mt-1 mr-3 flex-shrink-0" />
+          <MapPin className="h-5 w-5 text-eduhus-accent mt-1 mr-3 flex-shrink-0" />
           <div>
             <h4 className="font-medium text-gray-800">Współrzędne GPS</h4>
             <p className="text-gray-600 text-sm">
@@ -81,7 +81,7 @@ export default function DirectionsInfo() {
           onClick={() =>
             window.open(`https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`, "_blank")
           }
-          className="bg-teal-600 hover:bg-teal-700 text-white py-2 px-4 rounded-lg flex items-center transition-colors"
+          className="bg-eduhus-accent hover:opacity-90 text-white py-2 px-4 rounded-lg flex items-center transition-colors"
         >
           <Navigation className="h-4 w-4 mr-2" />
           Nawiguj do gabinetu

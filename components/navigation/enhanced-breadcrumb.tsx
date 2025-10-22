@@ -63,9 +63,9 @@ const EnhancedBreadcrumb = React.forwardRef<HTMLElement, EnhancedBreadcrumbProps
                 <Link
                   href={item.href}
                   className={cn(
-                    "flex items-center gap-1 hover:text-teal-600 transition-colors duration-200",
+                    "flex items-center gap-1 hover:text-eduhus-accent transition-colors duration-200",
                     "focus-enhanced rounded px-1 py-0.5",
-                    index === 0 && "text-teal-600"
+                    index === 0 && "text-eduhus-accent"
                   )}
                 >
                   {item.icon}

@@ -55,7 +55,7 @@ export default function BlogPostModal({ post, isOpen, onClose }: BlogPostModalPr
         <div className="mt-6 pt-4 border-t border-gray-200">
           <div className="flex flex-wrap gap-2">
             {post.tags.map((tag, index) => (
-              <div key={index} className="flex items-center bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm">
+              <div key={index} className="flex items-center bg-teal-50 text-eduhus-accent px-3 py-1 rounded-full text-sm">
                 <Tag className="h-3 w-3 mr-1" />
                 {tag}
               </div>

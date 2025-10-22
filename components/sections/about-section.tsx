@@ -54,7 +54,7 @@ const AboutSection = memo(() => {
               <div className="grid grid-cols-2 gap-4 my-8">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
-                    <Award className="h-6 w-6 text-teal-600" />
+                    <Award className="h-6 w-6 text-eduhus-accent" />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800">15+ lat</div>
@@ -95,7 +95,7 @@ const AboutSection = memo(() => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  className="bg-teal-600 hover:bg-teal-700 text-white"
+                  className="bg-eduhus-accent hover:opacity-90 text-white"
                   onClick={() => (window.location.href = "tel:+48531509008")}
                 >
                   <Phone className="mr-2 h-4 w-4" />
@@ -103,7 +103,7 @@ const AboutSection = memo(() => {
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                  className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
                   onClick={() => (window.location.href = "/o-mnie")}
                 >
                   Dowiedz się więcej

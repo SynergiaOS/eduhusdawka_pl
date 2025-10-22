@@ -54,7 +54,7 @@ const services: Service[] = [
     price: "350 zł",
     description: "Indywidualna Stymulacja Słuchu",
     href: "/uslugi/indywidualna-stymulacja-sluchu-johansena",
-    color: "text-teal-600",
+    color: "text-eduhus-accent",
     bgColor: "bg-teal-50 hover:bg-teal-100"
   },
   {
@@ -142,7 +142,7 @@ export default function InteractiveServicesMap() {
             Nie wiesz, która usługa będzie najlepsza dla Twojego dziecka?
           </p>
           <Link href="/rezerwacja">
-            <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button className="bg-eduhus-accent hover:opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
               Umów bezpłatną konsultację
             </button>
           </Link>

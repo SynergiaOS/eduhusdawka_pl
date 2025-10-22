@@ -266,7 +266,7 @@ export default function PricingSection() {
                 key={category.id}
                 variant={activeFilter === category.id ? "default" : "outline"}
                 onClick={() => setActiveFilter(category.id)}
-                className={activeFilter === category.id ? "bg-teal-600 hover:bg-teal-700" : "text-gray-700"}
+                className={activeFilter === category.id ? "bg-eduhus-accent hover:opacity-90" : "text-gray-700"}
               >
                 {category.name}
               </Button>
@@ -279,7 +279,7 @@ export default function PricingSection() {
             <div className="min-w-[800px]">
               <table className="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
                 <thead>
-                  <tr className="bg-teal-600 text-white">
+                  <tr className="bg-eduhus-accent text-white">
                     <th className="px-6 py-4 text-left font-semibold">Kategoria usługi</th>
                     <th className="px-6 py-4 text-left font-semibold">Nazwa</th>
                     <th className="px-6 py-4 text-left font-semibold">Opis</th>
@@ -297,7 +297,7 @@ export default function PricingSection() {
                       )}
                     >
                       <td className="px-6 py-4">
-                        <div className="font-medium text-teal-700">{item.serviceName}</div>
+                        <div className="font-medium text-eduhus-accent">{item.serviceName}</div>
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap items-center gap-2">
@@ -318,7 +318,7 @@ export default function PricingSection() {
                         <div className="text-sm text-gray-600 max-w-xs">{item.description}</div>
                       </td>
                       <td className="px-6 py-4 text-right">
-                        <div className="font-bold text-lg text-teal-600">{item.price}</div>
+                        <div className="font-bold text-lg text-eduhus-accent">{item.price}</div>
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex flex-col sm:flex-row justify-center gap-2">
@@ -326,7 +326,7 @@ export default function PricingSection() {
                             <Button
                               variant="outline"
                               size="sm"
-                              className="text-teal-600 border-teal-600 hover:bg-teal-50 w-full sm:w-auto bg-transparent"
+                              className="text-eduhus-accent border-eduhus-accent hover:bg-teal-50 w-full sm:w-auto bg-transparent"
                             >
                               <Info className="h-4 w-4 mr-1" /> Szczegóły
                             </Button>
@@ -334,7 +334,7 @@ export default function PricingSection() {
                           <Button
                             onClick={() => handleBookNow(item.id, item.serviceName)}
                             size="sm"
-                            className="bg-teal-600 hover:bg-teal-700 text-white w-full sm:w-auto"
+                            className="bg-eduhus-accent hover:opacity-90 text-white w-full sm:w-auto"
                           >
                             Rezerwuj
                           </Button>
@@ -357,7 +357,7 @@ export default function PricingSection() {
           <div className="mt-12 text-center">
             <div className="bg-teal-50 rounded-lg p-6 mb-8">
               <h3 className="text-xl font-semibold text-teal-800 mb-4">Informacje dodatkowe</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-sm text-teal-700">
+              <div className="grid md:grid-cols-2 gap-4 text-sm text-eduhus-accent">
                 <div>
                   <strong>Pakiety:</strong> Wybierając pakiety sesji, oszczędzasz na pojedynczych wizytach
                 </div>
@@ -378,11 +378,11 @@ export default function PricingSection() {
               <Button
                 onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
                 variant="outline"
-                className="text-teal-600 border-teal-600 hover:bg-teal-50"
+                className="text-eduhus-accent border-eduhus-accent hover:bg-teal-50"
               >
                 Skontaktuj się ze mną
               </Button>
-              <Button onClick={() => router.push("/rezerwacja")} className="bg-teal-600 hover:bg-teal-700 text-white">
+              <Button onClick={() => router.push("/rezerwacja")} className="bg-eduhus-accent hover:opacity-90 text-white">
                 <ArrowRight className="h-4 w-4 mr-2" />
                 Zarezerwuj wizytę
               </Button>

@@ -69,14 +69,14 @@ export default function BlogSection() {
                     objectFit="cover"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-eduhus-accent text-white px-3 py-1 rounded-full text-xs font-medium">
                       {post.category}
                     </span>
                   </div>
                 </div>
 
                 <CardHeader>
-                  <CardTitle className="text-lg group-hover:text-teal-600 transition-colors">{post.title}</CardTitle>
+                  <CardTitle className="text-lg group-hover:text-eduhus-accent transition-colors">{post.title}</CardTitle>
                   <CardDescription className="text-gray-600 leading-relaxed">{post.excerpt}</CardDescription>
                 </CardHeader>
 
@@ -96,7 +96,7 @@ export default function BlogSection() {
 
                   <Button
                     variant="ghost"
-                    className="w-full justify-between text-teal-600 hover:text-teal-700 hover:bg-teal-50 p-0"
+                    className="w-full justify-between text-eduhus-accent hover:text-eduhus-accent hover:bg-teal-50 p-0"
                   >
                     Czytaj więcej
                     <ArrowRight className="h-4 w-4" />
@@ -109,7 +109,7 @@ export default function BlogSection() {
 
         <AnimatedSection delay={400}>
           <div className="text-center mt-12">
-            <Button variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent">
+            <Button variant="outline" className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent">
               Zobacz wszystkie artykuły
             </Button>
           </div>

@@ -1119,3 +1119,23 @@
 2025-10-22T18:57:47+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
 2025-10-22T18:57:47+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
 2025-10-22T18:57:47+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2025-10-22T18:58:20+02:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.360.sha.06bb49b (06bb49b) built at 2025-10-21T10:02:19Z
+2025-10-22T18:58:20+02:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/marcin/.cache/codacy/codacy-cli-v2/1.0.0-main.360.sha.06bb49b/codacy-cli-v2 analyze /home/marcin/windsurf/Projects/asia/eduhusdawka_pl/app/globals.css --format sarif] args=[/home/marcin/windsurf/Projects/asia/eduhusdawka_pl/app/globals.css]
+2025-10-22T18:59:39+02:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.360.sha.06bb49b (06bb49b) built at 2025-10-21T10:02:19Z
+2025-10-22T18:59:39+02:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/marcin/.cache/codacy/codacy-cli-v2/1.0.0-main.360.sha.06bb49b/codacy-cli-v2 analyze /home/marcin/windsurf/Projects/asia/eduhusdawka_pl/components/mobile/mobile-optimizations.tsx --format sarif] args=[/home/marcin/windsurf/Projects/asia/eduhusdawka_pl/components/mobile/mobile-optimizations.tsx]
+2025-10-22T18:59:39+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=semgrep
+2025-10-22T18:59:57+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2025-10-22T18:59:57+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2025-10-22T18:59:57+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard
+2025-10-22T19:00:13+02:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.360.sha.06bb49b (06bb49b) built at 2025-10-21T10:02:19Z
+2025-10-22T19:00:13+02:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/marcin/.cache/codacy/codacy-cli-v2/1.0.0-main.360.sha.06bb49b/codacy-cli-v2 analyze /home/marcin/windsurf/Projects/asia/eduhusdawka_pl/components/mobile/mobile-optimizations.tsx --format sarif] args=[/home/marcin/windsurf/Projects/asia/eduhusdawka_pl/components/mobile/mobile-optimizations.tsx]
+2025-10-22T19:00:13+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2025-10-22T19:00:13+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=lizard toolConfigPath=.codacy/tools-configs/lizard.yaml
+2025-10-22T19:00:13+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool toolConfigPath=.codacy/tools-configs/semgrep.yaml tool=semgrep
+2025-10-22T19:00:26+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2025-10-22T19:01:56+02:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.360.sha.06bb49b (06bb49b) built at 2025-10-21T10:02:19Z
+2025-10-22T19:01:56+02:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/marcin/.cache/codacy/codacy-cli-v2/1.0.0-main.360.sha.06bb49b/codacy-cli-v2 analyze components/mobile/mobile-optimizations.tsx --format sarif] args=[components/mobile/mobile-optimizations.tsx] command=analyze
+2025-10-22T19:01:56+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=semgrep toolConfigPath=.codacy/tools-configs/semgrep.yaml
+2025-10-22T19:02:09+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2025-10-22T19:02:09+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool tool=eslint toolConfigPath=.codacy/tools-configs/eslint.config.mjs
+2025-10-22T19:02:10+02:00 [INFO] (codacy-cli-v2/cmd/analyze.go:341) Config file found for tool toolConfigPath=.codacy/tools-configs/lizard.yaml tool=lizard

@@ -10,21 +10,21 @@ const enhancedButtonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "bg-gradient-to-r from-teal-600 to-teal-700 text-white",
-          "hover:from-teal-700 hover:to-teal-800",
-          "active:from-teal-800 active:to-teal-900",
+          "bg-gradient-to-r from-eduhus-accent to-eduhus-accent text-white",
+          "hover:from-eduhus-accent hover:to-eduhus-accent",
+          "active:from-eduhus-accent active:to-eduhus-accent",
           "shadow-lg hover:shadow-xl active:shadow-md",
-          "contrast-more:from-teal-700 contrast-more:to-teal-800 contrast-more:text-white",
+          "contrast-more:from-eduhus-accent contrast-more:to-eduhus-accent contrast-more:text-white",
           "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/25 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
         ],
         secondary: [
-          "bg-gradient-to-r from-emerald-600 to-emerald-700 text-white",
-          "hover:from-emerald-700 hover:to-emerald-800",
-          "active:from-emerald-800 active:to-emerald-900",
+          "bg-gradient-to-r from-eduhus-accent to-eduhus-accent text-white",
+          "hover:from-eduhus-accent hover:to-eduhus-accent",
+          "active:from-eduhus-accent active:to-eduhus-accent",
           "shadow-lg hover:shadow-xl active:shadow-md",
-          "contrast-more:from-emerald-700 contrast-more:to-emerald-800 contrast-more:text-white",
+          "contrast-more:from-eduhus-accent contrast-more:to-eduhus-accent contrast-more:text-white",
           "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/25 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
@@ -40,7 +40,7 @@ const enhancedButtonVariants = cva(
           "hover:before:translate-x-[100%]"
         ],
         ghost: [
-          "text-teal-700 hover:bg-teal-50",
+          "text-eduhus-accent hover:bg-teal-50",
           "contrast-more:text-teal-900",
           "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-teal-100/30 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",

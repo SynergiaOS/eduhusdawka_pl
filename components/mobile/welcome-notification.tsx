@@ -42,7 +42,7 @@ export default function WelcomeNotification() {
       "fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-96 z-50 transition-all duration-300",
       isClosing ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
     )}>
-      <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white p-6 rounded-xl shadow-2xl border border-teal-400">
+      <div className="bg-gradient-to-r from-eduhus-accent to-eduhus-accent text-white p-6 rounded-xl shadow-2xl border border-teal-400">
         <button
           onClick={handleClose}
           className="absolute top-2 right-2 text-white/80 hover:text-white transition-colors"
@@ -68,7 +68,7 @@ export default function WelcomeNotification() {
             <div className="flex flex-col sm:flex-row gap-2">
               <button
                 onClick={handleCallClick}
-                className="bg-white text-teal-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 text-sm"
+                className="bg-white text-eduhus-accent px-4 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 text-sm"
               >
                 <Phone className="w-4 h-4" />
                 Zadzwoń: 531 509 008

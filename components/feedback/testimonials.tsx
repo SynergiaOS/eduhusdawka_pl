@@ -98,7 +98,7 @@ export default function Testimonials({ testimonials }: { testimonials: Testimoni
               }}
               className={cn(
                 "w-2.5 h-2.5 rounded-full transition-all duration-300",
-                index === currentIndex ? "bg-teal-600 w-6" : "bg-gray-300 hover:bg-gray-400",
+                index === currentIndex ? "bg-eduhus-accent w-6" : "bg-gray-300 hover:bg-gray-400",
               )}
               aria-label={`Go to testimonial ${index + 1}`}
             />

@@ -46,7 +46,7 @@ export function Toast({ id, title, description, variant = "default", onDismiss }
                 "h-5 w-5",
                 variant === "destructive" && "text-red-600",
                 variant === "success" && "text-green-600",
-                variant === "default" && "text-teal-600",
+                variant === "default" && "text-eduhus-accent",
               )}
             />
           </div>

@@ -116,7 +116,7 @@ const GoogleMap = memo(({
           className="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors"
           aria-label="Pokaż informacje"
         >
-          <Info className="h-5 w-5 text-teal-600" />
+          <Info className="h-5 w-5 text-eduhus-accent" />
         </button>
         {showNavigationButton && (
           <>
@@ -125,14 +125,14 @@ const GoogleMap = memo(({
               className="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors"
               aria-label="Nawiguj do lokalizacji"
             >
-              <Navigation className="h-5 w-5 text-teal-600" />
+              <Navigation className="h-5 w-5 text-eduhus-accent" />
             </button>
             <button
               onClick={handleShowAddress}
               className="bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors"
               aria-label="Pokaż adres"
             >
-              <MapPin className="h-5 w-5 text-teal-600" />
+              <MapPin className="h-5 w-5 text-eduhus-accent" />
             </button>
           </>
         )}
@@ -142,7 +142,7 @@ const GoogleMap = memo(({
       {showInfoWindow && (
         <div className="absolute top-4 left-4 right-4 bg-white rounded-lg shadow-lg p-4 max-w-xs mx-auto">
           <div className="flex justify-between items-start mb-2">
-            <h4 className="font-semibold text-teal-700">{locationName}</h4>
+            <h4 className="font-semibold text-eduhus-accent">{locationName}</h4>
             <button onClick={toggleInfoWindow} className="text-gray-500 hover:text-gray-700" aria-label="Zamknij">
               <X className="h-4 w-4" />
             </button>
@@ -157,7 +157,7 @@ const GoogleMap = memo(({
               GPS: {latitude}, {longitude}
             </p>
             {locationInfo?.isHomeOffice && (
-              <p className="bg-teal-50 p-2 rounded text-teal-700 text-xs font-medium border-l-2 border-teal-500">
+              <p className="bg-teal-50 p-2 rounded text-eduhus-accent text-xs font-medium border-l-2 border-teal-500">
                 Gabinet znajduje się w domu prywatnym. Prosimy o dyskrecję i punktualność.
               </p>
             )}
@@ -167,7 +167,7 @@ const GoogleMap = memo(({
             <div className="flex space-x-2 pt-2">
               <button
                 onClick={handleNavigate}
-                className="bg-teal-600 hover:bg-teal-700 text-white text-xs py-1 px-3 rounded flex items-center"
+                className="bg-eduhus-accent hover:opacity-90 text-white text-xs py-1 px-3 rounded flex items-center"
               >
                 <Navigation className="h-3 w-3 mr-1" /> Nawiguj
               </button>

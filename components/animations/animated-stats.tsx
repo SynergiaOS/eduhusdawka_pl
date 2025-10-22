@@ -64,7 +64,7 @@ const StatItem = memo(({ icon, value, label, suffix = "", duration = 2000 }: Sta
           {icon}
         </div>
       </div>
-      <div className="text-3xl font-bold text-teal-600 mb-2">
+      <div className="text-3xl font-bold text-eduhus-accent mb-2">
         {count}{suffix}
       </div>
       <div className="text-gray-600 font-medium">
@@ -79,25 +79,25 @@ StatItem.displayName = 'StatItem'
 const AnimatedStats = memo(() => {
   const stats = useMemo(() => [
     {
-      icon: <Users className="w-8 h-8 text-teal-600" />,
+      icon: <Users className="w-8 h-8 text-eduhus-accent" />,
       value: 500,
       label: "Zadowolonych rodzin",
       suffix: "+"
     },
     {
-      icon: <Clock className="w-8 h-8 text-teal-600" />,
+      icon: <Clock className="w-8 h-8 text-eduhus-accent" />,
       value: 15,
       label: "Lat doświadczenia",
       suffix: "+"
     },
     {
-      icon: <Star className="w-8 h-8 text-teal-600" />,
+      icon: <Star className="w-8 h-8 text-eduhus-accent" />,
       value: 98,
       label: "Zadowolenia klientów",
       suffix: "%"
     },
     {
-      icon: <Award className="w-8 h-8 text-teal-600" />,
+      icon: <Award className="w-8 h-8 text-eduhus-accent" />,
       value: 8,
       label: "Rodzajów terapii"
     }

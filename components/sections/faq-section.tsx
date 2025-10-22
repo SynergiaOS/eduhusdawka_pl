@@ -76,9 +76,9 @@ const FaqSection = memo(() => {
                   <div className="flex justify-between items-center">
                     <h3 className="text-lg font-semibold text-gray-800 pr-4">{item.question}</h3>
                     {openItems.includes(item.id) ? (
-                      <ChevronUp className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                      <ChevronUp className="h-5 w-5 text-eduhus-accent flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                      <ChevronDown className="h-5 w-5 text-eduhus-accent flex-shrink-0" />
                     )}
                   </div>
 
@@ -97,19 +97,19 @@ const FaqSection = memo(() => {
           <div className="text-center mt-12">
             <div className="bg-teal-50 rounded-lg p-8">
               <h3 className="text-xl font-semibold mb-4 text-teal-800">Nie znalazłeś odpowiedzi na swoje pytanie?</h3>
-              <p className="text-teal-700 mb-6">
+              <p className="text-eduhus-accent mb-6">
                 Skontaktuj się ze mną bezpośrednio - chętnie odpowiem na wszystkie wątpliwości
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={() => (window.location.href = "tel:+48531509008")}
-                  className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                  className="bg-eduhus-accent hover:opacity-90 text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
                   Zadzwoń: 531 509 008
                 </button>
                 <button
                   onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-                  className="border border-teal-600 text-teal-600 hover:bg-teal-50 px-6 py-3 rounded-lg font-medium transition-colors bg-transparent"
+                  className="border border-eduhus-accent text-eduhus-accent hover:bg-teal-50 px-6 py-3 rounded-lg font-medium transition-colors bg-transparent"
                 >
                   Napisz wiadomość
                 </button>

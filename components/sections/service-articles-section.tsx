@@ -80,7 +80,7 @@ export default function ServiceArticlesSection() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute top-4 left-4">
-                        <div className="bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2">
+                        <div className="bg-eduhus-accent text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2">
                           {article.icon}
                           {article.category}
                         </div>
@@ -94,7 +94,7 @@ export default function ServiceArticlesSection() {
                         {article.readTime} czytania
                       </div>
 
-                      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
+                      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-eduhus-accent transition-colors line-clamp-2">
                         {article.title}
                       </h3>
 
@@ -102,7 +102,7 @@ export default function ServiceArticlesSection() {
                         {article.excerpt}
                       </p>
 
-                      <div className="flex items-center text-teal-600 font-medium group-hover:text-teal-700 transition-colors">
+                      <div className="flex items-center text-eduhus-accent font-medium group-hover:text-eduhus-accent transition-colors">
                         Czytaj więcej
                         <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                       </div>
@@ -120,7 +120,7 @@ export default function ServiceArticlesSection() {
                 Masz pytania o rozwój swojego dziecka?
               </p>
               <Link href="/rezerwacja">
-                <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+                <button className="bg-eduhus-accent hover:opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
                   Umów bezpłatną konsultację
                 </button>
               </Link>

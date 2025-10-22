@@ -106,7 +106,7 @@ const UnifiedImage = React.memo<UnifiedImageProps>(({
           }}
         >
           {loadingFallback || (
-            <div className="w-6 h-6 border-2 border-teal-600 border-t-transparent rounded-full animate-spin" />
+            <div className="w-6 h-6 border-2 border-eduhus-accent border-t-transparent rounded-full animate-spin" />
           )}
         </div>
       )}

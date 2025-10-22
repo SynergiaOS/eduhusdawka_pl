@@ -38,7 +38,7 @@ export default function RecommendedServices({ limit = 3, showPreferencesButton =
               <h3 className="text-lg font-semibold mb-2">{service.name}</h3>
               <p className="text-gray-600 text-sm mb-4 line-clamp-2">{service.description}</p>
               <div className="flex justify-between items-center">
-                <span className="text-teal-600 font-medium">{service.price} zł</span>
+                <span className="text-eduhus-accent font-medium">{service.price} zł</span>
                 <Link href={`/uslugi/${service.id}`}>
                   <Button variant="outline" size="sm">
                     Więcej informacji
@@ -55,7 +55,7 @@ export default function RecommendedServices({ limit = 3, showPreferencesButton =
           <Button
             variant="outline"
             onClick={() => setShowPreferences(true)}
-            className="text-teal-600 border-teal-600 hover:bg-teal-50"
+            className="text-eduhus-accent border-eduhus-accent hover:bg-teal-50"
           >
             Dostosuj rekomendacje
           </Button>

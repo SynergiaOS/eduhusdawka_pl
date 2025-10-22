@@ -71,7 +71,7 @@ export default function DevelopmentTimeline() {
     <section className="py-20 px-4 bg-gradient-to-br from-teal-50 via-white to-teal-50 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-teal-600 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-eduhus-accent rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-green-600 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-600 rounded-full blur-2xl"></div>
       </div>
@@ -80,8 +80,8 @@ export default function DevelopmentTimeline() {
         <AnimatedSection>
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 bg-teal-100 px-6 py-3 rounded-full mb-6">
-              <TreePine className="w-6 h-6 text-teal-600" />
-              <span className="text-teal-700 font-semibold">Drzewo Wsparcia</span>
+              <TreePine className="w-6 h-6 text-eduhus-accent" />
+              <span className="text-eduhus-accent font-semibold">Drzewo Wsparcia</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Wsparcie na każdym etapie rozwoju
@@ -195,13 +195,13 @@ export default function DevelopmentTimeline() {
         <AnimatedSection delay={800}>
           <div className="text-center mt-20">
             <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
-              <TreePine className="w-12 h-12 text-teal-600 mx-auto mb-4" />
+              <TreePine className="w-12 h-12 text-eduhus-accent mx-auto mb-4" />
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Każde dziecko rozwija się w swoim tempie, jak drzewo które potrzebuje odpowiedniej pory na każdy etap wzrostu.
                 Skontaktuj się z nami, aby omówić indywidualne potrzeby Twojego dziecka.
               </p>
               <a href="tel:+48531509008">
-                <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                <button className="bg-eduhus-accent hover:opacity-90 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                   Umów konsultację: 531 509 008
                 </button>
               </a>

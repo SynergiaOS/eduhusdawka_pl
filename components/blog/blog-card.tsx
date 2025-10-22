@@ -36,7 +36,7 @@ export default function BlogCard({ post, onReadMore }: BlogCardProps) {
       <CardFooter className="pt-0">
         <Button
           variant="outline"
-          className="text-teal-600 border-teal-600 hover:bg-teal-50 w-full"
+          className="text-eduhus-accent border-eduhus-accent hover:bg-teal-50 w-full"
           onClick={() => onReadMore(post)}
         >
           Czytaj więcej

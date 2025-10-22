@@ -65,7 +65,7 @@ export default function CookieBanner() {
                     type="checkbox"
                     checked={consents.analytics}
                     onChange={(e) => setConsent("analytics", e.target.checked)}
-                    className="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded"
+                    className="h-4 w-4 text-eduhus-accent focus:ring-teal-500 border-gray-300 rounded"
                   />
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function CookieBanner() {
                     type="checkbox"
                     checked={consents.marketing}
                     onChange={(e) => setConsent("marketing", e.target.checked)}
-                    className="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded"
+                    className="h-4 w-4 text-eduhus-accent focus:ring-teal-500 border-gray-300 rounded"
                   />
                 </div>
               </div>
@@ -90,11 +90,11 @@ export default function CookieBanner() {
               <div className="text-xs text-gray-500 mt-2">
                 <p>
                   Więcej informacji znajdziesz w naszej{" "}
-                  <Link href="/polityka-prywatnosci" className="text-teal-600 hover:underline">
+                  <Link href="/polityka-prywatnosci" className="text-eduhus-accent hover:underline">
                     Polityce Prywatności
                   </Link>{" "}
                   oraz{" "}
-                  <Link href="/polityka-cookies" className="text-teal-600 hover:underline">
+                  <Link href="/polityka-cookies" className="text-eduhus-accent hover:underline">
                     Polityce Cookies
                   </Link>
                   .
@@ -123,7 +123,7 @@ export default function CookieBanner() {
                 setConsent("marketing", false)
                 saveConsents()
               }}
-              className="text-teal-600 border-teal-600"
+              className="text-eduhus-accent border-eduhus-accent"
             >
               Analityczne
             </Button>
@@ -133,7 +133,7 @@ export default function CookieBanner() {
                 setAllConsents(true)
                 saveConsents()
               }}
-              className="bg-teal-600 hover:bg-teal-700 text-white"
+              className="bg-eduhus-accent hover:opacity-90 text-white"
             >
               Akceptuj wszystkie
             </Button>

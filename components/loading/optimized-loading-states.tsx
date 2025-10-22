@@ -157,7 +157,7 @@ export const OptimizedSpinner = memo<{
   return (
     <div
       className={cn(
-        "border-teal-600 border-t-transparent rounded-full animate-spin",
+        "border-eduhus-accent border-t-transparent rounded-full animate-spin",
         sizeClasses[size],
         className
       )}

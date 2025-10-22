@@ -18,12 +18,12 @@ export default function SimpleContactSection() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
-                <Phone className="h-8 w-8 text-teal-600" />
+                <Phone className="h-8 w-8 text-eduhus-accent" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Zadzwoń</h3>
               <p className="text-gray-600 mb-4">Porozmawiajmy o potrzebach Twojego dziecka</p>
               <Button
-                className="bg-teal-600 hover:bg-teal-700 text-white"
+                className="bg-eduhus-accent hover:opacity-90 text-white"
                 onClick={() => (window.location.href = "tel:+48531509008")}
               >
                 531 509 008
@@ -32,13 +32,13 @@ export default function SimpleContactSection() {
 
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
-                <Mail className="h-8 w-8 text-teal-600" />
+                <Mail className="h-8 w-8 text-eduhus-accent" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Napisz</h3>
               <p className="text-gray-600 mb-4">Wypełnij formularz kontaktowy</p>
               <Button
                 variant="outline"
-                className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
                 onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Formularz
@@ -47,12 +47,12 @@ export default function SimpleContactSection() {
 
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
-                <MapPin className="h-8 w-8 text-teal-600" />
+                <MapPin className="h-8 w-8 text-eduhus-accent" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Odwiedź</h3>
               <p className="text-gray-600 mb-4">Umów się na wizytę w gabinecie</p>
               <Link href="/kontakt">
-                <Button variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent">
+                <Button variant="outline" className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent">
                   Lokalizacja
                 </Button>
               </Link>
@@ -61,7 +61,7 @@ export default function SimpleContactSection() {
 
           <div className="bg-teal-50 rounded-lg p-8">
             <div className="flex items-center justify-center mb-4">
-              <Clock className="h-6 w-6 text-teal-600 mr-2" />
+              <Clock className="h-6 w-6 text-eduhus-accent mr-2" />
               <h3 className="text-lg font-semibold text-gray-900">Godziny pracy</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-4 text-gray-600">

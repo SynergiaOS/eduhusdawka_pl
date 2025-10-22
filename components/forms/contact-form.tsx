@@ -110,7 +110,7 @@ const ContactForm = memo(() => {
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <info.icon className="h-6 w-6 text-teal-600" />
+                    <info.icon className="h-6 w-6 text-eduhus-accent" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">{info.title}</h4>
@@ -127,9 +127,9 @@ const ContactForm = memo(() => {
 
             <div className="mt-8 p-6 text-teal-50 rounded-lg">
               <h4 className="font-semibold text-teal-800 mb-2">Szybki kontakt</h4>
-              <p className="text-teal-700 text-sm mb-4">Potrzebujesz pilnej konsultacji? Zadzwoń bezpośrednio!</p>
+              <p className="text-eduhus-accent text-sm mb-4">Potrzebujesz pilnej konsultacji? Zadzwoń bezpośrednio!</p>
               <Button
-                className="w-full bg-teal-600 hover:bg-teal-700 text-white"
+                className="w-full bg-eduhus-accent hover:opacity-90 text-white"
                 onClick={() => {
                   trackEvent("call_click", "CTA", "contact_form");
                   window.location.href = "tel:+48531509008";
@@ -230,7 +230,7 @@ const ContactForm = memo(() => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-teal-600 hover:bg-teal-700 text-white py-3"
+                className="w-full bg-eduhus-accent hover:opacity-90 text-white py-3"
               >
                 {isSubmitting ? (
                   <div className="flex items-center">

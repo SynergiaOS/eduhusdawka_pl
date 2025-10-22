@@ -94,7 +94,7 @@ const TestimonialsSection = memo(() => {
                 <div className="border-t border-gray-200 pt-6">
                   <div className="font-semibold text-gray-800 text-lg">{currentTestimonial.name}</div>
                   <div className="text-gray-600 mb-2">{currentTestimonial.role}</div>
-                  <div className="inline-block bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm">
+                  <div className="inline-block bg-teal-100 text-eduhus-accent px-3 py-1 rounded-full text-sm">
                     {currentTestimonial.service}
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const TestimonialsSection = memo(() => {
                   variant="outline"
                   size="sm"
                   onClick={prevTestimonial}
-                  className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                  className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
                   aria-label="Poprzednia opinia"
                 >
                   <ChevronLeft className="h-4 w-4" />
@@ -118,7 +118,7 @@ const TestimonialsSection = memo(() => {
                       key={index}
                       onClick={() => setCurrentIndex(index)}
                       className={`w-3 h-3 rounded-full transition-colors ${
-                        index === currentIndex ? "bg-teal-600" : "bg-gray-300"
+                        index === currentIndex ? "bg-eduhus-accent" : "bg-gray-300"
                       }`}
                       aria-label={`Przejdź do opinii ${index + 1}`}
                       aria-current={index === currentIndex ? "true" : "false"}
@@ -130,7 +130,7 @@ const TestimonialsSection = memo(() => {
                   variant="outline"
                   size="sm"
                   onClick={nextTestimonial}
-                  className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                  className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
                   aria-label="Następna opinia"
                 >
                   <ChevronRight className="h-4 w-4" />
@@ -143,15 +143,15 @@ const TestimonialsSection = memo(() => {
           <AnimatedSection delay={400}>
             <div className="grid grid-cols-3 gap-8 mt-12 text-center">
               <div>
-                <div className="text-3xl font-bold text-teal-600 mb-2">500+</div>
+                <div className="text-3xl font-bold text-eduhus-accent mb-2">500+</div>
                 <div className="text-gray-600">Zadowolonych rodzin</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-teal-600 mb-2">15+</div>
+                <div className="text-3xl font-bold text-eduhus-accent mb-2">15+</div>
                 <div className="text-gray-600">Lat doświadczenia</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-teal-600 mb-2">98%</div>
+                <div className="text-3xl font-bold text-eduhus-accent mb-2">98%</div>
                 <div className="text-gray-600">Pozytywnych opinii</div>
               </div>
             </div>
