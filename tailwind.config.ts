@@ -82,7 +82,19 @@ const config = {
         "eduhus-text-main": "#444444", // tekst główny
         "eduhus-text-light": "#888888", // tekst jasny
         // Action Colors
-        "eduhus-accent": "#F4A261", // CTA przyciski - pomarańczowy
+        "eduhus-accent": {
+          50: "#FEF3E7",
+          100: "#FCDFC0",
+          200: "#FAC89A",
+          300: "#F8B173",
+          400: "#F6A96A",
+          500: "#F4A261",
+          600: "#E88A45",
+          700: "#D67230",
+          800: "#B35A1F",
+          900: "#8A4416",
+          DEFAULT: "#F4A261",
+        },
         "eduhus-secondary": "#2E86AB", // turkus - secondary akcent
         "eduhus-tertiary": "#1ebaf1", // cyan - subtelny akcent
         // Icon Colors (Service-specific)

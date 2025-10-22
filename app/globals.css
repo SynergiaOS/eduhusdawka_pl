@@ -36,14 +36,11 @@
     --brand-blue-dark: 197 69% 50%;
     --brand-yellow: 45 94% 64%;
     --brand-orange: 38 88% 54%;
-    --eduhus-primary: 206 67% 95%;
     --eduhus-accent: 27 87% 61%;
     --eduhus-secondary: 197 58% 43%;
     --eduhus-text: 210 29% 24%;
     --eduhus-background: 210 17% 98%;
-    --eduhus-yellow: #fed102;
     --eduhus-cyan: #1ebaf1;
-    --eduhus-light-cyan: #a4efeb;
     --eduhus-white: #ffffff;
     --eduhus-accent-cta: #F4A261;
   }
@@ -84,7 +81,7 @@
   h1,
   h2 {
     font-family: var(--font-playfair);
-    @apply text-blue-800 dark:text-blue-300;
+    @apply text-eduhus-accent dark:text-eduhus-accent;
   }
 
   h1 {
