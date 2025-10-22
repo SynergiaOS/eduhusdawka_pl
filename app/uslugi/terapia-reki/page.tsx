@@ -6,9 +6,9 @@ import { Hand, Paintbrush, CheckCircle, Star, Target, Users, Puzzle } from "luci
 import UnifiedImage from "@/components/media/unified-image"
 
 export const metadata: Metadata = {
-  title: "Terapia Ręki - 120 zł gabinet, 150 zł dojazd | EduHustawka",
-  description: "Profesjonalna terapia ręki w Pomigaczach. 120 zł (gabinet), 150 zł (dojazd). Rozwój motoryki małej, grafomotoryki i umiejętności pisania u dzieci.",
-  keywords: "terapia ręki, motoryka mała, grafomotoryka, pisanie, Pomigacze, 120 zł",
+  title: "Terapia Ręki - 120 zł | EduHustawka",
+  description: "Profesjonalna terapia ręki w Pomigaczach. Sesja 120 zł. Rozwój motoryki małej, grafomotoryki i umiejętności pisania u dzieci.",
+  keywords: "terapia ręki, motoryka mała, grafomotoryka, pisanie, Pomigacze",
 }
 
 export default function TerapiaRekiPage() {

@@ -20,33 +20,33 @@ export default function RezerwacjaPage() {
     },
     {
       name: "Terapia Pedagogiczna",
-      price: "120 zł / 150 zł",
+      price: "120 zł",
       duration: "50 min",
-      description: "Wsparcie w nauce i rozwoju (gabinet/dojazd)"
+      description: "Wsparcie w nauce i rozwoju"
     },
     {
       name: "Terapia Ręki",
-      price: "120 zł / 150 zł",
+      price: "120 zł",
       duration: "50 min",
-      description: "Rozwój motoryki małej (gabinet/dojazd)"
+      description: "Rozwój motoryki małej"
     },
     {
       name: "Wczesna Nauka Czytania",
-      price: "120 zł / 150 zł",
+      price: "120 zł",
       duration: "50 min",
-      description: "Metoda symultaniczno-sekwencyjna (gabinet/dojazd)"
+      description: "Metoda symultaniczno-sekwencyjna"
     },
     {
       name: "Czytanie Sylabowe",
-      price: "120 zł / 150 zł",
+      price: "120 zł",
       duration: "50 min",
-      description: "Nauka czytania metodą sylabową (gabinet/dojazd)"
+      description: "Nauka czytania metodą sylabową"
     },
     {
       name: "Czytanie z Forbrain",
-      price: "150 zł / 180 zł",
+      price: "150 zł",
       duration: "50 min",
-      description: "Nauka czytania z Forbrain (gabinet/dojazd)"
+      description: "Nauka czytania z Forbrain"
     },
     {
       name: "KORP - Badanie",
@@ -61,16 +61,16 @@ export default function RezerwacjaPage() {
       description: "Diagnoza przed treningiem słuchowym"
     },
     {
-      name: "IAS Johansena - Dojazd",
+      name: "IAS Johansena",
       price: "300 zł",
       duration: "50 min",
-      description: "Trening słuchowy w domu ucznia"
+      description: "Trening słuchowy"
     },
     {
-      name: "Neuroflow - Dojazd",
-      price: "300 zł",
+      name: "Neuroflow",
+      price: "350 zł",
       duration: "50 min",
-      description: "Trening Neuroflow w domu ucznia"
+      description: "Trening Neuroflow"
     }
   ]
 
