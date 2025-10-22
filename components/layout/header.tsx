@@ -54,10 +54,10 @@ function Header() {
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-lg lg:text-xl font-bold text-eduhus-accent">
+              <h1 className="text-base lg:text-lg font-bold text-eduhus-accent">
                 EduHustawka
               </h1>
-              <p className="text-xs text-eduhus-accent -mt-1">Wsparcie w rozwoju dziecka</p>
+              <p className="text-xs text-eduhus-accent -mt-1 font-medium">Wsparcie w rozwoju dziecka</p>
             </div>
           </Link>
 
