@@ -66,9 +66,9 @@ export default function NeuroflowPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-gray-900">
               Dla kogo przeznaczony jest Aktywny Trening Słuchowy?
             </h2>
-            <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-cyan-600">
+            <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-eduhus-icon-neuroflow">
               <div className="flex items-start gap-4">
-                <CheckCircle className="w-8 h-8 text-cyan-600 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-8 h-8 text-eduhus-icon-neuroflow flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Dla dzieci z zaburzeniami przetwarzania słuchowego (APD)</h3>
                   <p className="text-gray-600 text-lg leading-relaxed mb-4">
@@ -77,28 +77,28 @@ export default function NeuroflowPage() {
                   </p>
                   <div className="bg-cyan-50 p-6 rounded-lg mt-6">
                     <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                      <Volume2 className="w-5 h-5 text-cyan-600" />
+                      <Volume2 className="w-5 h-5 text-eduhus-icon-neuroflow" />
                       Program wspiera:
                     </h4>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-cyan-600 rounded-full"></div>
+                        <div className="w-2 h-2 bg-eduhus-icon-neuroflow rounded-full"></div>
                         Lokalizację źródła dźwięku w przestrzeni
                       </li>
                       <li className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-cyan-600 rounded-full"></div>
+                        <div className="w-2 h-2 bg-eduhus-icon-neuroflow rounded-full"></div>
                         Dyskryminację (rozróżnianie) różnych dźwięków
                       </li>
                       <li className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-cyan-600 rounded-full"></div>
+                        <div className="w-2 h-2 bg-eduhus-icon-neuroflow rounded-full"></div>
                         Sekwencjonowanie dźwięków (rozumienie kolejności)
                       </li>
                       <li className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-cyan-600 rounded-full"></div>
+                        <div className="w-2 h-2 bg-eduhus-icon-neuroflow rounded-full"></div>
                         Figurę-tło (wyodrębnianie ważnych dźwięków)
                       </li>
                       <li className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-cyan-600 rounded-full"></div>
+                        <div className="w-2 h-2 bg-eduhus-icon-neuroflow rounded-full"></div>
                         Integrację słuchowo-motoryczną
                       </li>
                     </ul>

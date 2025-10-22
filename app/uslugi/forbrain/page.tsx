@@ -66,7 +66,7 @@ export default function ForbrainPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest Forbrain?
             </h2>
-            <div className="bg-orange-50 p-8 rounded-2xl mb-8">
+            <div className="bg-blue-50 p-8 rounded-2xl mb-8">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Słuchawki Forbrain służą do treningu słuchowo-głosowego. Mają na celu poprawić percepcję 
                 naszego własnego głosu, co z kolei pomaga mózgowi w lepszym przetwarzaniu informacji zmysłowych. 
@@ -85,8 +85,8 @@ export default function ForbrainPage() {
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mic className="w-8 h-8 text-eduhus-accent" />
+                <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Mic className="w-8 h-8 text-eduhus-icon-forbrain" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Nagrywanie</h3>
                 <p className="text-gray-600">
@@ -95,8 +95,8 @@ export default function ForbrainPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-eduhus-accent" />
+                <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-icon-forbrain" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Filtrowanie</h3>
                 <p className="text-gray-600">
@@ -126,25 +126,25 @@ export default function ForbrainPage() {
 
             <div className="grid md:grid-cols-1 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-purple-700 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-eduhus-icon-forbrain mb-4 flex items-center">
                   <Target className="w-6 h-6 mr-2" />
                   Trudności, z którymi pomaga
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-forbrain mr-2 mt-0.5 flex-shrink-0" />
                     <span>Trudności w uczeniu się</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-forbrain mr-2 mt-0.5 flex-shrink-0" />
                     <span>Problemy z przetwarzaniem słuchowym</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-forbrain mr-2 mt-0.5 flex-shrink-0" />
                     <span>Zaburzenia komunikacji</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-forbrain mr-2 mt-0.5 flex-shrink-0" />
                     <span>Problemy z uwagą i zapamiętywaniem</span>
                   </li>
                 </ul>

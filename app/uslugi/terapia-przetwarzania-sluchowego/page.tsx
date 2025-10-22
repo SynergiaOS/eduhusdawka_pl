@@ -88,9 +88,9 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
               Cechy programu mTalent
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-accent-600">
-                <h3 className="text-lg font-semibold text-eduhus-accent mb-4 flex items-center">
+                        <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-icon-hearing">
+                <h3 className="text-lg font-semibold text-eduhus-icon-hearing mb-4 flex items-center">
                   <CheckCircle className="w-6 h-6 mr-2" />
                   700+ interaktywnych ekranów
                 </h3>
@@ -111,10 +111,10 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-accent-600">
-                <h3 className="text-lg font-semibold text-eduhus-accent mb-4 flex items-center">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-icon-hearing">
+                <h3 className="text-lg font-semibold text-eduhus-icon-hearing mb-4 flex items-center">
                   <CheckCircle className="w-6 h-6 mr-2" />
-                  Angażująca forma zabawy
+                  Angająca forma zabawy
                 </h3>
                 <p className="text-gray-700">
                   Gry i ćwiczenia są prezentowane w atrakcyjnej, motywującej formie, co sprzyja zaangażowaniu 
@@ -144,38 +144,38 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
             </h2>
             
             <div className="grid md:grid-cols-1 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-accent-600">
-                <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-icon-hearing">
+                <h3 className="text-xl font-semibold text-eduhus-icon-hearing mb-4 flex items-center">
                   <Target className="w-6 h-6 mr-2" />
                   Wskazania do terapii
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Zaburzenia przetwarzania słuchowego (Auditory Processing Disorder)</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Trudności w rozumieniu mowy, szczególnie w hałaśliwym środowisku</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Opóźniony rozwój mowy i zaburzenia komunikacyjne</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Problemy z percepcją i dyskryminacją dźwięków</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Trudności w lokalizacji źródła dźwięku</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">ADHD i problemy z koncentracją (związane z percepcją słuchową)</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Zaburzenia memorii słuchowej</span>
                   </li>
                   <li className="flex items-start">
@@ -244,16 +244,16 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
         </AnimatedSection>
 
         {/* Efekty */}
-        <AnimatedSection className="py-16 px-4 bg-eduhus-accent-50" delay={600}>
+        <AnimatedSection className="py-16 px-4 bg-teal-50" delay={600}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
               Efekty terapii
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent-600">
-                <div className="w-16 h-16 bg-eduhus-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Volume2 className="w-8 h-8 text-eduhus-accent" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
+                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Volume2 className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa percepcji słuchowej</h3>
                 <p className="text-gray-600">
@@ -261,9 +261,9 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-cyan-600">
-                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-cyan-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
+                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Lepsza pamięć słuchowa</h3>
                 <p className="text-gray-600">
@@ -271,9 +271,9 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-purple-600">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-8 h-8 text-purple-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
+                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa uwagi i koncentracji</h3>
                 <p className="text-gray-600">
@@ -281,9 +281,9 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Headphones className="w-8 h-8 text-eduhus-accent" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
+                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Headphones className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa rozumienia mowy</h3>
                 <p className="text-gray-600">
@@ -291,9 +291,9 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-pink-600">
-                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-pink-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
+                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa nauki czytania</h3>
                 <p className="text-gray-600">
@@ -301,9 +301,9 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-orange-600">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-orange-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
+                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Wsparcie rozwoju mowy</h3>
                 <p className="text-gray-600">

@@ -49,9 +49,9 @@ export default function DiagnosisPage() {
               </div>
 
               <div className="relative">
-                <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-2xl shadow-lg">
+                <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl shadow-lg">
                   <div className="aspect-video bg-gray-900 rounded-xl flex items-center justify-center">
-                    <Zap className="w-20 h-20 text-purple-400 opacity-50" />
+                    <Zap className="w-20 h-20 text-eduhus-icon-adhd opacity-50" />
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function DiagnosisPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-gray-900">
               Czym jest ADHD?
             </h2>
-            <div className="bg-purple-50 p-8 rounded-xl shadow-md border-l-4 border-purple-600">
+            <div className="bg-red-50 p-8 rounded-xl shadow-md border-l-4 border-eduhus-icon-adhd">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 ADHD (Attention Deficit/Hyperactivity Disorder) - zaburzenie deficytu uwagi z nadpobudliwością to neurobihawioralny 
                 problem rozwojowy, który dotyka około 5-7% populacji dzieci i młodzieży. Charakteryzuje się trudnościami w koncentracji, 
@@ -73,15 +73,15 @@ export default function DiagnosisPage() {
               </p>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white p-4 rounded-lg">
-                  <h3 className="font-bold text-purple-700 mb-2">Nieuwaga</h3>
+                  <h3 className="font-bold text-eduhus-icon-adhd mb-2">Nieuwaga</h3>
                   <p className="text-sm text-gray-700">Trudności w skupianiu uwagi, łatwa rozpraszalność, problemy z organizacją</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
-                  <h3 className="font-bold text-purple-700 mb-2">Nadpobudliwość</h3>
+                  <h3 className="font-bold text-eduhus-icon-adhd mb-2">Nadpobudliwość</h3>
                   <p className="text-sm text-gray-700">Bezustanne ruchy, trudności w pozostaniu w bezruchu, niecierpliwość</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
-                  <h3 className="font-bold text-purple-700 mb-2">Impulsywność</h3>
+                  <h3 className="font-bold text-eduhus-icon-adhd mb-2">Impulsywność</h3>
                   <p className="text-sm text-gray-700">Podejmowanie decyzji bez zastanowienia, przerywanie, trudności z czekaniem</p>
                 </div>
               </div>

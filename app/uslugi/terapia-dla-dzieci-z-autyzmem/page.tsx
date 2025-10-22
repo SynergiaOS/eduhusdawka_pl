@@ -26,17 +26,17 @@ export default function TerapiaDzieciZAutyzmemPage() {
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
                     <div className="bg-orange-50 p-4 rounded-full w-fit">
-                      <Heart className="h-12 w-12 text-eduhus-accent" />
+                      <Heart className="h-12 w-12 text-eduhus-icon-autism" />
                     </div>
                     <div>
                       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight">
-                        Terapia dla dzieci z <span className="text-eduhus-accent">autyzmem</span>
+                        Terapia dla dzieci z <span className="text-eduhus-icon-autism">autyzmem</span>
                       </h1>
-                      <p className="text-lg sm:text-xl text-eduhus-accent font-medium">Indywidualne podejście do rozwoju Twojego dziecka</p>
+                      <p className="text-lg sm:text-xl text-eduhus-icon-autism font-medium">Indywidualne podejście do rozwoju Twojego dziecka</p>
                     </div>
                   </div>
 
-                  <blockquote className="text-base sm:text-lg italic text-gray-700 border-l-4 border-eduhus-accent pl-4 mb-8 leading-relaxed">
+                  <blockquote className="text-base sm:text-lg italic text-gray-700 border-l-4 border-eduhus-icon-autism pl-4 mb-8 leading-relaxed">
                     &ldquo;Każde dziecko z autyzmem ma unikalny potencjał. Naszym celem jest odkrycie i rozwinięcie tego potencjału w bezpiecznym i wspierającym środowisku.&rdquo;
                   </blockquote>
 
@@ -91,12 +91,12 @@ export default function TerapiaDzieciZAutyzmemPage() {
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-12">
                 <div className="bg-orange-50 border border-orange-200 p-4 rounded-lg mb-6">
                   <div className="flex items-start">
-                    <Heart className="h-6 w-6 text-eduhus-accent mr-3 flex-shrink-0 mt-0.5" />
+                    <Heart className="h-6 w-6 text-eduhus-icon-autism mr-3 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-semibold text-eduhus-accent mb-2">
+                      <h3 className="font-semibold text-eduhus-icon-autism mb-2">
                         Autyzm to nie ograniczenie, to inny sposób postrzegania świata
                       </h3>
-                      <p className="text-eduhus-accent text-sm">
+                      <p className="text-eduhus-icon-autism text-sm">
                         Dzieci z autyzmem potrzebują specjalistycznego podejścia, które uwzględnia ich unikalne potrzeby i potencjał.
                       </p>
                     </div>

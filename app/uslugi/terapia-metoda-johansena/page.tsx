@@ -89,38 +89,38 @@ export default function TerapiaMetodaJohansenPage() {
             </h2>
             
             <div className="grid md:grid-cols-1 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-600">
-                <h3 className="text-xl font-semibold text-purple-700 mb-4 flex items-center">
+                          <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-icon-johansen">
+                <h3 className="text-xl font-semibold text-eduhus-icon-johansen mb-4 flex items-center">
                   <Target className="w-6 h-6 mr-2" />
                   Wskazania do terapii
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Opóźniony rozwój mowy i komunikacji</span>
+                    <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Opoźniony rozwój mowy i komunikacji</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Problemy z przetwarzaniem słuchowym</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Zaburzenia integracji sensorycznej</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Autyzm i zaburzenia ze spektrum</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">ADHD i problemy z koncentracją</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Zaburzenia motoryki i koordynacji</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-purple-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Zaburzenia emocjonalne i behawioralne</span>
                   </li>
                 </ul>
@@ -138,8 +138,8 @@ export default function TerapiaMetodaJohansenPage() {
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MessageCircle className="w-8 h-8 text-eduhus-icon-johansen" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Mowa i komunikacja</h3>
                 <p className="text-gray-600">
@@ -189,7 +189,7 @@ export default function TerapiaMetodaJohansenPage() {
             
             <div className="space-y-4">
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div className="w-12 h-12 bg-eduhus-icon-johansen text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Ocena i diagnoza</h3>
                   <p className="text-gray-600">Przeprowadzenie szczegółowej obserwacji i oceny poziomu funkcjonowania dziecka</p>
@@ -197,7 +197,7 @@ export default function TerapiaMetodaJohansenPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div className="w-12 h-12 bg-eduhus-icon-johansen text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Stymulacja słuchowa</h3>
                   <p className="text-gray-600">Zastosowanie specjalistycznych sekwencji dźwiękowych w zabawie i ćwiczeniach</p>
