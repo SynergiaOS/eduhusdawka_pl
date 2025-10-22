@@ -22,13 +22,13 @@ export default function ProblemowyKoncentracjaPage() {
         <AnimatedSection className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full mb-6">
-                <Brain className="w-5 h-5 text-blue-600" />
-                <span className="text-blue-700 font-medium">Terapia pedagogiczna</span>
+              <div className="inline-flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full mb-6">
+                <Brain className="w-5 h-5 text-eduhus-accent" />
+                <span className="text-eduhus-accent font-medium">Terapia pedagogiczna</span>
               </div>
               
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Jak rozpoznać <span className="text-blue-600">problemy z koncentracją?</span>
+                Jak rozpoznać <span className="text-eduhus-accent">problemy z koncentracją?</span>
               </h1>
               
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -80,8 +80,8 @@ export default function ProblemowyKoncentracjaPage() {
 
                 <div className="grid md:grid-cols-2 gap-8">
                   {/* Normal behaviors */}
-                  <div className="bg-green-50 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center gap-2">
+                  <div className="bg-orange-50 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-eduhus-accent mb-4 flex items-center gap-2">
                       <CheckCircle className="w-6 h-6" />
                       Normalne zachowania
                     </h3>
@@ -93,7 +93,7 @@ export default function ProblemowyKoncentracjaPage() {
                         "Większa uwaga przy ulubionych zajęciach",
                         "Czasowe zapominanie instrukcji"
                       ].map((item, index) => (
-                        <li key={index} className="flex items-start gap-2 text-green-700">
+                        <li key={index} className="flex items-start gap-2 text-eduhus-accent">
                           <CheckCircle className="w-4 h-4 mt-1 flex-shrink-0" />
                           <span className="text-sm">{item}</span>
                         </li>
@@ -132,15 +132,15 @@ export default function ProblemowyKoncentracjaPage() {
                 </h2>
 
                 <div className="space-y-6">
-                  <div className="border-l-4 border-blue-500 pl-6 py-4 bg-blue-50 rounded-r-lg">
-                    <h3 className="text-xl font-semibold text-blue-700 mb-2">3-4 lata</h3>
+                  <div className="border-l-4 border-eduhus-accent pl-6 py-4 bg-orange-50 rounded-r-lg">
+                    <h3 className="text-xl font-semibold text-eduhus-accent mb-2">3-4 lata</h3>
                     <p className="text-gray-700">
                       Koncentracja: 3-5 minut na zadaniu. Normalne jest częste przechodzenie między aktywnościami.
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-teal-500 pl-6 py-4 bg-teal-50 rounded-r-lg">
-                    <h3 className="text-xl font-semibold text-teal-700 mb-2">5-6 lat</h3>
+                  <div className="border-l-4 border-eduhus-accent-500 pl-6 py-4 bg-eduhus-accent-50 rounded-r-lg">
+                    <h3 className="text-xl font-semibold text-eduhus-accent mb-2">5-6 lat</h3>
                     <p className="text-gray-700">
                       Koncentracja: 10-15 minut. Dziecko powinno móc słuchać prostych instrukcji i je wykonywać.
                     </p>
@@ -158,7 +158,7 @@ export default function ProblemowyKoncentracjaPage() {
               {/* How therapy helps */}
               <div className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                  <Target className="w-8 h-8 text-teal-600" />
+                  <Target className="w-8 h-8 text-eduhus-accent" />
                   Jak pomaga terapia pedagogiczna?
                 </h2>
 
@@ -171,8 +171,8 @@ export default function ProblemowyKoncentracjaPage() {
                     "Budowanie motywacji do nauki",
                     "Wsparcie w wykonywaniu zadań domowych"
                   ].map((benefit, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-teal-50 rounded-lg">
-                      <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
+                    <div key={index} className="flex items-start gap-3 p-4 bg-eduhus-accent-50 rounded-lg">
+                      <CheckCircle className="w-5 h-5 text-eduhus-accent-500 mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700">{benefit}</span>
                     </div>
                   ))}
@@ -187,41 +187,41 @@ export default function ProblemowyKoncentracjaPage() {
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">1</div>
+                    <div className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">1</div>
                     <p className="text-gray-700"><strong>Stwórz spokojne miejsce do nauki</strong> - bez rozpraszających elementów</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">2</div>
+                    <div className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">2</div>
                     <p className="text-gray-700"><strong>Podziel zadania na mniejsze części</strong> - łatwiej je ukończyć</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">3</div>
+                    <div className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">3</div>
                     <p className="text-gray-700"><strong>Używaj timerów</strong> - pomogą w organizacji czasu</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">4</div>
+                    <div className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">4</div>
                     <p className="text-gray-700"><strong>Chwal za wysiłek</strong> - nie tylko za wyniki</p>
                   </div>
                 </div>
               </div>
 
               {/* CTA */}
-              <div className="bg-blue-50 rounded-xl p-8 text-center">
-                <h3 className="text-2xl font-bold text-blue-700 mb-4">
+              <div className="bg-orange-50 rounded-xl p-8 text-center">
+                <h3 className="text-2xl font-bold text-eduhus-accent mb-4">
                   Martwisz się o koncentrację swojego dziecka?
                 </h3>
-                <p className="text-blue-600 mb-6 max-w-2xl mx-auto">
+                <p className="text-eduhus-accent mb-6 max-w-2xl mx-auto">
                   Umów się na bezpłatną konsultację. Wspólnie ocenimy sytuację i zaplanujemy 
                   odpowiednie wsparcie dla Twojego dziecka.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a href="tel:+48531509008">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+                    <button className="bg-eduhus-accent hover:opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
                       Zadzwoń: 531 509 008
                     </button>
                   </a>
                   <Link href="/uslugi/terapia-pedagogiczna">
-                    <button className="bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <button className="bg-white text-eduhus-accent border-2 border-eduhus-accent hover:bg-orange-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2">
                       Dowiedz się więcej o terapii
                       <ArrowRight className="w-4 h-4" />
                     </button>

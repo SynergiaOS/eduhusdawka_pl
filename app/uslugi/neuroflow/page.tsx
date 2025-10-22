@@ -23,14 +23,14 @@ export default function NeuroflowPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-                  <div className="bg-cyan-100 p-4 rounded-full w-fit">
-                    <Headphones className="h-12 w-12 text-cyan-600" />
+                  <div className="bg-cyan-50 p-4 rounded-full w-fit">
+                    <Headphones className="h-12 w-12 text-eduhus-icon-neuroflow" />
                   </div>
                   <div>
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight">
-                      Aktywny Trening Słuchowy <span className="text-cyan-600 block sm:inline">NEUROFLOW</span>
+                      Aktywny Trening Słuchowy <span className="text-eduhus-icon-neuroflow block sm:inline">NEUROFLOW</span>
                     </h1>
-                    <p className="text-lg sm:text-xl text-cyan-600 font-medium">Nowoczesna terapia wspierająca rozwój słuchu i zdolności poznawczych</p>
+                    <p className="text-lg sm:text-xl text-eduhus-icon-neuroflow font-medium">Nowoczesna terapia wspierająca rozwój słuchu i zdolności poznawczych</p>
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
@@ -38,13 +38,13 @@ export default function NeuroflowPage() {
                   Program wspiera rozwój słuchu, mowy i zdolności poznawczych dziecka.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
-                  <div className="flex items-center gap-2 bg-cyan-100 px-4 py-2 rounded-full">
-                    <Wifi className="w-5 h-5 text-cyan-600" />
-                    <span className="text-cyan-700 font-medium">Terapia online</span>
+                  <div className="flex items-center gap-2 bg-cyan-50 px-4 py-2 rounded-full">
+                    <Wifi className="w-5 h-5 text-eduhus-icon-neuroflow" />
+                    <span className="text-eduhus-icon-neuroflow font-medium">Terapia online</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-green-700 font-medium">Indywidualny program</span>
+                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent font-medium">Indywidualny program</span>
                   </div>
                 </div>
               </div>
@@ -128,12 +128,12 @@ export default function NeuroflowPage() {
                 <h3 className="font-bold text-yellow-700 mb-2">Opóźnienie mowy</h3>
                 <p className="text-gray-600 text-sm">Wolniejszy rozwój umiejętności mówienia niż rówieśnicy</p>
               </div>
-              <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
-                <h3 className="font-bold text-green-700 mb-2">Trudności w czytaniu i pisaniu</h3>
+              <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
+                <h3 className="font-bold text-eduhus-accent mb-2">Trudności w czytaniu i pisaniu</h3>
                 <p className="text-gray-600 text-sm">Problemy fonologiczne, błędy w zamienianiu głosek</p>
               </div>
-              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                <h3 className="font-bold text-blue-700 mb-2">Niska tolerancja na hałas</h3>
+              <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
+                <h3 className="font-bold text-eduhus-accent mb-2">Niska tolerancja na hałas</h3>
                 <p className="text-gray-600 text-sm">Wrażliwość na głośne dźwięki, nieprzyjemne uczucie w uszu</p>
               </div>
               <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
@@ -210,7 +210,7 @@ export default function NeuroflowPage() {
                     <span className="text-3xl font-bold">2</span>
                   </div>
                 </div>
-                <div className="flex-1 bg-green-50 p-6 rounded-xl">
+                <div className="flex-1 bg-orange-50 p-6 rounded-xl">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Faza główna - Intensywny trening (8-12 tygodni)</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Systematyczne ćwiczenia 3 razy w tygodniu po 20-25 minut. Stopniowe podwyższanie poziomu trudności. 
@@ -233,8 +233,8 @@ export default function NeuroflowPage() {
                 </div>
               </div>
 
-              <div className="mt-8 bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600">
-                <h4 className="font-bold text-blue-900 mb-3 flex items-center gap-2">
+              <div className="mt-8 bg-orange-50 p-6 rounded-xl border-l-4 border-eduhus-accent">
+                <h4 className="font-bold text-eduhus-accent mb-3 flex items-center gap-2">
                   <AlertCircle className="w-5 h-5" />
                   Typowy przebieg:
                 </h4>
@@ -278,9 +278,9 @@ export default function NeuroflowPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Brain className="w-6 h-6 text-blue-600" />
+              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-eduhus-accent">
+                <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center mb-4">
+                  <Brain className="w-6 h-6 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Rozwój poznawczy</h3>
                 <ul className="space-y-2 text-gray-700 text-sm">
@@ -291,9 +291,9 @@ export default function NeuroflowPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-500">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                  <CheckCircle className="w-6 h-6 text-green-600" />
+              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-eduhus-accent">
+                <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center mb-4">
+                  <CheckCircle className="w-6 h-6 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Rozwój mowy i szkoły</h3>
                 <ul className="space-y-2 text-gray-700 text-sm">
@@ -321,7 +321,7 @@ export default function NeuroflowPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-gray-900">
               Wymagania techniczne
             </h2>
-            <div className="bg-blue-50 p-8 rounded-xl border-l-4 border-blue-600">
+            <div className="bg-orange-50 p-8 rounded-xl border-l-4 border-eduhus-accent">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 NEUROFLOW to terapia całkowicie online, realizowana z dowolnego miejsca. 
                 Wymagania techniczne są minimalne:
@@ -329,7 +329,7 @@ export default function NeuroflowPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <Wifi className="w-5 h-5 text-blue-600" />
+                    <Wifi className="w-5 h-5 text-eduhus-accent" />
                     Sprzęt:
                   </h3>
                   <ul className="space-y-2 text-gray-700">
@@ -379,11 +379,11 @@ export default function NeuroflowPage() {
                   </div>
                   <div className="flex justify-between items-center pb-3 border-b border-cyan-300">
                     <span className="text-gray-700">Pakiet 5 sesji</span>
-                    <span className="text-3xl font-bold text-green-600">350 zł*</span>
+                    <span className="text-3xl font-bold text-eduhus-accent">350 zł*</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-700">Pakiet 10 sesji</span>
-                    <span className="text-3xl font-bold text-green-600">470 zł*</span>
+                    <span className="text-3xl font-bold text-eduhus-accent">470 zł*</span>
                   </div>
                   <p className="text-sm text-gray-600 mt-4">
                     * Za sesję w pakiecie
@@ -391,16 +391,16 @@ export default function NeuroflowPage() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl shadow-md border-2 border-green-600">
-                <h3 className="text-2xl font-bold text-green-700 mb-6">Pakiet terapeutyczny</h3>
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl shadow-md border-2 border-eduhus-accent">
+                <h3 className="text-2xl font-bold text-eduhus-accent mb-6">Pakiet terapeutyczny</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center pb-3 border-b border-green-300">
                     <span className="text-gray-700">Program podstawowy (24 sesje)</span>
-                    <span className="text-3xl font-bold text-green-600">460 zł*</span>
+                    <span className="text-3xl font-bold text-eduhus-accent">460 zł*</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-700">Program intensywny (36 sesji)</span>
-                    <span className="text-3xl font-bold text-green-600">450 zł*</span>
+                    <span className="text-3xl font-bold text-eduhus-accent">450 zł*</span>
                   </div>
                   <p className="text-sm text-gray-600 mt-4">
                     * Za sesję w pakiecie - zalecane dla osiągnięcia optymalnych rezultatów

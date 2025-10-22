@@ -23,12 +23,12 @@ export default function WczesnaNaukaCzytaniaPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <BookOpen className="h-12 w-12 text-green-600" />
+                  <BookOpen className="h-12 w-12 text-eduhus-accent" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Wczesna Nauka Czytania
                     </h1>
-                    <p className="text-xl text-green-600">Wsparcie rozwoju umiejętności czytania</p>
+                    <p className="text-xl text-eduhus-accent">Wsparcie rozwoju umiejętności czytania</p>
                   </div>
                 </div>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -36,9 +36,9 @@ export default function WczesnaNaukaCzytaniaPage() {
                   w wieku przedszkolnym i wczesnoszkolnym. Indywidualne podejście do każdego dziecka.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-green-700">Metody sprawdzone</span>
+                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent">Metody sprawdzone</span>
                   </div>
                   <div className="flex items-center gap-2 bg-emerald-100 px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-emerald-600" />
@@ -65,7 +65,7 @@ export default function WczesnaNaukaCzytaniaPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest wczesna nauka czytania?
             </h2>
-            <div className="bg-green-50 p-8 rounded-2xl mb-8">
+            <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl mb-8">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Wczesna nauka czytania to specjalistyczne zajęcia wspierające rozwój umiejętności czytania
                 u dzieci w wieku przedszkolnym i wczesnoszkolnym. Wykorzystujemy różnorodne metody dostosowane
@@ -84,8 +84,8 @@ export default function WczesnaNaukaCzytaniaPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Eye className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Rozpoznawanie</h3>
                 <p className="text-gray-600">
@@ -104,8 +104,8 @@ export default function WczesnaNaukaCzytaniaPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Rozumienie</h3>
                 <p className="text-gray-600">
@@ -124,7 +124,7 @@ export default function WczesnaNaukaCzytaniaPage() {
             </h2>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-green-700 mb-6 flex items-center">
+              <h3 className="text-xl font-semibold text-eduhus-accent mb-6 flex items-center">
                 <Target className="w-6 h-6 mr-2" />
                 Zajęcia są przeznaczone dla dzieci, które:
               </h3>

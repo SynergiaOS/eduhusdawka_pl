@@ -18,7 +18,7 @@ export default function CookiePolicyPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
             <div className="p-6 md:p-8">
-              <h1 className="text-2xl md:text-3xl font-bold text-teal-800 mb-6 font-heading">Polityka Cookies</h1>
+              <h1 className="text-2xl md:text-3xl font-bold text-eduhus-accent-800 mb-6 font-heading">Polityka Cookies</h1>
 
               <div className="prose prose-teal max-w-none">
                 <p>Ostatnia aktualizacja: 25 kwietnia 2024</p>
@@ -102,7 +102,7 @@ export default function CookiePolicyPage() {
                       href="https://support.google.com/chrome/answer/95647?hl=pl"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline"
+                      className="text-eduhus-accent hover:underline"
                     >
                       Google Chrome
                     </a>
@@ -112,7 +112,7 @@ export default function CookiePolicyPage() {
                       href="https://support.mozilla.org/pl/kb/ciasteczka"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline"
+                      className="text-eduhus-accent hover:underline"
                     >
                       Mozilla Firefox
                     </a>
@@ -122,7 +122,7 @@ export default function CookiePolicyPage() {
                       href="https://support.microsoft.com/pl-pl/microsoft-edge/usuwanie-plik%C3%B3w-cookie-w-przegl%C4%85darce-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline"
+                      className="text-eduhus-accent hover:underline"
                     >
                       Microsoft Edge
                     </a>
@@ -132,7 +132,7 @@ export default function CookiePolicyPage() {
                       href="https://support.apple.com/pl-pl/guide/safari/sfri11471/mac"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline"
+                      className="text-eduhus-accent hover:underline"
                     >
                       Safari
                     </a>
@@ -161,7 +161,7 @@ export default function CookiePolicyPage() {
                     href="https://policies.google.com/privacy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-teal-600 hover:underline"
+                    className="text-eduhus-accent hover:underline"
                   >
                     stronie polityki prywatności Google
                   </a>
@@ -183,7 +183,7 @@ export default function CookiePolicyPage() {
 
                 <div className="mt-8 flex justify-center">
                   <Link href="/">
-                    <Button className="bg-teal-600 hover:bg-teal-700 text-white">Powrót do strony głównej</Button>
+                    <Button className="bg-eduhus-accent hover:opacity-90 text-white">Powrót do strony głównej</Button>
                   </Link>
                 </div>
               </div>

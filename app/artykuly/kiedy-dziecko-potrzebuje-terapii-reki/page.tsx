@@ -112,15 +112,15 @@ export default function KiedyDzieckoTerapiaRekiPage() {
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-blue-500 pl-6 py-4">
-                    <h3 className="text-xl font-semibold text-blue-700 mb-2">5-6 lat</h3>
+                  <div className="border-l-4 border-eduhus-accent pl-6 py-4">
+                    <h3 className="text-xl font-semibold text-eduhus-accent mb-2">5-6 lat</h3>
                     <p className="text-gray-700">
                       Prawidłowy chwyt kredki, rysowanie kształtów, wycinanie nożyczkami po linii
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-green-500 pl-6 py-4">
-                    <h3 className="text-xl font-semibold text-green-700 mb-2">7+ lat</h3>
+                  <div className="border-l-4 border-eduhus-accent pl-6 py-4">
+                    <h3 className="text-xl font-semibold text-eduhus-accent mb-2">7+ lat</h3>
                     <p className="text-gray-700">
                       Płynne pisanie, precyzyjne ruchy, wykonywanie złożonych zadań manualnych
                     </p>
@@ -143,8 +143,8 @@ export default function KiedyDzieckoTerapiaRekiPage() {
                     "Przygotowanie do zadań szkolnych",
                     "Rozwój koordynacji wzrokowo-ruchowej"
                   ].map((benefit, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
-                      <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <div key={index} className="flex items-start gap-3 p-4 bg-orange-50 rounded-lg">
+                      <CheckCircle className="w-5 h-5 text-eduhus-accent mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700">{benefit}</span>
                     </div>
                   ))}

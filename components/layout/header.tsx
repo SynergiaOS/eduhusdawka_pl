@@ -48,13 +48,13 @@ function Header() {
               <UnifiedImage
                 src="/1.png"
                 alt="EduHustawka Logo"
-                width={48}
-                height={48}
-                className="w-10 h-10 lg:w-12 lg:h-12 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                width={56}
+                height={56}
+                className="w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-base lg:text-lg font-bold text-eduhus-accent">
+              <h1 className="text-lg lg:text-2xl font-black text-eduhus-accent">
                 EduHustawka
               </h1>
               <p className="text-xs text-eduhus-accent -mt-1 font-medium">Wsparcie w rozwoju dziecka</p>

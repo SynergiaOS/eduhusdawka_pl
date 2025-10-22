@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
             <div className="p-6 md:p-8">
-              <h1 className="text-2xl md:text-3xl font-bold text-teal-800 mb-6 font-heading">Polityka Prywatności</h1>
+              <h1 className="text-2xl md:text-3xl font-bold text-eduhus-accent-800 mb-6 font-heading">Polityka Prywatności</h1>
 
               <div className="prose prose-teal max-w-none">
                 <p>Ostatnia aktualizacja: 25 kwietnia 2024</p>

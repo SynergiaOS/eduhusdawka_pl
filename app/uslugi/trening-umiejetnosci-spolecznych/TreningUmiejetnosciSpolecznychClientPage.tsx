@@ -20,12 +20,12 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
             <AnimatedSection>
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <Users className="h-10 w-10 text-blue-600" />
+                  <Users className="h-10 w-10 text-eduhus-accent" />
                   <div>
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
                       Trening Umiejętności Społecznych
                     </h1>
-                    <p className="text-xl text-blue-600">TUS - Zajęcia wspierające rozwój Twojego dziecka</p>
+                    <p className="text-xl text-eduhus-accent">TUS - Zajęcia wspierające rozwój Twojego dziecka</p>
                   </div>
                 </div>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -36,7 +36,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     size="lg"
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4"
+                    className="bg-eduhus-accent hover:opacity-90 text-white px-8 py-4"
                     onClick={() => (window.location.href = "tel:+48531509008")}
                   >
                     <Phone className="mr-2 h-5 w-5" />
@@ -45,7 +45,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 bg-transparent"
+                    className="border-eduhus-accent text-eduhus-accent hover:bg-orange-50 px-8 py-4 bg-transparent"
                     onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
@@ -80,7 +80,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
 
           <div className="max-w-4xl mx-auto">
             <AnimatedSection delay={200}>
-              <div className="bg-blue-50 rounded-2xl p-8 mb-12">
+              <div className="bg-orange-50 rounded-2xl p-8 mb-12">
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Trening Umiejętności Społecznych to program zajęć grupowych, który pomaga dzieciom i młodzieży w
                   rozwijaniu kompetencji społecznych, emocjonalnych i komunikacyjnych. Zajęcia odbywają się w małych
@@ -93,7 +93,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
               <AnimatedSection delay={300}>
                 <Card className="h-full">
                   <CardHeader>
-                    <CardTitle className="text-blue-700 flex items-center">
+                    <CardTitle className="text-eduhus-accent flex items-center">
                       <Heart className="h-6 w-6 mr-2" />
                       Zajęcia pomagają w:
                     </CardTitle>
@@ -101,23 +101,23 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                   <CardContent>
                     <ul className="space-y-3">
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>inicjowaniu i podtrzymywaniu relacji z rówieśnikami</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>lepszym rozumieniu emocji – własnych i innych osób</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>regulacji emocji, radzeniu sobie ze stresem</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>opanowaniu zachowań niepożądanych</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>budowaniu pewności siebie</span>
                       </li>
                     </ul>
@@ -174,8 +174,8 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
           <div className="max-w-4xl mx-auto">
             <AnimatedSection delay={200}>
               <Card className="mb-8">
-                <CardHeader className="bg-blue-50">
-                  <CardTitle className="text-blue-700 flex items-center">
+                <CardHeader className="bg-orange-50">
+                  <CardTitle className="text-eduhus-accent flex items-center">
                     <Brain className="h-6 w-6 mr-2" />
                     TUS jest szczególnie pomocny dla dzieci:
                   </CardTitle>
@@ -184,37 +184,37 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <ul className="space-y-3">
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>z zespołem Aspergera i autyzmem</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>z ADHD i problemami z koncentracją</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>nieśmiałych i wycofanych</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>z problemami w nawiązywaniu kontaktów</span>
                       </li>
                     </ul>
                     <ul className="space-y-3">
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>z trudnościami w regulacji emocji</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>z problemami behawioralnymi</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>z niską samooceną</span>
                       </li>
                       <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-eduhus-accent mr-3 mt-0.5 flex-shrink-0" />
                         <span>przygotowujących się do szkoły</span>
                       </li>
                     </ul>
@@ -224,12 +224,12 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={300}>
-              <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="bg-orange-50 p-6 rounded-lg">
                 <div className="flex items-center mb-4">
-                  <Users className="h-6 w-6 text-blue-600 mr-2" />
-                  <h3 className="text-lg font-semibold text-blue-800">Grupy</h3>
+                  <Users className="h-6 w-6 text-eduhus-accent mr-2" />
+                  <h3 className="text-lg font-semibold text-eduhus-accent">Grupy</h3>
                 </div>
-                <p className="text-blue-700">
+                <p className="text-eduhus-accent">
                   Kameralne grupy do 8 osób, dobrane na podstawie indywidualnej konsultacji. Uczestnicy są dobierani pod
                   względem wieku, poziomu rozwoju i specyficznych potrzeb.
                 </p>
@@ -250,8 +250,8 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <AnimatedSection delay={200}>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-eduhus-accent" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Integracja</h3>
                   <p className="text-gray-600">
@@ -262,8 +262,8 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
 
               <AnimatedSection delay={300}>
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Brain className="w-8 h-8 text-green-600" />
+                  <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Brain className="w-8 h-8 text-eduhus-accent" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Ćwiczenia</h3>
                   <p className="text-gray-600">
@@ -299,7 +299,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
             <AnimatedSection delay={200}>
               <Card className="text-center h-full">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl">🎭</span>
                   </div>
                   <CardTitle>Gry i zabawy</CardTitle>
@@ -315,7 +315,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
             <AnimatedSection delay={300}>
               <Card className="text-center h-full">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl">💭</span>
                   </div>
                   <CardTitle>Rozmowy i dyskusje</CardTitle>
@@ -356,20 +356,20 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
 
           <div className="max-w-4xl mx-auto text-center">
             <AnimatedSection delay={200}>
-              <div className="bg-blue-50 p-8 rounded-2xl max-w-md mx-auto">
-                <h3 className="text-2xl font-semibold mb-6 text-blue-700">Trening Umiejętności Społecznych</h3>
+              <div className="bg-orange-50 p-8 rounded-2xl max-w-md mx-auto">
+                <h3 className="text-2xl font-semibold mb-6 text-eduhus-accent">Trening Umiejętności Społecznych</h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-blue-200">
+                  <div className="flex justify-between items-center py-2 border-b border-orange-200">
                     <span className="text-gray-700">Zajęcia grupowe (50 min)</span>
-                    <span className="text-2xl font-bold text-blue-600">80 zł</span>
+                    <span className="text-2xl font-bold text-eduhus-accent">80 zł</span>
                   </div>
                 </div>
                 <div className="mt-6 text-center">
-                  <p className="text-sm text-blue-600 mb-4">
+                  <p className="text-sm text-eduhus-accent mb-4">
                     💡 Kameralne grupy do 8 osób
                   </p>
                   <a href="tel:+48531509008" className="inline-block">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                    <button className="bg-eduhus-accent hover:opacity-90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                       📞 Zadzwoń: 531 509 008
                     </button>
                   </a>
@@ -381,7 +381,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="kontakt" className="py-16 bg-blue-50">
+      <section id="kontakt" className="py-16 bg-orange-50">
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Zapisz dziecko na TUS</h2>
@@ -397,12 +397,12 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <Card>
                   <CardContent className="p-6 text-center">
-                    <Phone className="h-8 w-8 text-blue-600 mx-auto mb-4" />
+                    <Phone className="h-8 w-8 text-eduhus-accent mx-auto mb-4" />
                     <h3 className="font-semibold mb-2">Zadzwoń</h3>
                     <p className="text-2xl font-bold text-gray-800 mb-2">531 509 008</p>
                     <p className="text-sm text-gray-600 mb-4">Pon-Pt: 8:00-16:00</p>
                     <Button
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      className="w-full bg-eduhus-accent hover:opacity-90 text-white"
                       onClick={() => (window.location.href = "tel:+48531509008")}
                     >
                       Zadzwoń teraz
@@ -412,7 +412,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
 
                 <Card>
                   <CardContent className="p-6 text-center">
-                    <MessageCircle className="h-8 w-8 text-green-600 mx-auto mb-4" />
+                    <MessageCircle className="h-8 w-8 text-eduhus-accent mx-auto mb-4" />
                     <h3 className="font-semibold mb-2">Napisz</h3>
                     <p className="text-sm text-gray-600 mb-4">
                       kontakt@eduhustawka.pl
@@ -421,7 +421,7 @@ export default function TreningUmiejetnosciSpolecznychClientPage() {
                     </p>
                     <Button
                       variant="outline"
-                      className="w-full border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
+                      className="w-full border-eduhus-accent text-eduhus-accent hover:bg-gradient-to-br from-orange-50 to-white bg-transparent"
                       onClick={() => (window.location.href = "/#kontakt")}
                     >
                       Formularz kontaktowy

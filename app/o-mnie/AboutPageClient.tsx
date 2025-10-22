@@ -40,15 +40,15 @@ export default function AboutPageClient() {
                   />
                 </div>
                 {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-teal-100 rounded-full opacity-60 -z-10"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-100 rounded-full opacity-40 -z-10"></div>
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-eduhus-accent-100 rounded-full opacity-60 -z-10"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-orange-50 rounded-full opacity-40 -z-10"></div>
               </div>
             </AnimatedSection>
 
             <AnimatedSection animation="slide" direction="right" delay={200}>
               <div className="space-y-6">
                 <div>
-                  <h2 className="text-2xl font-bold mb-4 text-teal-700">Kim jestem</h2>
+                  <h2 className="text-2xl font-bold mb-4 text-eduhus-accent">Kim jestem</h2>
                   <p className="text-gray-600 leading-relaxed">
                     Jestem pedagogiem specjalnym z wieloletnim doświadczeniem w pracy z dziećmi o zróżnicowanych
                     potrzebach rozwojowych i edukacyjnych. Specjalizuję się w terapii dzieci z niepełnosprawnością
@@ -68,8 +68,8 @@ export default function AboutPageClient() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
-                      <Award className="h-6 w-6 text-teal-600" />
+                    <div className="w-12 h-12 bg-eduhus-accent-100 rounded-full flex items-center justify-center">
+                      <Award className="h-6 w-6 text-eduhus-accent" />
                     </div>
                     <div>
                       <div className="font-semibold text-gray-800">15+ lat</div>
@@ -78,8 +78,8 @@ export default function AboutPageClient() {
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <Users className="h-6 w-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center">
+                      <Users className="h-6 w-6 text-eduhus-accent" />
                     </div>
                     <div>
                       <div className="font-semibold text-gray-800">500+</div>
@@ -94,7 +94,7 @@ export default function AboutPageClient() {
           {/* Education Section */}
           <AnimatedSection delay={300}>
             <div className="bg-gray-50 rounded-2xl p-8 mb-16">
-              <h2 className="text-2xl font-bold mb-8 text-center text-teal-700 flex items-center justify-center">
+              <h2 className="text-2xl font-bold mb-8 text-center text-eduhus-accent flex items-center justify-center">
                 <GraduationCap className="mr-3 h-6 w-6" />
                 Wykształcenie i kwalifikacje
               </h2>
@@ -104,7 +104,7 @@ export default function AboutPageClient() {
                   <h3 className="text-lg font-semibold mb-4 text-gray-800">Studia</h3>
                   <div className="space-y-3">
                     <div className="bg-white p-4 rounded-lg shadow-sm">
-                      <h4 className="font-medium text-teal-700">Studia magisterskie</h4>
+                      <h4 className="font-medium text-eduhus-accent">Studia magisterskie</h4>
                       <p className="text-sm text-gray-600">
                         Edukacja i rehabilitacja osób z niepełnosprawnością intelektualną
                         <br />
@@ -112,7 +112,7 @@ export default function AboutPageClient() {
                       </p>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm">
-                      <h4 className="font-medium text-teal-700">Studia licencjackie</h4>
+                      <h4 className="font-medium text-eduhus-accent">Studia licencjackie</h4>
                       <p className="text-sm text-gray-600">
                         Pedagogika niepełnosprawnych intelektualnie z pedagogiką wczesnoszkolną
                       </p>
@@ -146,7 +146,7 @@ export default function AboutPageClient() {
           {/* Certifications Section */}
           <AnimatedSection delay={400}>
             <div className="bg-white rounded-2xl border border-gray-200 p-8 mb-16">
-              <h2 className="text-2xl font-bold mb-8 text-center text-teal-700 flex items-center justify-center">
+              <h2 className="text-2xl font-bold mb-8 text-center text-eduhus-accent flex items-center justify-center">
                 <Certificate className="mr-3 h-6 w-6" />
                 Ukończone kursy i szkolenia
               </h2>
@@ -166,8 +166,8 @@ export default function AboutPageClient() {
                   "Trening Zastępowania Agresji (TZA)",
                   "Terapia behawioralna – Stosowana Analiza Zachowania",
                 ].map((course, index) => (
-                  <div key={index} className="bg-teal-50 p-3 rounded-lg border border-teal-100">
-                    <p className="text-sm text-teal-800 font-medium">{course}</p>
+                  <div key={index} className="bg-eduhus-accent-50 p-3 rounded-lg border border-eduhus-accent-100">
+                    <p className="text-sm text-eduhus-accent-800 font-medium">{course}</p>
                   </div>
                 ))}
               </div>
@@ -176,15 +176,15 @@ export default function AboutPageClient() {
 
           {/* Contact CTA */}
           <AnimatedSection delay={500}>
-            <div className="bg-teal-600 text-white rounded-2xl p-8 text-center">
+            <div className="bg-eduhus-accent text-white rounded-2xl p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">Skontaktuj się ze mną</h2>
-              <p className="mb-6 text-teal-100">
+              <p className="mb-6 text-eduhus-accent-100">
                 Masz pytania o terapię dla swojego dziecka? Chętnie odpowiem na wszystkie wątpliwości.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
-                  className="bg-white text-teal-600 hover:bg-teal-50"
+                  className="bg-white text-eduhus-accent hover:bg-eduhus-accent-50"
                   onClick={() => (window.location.href = "tel:+48531509008")}
                 >
                   <Phone className="mr-2 h-5 w-5" />
@@ -193,7 +193,7 @@ export default function AboutPageClient() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-teal-600 bg-transparent"
+                  className="border-white text-white hover:bg-white hover:text-eduhus-accent bg-transparent"
                   onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   <Mail className="mr-2 h-5 w-5" />

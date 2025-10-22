@@ -22,14 +22,14 @@ export default function DiagnosisPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-                  <div className="bg-purple-100 p-4 rounded-full w-fit">
-                    <Brain className="h-12 w-12 text-purple-600" />
+                  <div className="bg-red-50 p-4 rounded-full w-fit">
+                    <Brain className="h-12 w-12 text-eduhus-icon-adhd" />
                   </div>
                   <div>
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight">
-                      Diagnoza ADHD <span className="text-purple-600 block sm:inline">+ Test MOXO</span>
+                      Diagnoza ADHD <span className="text-eduhus-icon-adhd block sm:inline">+ Test MOXO</span>
                     </h1>
-                    <p className="text-lg sm:text-xl text-purple-600 font-medium">Kompleksowa ocena zaburzenia deficytu uwagi i nadpobudliwości</p>
+                    <p className="text-lg sm:text-xl text-eduhus-icon-adhd font-medium">Kompleksowa ocena zaburzenia deficytu uwagi i nadpobudliwości</p>
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
@@ -37,13 +37,13 @@ export default function DiagnosisPage() {
                   Test MOXO - obiektywne badanie funkcji wykonawczych, uwagi i impulsywności.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
-                  <div className="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-purple-600" />
-                    <span className="text-purple-700 font-medium">Objektywne wyniki</span>
+                  <div className="flex items-center gap-2 bg-red-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-icon-adhd" />
+                    <span className="text-eduhus-icon-adhd font-medium">Objektywne wyniki</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-blue-600" />
-                    <span className="text-blue-700 font-medium">Opinia diagnostyczna</span>
+                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent font-medium">Opinia diagnostyczna</span>
                   </div>
                 </div>
               </div>
@@ -187,8 +187,8 @@ export default function DiagnosisPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-6 items-start bg-blue-50 p-6 rounded-xl">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex flex-col md:flex-row gap-6 items-start bg-orange-50 p-6 rounded-xl">
+                <div className="w-16 h-16 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl font-bold">2</span>
                 </div>
                 <div className="flex-1">
@@ -200,8 +200,8 @@ export default function DiagnosisPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-6 items-start bg-green-50 p-6 rounded-xl">
-                <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex flex-col md:flex-row gap-6 items-start bg-orange-50 p-6 rounded-xl">
+                <div className="w-16 h-16 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl font-bold">3</span>
                 </div>
                 <div className="flex-1">
@@ -210,7 +210,7 @@ export default function DiagnosisPage() {
                     Zaawansowany test komputerowy, który zmierza funkcje wykonawcze, uwagę, impulsywność oraz odpowiedzi 
                     na bodźce. Trwa ok. 15 minut. Test jest uznawany przez specjalistów do obiektywnej oceny objawów ADHD.
                   </p>
-                  <div className="bg-white p-4 rounded-lg mt-3 border-l-4 border-green-600">
+                  <div className="bg-white p-4 rounded-lg mt-3 border-l-4 border-eduhus-accent">
                     <p className="text-sm text-gray-700">
                       <strong>Co mierzy Test MOXO:</strong> czas reakcji, wariancję czasu reakcji, błędy pominięcia, 
                       błędy alarmu alarmowego, zaburzenia w czytaniu wzorców - wszystko to wskaźniki potencjalnego ADHD.
@@ -326,26 +326,26 @@ export default function DiagnosisPage() {
                 </ul>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center gap-2">
+              <div className="bg-orange-50 p-6 rounded-xl">
+                <h3 className="text-xl font-bold text-eduhus-accent mb-4 flex items-center gap-2">
                   <Headphones className="w-5 h-5" />
                   Diagnoza może być przydatna również dla:
                 </h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 font-bold">✓</span>
+                    <span className="text-eduhus-accent font-bold">✓</span>
                     <span>Dzieci z opóźnieniem w mowie/zaburzeniami językowymi</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 font-bold">✓</span>
+                    <span className="text-eduhus-accent font-bold">✓</span>
                     <span>Dzieci ze spektrum autyzmu</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 font-bold">✓</span>
+                    <span className="text-eduhus-accent font-bold">✓</span>
                     <span>Dzieci z zaburzeniami procesów poznawczych</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 font-bold">✓</span>
+                    <span className="text-eduhus-accent font-bold">✓</span>
                     <span>Dla różnicowania diagnozy zaburzenia ADHD</span>
                   </li>
                 </ul>
@@ -383,14 +383,14 @@ export default function DiagnosisPage() {
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-green-600">
-                <h3 className="text-2xl font-bold text-green-700 mb-6">Test MOXO (samodzielnie)</h3>
+              <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-eduhus-accent">
+                <h3 className="text-2xl font-bold text-eduhus-accent mb-6">Test MOXO (samodzielnie)</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center pb-3 border-b border-gray-300">
                     <span className="text-gray-700 text-lg">Cena</span>
-                    <span className="text-4xl font-bold text-green-600">350 zł</span>
+                    <span className="text-4xl font-bold text-eduhus-accent">350 zł</span>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="bg-orange-50 p-4 rounded-lg">
                     <h4 className="font-bold text-gray-900 mb-3">Zawiera:</h4>
                     <ul className="space-y-2 text-sm text-gray-700">
                       <li>✓ Przeprowadzenie testu MOXO</li>
@@ -403,8 +403,8 @@ export default function DiagnosisPage() {
               </div>
             </div>
 
-            <div className="mt-8 bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600 max-w-3xl mx-auto">
-              <h4 className="font-bold text-blue-900 mb-2">ℹ️ Ważna informacja:</h4>
+            <div className="mt-8 bg-orange-50 p-6 rounded-xl border-l-4 border-eduhus-accent max-w-3xl mx-auto">
+              <h4 className="font-bold text-eduhus-accent mb-2">ℹ️ Ważna informacja:</h4>
               <p className="text-gray-700">
                 Diagnoza ADHD wymaga kompleksowej oceny. Jeśli posiadasz już częściowe wyniki (np. opinię szkoły lub badania u psychiatry), 
                 możemy przeprowadzić diagnozę uzupełniającą. Skontaktuj się bezpośrednio, aby ustalić optymalny plan diagnostyczny dla Twojego dziecka.

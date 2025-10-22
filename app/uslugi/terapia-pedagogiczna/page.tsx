@@ -23,12 +23,12 @@ export default function TerapiaPedagogicznaPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <BookOpen className="h-12 w-12 text-teal-600" />
+                  <BookOpen className="h-12 w-12 text-eduhus-accent" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Terapia Pedagogiczna
                     </h1>
-                    <p className="text-xl text-teal-600">Skuteczne wsparcie dla dzieci z trudnościami w nauce</p>
+                    <p className="text-xl text-eduhus-accent">Skuteczne wsparcie dla dzieci z trudnościami w nauce</p>
                   </div>
                 </div>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -36,13 +36,13 @@ export default function TerapiaPedagogicznaPage() {
                   Pomaga przezwyciężać trudności w czytaniu, pisaniu, liczeniu oraz wspiera rozwój emocjonalny i społeczny.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-teal-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-teal-600" />
-                    <span className="text-teal-700">Indywidualne podejście</span>
+                  <div className="flex items-center gap-2 bg-eduhus-accent-100 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent">Indywidualne podejście</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-blue-600" />
-                    <span className="text-blue-700">Nowoczesne metody</span>
+                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent">Nowoczesne metody</span>
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function TerapiaPedagogicznaPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest terapia pedagogiczna?
             </h2>
-            <div className="bg-teal-50 p-8 rounded-2xl mb-8">
+            <div className="bg-eduhus-accent-50 p-8 rounded-2xl mb-8">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Terapia pedagogiczna to specjalistyczne wsparcie dla dzieci, które mają trudności w nauce i rozwoju.
                 Pomaga przezwyciężać trudności w czytaniu, pisaniu, liczeniu oraz innych czynnościach szkolnych,
@@ -85,8 +85,8 @@ export default function TerapiaPedagogicznaPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-teal-600" />
+                <div className="w-16 h-16 bg-eduhus-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Diagnoza</h3>
                 <p className="text-gray-600">
@@ -95,8 +95,8 @@ export default function TerapiaPedagogicznaPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Lightbulb className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Lightbulb className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Plan terapii</h3>
                 <p className="text-gray-600">
@@ -105,8 +105,8 @@ export default function TerapiaPedagogicznaPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <GraduationCap className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <GraduationCap className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Realizacja</h3>
                 <p className="text-gray-600">
@@ -125,7 +125,7 @@ export default function TerapiaPedagogicznaPage() {
             </h2>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-teal-700 mb-6 flex items-center">
+              <h3 className="text-xl font-semibold text-eduhus-accent mb-6 flex items-center">
                 <Target className="w-6 h-6 mr-2" />
                 Trudności, z którymi pomaga terapia:
               </h3>
@@ -176,7 +176,7 @@ export default function TerapiaPedagogicznaPage() {
         </AnimatedSection>
 
         {/* Cele terapii */}
-        <AnimatedSection className="py-16 px-4 bg-teal-50" delay={500}>
+        <AnimatedSection className="py-16 px-4 bg-eduhus-accent-50" delay={500}>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
               Cele terapii pedagogicznej
@@ -185,22 +185,22 @@ export default function TerapiaPedagogicznaPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  icon: <Target className="w-8 h-8 text-teal-600" />,
+                  icon: <Target className="w-8 h-8 text-eduhus-accent" />,
                   title: "Wspieranie rozwoju",
                   description: "Rozwój funkcji poznawczych i motorycznych"
                 },
                 {
-                  icon: <BookOpen className="w-8 h-8 text-teal-600" />,
+                  icon: <BookOpen className="w-8 h-8 text-eduhus-accent" />,
                   title: "Wyrównywanie braków",
                   description: "Uzupełnianie wiadomości i umiejętności"
                 },
                 {
-                  icon: <Heart className="w-8 h-8 text-teal-600" />,
+                  icon: <Heart className="w-8 h-8 text-eduhus-accent" />,
                   title: "Eliminowanie niepowodzeń",
                   description: "Redukcja niepowodzeń szkolnych i ich konsekwencji"
                 },
                 {
-                  icon: <Users className="w-8 h-8 text-teal-600" />,
+                  icon: <Users className="w-8 h-8 text-eduhus-accent" />,
                   title: "Budowanie pewności siebie",
                   description: "Wzmacnianie motywacji i rozwijanie talentów"
                 }

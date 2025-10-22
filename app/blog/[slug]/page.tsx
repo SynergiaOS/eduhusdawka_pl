@@ -82,7 +82,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               <div className="p-6 md:p-8">
-                <h1 className="text-2xl md:text-3xl font-bold text-teal-800 mb-4 font-heading">{post.title}</h1>
+                <h1 className="text-2xl md:text-3xl font-bold text-eduhus-accent-800 mb-4 font-heading">{post.title}</h1>
 
                 <div className="flex flex-wrap gap-4 mb-6 text-sm">
                   <div className="flex items-center text-gray-600">
@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     {post.tags.map((tag, index) => (
                       <div
                         key={index}
-                        className="flex items-center bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm"
+                        className="flex items-center bg-eduhus-accent-50 text-eduhus-accent px-3 py-1 rounded-full text-sm"
                       >
                         <Tag className="h-3 w-3 mr-1" />
                         {tag}

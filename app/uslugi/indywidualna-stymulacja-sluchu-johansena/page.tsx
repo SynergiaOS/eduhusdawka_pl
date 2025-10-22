@@ -43,9 +43,9 @@ export default function IASJohansenPage() {
                     <Home className="w-5 h-5 text-purple-600" />
                     <span className="text-purple-700 font-medium">Terapia w domu</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-green-700 font-medium">Indywidualny program</span>
+                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent font-medium">Indywidualny program</span>
                   </div>
                 </div>
 
@@ -116,10 +116,10 @@ export default function IASJohansenPage() {
                 </p>
               </div>
 
-              <div className="group bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-500 hover:border-green-600">
+              <div className="group bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-eduhus-accent hover:border-eduhus-accent">
                 <div className="flex items-center mb-4">
-                  <div className="bg-green-100 p-3 rounded-full group-hover:bg-green-200 transition-colors">
-                    <Clock className="w-8 h-8 text-green-600" />
+                  <div className="bg-orange-50 p-3 rounded-full group-hover:bg-orange-50-200 transition-colors">
+                    <Clock className="w-8 h-8 text-eduhus-accent" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 ml-4">Krótkie sesje</h3>
                 </div>
@@ -128,10 +128,10 @@ export default function IASJohansenPage() {
                 </p>
               </div>
 
-              <div className="group bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500 hover:border-blue-600">
+              <div className="group bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-eduhus-accent hover:border-eduhus-accent">
                 <div className="flex items-center mb-4">
-                  <div className="bg-blue-100 p-3 rounded-full group-hover:bg-blue-200 transition-colors">
-                    <Target className="w-8 h-8 text-blue-600" />
+                  <div className="bg-orange-50 p-3 rounded-full group-hover:bg-orange-100 transition-colors">
+                    <Target className="w-8 h-8 text-eduhus-accent" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 ml-4">Kontrolowane postępy</h3>
                 </div>
@@ -187,30 +187,30 @@ export default function IASJohansenPage() {
             </h2>
             
             <div className="space-y-8">
-              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                <h3 className="text-xl font-semibold text-blue-700 mb-4 flex items-center">
+              <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
+                <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
                   <Brain className="w-6 h-6 mr-2" />
                   Diagnoza
                 </h3>
                 <p className="text-gray-700 mb-3">Diagnoza opiera się na:</p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                     <span>Badaniu audiometrii tonalnej</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                     <span>Testach mowy utrudnionej, w tym teście dychotycznym</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                     <span>Ocenie przetwarzania bodźców słuchowych</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
-                <h3 className="text-xl font-semibold text-green-700 mb-4 flex items-center">
+              <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
+                <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
                   <Headphones className="w-6 h-6 mr-2" />
                   Program terapeutyczny
                 </h3>
@@ -321,9 +321,9 @@ export default function IASJohansenPage() {
                 "Wzrost samooceny i lepsze wyniki w nauce",
                 "Skuteczniejsze przyswajanie języków obcych"
               ].map((benefit, index) => (
-                <div key={index} className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+                <div key={index} className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
                   <div className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                    <CheckCircle className="w-6 h-6 text-eduhus-accent mr-3 mt-1 flex-shrink-0" />
                     <p className="text-gray-700 font-medium">{benefit}</p>
                   </div>
                 </div>
@@ -331,38 +331,38 @@ export default function IASJohansenPage() {
             </div>
 
             {/* Zalety */}
-            <div className="bg-blue-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-blue-700 mb-6 text-center">Zalety terapii IAS</h3>
+            <div className="bg-orange-50 p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold text-eduhus-accent mb-6 text-center">Zalety terapii IAS</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start">
-                  <Home className="w-8 h-8 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <Home className="w-8 h-8 text-eduhus-accent mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-700 mb-2">Możliwość przeprowadzania w domu</h4>
-                    <p className="text-blue-600">Idealne dla osób mieszkających z dala od ośrodka terapeutycznego</p>
+                    <h4 className="font-semibold text-eduhus-accent mb-2">Możliwość przeprowadzania w domu</h4>
+                    <p className="text-eduhus-accent">Idealne dla osób mieszkających z dala od ośrodka terapeutycznego</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <Target className="w-8 h-8 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <Target className="w-8 h-8 text-eduhus-accent mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-700 mb-2">Możliwość łączenia z innymi terapiami</h4>
-                    <p className="text-blue-600">Np. logopedycznymi, pedagogicznymi</p>
+                    <h4 className="font-semibold text-eduhus-accent mb-2">Możliwość łączenia z innymi terapiami</h4>
+                    <p className="text-eduhus-accent">Np. logopedycznymi, pedagogicznymi</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <Star className="w-8 h-8 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <Star className="w-8 h-8 text-eduhus-accent mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-700 mb-2">Komfortowa, domowa atmosfera</h4>
-                    <p className="text-blue-600">Sprzyjająca skuteczności terapii</p>
+                    <h4 className="font-semibold text-eduhus-accent mb-2">Komfortowa, domowa atmosfera</h4>
+                    <p className="text-eduhus-accent">Sprzyjająca skuteczności terapii</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <Clock className="w-8 h-8 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                  <Clock className="w-8 h-8 text-eduhus-accent mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-700 mb-2">Rozłożone w czasie koszty</h4>
-                    <p className="text-blue-600">Terapia staje się bardziej dostępna</p>
+                    <h4 className="font-semibold text-eduhus-accent mb-2">Rozłożone w czasie koszty</h4>
+                    <p className="text-eduhus-accent">Terapia staje się bardziej dostępna</p>
                   </div>
                 </div>
               </div>

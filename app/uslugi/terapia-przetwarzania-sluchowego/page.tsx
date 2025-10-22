@@ -23,12 +23,12 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <Headphones className="h-12 w-12 text-teal-600" />
+                  <Headphones className="h-12 w-12 text-eduhus-accent" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Interaktywna Terapia Przetwarzania Słuchowego
                     </h1>
-                    <p className="text-xl text-teal-600">Program mTalent - certyfikowany wyrób medyczny</p>
+                    <p className="text-xl text-eduhus-accent">Program mTalent - certyfikowany wyrób medyczny</p>
                   </div>
                 </div>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -37,13 +37,13 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                   specjalistów z zakresu pedagogiki, logopedii i neuropsychologii.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-teal-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-teal-600" />
-                    <span className="text-teal-700">Certyfikowany wyrób medyczny</span>
+                  <div className="flex items-center gap-2 bg-teal-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-icon-hearing" />
+                    <span className="text-eduhus-icon-hearing">Certyfikowany wyrób medyczny</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-cyan-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-cyan-600" />
-                    <span className="text-cyan-700">Profesjonalny program</span>
+                  <div className="flex items-center gap-2 bg-teal-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-icon-hearing" />
+                    <span className="text-eduhus-icon-hearing">Profesjonalny program</span>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest program mTalent?
             </h2>
-            <div className="bg-teal-50 p-8 rounded-2xl mb-8">
+            <div className="bg-eduhus-accent-50 p-8 rounded-2xl mb-8">
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Program mTalent to nowoczesny system interaktywnych ćwiczeń terapeutycznych wspierających rozwój wyższych 
                 funkcji słuchowych, uwagi i pamięci opartej na analizatorze słuchowym. Zawiera ponad 700 interaktywnych 
@@ -89,8 +89,8 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-600">
-                <h3 className="text-lg font-semibold text-teal-700 mb-4 flex items-center">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-accent-600">
+                <h3 className="text-lg font-semibold text-eduhus-accent mb-4 flex items-center">
                   <CheckCircle className="w-6 h-6 mr-2" />
                   700+ interaktywnych ekranów
                 </h3>
@@ -111,8 +111,8 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-600">
-                <h3 className="text-lg font-semibold text-teal-700 mb-4 flex items-center">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-accent-600">
+                <h3 className="text-lg font-semibold text-eduhus-accent mb-4 flex items-center">
                   <CheckCircle className="w-6 h-6 mr-2" />
                   Angażująca forma zabawy
                 </h3>
@@ -144,46 +144,46 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
             </h2>
             
             <div className="grid md:grid-cols-1 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-600">
-                <h3 className="text-xl font-semibold text-teal-700 mb-4 flex items-center">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-accent-600">
+                <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
                   <Target className="w-6 h-6 mr-2" />
                   Wskazania do terapii
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Zaburzenia przetwarzania słuchowego (Auditory Processing Disorder)</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Trudności w rozumieniu mowy, szczególnie w hałaśliwym środowisku</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Opóźniony rozwój mowy i zaburzenia komunikacyjne</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Problemy z percepcją i dyskryminacją dźwięków</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Trudności w lokalizacji źródła dźwięku</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">ADHD i problemy z koncentracją (związane z percepcją słuchową)</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Zaburzenia memorii słuchowej</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Problemy nauki czytania (dysleksja)</span>
                   </li>
                   <li className="flex items-start">
-                    <Star className="w-5 h-5 text-teal-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">Autyzm i zaburzenia ze spektrum</span>
                   </li>
                 </ul>
@@ -201,7 +201,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
             
             <div className="space-y-4">
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Diagnoza i ocena</h3>
                   <p className="text-gray-600">Wstępna ocena umiejętności słuchowych dziecka i identyfikacja obszarów wymagających wsparcia</p>
@@ -209,7 +209,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Dostosowanie programu</h3>
                   <p className="text-gray-600">Wybranie odpowiednich ćwiczeń z programu mTalent dostosowanych do poziomu i potrzeb dziecka</p>
@@ -217,7 +217,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Ćwiczenia interaktywne</h3>
                   <p className="text-gray-600">Wykonywanie ćwiczeń z programu w angażującej formie zabawy i gier</p>
@@ -225,7 +225,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
               </div>
               
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Monitoring postępów</h3>
                   <p className="text-gray-600">Obserwacja postępów dziecka i dostosowanie ćwiczeń do rosnących umiejętności</p>
@@ -233,7 +233,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Karty pracy i zadania domowe</h3>
                   <p className="text-gray-600">Wykorzystanie kart pracy oraz rekomendacje ćwiczeń do utrwalania umiejętności w domu</p>
@@ -244,16 +244,16 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
         </AnimatedSection>
 
         {/* Efekty */}
-        <AnimatedSection className="py-16 px-4 bg-teal-50" delay={600}>
+        <AnimatedSection className="py-16 px-4 bg-eduhus-accent-50" delay={600}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
               Efekty terapii
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-teal-600">
-                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Volume2 className="w-8 h-8 text-teal-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent-600">
+                <div className="w-16 h-16 bg-eduhus-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Volume2 className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa percepcji słuchowej</h3>
                 <p className="text-gray-600">
@@ -281,9 +281,9 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-green-600">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Headphones className="w-8 h-8 text-green-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent">
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Headphones className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa rozumienia mowy</h3>
                 <p className="text-gray-600">

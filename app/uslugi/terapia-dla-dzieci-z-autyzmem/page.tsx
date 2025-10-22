@@ -25,36 +25,36 @@ export default function TerapiaDzieciZAutyzmemPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-                    <div className="bg-blue-100 p-4 rounded-full w-fit">
-                      <Heart className="h-12 w-12 text-blue-600" />
+                    <div className="bg-orange-50 p-4 rounded-full w-fit">
+                      <Heart className="h-12 w-12 text-eduhus-accent" />
                     </div>
                     <div>
                       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight">
-                        Terapia dla dzieci z <span className="text-blue-600">autyzmem</span>
+                        Terapia dla dzieci z <span className="text-eduhus-accent">autyzmem</span>
                       </h1>
-                      <p className="text-lg sm:text-xl text-blue-600 font-medium">Indywidualne podejście do rozwoju Twojego dziecka</p>
+                      <p className="text-lg sm:text-xl text-eduhus-accent font-medium">Indywidualne podejście do rozwoju Twojego dziecka</p>
                     </div>
                   </div>
 
-                  <blockquote className="text-base sm:text-lg italic text-gray-700 border-l-4 border-blue-300 pl-4 mb-8 leading-relaxed">
+                  <blockquote className="text-base sm:text-lg italic text-gray-700 border-l-4 border-eduhus-accent pl-4 mb-8 leading-relaxed">
                     &ldquo;Każde dziecko z autyzmem ma unikalny potencjał. Naszym celem jest odkrycie i rozwinięcie tego potencjału w bezpiecznym i wspierającym środowisku.&rdquo;
                   </blockquote>
 
                   <div className="flex flex-wrap gap-3 mb-8">
-                    <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                      <CheckCircle className="w-5 h-5 text-blue-600" />
-                      <span className="text-blue-700 font-medium">Indywidualne podejście</span>
+                    <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                      <CheckCircle className="w-5 h-5 text-eduhus-icon-autism" />
+                      <span className="text-eduhus-icon-autism font-medium">Indywidualne podejście</span>
                     </div>
-                    <div className="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full">
-                      <CheckCircle className="w-5 h-5 text-purple-600" />
-                      <span className="text-purple-700 font-medium">Wspieramy całą rodzinę</span>
+                    <div className="flex items-center gap-2 bg-orange-100 px-4 py-2 rounded-full">
+                      <CheckCircle className="w-5 h-5 text-eduhus-icon-autism" />
+                      <span className="text-eduhus-icon-autism font-medium">Wspieramy całą rodzinę</span>
                     </div>
                   </div>
 
                   {/* CTA Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a href="tel:+48531509008">
-                      <button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                      <button className="w-full sm:w-auto bg-eduhus-accent hover:opacity-90 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
                         <Phone className="w-5 h-5" />
                         Zadzwoń: 531 509 008
                       </button>
@@ -76,7 +76,7 @@ export default function TerapiaDzieciZAutyzmemPage() {
                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                     />
                     <div className="text-center mt-4">
-                      <div className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                      <div className="inline-flex items-center bg-eduhus-accent text-white px-4 py-2 rounded-full text-sm font-medium">
                         <Heart className="w-4 h-4 mr-2" />
                         Profesjonalna terapia
                       </div>
@@ -89,14 +89,14 @@ export default function TerapiaDzieciZAutyzmemPage() {
             {/* Main Content */}
             <AnimatedSection>
               <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-12">
-                <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-6">
+                <div className="bg-orange-50 border border-orange-200 p-4 rounded-lg mb-6">
                   <div className="flex items-start">
-                    <Heart className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-0.5" />
+                    <Heart className="h-6 w-6 text-eduhus-accent mr-3 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-semibold text-blue-800 mb-2">
+                      <h3 className="font-semibold text-eduhus-accent mb-2">
                         Autyzm to nie ograniczenie, to inny sposób postrzegania świata
                       </h3>
-                      <p className="text-blue-700 text-sm">
+                      <p className="text-eduhus-accent text-sm">
                         Dzieci z autyzmem potrzebują specjalistycznego podejścia, które uwzględnia ich unikalne potrzeby i potencjał.
                       </p>
                     </div>
@@ -111,7 +111,7 @@ export default function TerapiaDzieciZAutyzmemPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">
                   Czym jest terapia dla dzieci z autyzmem?
                 </h2>
-                <div className="bg-blue-50 p-8 rounded-2xl mb-8">
+                <div className="bg-orange-50 p-8 rounded-2xl mb-8">
                   <p className="text-lg text-gray-700 leading-relaxed">
                     Terapia dla dzieci z autyzmem to specjalistyczne wsparcie dostosowane do unikalnych potrzeb
                     każdego dziecka ze spektrum autyzmu. Koncentruje się na rozwoju komunikacji, umiejętności społecznych,
@@ -130,8 +130,8 @@ export default function TerapiaDzieciZAutyzmemPage() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Target className="w-8 h-8 text-blue-600" />
+                    <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Target className="w-8 h-8 text-eduhus-accent" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Ocena</h3>
                     <p className="text-gray-600">
@@ -150,8 +150,8 @@ export default function TerapiaDzieciZAutyzmemPage() {
                   </div>
 
                   <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Heart className="w-8 h-8 text-green-600" />
+                    <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Heart className="w-8 h-8 text-eduhus-accent" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Terapia</h3>
                     <p className="text-gray-600">
@@ -205,42 +205,42 @@ export default function TerapiaDzieciZAutyzmemPage() {
                       </ul>
                     </div>
 
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-green-800 mb-3">Cele terapii dla dzieci z autyzmem:</h4>
+                    <div className="bg-orange-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-eduhus-accent-800 mb-3">Cele terapii dla dzieci z autyzmem:</h4>
                       <ul className="space-y-2">
                         <li className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-5 w-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                           <span>Rozwój komunikacji werbalnej i niewerbalnej</span>
                         </li>
                         <li className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-5 w-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                           <span>Poprawa umiejętności społecznych</span>
                         </li>
                         <li className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-5 w-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                           <span>Redukcja problemowych zachowań</span>
                         </li>
                         <li className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-5 w-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                           <span>Rozwój umiejętności adaptacyjnych</span>
                         </li>
                         <li className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-5 w-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                           <span>Poprawa integracji sensorycznej</span>
                         </li>
                         <li className="flex items-start">
-                          <CheckCircle className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-5 w-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
                           <span>Wzrost niezależności w codziennych czynnościach</span>
                         </li>
                       </ul>
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-semibold mt-8 mb-4 text-blue-700">Metody terapii</h3>
-                  <div className="bg-blue-50 p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-semibold mt-8 mb-4 text-eduhus-accent">Metody terapii</h3>
+                  <div className="bg-orange-50 p-6 rounded-lg mb-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <h4 className="font-semibold text-blue-800 mb-3">Techniki używane w terapii:</h4>
+                        <h4 className="font-semibold text-eduhus-accent mb-3">Techniki używane w terapii:</h4>
                         <ul className="space-y-2 text-sm">
                           <li>• Terapia behawioralna (ABA)</li>
                           <li>• Terapia zajęciowa (OT)</li>
@@ -251,7 +251,7 @@ export default function TerapiaDzieciZAutyzmemPage() {
                         </ul>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-blue-800 mb-3">Podejście terapeutyczne:</h4>
+                        <h4 className="font-semibold text-eduhus-accent mb-3">Podejście terapeutyczne:</h4>
                         <ul className="space-y-2 text-sm">
                           <li>• Indywidualne planowanie terapii</li>
                           <li>• Współpraca z rodziną</li>
@@ -264,48 +264,48 @@ export default function TerapiaDzieciZAutyzmemPage() {
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-semibold mt-6 mb-4 text-blue-700">Przebieg terapii</h3>
+                  <h3 className="text-xl font-semibold mt-6 mb-4 text-eduhus-accent">Przebieg terapii</h3>
                   <div className="bg-gray-50 p-6 rounded-lg">
                     <ol className="space-y-4">
                       <li className="flex items-start">
-                        <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
+                        <div className="bg-eduhus-accent text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
                           1
                         </div>
                         <div>
-                          <strong className="text-blue-700">Ocena wstępna</strong>
+                          <strong className="text-eduhus-accent">Ocena wstępna</strong>
                           <p className="text-gray-600 text-sm mt-1">
                             Kompleksowa diagnoza rozwoju dziecka i identyfikacja obszarów wymagających wsparcia
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start">
-                        <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
+                        <div className="bg-eduhus-accent text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
                           2
                         </div>
                         <div>
-                          <strong className="text-blue-700">Plan terapii</strong>
+                          <strong className="text-eduhus-accent">Plan terapii</strong>
                           <p className="text-gray-600 text-sm mt-1">
                             Opracowanie indywidualnego planu terapeutycznego dostosowanego do potrzeb dziecka
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start">
-                        <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
+                        <div className="bg-eduhus-accent text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
                           3
                         </div>
                         <div>
-                          <strong className="text-blue-700">Sesje terapeutyczne</strong>
+                          <strong className="text-eduhus-accent">Sesje terapeutyczne</strong>
                           <p className="text-gray-600 text-sm mt-1">
                             Regularne spotkania terapeutyczne z wykorzystaniem wybranych metod i technik
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start">
-                        <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
+                        <div className="bg-eduhus-accent text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4 mt-1 flex-shrink-0">
                           4
                         </div>
                         <div>
-                          <strong className="text-blue-700">Współpraca z rodziną</strong>
+                          <strong className="text-eduhus-accent">Współpraca z rodziną</strong>
                           <p className="text-gray-600 text-sm mt-1">
                             Szkolenie rodziców i opiekunów w zakresie technik wsparcia dziecka w domu
                           </p>
@@ -314,7 +314,7 @@ export default function TerapiaDzieciZAutyzmemPage() {
                     </ol>
                   </div>
 
-                  <h3 className="text-xl font-semibold mt-6 mb-4 text-blue-700">Oczekiwane efekty</h3>
+                  <h3 className="text-xl font-semibold mt-6 mb-4 text-eduhus-accent">Oczekiwane efekty</h3>
                   <p className="mb-4">Profesjonalna terapia dla dzieci z autyzmem przynosi wymierne korzyści:</p>
                   <ul className="list-disc list-inside mb-6 space-y-1">
                     <li>Poprawa komunikacji werbalnej i niewerbalnej</li>

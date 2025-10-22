@@ -23,12 +23,12 @@ export default function ForbrainPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <Headphones className="h-12 w-12 text-blue-600" />
+                  <Headphones className="h-12 w-12 text-eduhus-icon-forbrain" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Forbrain
                     </h1>
-                    <p className="text-xl text-blue-600">Trening słuchowo-głosowy nowej generacji</p>
+                    <p className="text-xl text-eduhus-icon-forbrain">Trening słuchowo-głosowy nowej generacji</p>
                   </div>
                 </div>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -36,13 +36,13 @@ export default function ForbrainPage() {
                   czytania i koncentracji poprzez trening słuchowo-głosowy.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-blue-600" />
-                    <span className="text-blue-700">Bezpieczne i łatwe w obsłudze</span>
+                  <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-icon-forbrain" />
+                    <span className="text-eduhus-icon-forbrain">Bezpieczne i łatwe w obsludze</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <span className="text-green-700">Ocena kliniczna</span>
+                  <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-icon-forbrain" />
+                    <span className="text-eduhus-icon-forbrain">Ocena kliniczna</span>
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function ForbrainPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest Forbrain?
             </h2>
-            <div className="bg-blue-50 p-8 rounded-2xl mb-8">
+            <div className="bg-orange-50 p-8 rounded-2xl mb-8">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Słuchawki Forbrain służą do treningu słuchowo-głosowego. Mają na celu poprawić percepcję 
                 naszego własnego głosu, co z kolei pomaga mózgowi w lepszym przetwarzaniu informacji zmysłowych. 
@@ -85,8 +85,8 @@ export default function ForbrainPage() {
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mic className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Mic className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Nagrywanie</h3>
                 <p className="text-gray-600">
@@ -95,8 +95,8 @@ export default function ForbrainPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Filtrowanie</h3>
                 <p className="text-gray-600">

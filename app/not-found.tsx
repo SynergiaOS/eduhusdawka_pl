@@ -31,7 +31,7 @@ export default function NotFound() {
                 />
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-bold text-teal-800 mb-4 font-heading">404</h1>
+              <h1 className="text-5xl md:text-7xl font-bold text-eduhus-accent-800 mb-4 font-heading">404</h1>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6 font-heading">
                 Ups! Strona nie znaleziona
               </h2>
@@ -43,39 +43,39 @@ export default function NotFound() {
             <AnimatedSection delay={200}>
               <div className="grid md:grid-cols-3 gap-4 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-md hover-lift">
-                  <Home className="h-8 w-8 text-teal-600 mx-auto mb-4" />
+                  <Home className="h-8 w-8 text-eduhus-accent mx-auto mb-4" />
                   <h3 className="font-medium text-gray-800 mb-2">Strona główna</h3>
                   <p className="text-sm text-gray-600 mb-4">
                     Wróć do strony głównej, aby znaleźć potrzebne informacje.
                   </p>
                   <Link href="/">
-                    <Button variant="outline" className="w-full text-teal-600 border-teal-600 hover:bg-teal-50">
+                    <Button variant="outline" className="w-full text-eduhus-accent border-eduhus-accent-600 hover:bg-eduhus-accent-50">
                       Strona główna
                     </Button>
                   </Link>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md hover-lift">
-                  <MapPin className="h-8 w-8 text-teal-600 mx-auto mb-4" />
+                  <MapPin className="h-8 w-8 text-eduhus-accent mx-auto mb-4" />
                   <h3 className="font-medium text-gray-800 mb-2">Kontakt</h3>
                   <p className="text-sm text-gray-600 mb-4">
                     Skontaktuj się z nami, jeśli potrzebujesz pomocy lub masz pytania.
                   </p>
                   <Link href="/#kontakt">
-                    <Button variant="outline" className="w-full text-teal-600 border-teal-600 hover:bg-teal-50">
+                    <Button variant="outline" className="w-full text-eduhus-accent border-eduhus-accent-600 hover:bg-eduhus-accent-50">
                       Kontakt
                     </Button>
                   </Link>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md hover-lift">
-                  <Search className="h-8 w-8 text-teal-600 mx-auto mb-4" />
+                  <Search className="h-8 w-8 text-eduhus-accent mx-auto mb-4" />
                   <h3 className="font-medium text-gray-800 mb-2">Oferta</h3>
                   <p className="text-sm text-gray-600 mb-4">
                     Sprawdź naszą ofertę usług terapeutycznych i diagnostycznych.
                   </p>
                   <Link href="/#oferta">
-                    <Button variant="outline" className="w-full text-teal-600 border-teal-600 hover:bg-teal-50">
+                    <Button variant="outline" className="w-full text-eduhus-accent border-eduhus-accent-600 hover:bg-eduhus-accent-50">
                       Oferta
                     </Button>
                   </Link>
@@ -85,7 +85,7 @@ export default function NotFound() {
 
             <AnimatedSection delay={300}>
               <Link href="/">
-                <Button className="bg-teal-600 hover:bg-teal-700 text-white">
+                <Button className="bg-eduhus-accent hover:opacity-90 text-white">
                   <ArrowLeft className="mr-2 h-4 w-4" /> Wróć do strony głównej
                 </Button>
               </Link>

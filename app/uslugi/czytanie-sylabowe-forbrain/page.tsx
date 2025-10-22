@@ -42,9 +42,9 @@ export default function CzytanieSylaboweForbrain() {
                     <CheckCircle className="w-5 h-5 text-indigo-600" />
                     <span className="text-indigo-700">Skuteczna metoda</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-blue-600" />
-                    <span className="text-blue-700">Technologia Forbrain</span>
+                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent">Technologia Forbrain</span>
                   </div>
                 </div>
               </div>
@@ -80,8 +80,8 @@ export default function CzytanieSylaboweForbrain() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-blue-700 mb-4 flex items-center">
+              <div className="bg-orange-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
                   <Headphones className="w-6 h-6 mr-2" />
                   Słuchawki Forbrain®
                 </h3>
@@ -151,9 +151,9 @@ export default function CzytanieSylaboweForbrain() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-blue-600">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-blue-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent">
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Lepsze rozumienie tekstu</h3>
                 <p className="text-gray-600">
@@ -171,9 +171,9 @@ export default function CzytanieSylaboweForbrain() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-green-600">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Volume2 className="w-8 h-8 text-green-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent">
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Volume2 className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Rozwój mowy i komunikacji</h3>
                 <p className="text-gray-600">

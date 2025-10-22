@@ -23,12 +23,12 @@ export default function TerapiaMetodaJohansenPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <Ear className="h-12 w-12 text-purple-600" />
+                  <Ear className="h-12 w-12 text-eduhus-icon-johansen" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Metoda Johansena
                     </h1>
-                    <p className="text-xl text-purple-600">Nowoczesna terapia słuchowa dla dzieci</p>
+                    <p className="text-xl text-eduhus-icon-johansen">Nowoczesna terapia słuchowa dla dzieci</p>
                   </div>
                 </div>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -37,13 +37,13 @@ export default function TerapiaMetodaJohansenPage() {
                   stymulacji słuchowej i neuronalnego uczenia się.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-purple-600" />
-                    <span className="text-purple-700">Sprawdzona metoda</span>
+                  <div className="flex items-center gap-2 bg-purple-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-icon-johansen" />
+                    <span className="text-eduhus-icon-johansen">Sprawdzona metoda</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-blue-600" />
-                    <span className="text-blue-700">Indywidualna terapia</span>
+                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                    <span className="text-eduhus-accent">Indywidualna terapia</span>
                   </div>
                 </div>
               </div>
@@ -148,8 +148,8 @@ export default function TerapiaMetodaJohansenPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Funkcje poznawcze</h3>
                 <p className="text-gray-600">
@@ -158,8 +158,8 @@ export default function TerapiaMetodaJohansenPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Integracja sensoryczna</h3>
                 <p className="text-gray-600">

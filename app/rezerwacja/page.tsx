@@ -118,7 +118,7 @@ Z poważaniem`
         <AnimatedSection className="py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <Calendar className="h-12 w-12 text-teal-600" />
+              <Calendar className="h-12 w-12 text-eduhus-accent" />
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900">
                 Rezerwacja wizyty
               </h1>
@@ -127,13 +127,13 @@ Z poważaniem`
               Umów się na konsultację lub terapię. Skontaktuj się ze mną, aby wybrać najlepszy termin.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex items-center gap-2 bg-teal-100 px-4 py-2 rounded-full">
-                <CheckCircle className="w-5 h-5 text-teal-600" />
-                <span className="text-teal-700">Indywidualne podejście</span>
+              <div className="flex items-center gap-2 bg-eduhus-accent-100 px-4 py-2 rounded-full">
+                <CheckCircle className="w-5 h-5 text-eduhus-accent" />
+                <span className="text-eduhus-accent">Indywidualne podejście</span>
               </div>
-              <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                <Clock className="w-5 h-5 text-blue-600" />
-                <span className="text-blue-700">Elastyczne terminy</span>
+              <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                <Clock className="w-5 h-5 text-eduhus-accent" />
+                <span className="text-eduhus-accent">Elastyczne terminy</span>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@ Z poważaniem`
                 <div key={index} className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.name}</h3>
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-2xl font-bold text-teal-600">{service.price}</span>
+                    <span className="text-2xl font-bold text-eduhus-accent">{service.price}</span>
                     <span className="text-gray-500">{service.duration}</span>
                   </div>
                   <p className="text-gray-600 text-sm">{service.description}</p>
@@ -170,8 +170,8 @@ Z poważaniem`
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Phone className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Zadzwoń</h3>
                 <p className="text-gray-600 mb-6">
@@ -179,7 +179,7 @@ Z poważaniem`
                 </p>
                 <Button 
                   onClick={handlePhoneCall}
-                  className="w-full bg-green-600 hover:bg-green-700 text-white"
+                  className="w-full bg-eduhus-accent hover:opacity-90 text-white"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   531 509 008
@@ -188,8 +188,8 @@ Z poważaniem`
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageSquare className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MessageSquare className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">WhatsApp</h3>
                 <p className="text-gray-600 mb-6">
@@ -197,7 +197,7 @@ Z poważaniem`
                 </p>
                 <Button 
                   onClick={handleWhatsApp}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                  className="w-full bg-eduhus-accent hover:opacity-90 text-white"
                 >
                   <MessageSquare className="w-4 h-4 mr-2" />
                   Napisz na WhatsApp
@@ -235,7 +235,7 @@ Z poważaniem`
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-teal-700 mb-4">Lokalizacja</h3>
+                <h3 className="text-xl font-semibold text-eduhus-accent mb-4">Lokalizacja</h3>
                 <p className="text-gray-600 mb-2">
                   <strong>Adres:</strong> ul. Polna 17, 18-106 Pomigacze
                 </p>
@@ -248,7 +248,7 @@ Z poważaniem`
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-blue-700 mb-4">Płatność</h3>
+                <h3 className="text-xl font-semibold text-eduhus-accent mb-4">Płatność</h3>
                 <p className="text-gray-600 mb-2">
                   <strong>Gotówka:</strong> Płatność po wizycie
                 </p>
