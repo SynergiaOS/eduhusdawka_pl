@@ -67,23 +67,24 @@ export default function RootLayout({
 
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#2564bc" />
+        <meta name="theme-color" content="#F4A261" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="EduHustawka" />
-        <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon-180.png" />
+        <link rel="apple-touch-icon" href="/1.png" />
 
         {/* Preload critical resources */}
-        <link rel="preload" href="/images/joanna.png" as="image" />
-        <link rel="preload" href="/images/hero-children.png" as="image" />
+        <link rel="prefetch" href="/images/joanna.png" as="image" />
+        <link rel="prefetch" href="/images/hero-children.png" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
 
         {/* Resource hints for better performance */}
-        <link rel="preload" href="/images/logo-new.svg" as="image" />
-        <link rel="preload" href="/images/autism-therapy.png" as="image" />
+        <link rel="prefetch" href="/images/logo-new.svg" as="image" />
+        <link rel="prefetch" href="/images/autism-therapy.png" as="image" />
         <link rel="prefetch" href="/uslugi" />
         <link rel="prefetch" href="/rezerwacja" />
         <link rel="prefetch" href="/o-mnie" />
