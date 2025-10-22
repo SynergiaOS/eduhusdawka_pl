@@ -16,9 +16,9 @@ const Footer = React.memo(() => {
               <UnifiedImage
                 src="/1.png"
                 alt="EduHustawka Logo"
-                width={80}
-                height={80}
-                className="w-16 h-16 lg:w-20 lg:h-20 rounded-full shadow-lg"
+                width={64}
+                height={64}
+                className="w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg"
               />
               <div className="hidden sm:block">
                 <span className="font-bold text-lg bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">EduHustawka</span>

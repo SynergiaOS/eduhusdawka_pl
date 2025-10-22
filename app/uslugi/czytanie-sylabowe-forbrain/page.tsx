@@ -276,23 +276,19 @@ export default function CzytanieSylaboweForbrain() {
         </AnimatedSection>
 
         {/* Cennik */}
-        <AnimatedSection className="py-16 px-4 bg-indigo-50" delay={700}>
+        <AnimatedSection className="py-16 px-4 bg-eduhus-bg-white" delay={700}>
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
+            <h2 className="text-3xl font-bold eduhus-text-dark mb-12">Cennik</h2>
 
-            <div className="bg-white p-8 rounded-2xl max-w-md mx-auto shadow-lg">
-              <h3 className="text-2xl font-semibold mb-6 text-indigo-700">Czytanie sylabowe z Forbrain</h3>
+            <div className="bg-eduhus-bg-light p-8 rounded-2xl max-w-md mx-auto shadow-lg">
+              <h3 className="text-2xl font-semibold mb-6 eduhus-text-dark">Czytanie sylabowe z Forbrain</h3>
               <div className="space-y-4">
-                <div className="flex justify-between items-center py-3 border-b border-indigo-200">
-                  <span className="text-gray-700">W gabinecie (50 min)</span>
-                  <span className="text-2xl font-bold text-indigo-600">150 zł</span>
-                </div>
-                <div className="flex justify-between items-center py-3">
-                  <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
-                  <span className="text-2xl font-bold text-indigo-600">180 zł</span>
+                <div className="flex justify-between items-center py-3 border-b border-gray-200">
+                  <span className="eduhus-text-main">Sesja (50 min)</span>
+                  <span className="text-2xl font-bold text-eduhus-accent">150 zł</span>
                 </div>
               </div>
-              <div className="mt-6 text-center text-sm text-gray-600">
+              <div className="mt-6 text-center text-sm eduhus-text-light">
                 <p>💡 Możliwość wykorzystywania Forbrain w środowisku rodzinnym dziecka po instruktażu</p>
               </div>
             </div>

@@ -333,24 +333,20 @@ export default function TerapiaDzieciZAutyzmemPage() {
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
 
-                <div className="bg-blue-50 p-8 rounded-2xl max-w-md mx-auto">
-                  <h3 className="text-2xl font-semibold mb-6 text-blue-700">Terapia dla dzieci z autyzmem</h3>
+                <div className="bg-eduhus-bg-light p-8 rounded-2xl max-w-md mx-auto">
+                  <h3 className="text-2xl font-semibold mb-6 eduhus-text-dark">Terapia dla dzieci z autyzmem</h3>
                   <div className="space-y-4">
-                    <div className="flex justify-between items-center py-2 border-b border-blue-200">
-                      <span className="text-gray-700">W gabinecie (50 min)</span>
-                      <span className="text-2xl font-bold text-blue-600">150 zł</span>
-                    </div>
-                    <div className="flex justify-between items-center py-2">
-                      <span className="text-gray-700">Z dojazdem do klienta (50 min)</span>
-                      <span className="text-2xl font-bold text-blue-600">180 zł</span>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-200">
+                      <span className="eduhus-text-main">Sesja (50 min)</span>
+                      <span className="text-2xl font-bold text-eduhus-accent">150 zł</span>
                     </div>
                   </div>
                   <div className="mt-6 text-center">
-                    <p className="text-sm text-blue-600 mb-4">
+                    <p className="text-sm eduhus-text-light mb-4">
                       💡 Indywidualne podejście do każdego dziecka
                     </p>
                     <a href="tel:+48531509008" className="inline-block">
-                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                      <button className="bg-eduhus-accent hover:opacity-90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                         📞 Zadzwoń: 531 509 008
                       </button>
                     </a>

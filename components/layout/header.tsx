@@ -48,9 +48,9 @@ function Header() {
               <UnifiedImage
                 src="/1.png"
                 alt="EduHustawka Logo"
-                width={80}
-                height={80}
-                className="w-16 h-16 lg:w-20 lg:h-20 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                width={64}
+                height={64}
+                className="w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
             </div>
             <div className="hidden sm:block">

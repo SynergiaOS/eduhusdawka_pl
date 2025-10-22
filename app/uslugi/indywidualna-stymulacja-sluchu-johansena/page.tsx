@@ -395,20 +395,16 @@ export default function IASJohansenPage() {
                   <span className="text-2xl font-bold text-purple-600">350 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
-                  <span className="text-gray-700">Diagnoza kontrolna uproszczona</span>
-                  <span className="text-2xl font-bold text-purple-600">200 zł</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-gray-700">Sesja z dojazdem do ucznia</span>
-                  <span className="text-2xl font-bold text-purple-600">300 zł</span>
+                  <span className="eduhus-text-main">Diagnoza kontrolna uproszczona</span>
+                  <span className="text-2xl font-bold text-eduhus-accent">200 zł</span>
                 </div>
               </div>
               <div className="mt-6 text-center">
-                <p className="text-sm text-purple-600 mb-4">
+                <p className="text-sm eduhus-text-light mb-4">
                   💡 Terapia prowadzona w warunkach domowych
                 </p>
                 <a href="tel:+48531509008" className="inline-block">
-                  <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                  <button className="bg-eduhus-accent hover:opacity-90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                     📞 Zadzwoń: 531 509 008
                   </button>
                 </a>
