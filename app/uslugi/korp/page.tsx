@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function KORPPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-orange-50">
+    <div className="min-h-screen bg-eduhus-bg-white">
       <Header />
       
       <main className="pt-20">
@@ -291,23 +291,23 @@ export default function KORPPage() {
         </AnimatedSection>
 
         {/* CTA */}
-        <AnimatedSection className="py-16 px-4" delay={700}>
+        <AnimatedSection className="py-16 px-4 bg-eduhus-bg-white border-t border-gray-200" delay={700}>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 md:p-12 text-white">
-              <h2 className="text-3xl font-bold mb-6">
+            <div className="bg-eduhus-bg-white rounded-2xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold mb-6 eduhus-text-dark">
                 Chcesz sprawdzić rozwój swojego dziecka?
               </h2>
-              <p className="text-xl mb-8 opacity-90">
+              <p className="text-xl mb-8 eduhus-text-main">
                 Umów się na badanie KORP i otrzymaj profesjonalną ocenę rozwoju psychoruchowego
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="tel:+48531509008">
-                  <button className="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+                  <button className="bg-white text-eduhus-accent px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg border border-eduhus-accent">
                     📞 Zadzwoń: 531 509 008
                   </button>
                 </a>
                 <Link href="/rezerwacja">
-                  <button className="bg-red-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-900 transition-colors shadow-lg flex items-center gap-2 justify-center">
+                  <button className="bg-eduhus-accent text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-colors shadow-lg flex items-center gap-2 justify-center">
                     Rezerwacja online
                     <ArrowRight className="w-4 h-4" />
                   </button>

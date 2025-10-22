@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function WczesnaNaukaCzytaniaPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-emerald-50">
+    <div className="min-h-screen bg-eduhus-bg-white">
       <Header />
 
       <main className="pt-20">
@@ -169,7 +169,7 @@ export default function WczesnaNaukaCzytaniaPage() {
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-green-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-semibold mb-6 text-green-700">Wczesna Nauka Czytania</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-green-700">Metoda Symultaniczno-Sekwencyjna</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-green-200">
                     <span className="text-gray-700">W gabinecie (50 min)</span>
@@ -188,15 +188,15 @@ export default function WczesnaNaukaCzytaniaPage() {
               </div>
 
               <div className="bg-blue-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-semibold mb-6 text-blue-700">Czytanie Sylabowe</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-blue-700">Czytanie Sylabowe z Forbrain</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-blue-200">
                     <span className="text-gray-700">W gabinecie (50 min)</span>
-                    <span className="text-2xl font-bold text-blue-600">120 zł</span>
+                    <span className="text-2xl font-bold text-blue-600">150 zł</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-gray-700">Z dojazdem do ucznia (50 min)</span>
-                    <span className="text-2xl font-bold text-blue-600">150 zł</span>
+                    <span className="text-2xl font-bold text-blue-600">180 zł</span>
                   </div>
                 </div>
                 <div className="mt-6 text-center">

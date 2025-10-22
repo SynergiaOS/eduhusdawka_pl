@@ -46,18 +46,18 @@ function Header() {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
               <UnifiedImage
-                src="/images/logo-new.svg"
+                src="/1.png"
                 alt="EduHustawka Logo"
-                width={50}
-                height={50}
-                className="w-12 h-12 lg:w-14 lg:h-14 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                width={80}
+                height={80}
+                className="w-16 h-16 lg:w-20 lg:h-20 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
+              <h1 className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
                 EduHustawka
               </h1>
-              <p className="text-xs text-gray-600 -mt-1">Pedagog specjalny</p>
+              <p className="text-xs text-cyan-600 -mt-1">Wsparcie w rozwoju dziecka</p>
             </div>
           </Link>
 

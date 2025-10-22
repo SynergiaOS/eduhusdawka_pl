@@ -71,7 +71,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="EduHustawka" />
-        <link rel="apple-touch-icon" href="/images/logo-new.svg" />
+        <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon-180.png" />
 
         {/* Preload critical resources */}
         <link rel="preload" href="/images/joanna.png" as="image" />

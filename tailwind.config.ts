@@ -72,6 +72,26 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // EduHus Minimalist Color Palette - Professional Design
+        // Backgrounds
+        "eduhus-bg-white": "#ffffff", // główne tło
+        "eduhus-bg-light": "#f8f9fa", // alternatywne tło sekcji
+        "eduhus-bg-accent": "#e8eef5", // jasny niebieski akcent
+        // Text
+        "eduhus-text-dark": "#1a1a1a", // nagłówki
+        "eduhus-text-main": "#444444", // tekst główny
+        "eduhus-text-light": "#888888", // tekst jasny
+        // Action Colors
+        "eduhus-accent": "#F4A261", // CTA przyciski - pomarańczowy
+        "eduhus-secondary": "#2E86AB", // turkus - secondary akcent
+        "eduhus-tertiary": "#1ebaf1", // cyan - subtelny akcent
+        // Icon Colors (Service-specific)
+        "eduhus-icon-johansen": "#9b59b6", // fioletowy
+        "eduhus-icon-neuroflow": "#1ebaf1", // cyan
+        "eduhus-icon-adhd": "#e74c3c", // czerwony
+        "eduhus-icon-forbrain": "#3498db", // niebieski
+        "eduhus-icon-autism": "#f39c12", // pomarańczowy
+        "eduhus-icon-hearing": "#16a085", // turkus
         blue: {
           25: "#f7faff",
           50: "#f0f5ff",
@@ -138,6 +158,13 @@ const config = {
           850: "#1f1f1f",
           900: "#171717",
           950: "#0a0a0a",
+        },
+        brand: {
+          'blue-light': '#B5EBFB',
+          'blue-medium': '#56C1E8',
+          'blue-dark': '#27A7D7',
+          'yellow': '#F9D14C',
+          'orange': '#F0A523',
         },
       },
       borderRadius: {
