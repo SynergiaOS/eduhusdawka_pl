@@ -109,7 +109,7 @@ const ContactForm = memo(() => {
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-eduhus-bg-light rounded-lg flex items-center justify-center flex-shrink-0">
                     <info.icon className="h-6 w-6 text-eduhus-accent" />
                   </div>
                   <div>
@@ -125,8 +125,8 @@ const ContactForm = memo(() => {
               ))}
             </div>
 
-            <div className="mt-8 p-6 text-teal-50 rounded-lg">
-              <h4 className="font-semibold text-teal-800 mb-2">Szybki kontakt</h4>
+            <div className="mt-8 p-6 text-eduhus-secondary rounded-lg">
+              <h4 className="font-semibold text-eduhus-secondary mb-2">Szybki kontakt</h4>
               <p className="text-eduhus-accent text-sm mb-4">Potrzebujesz pilnej konsultacji? Zadzwoń bezpośrednio!</p>
               <Button
                 className="w-full bg-eduhus-accent hover:opacity-90 text-white"

@@ -30,7 +30,7 @@ export function TherapyLoadingAnimation() {
       <div className="relative">
         <div className="flex space-x-4">
           <div className="animate-bounce" style={{ animationDelay: "0ms" }}>
-            <Brain className="h-8 w-8 text-teal-500" />
+            <Brain className="h-8 w-8 text-eduhus-secondary" />
           </div>
           <div className="animate-bounce" style={{ animationDelay: "150ms" }}>
             <Hand className="h-8 w-8 text-eduhus-accent" />

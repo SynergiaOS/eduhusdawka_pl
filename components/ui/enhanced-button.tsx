@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const enhancedButtonVariants = cva(
-  "relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-base font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500/80 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0 overflow-hidden group focus-enhanced hover:brightness-[1.05] active:translate-y-[1px]",
+  "relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-base font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-eduhus-secondary/80 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0 overflow-hidden group focus-enhanced hover:brightness-[1.05] active:translate-y-[1px]",
 
   {
     variants: {
@@ -30,19 +30,19 @@ const enhancedButtonVariants = cva(
           "hover:before:translate-x-[100%]"
         ],
         outline: [
-          "border-2 border-teal-700 text-teal-800 bg-white/90 backdrop-blur-sm",
-          "hover:bg-teal-50 hover:border-teal-800 hover:text-teal-900",
-          "active:bg-teal-100",
+          "border-2 border-eduhus-secondary text-eduhus-secondary bg-white/90 backdrop-blur-sm",
+          "hover:bg-eduhus-bg-light hover:border-eduhus-secondary hover:text-eduhus-secondary",
+          "active:bg-eduhus-bg-light",
           "shadow-lg hover:shadow-xl active:shadow-md",
-          "contrast-more:border-teal-900 contrast-more:text-teal-900",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-teal-100/40 before:to-transparent",
+          "contrast-more:border-eduhus-secondary contrast-more:text-eduhus-secondary",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-eduhus-bg-light/40 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
         ],
         ghost: [
-          "text-eduhus-accent hover:bg-teal-50",
-          "contrast-more:text-teal-900",
-          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-teal-100/30 before:to-transparent",
+          "text-eduhus-accent hover:bg-eduhus-bg-light",
+          "contrast-more:text-eduhus-secondary",
+          "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-eduhus-bg-light/30 before:to-transparent",
           "before:translate-x-[-100%] before:transition-transform before:duration-700",
           "hover:before:translate-x-[100%]"
         ],

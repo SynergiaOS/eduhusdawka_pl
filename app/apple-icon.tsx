@@ -16,7 +16,7 @@ export default function Icon() {
     <div
       style={{
         fontSize: 120,
-        background: "#f0fdfa", // Light teal background
+  background: "#ffffff", // Główne białe tło z palety
         width: "100%",
         height: "100%",
         display: "flex",
@@ -35,7 +35,7 @@ export default function Icon() {
           justifyContent: "center",
           fontWeight: 700,
           fontSize: 100,
-          color: "#0d9488", // Teal color
+          color: "#fed102", // Żółty akcent CTA
           fontFamily: "serif",
           position: "relative",
           zIndex: 2,
@@ -52,7 +52,7 @@ export default function Icon() {
           width: 40,
           height: 40,
           borderRadius: "50%",
-          background: "#f59e0b", // Amber color
+          background: "#1ebaf1", // Cyan secondary akcent
           zIndex: 1,
         }}
       />
@@ -65,7 +65,7 @@ export default function Icon() {
           width: 30,
           height: 30,
           borderRadius: "50%",
-          background: "#ec4899", // Pink color
+          background: "#a4efeb", // Jasny cyan z palety
           zIndex: 1,
         }}
       />

@@ -49,7 +49,7 @@ export default function Testimonials({ testimonials }: { testimonials: Testimoni
 
   return (
     <div className="relative overflow-hidden py-8">
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 text-teal-100">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 text-eduhus-secondary">
         <Quote size={120} strokeWidth={0.5} className="opacity-50" />
       </div>
 
@@ -108,7 +108,7 @@ export default function Testimonials({ testimonials }: { testimonials: Testimoni
 
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 rounded-full p-2 shadow-md transition-all duration-200 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 rounded-full p-2 shadow-md transition-all duration-200 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-eduhus-secondary focus:ring-opacity-50"
         aria-label="Previous testimonial"
       >
         <ChevronLeft size={20} />
@@ -116,7 +116,7 @@ export default function Testimonials({ testimonials }: { testimonials: Testimoni
 
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 rounded-full p-2 shadow-md transition-all duration-200 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 rounded-full p-2 shadow-md transition-all duration-200 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-eduhus-secondary focus:ring-opacity-50"
         aria-label="Next testimonial"
       >
         <ChevronRight size={20} />

@@ -157,7 +157,7 @@ const GoogleMap = memo(({
               GPS: {latitude}, {longitude}
             </p>
             {locationInfo?.isHomeOffice && (
-              <p className="bg-teal-50 p-2 rounded text-eduhus-accent text-xs font-medium border-l-2 border-teal-500">
+              <p className="bg-eduhus-bg-light p-2 rounded text-eduhus-accent text-xs font-medium border-l-2 border-eduhus-secondary">
                 Gabinet znajduje się w domu prywatnym. Prosimy o dyskrecję i punktualność.
               </p>
             )}

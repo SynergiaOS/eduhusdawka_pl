@@ -17,7 +17,7 @@ export default function SimpleContactSection() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-eduhus-bg-light rounded-full mb-4">
                 <Phone className="h-8 w-8 text-eduhus-accent" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Zadzwoń</h3>
@@ -31,14 +31,14 @@ export default function SimpleContactSection() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-eduhus-bg-light rounded-full mb-4">
                 <Mail className="h-8 w-8 text-eduhus-accent" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Napisz</h3>
               <p className="text-gray-600 mb-4">Wypełnij formularz kontaktowy</p>
               <Button
                 variant="outline"
-                className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
+                className="border-eduhus-accent text-eduhus-accent hover:bg-eduhus-bg-light bg-transparent"
                 onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Formularz
@@ -46,20 +46,20 @@ export default function SimpleContactSection() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-eduhus-bg-light rounded-full mb-4">
                 <MapPin className="h-8 w-8 text-eduhus-accent" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Odwiedź</h3>
               <p className="text-gray-600 mb-4">Umów się na wizytę w gabinecie</p>
               <Link href="/kontakt">
-                <Button variant="outline" className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent">
+                <Button variant="outline" className="border-eduhus-accent text-eduhus-accent hover:bg-eduhus-bg-light bg-transparent">
                   Lokalizacja
                 </Button>
               </Link>
             </div>
           </div>
 
-          <div className="bg-teal-50 rounded-lg p-8">
+          <div className="bg-eduhus-bg-light rounded-lg p-8">
             <div className="flex items-center justify-center mb-4">
               <Clock className="h-6 w-6 text-eduhus-accent mr-2" />
               <h3 className="text-lg font-semibold text-gray-900">Godziny pracy</h3>

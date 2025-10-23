@@ -55,7 +55,7 @@ const services: Service[] = [
     description: "Indywidualna Stymulacja Słuchu",
     href: "/uslugi/indywidualna-stymulacja-sluchu-johansena",
     color: "text-eduhus-accent",
-    bgColor: "bg-teal-50 hover:bg-teal-100"
+    bgColor: "bg-eduhus-bg-light hover:bg-eduhus-bg-light"
   },
   {
     id: "forbrain",

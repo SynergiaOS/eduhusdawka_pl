@@ -173,7 +173,7 @@ export default function PageTransition({ children }: { children: ReactNode }) {
 
         {/* Overlay animacji - pojawia się podczas przejścia */}
         <motion.div
-          className="fixed inset-0 pointer-events-none z-50 bg-teal-500/10"
+          className="fixed inset-0 pointer-events-none z-50 bg-eduhus-bg-light/10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0 }}
           exit={{ opacity: 0.3 }}

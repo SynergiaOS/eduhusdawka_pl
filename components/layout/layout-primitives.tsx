@@ -121,7 +121,7 @@ const presets = {
   mediaBase: "w-full rounded-xl object-cover aspect-[4/3] sm:aspect-video",
   ctaBox: "mt-8 sm:mt-10 p-6 sm:p-8 rounded-lg text-center",
   cardBase: "bg-white p-6 sm:p-8 rounded-xl shadow-md",
-  cardEmphasisTeal: "bg-white p-6 sm:p-8 rounded-xl shadow-md border-l-4 border-teal-500",
+  cardEmphasisTeal: "bg-white p-6 sm:p-8 rounded-xl shadow-md border-l-4 border-eduhus-secondary",
   divider: "my-12 sm:my-16 border-t border-muted/20",
   figure: "overflow-hidden rounded-xl",
 };

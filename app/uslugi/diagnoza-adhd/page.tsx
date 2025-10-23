@@ -22,7 +22,7 @@ export default function DiagnosisPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-                  <div className="bg-red-50 p-4 rounded-full w-fit">
+                  <div className="bg-eduhus-bg-light p-4 rounded-full w-fit">
                     <Brain className="h-12 w-12 text-eduhus-icon-adhd" />
                   </div>
                   <div>
@@ -32,16 +32,16 @@ export default function DiagnosisPage() {
                     <p className="text-lg sm:text-xl text-eduhus-icon-adhd font-medium">Kompleksowa ocena zaburzenia deficytu uwagi i nadpobudliwości</p>
                   </div>
                 </div>
-                <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-900 mb-8 leading-relaxed">
                   Profesjonalna diagnoza ADHD przeprowadzana przez pedagoga specjalnego z wieloletnim doświadczeniem. 
                   Test MOXO - obiektywne badanie funkcji wykonawczych, uwagi i impulsywności.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
-                  <div className="flex items-center gap-2 bg-red-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-icon-adhd" />
                     <span className="text-eduhus-icon-adhd font-medium">Objektywne wyniki</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                     <span className="text-eduhus-accent font-medium">Opinia diagnostyczna</span>
                   </div>
@@ -49,7 +49,7 @@ export default function DiagnosisPage() {
               </div>
 
               <div className="relative">
-                <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl shadow-lg">
+                <div className="bg-gradient-to-br from-eduhus-bg-light to-eduhus-bg-light p-8 rounded-2xl shadow-lg">
                   <div className="aspect-video bg-gray-900 rounded-xl flex items-center justify-center">
                     <Zap className="w-20 h-20 text-eduhus-icon-adhd opacity-50" />
                   </div>
@@ -65,8 +65,8 @@ export default function DiagnosisPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-gray-900">
               Czym jest ADHD?
             </h2>
-            <div className="bg-red-50 p-8 rounded-xl shadow-md border-l-4 border-eduhus-icon-adhd">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <div className="bg-eduhus-bg-light p-8 rounded-xl shadow-md border-l-4 border-eduhus-icon-adhd">
+              <p className="text-lg text-gray-900 leading-relaxed mb-6">
                 ADHD (Attention Deficit/Hyperactivity Disorder) - zaburzenie deficytu uwagi z nadpobudliwością to neurobihawioralny 
                 problem rozwojowy, który dotyka około 5-7% populacji dzieci i młodzieży. Charakteryzuje się trudnościami w koncentracji, 
                 kontrolowaniu impulsów i regulacji poziomu aktywności.
@@ -74,15 +74,15 @@ export default function DiagnosisPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white p-4 rounded-lg">
                   <h3 className="font-bold text-eduhus-icon-adhd mb-2">Nieuwaga</h3>
-                  <p className="text-sm text-gray-700">Trudności w skupianiu uwagi, łatwa rozpraszalność, problemy z organizacją</p>
+                  <p className="text-sm text-gray-900">Trudności w skupianiu uwagi, łatwa rozpraszalność, problemy z organizacją</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
                   <h3 className="font-bold text-eduhus-icon-adhd mb-2">Nadpobudliwość</h3>
-                  <p className="text-sm text-gray-700">Bezustanne ruchy, trudności w pozostaniu w bezruchu, niecierpliwość</p>
+                  <p className="text-sm text-gray-900">Bezustanne ruchy, trudności w pozostaniu w bezruchu, niecierpliwość</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
                   <h3 className="font-bold text-eduhus-icon-adhd mb-2">Impulsywność</h3>
-                  <p className="text-sm text-gray-700">Podejmowanie decyzji bez zastanowienia, przerywanie, trudności z czekaniem</p>
+                  <p className="text-sm text-gray-900">Podejmowanie decyzji bez zastanowienia, przerywanie, trudności z czekaniem</p>
                 </div>
               </div>
             </div>
@@ -97,67 +97,67 @@ export default function DiagnosisPage() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-red-500">
-                <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
+              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-eduhus-icon-adhd">
+                <h3 className="text-xl font-bold text-eduhus-icon-adhd mb-4 flex items-center gap-2">
                   <AlertCircle className="w-5 h-5" />
                   Objawy nieuwagi:
                 </h3>
-                <ul className="space-y-2 text-gray-700">
+                <ul className="space-y-2 text-gray-900">
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">•</span>
+                    <span className="text-eduhus-icon-adhd font-bold">•</span>
                     <span>Trudności w skupianiu się na zadaniach (szczególnie nudnych)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">•</span>
+                    <span className="text-eduhus-icon-adhd font-bold">•</span>
                     <span>Łatwa rozpraszalność nawet małymi bodźcami</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">•</span>
+                    <span className="text-eduhus-icon-adhd font-bold">•</span>
                     <span>Zapominanie instrukcji lub codziennych obowiązków</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">•</span>
+                    <span className="text-eduhus-icon-adhd font-bold">•</span>
                     <span>Problemy z organizacją i planowaniem</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">•</span>
+                    <span className="text-eduhus-icon-adhd font-bold">•</span>
                     <span>Częste gubienie przedmiotów</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">•</span>
+                    <span className="text-eduhus-icon-adhd font-bold">•</span>
                     <span>Opóźnianie się z pracami domowymi i projektami</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
-                <h3 className="text-xl font-bold text-orange-700 mb-4 flex items-center gap-2">
+              <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-eduhus-accent">
+                <h3 className="text-xl font-bold text-eduhus-accent mb-4 flex items-center gap-2">
                   <Zap className="w-5 h-5" />
                   Objawy nadpobudliwości i impulsywności:
                 </h3>
-                <ul className="space-y-2 text-gray-700">
+                <ul className="space-y-2 text-gray-900">
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-eduhus-accent font-bold">•</span>
                     <span>Nieustanne ruchy nóg i rąk, "drżenie"</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-eduhus-accent font-bold">•</span>
                     <span>Trudności w pozostaniu siedząco podczas lekcji</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-eduhus-accent font-bold">•</span>
                     <span>Odpowiadanie zanim skończą się pytania</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-eduhus-accent font-bold">•</span>
                     <span>Trudności w czekaniu na swoją kolej</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-eduhus-accent font-bold">•</span>
                     <span>Bycie "dzikim" i brawurowym</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">•</span>
+                    <span className="text-eduhus-accent font-bold">•</span>
                     <span>Mówienie zbyt wiele, głośno lub w nieodpowiednich momentach</span>
                   </li>
                 </ul>
@@ -174,44 +174,44 @@ export default function DiagnosisPage() {
             </h2>
             
             <div className="space-y-6">
-              <div className="flex flex-col md:flex-row gap-6 items-start bg-purple-50 p-6 rounded-xl">
-                <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex flex-col md:flex-row gap-6 items-start bg-eduhus-bg-light p-6 rounded-xl">
+                <div className="w-16 h-16 bg-eduhus-secondary text-white rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl font-bold">1</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Etap 1: Wywiad z rodzicami/opiekunami</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-900 leading-relaxed">
                     Szczegółowy bezpośredni wywiad na temat historii rozwojowej dziecka, rodziny, poprzednich diagnoz, 
                     oraz obserwacji w domu. Zbieramy informacje od najmłodszych lat dziecka.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-6 items-start bg-orange-50 p-6 rounded-xl">
+              <div className="flex flex-col md:flex-row gap-6 items-start bg-eduhus-bg-light p-6 rounded-xl">
                 <div className="w-16 h-16 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl font-bold">2</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Etap 2: Obserwacja behawioralna i testy psychologiczne</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-900 leading-relaxed">
                     Bezpośrednia obserwacja dziecka w gabinecie, zastosowanie testów i skal diagnostycznych 
                     (np. KOZE, KORP), ocena funkcjonowania poznawczego.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-6 items-start bg-orange-50 p-6 rounded-xl">
+              <div className="flex flex-col md:flex-row gap-6 items-start bg-eduhus-bg-light p-6 rounded-xl">
                 <div className="w-16 h-16 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl font-bold">3</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Etap 3: Test MOXO - Obiektywne badanie ADHD</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-900 leading-relaxed">
                     Zaawansowany test komputerowy, który zmierza funkcje wykonawcze, uwagę, impulsywność oraz odpowiedzi 
                     na bodźce. Trwa ok. 15 minut. Test jest uznawany przez specjalistów do obiektywnej oceny objawów ADHD.
                   </p>
                   <div className="bg-white p-4 rounded-lg mt-3 border-l-4 border-eduhus-accent">
-                    <p className="text-sm text-gray-700">
+                    <p className="text-sm text-gray-900">
                       <strong>Co mierzy Test MOXO:</strong> czas reakcji, wariancję czasu reakcji, błędy pominięcia, 
                       błędy alarmu alarmowego, zaburzenia w czytaniu wzorców - wszystko to wskaźniki potencjalnego ADHD.
                     </p>
@@ -219,13 +219,13 @@ export default function DiagnosisPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-6 items-start bg-yellow-50 p-6 rounded-xl">
-                <div className="w-16 h-16 bg-yellow-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="flex flex-col md:flex-row gap-6 items-start bg-eduhus-bg-light p-6 rounded-xl">
+                <div className="w-16 h-16 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl font-bold">4</span>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Etap 4: Opinia diagnostyczna i rekomendacje</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-900 leading-relaxed">
                     Na podstawie wszystkich zebranych informacji, wyników testów i obserwacji wystawiana jest opinia diagnostyczna 
                     zawierająca postawienie diagnozy (lub jej odrzucenie), a także rekomendacje dotyczące dalszych działań 
                     i wsparcia dla dziecka.
@@ -246,42 +246,42 @@ export default function DiagnosisPage() {
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="space-y-4">
                 <div className="flex items-start gap-4 pb-4 border-b border-gray-200">
-                  <ListChecks className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <ListChecks className="w-6 h-6 text-eduhus-secondary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-bold text-gray-900">Opinia diagnostyczna napisana na papierze firmowym</h3>
-                    <p className="text-sm text-gray-600">Z pełnym opisem wyników i rekomendacji</p>
+                    <p className="text-sm text-gray-900">Z pełnym opisem wyników i rekomendacji</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 pb-4 border-b border-gray-200">
-                  <ListChecks className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <ListChecks className="w-6 h-6 text-eduhus-secondary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-bold text-gray-900">Wyniki testu MOXO</h3>
-                    <p className="text-sm text-gray-600">Raport z parametrów uwagi, impulsywności i funkcji wykonawczych</p>
+                    <p className="text-sm text-gray-900">Raport z parametrów uwagi, impulsywności i funkcji wykonawczych</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 pb-4 border-b border-gray-200">
-                  <ListChecks className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <ListChecks className="w-6 h-6 text-eduhus-secondary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-bold text-gray-900">Wyniki testów psychologicznych</h3>
-                    <p className="text-sm text-gray-600">Testy behawioralne i skalowe (KOZE, KORP, itd.)</p>
+                    <p className="text-sm text-gray-900">Testy behawioralne i skalowe (KOZE, KORP, itd.)</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 pb-4 border-b border-gray-200">
-                  <ListChecks className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <ListChecks className="w-6 h-6 text-eduhus-secondary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-bold text-gray-900">Rekomendacje i sugestie terapeutyczne</h3>
-                    <p className="text-sm text-gray-600">Propozycje wsparcia, ćwiczeń i dalszych kroków terapeutycznych</p>
+                    <p className="text-sm text-gray-900">Propozycje wsparcia, ćwiczeń i dalszych kroków terapeutycznych</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <ListChecks className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                  <ListChecks className="w-6 h-6 text-eduhus-secondary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-bold text-gray-900">Rzetelne rekomendacje dla szkoły (jeśli potrzebne)</h3>
-                    <p className="text-sm text-gray-600">Sugestje dotyczące dostosowania warunków nauki</p>
+                    <p className="text-sm text-gray-900">Sugestje dotyczące dostosowania warunków nauki</p>
                   </div>
                 </div>
               </div>
@@ -297,41 +297,41 @@ export default function DiagnosisPage() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-purple-50 p-6 rounded-xl">
-                <h3 className="text-xl font-bold text-purple-700 mb-4 flex items-center gap-2">
+              <div className="bg-eduhus-bg-light p-6 rounded-xl">
+                <h3 className="text-xl font-bold text-eduhus-secondary mb-4 flex items-center gap-2">
                   <Target className="w-5 h-5" />
                   Dzieci, u których podejrzewa się ADHD:
                 </h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-gray-900">
                   <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">✓</span>
+                    <span className="text-eduhus-secondary font-bold">✓</span>
                     <span>Z trudnościami w skupianiu uwagi w domu i szkole</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">✓</span>
+                    <span className="text-eduhus-secondary font-bold">✓</span>
                     <span>Z problemami behawioralnymi i impulsywnością</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">✓</span>
+                    <span className="text-eduhus-secondary font-bold">✓</span>
                     <span>Z niskimi wynikami w szkole mimo inteligencji</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">✓</span>
+                    <span className="text-eduhus-secondary font-bold">✓</span>
                     <span>Kierowane do poradni psychologiczno-pedagogicznej</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">✓</span>
+                    <span className="text-eduhus-secondary font-bold">✓</span>
                     <span>Wymagające oceny do leczenia farmakologicznego</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-xl">
+              <div className="bg-eduhus-bg-light p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-eduhus-accent mb-4 flex items-center gap-2">
                   <Headphones className="w-5 h-5" />
                   Diagnoza może być przydatna również dla:
                 </h3>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-gray-900">
                   <li className="flex items-start gap-2">
                     <span className="text-eduhus-accent font-bold">✓</span>
                     <span>Dzieci z opóźnieniem w mowie/zaburzeniami językowymi</span>
@@ -363,15 +363,15 @@ export default function DiagnosisPage() {
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-xl shadow-md border-t-4 border-purple-600">
-                <h3 className="text-2xl font-bold text-purple-700 mb-6">Diagnoza pełna ADHD</h3>
+                <h3 className="text-2xl font-bold text-eduhus-secondary mb-6">Diagnoza pełna ADHD</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center pb-3 border-b border-gray-300">
-                    <span className="text-gray-700 text-lg">Cena</span>
-                    <span className="text-4xl font-bold text-purple-600">350 zł</span>
+                    <span className="text-gray-900 text-lg">Cena</span>
+                    <span className="text-4xl font-bold text-eduhus-secondary">350 zł</span>
                   </div>
-                  <div className="bg-purple-50 p-4 rounded-lg">
+                  <div className="bg-eduhus-bg-light p-4 rounded-lg">
                     <h4 className="font-bold text-gray-900 mb-3">Zawiera:</h4>
-                    <ul className="space-y-2 text-sm text-gray-700">
+                    <ul className="space-y-2 text-sm text-gray-900">
                       <li>✓ Wywiad diagnostyczny (60 min)</li>
                       <li>✓ Test MOXO (15 min)</li>
                       <li>✓ Testy psychologiczne</li>
@@ -387,12 +387,12 @@ export default function DiagnosisPage() {
                 <h3 className="text-2xl font-bold text-eduhus-accent mb-6">Test MOXO (samodzielnie)</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center pb-3 border-b border-gray-300">
-                    <span className="text-gray-700 text-lg">Cena</span>
+                    <span className="text-gray-900 text-lg">Cena</span>
                     <span className="text-4xl font-bold text-eduhus-accent">350 zł</span>
                   </div>
-                  <div className="bg-orange-50 p-4 rounded-lg">
+                  <div className="bg-eduhus-bg-light p-4 rounded-lg">
                     <h4 className="font-bold text-gray-900 mb-3">Zawiera:</h4>
-                    <ul className="space-y-2 text-sm text-gray-700">
+                    <ul className="space-y-2 text-sm text-gray-900">
                       <li>✓ Przeprowadzenie testu MOXO</li>
                       <li>✓ Raport z wynikami</li>
                       <li>✓ Wyjaśnienie wyniku</li>
@@ -403,9 +403,9 @@ export default function DiagnosisPage() {
               </div>
             </div>
 
-            <div className="mt-8 bg-orange-50 p-6 rounded-xl border-l-4 border-eduhus-accent max-w-3xl mx-auto">
+            <div className="mt-8 bg-eduhus-bg-light p-6 rounded-xl border-l-4 border-eduhus-accent max-w-3xl mx-auto">
               <h4 className="font-bold text-eduhus-accent mb-2">ℹ️ Ważna informacja:</h4>
-              <p className="text-gray-700">
+              <p className="text-gray-900">
                 Diagnoza ADHD wymaga kompleksowej oceny. Jeśli posiadasz już częściowe wyniki (np. opinię szkoły lub badania u psychiatry), 
                 możemy przeprowadzić diagnozę uzupełniającą. Skontaktuj się bezpośrednio, aby ustalić optymalny plan diagnostyczny dla Twojego dziecka.
               </p>

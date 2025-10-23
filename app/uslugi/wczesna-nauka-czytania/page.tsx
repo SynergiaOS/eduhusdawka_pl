@@ -31,18 +31,18 @@ export default function WczesnaNaukaCzytaniaPage() {
                     <p className="text-xl text-eduhus-accent">Wsparcie rozwoju umiejętności czytania</p>
                   </div>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-900 mb-8 leading-relaxed">
                   Specjalistyczne zajęcia wspierające rozwój umiejętności czytania u dzieci
                   w wieku przedszkolnym i wczesnoszkolnym. Indywidualne podejście do każdego dziecka.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                     <span className="text-eduhus-accent">Metody sprawdzone</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-emerald-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-emerald-600" />
-                    <span className="text-emerald-700">Indywidualne tempo</span>
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-secondary" />
+                    <span className="text-eduhus-secondary">Indywidualne tempo</span>
                   </div>
                 </div>
               </div>
@@ -65,8 +65,8 @@ export default function WczesnaNaukaCzytaniaPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest wczesna nauka czytania?
             </h2>
-            <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl mb-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
+            <div className="bg-gradient-to-br from-eduhus-accent to-white p-8 rounded-2xl mb-8">
+              <p className="text-lg text-gray-900 leading-relaxed">
                 Wczesna nauka czytania to specjalistyczne zajęcia wspierające rozwój umiejętności czytania
                 u dzieci w wieku przedszkolnym i wczesnoszkolnym. Wykorzystujemy różnorodne metody dostosowane
                 do indywidualnych potrzeb i możliwości każdego dziecka.
@@ -84,31 +84,31 @@ export default function WczesnaNaukaCzytaniaPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Eye className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Rozpoznawanie</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Nauka rozpoznawania liter, ich kształtów i brzmień w formie zabawy
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Lightbulb className="w-8 h-8 text-emerald-600" />
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Lightbulb className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Łączenie</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Łączenie liter w sylaby i proste wyrazy z wykorzystaniem gier edukacyjnych
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Rozumienie</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Rozwój czytania ze zrozumieniem i płynności czytania
                 </p>
               </div>

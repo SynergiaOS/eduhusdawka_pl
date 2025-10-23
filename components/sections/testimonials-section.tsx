@@ -64,7 +64,7 @@ const TestimonialsSection = memo(() => {
   const currentTestimonial = useMemo(() => testimonials[currentIndex], [testimonials, currentIndex])
 
   return (
-    <section className="py-16 bg-gradient-to-br from-teal-50 to-blue-50">
+  <section className="py-16 bg-gradient-to-br from-eduhus-bg-light to-white">
       <div className="container mx-auto px-4">
         <AnimatedSection>
           <div className="text-center mb-12">
@@ -78,7 +78,7 @@ const TestimonialsSection = memo(() => {
         <div className="max-w-4xl mx-auto">
           <AnimatedSection delay={200}>
             <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 relative">
-              <Quote className="absolute top-6 left-6 h-8 w-8 text-teal-200" />
+              <Quote className="absolute top-6 left-6 h-8 w-8 text-eduhus-secondary" />
 
               <div className="text-center mb-8">
                 <div className="flex justify-center mb-4">
@@ -94,7 +94,7 @@ const TestimonialsSection = memo(() => {
                 <div className="border-t border-gray-200 pt-6">
                   <div className="font-semibold text-gray-800 text-lg">{currentTestimonial.name}</div>
                   <div className="text-gray-600 mb-2">{currentTestimonial.role}</div>
-                  <div className="inline-block bg-teal-100 text-eduhus-accent px-3 py-1 rounded-full text-sm">
+                  <div className="inline-block bg-eduhus-bg-light text-eduhus-accent px-3 py-1 rounded-full text-sm">
                     {currentTestimonial.service}
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const TestimonialsSection = memo(() => {
                   variant="outline"
                   size="sm"
                   onClick={prevTestimonial}
-                  className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
+                  className="border-eduhus-accent text-eduhus-accent hover:bg-eduhus-bg-light bg-transparent"
                   aria-label="Poprzednia opinia"
                 >
                   <ChevronLeft className="h-4 w-4" />
@@ -130,7 +130,7 @@ const TestimonialsSection = memo(() => {
                   variant="outline"
                   size="sm"
                   onClick={nextTestimonial}
-                  className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
+                  className="border-eduhus-accent text-eduhus-accent hover:bg-eduhus-bg-light bg-transparent"
                   aria-label="Następna opinia"
                 >
                   <ChevronRight className="h-4 w-4" />

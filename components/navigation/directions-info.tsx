@@ -11,11 +11,11 @@ export default function DirectionsInfo() {
     <div className="bg-white p-6 rounded-lg shadow-md h-full mb-4">
       <h3 className="text-xl font-semibold mb-4 text-eduhus-accent font-heading">Wskazówki dojazdu</h3>
 
-      <div className="mb-4 p-3 bg-teal-50 rounded-lg border border-teal-100">
+      <div className="mb-4 p-3 bg-eduhus-bg-light rounded-lg border border-eduhus-secondary">
         <div className="flex items-start">
           <Home className="h-5 w-5 text-eduhus-accent mt-1 mr-2 flex-shrink-0" />
           <div>
-            <h4 className="font-medium text-teal-800">Gabinet w domu prywatnym</h4>
+            <h4 className="font-medium text-eduhus-secondary">Gabinet w domu prywatnym</h4>
             <p className="text-sm text-eduhus-accent">
               Gabinet terapeutyczny znajduje się w moim domu prywatnym. Wejście znajduje się od strony ogrodu, z prawej
                             strony budynku. Na bramie znajduje się tabliczka &ldquo;EDU HUSTAWKA&rdquo;.

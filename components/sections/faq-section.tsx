@@ -71,7 +71,7 @@ const FaqSection = memo(() => {
               <div className="mb-4">
                 <button
                   onClick={() => toggleItem(item.id)}
-                  className="w-full bg-white rounded-lg p-6 text-left hover:shadow-md transition-shadow duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  className="w-full bg-white rounded-lg p-6 text-left hover:shadow-md transition-shadow duration-200 focus:outline-none focus:ring-2 focus:ring-eduhus-secondary"
                 >
                   <div className="flex justify-between items-center">
                     <h3 className="text-lg font-semibold text-gray-800 pr-4">{item.question}</h3>
@@ -95,8 +95,8 @@ const FaqSection = memo(() => {
 
         <AnimatedSection delay={300}>
           <div className="text-center mt-12">
-            <div className="bg-teal-50 rounded-lg p-8">
-              <h3 className="text-xl font-semibold mb-4 text-teal-800">Nie znalazłeś odpowiedzi na swoje pytanie?</h3>
+            <div className="bg-eduhus-bg-light rounded-lg p-8">
+              <h3 className="text-xl font-semibold mb-4 text-eduhus-secondary">Nie znalazłeś odpowiedzi na swoje pytanie?</h3>
               <p className="text-eduhus-accent mb-6">
                 Skontaktuj się ze mną bezpośrednio - chętnie odpowiem na wszystkie wątpliwości
               </p>
@@ -109,7 +109,7 @@ const FaqSection = memo(() => {
                 </button>
                 <button
                   onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-                  className="border border-eduhus-accent text-eduhus-accent hover:bg-teal-50 px-6 py-3 rounded-lg font-medium transition-colors bg-transparent"
+                  className="border border-eduhus-accent text-eduhus-accent hover:bg-eduhus-bg-light px-6 py-3 rounded-lg font-medium transition-colors bg-transparent"
                 >
                   Napisz wiadomość
                 </button>

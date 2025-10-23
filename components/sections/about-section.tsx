@@ -22,7 +22,7 @@ const AboutSection = memo(() => {
                 objectFit="contain"
                 objectPosition="center"
               />
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-teal-100 rounded-full opacity-60" />
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-eduhus-bg-light rounded-full opacity-60" />
               <div className="absolute -top-4 -left-4 w-16 h-16 bg-blue-100 rounded-full opacity-40" />
             </div>
           </AnimatedSection>
@@ -53,7 +53,7 @@ const AboutSection = memo(() => {
 
               <div className="grid grid-cols-2 gap-4 my-8">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-eduhus-bg-light rounded-full flex items-center justify-center">
                     <Award className="h-6 w-6 text-eduhus-accent" />
                   </div>
                   <div>
@@ -103,7 +103,7 @@ const AboutSection = memo(() => {
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent"
+                  className="border-eduhus-accent text-eduhus-accent hover:bg-eduhus-bg-light bg-transparent"
                   onClick={() => (window.location.href = "/o-mnie")}
                 >
                   Dowiedz się więcej

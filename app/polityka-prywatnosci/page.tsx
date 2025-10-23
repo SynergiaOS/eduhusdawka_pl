@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
             <div className="p-6 md:p-8">
               <h1 className="text-2xl md:text-3xl font-bold text-eduhus-accent-800 mb-6 font-heading">Polityka Prywatności</h1>
 
-              <div className="prose prose-teal max-w-none">
+              <div className="prose max-w-none prose-headings:text-eduhus-secondary prose-a:text-eduhus-accent">
                 <p>Ostatnia aktualizacja: 25 kwietnia 2024</p>
 
                 <h2>1. Wprowadzenie</h2>

@@ -69,7 +69,7 @@ export default function ServiceArticlesSection() {
             {serviceArticles.map((article, index) => (
               <AnimatedSection key={article.id} delay={index * 100}>
                 <Link href={article.href} className="group block">
-                  <article className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-teal-200 h-full">
+                  <article className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-eduhus-secondary h-full">
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden">
                       <UnifiedImage

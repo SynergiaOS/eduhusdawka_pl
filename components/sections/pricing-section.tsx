@@ -326,7 +326,7 @@ export default function PricingSection() {
                             <Button
                               variant="outline"
                               size="sm"
-                              className="text-eduhus-accent border-eduhus-accent hover:bg-teal-50 w-full sm:w-auto bg-transparent"
+                              className="text-eduhus-accent border-eduhus-accent hover:bg-eduhus-bg-light w-full sm:w-auto bg-transparent"
                             >
                               <Info className="h-4 w-4 mr-1" /> Szczegóły
                             </Button>
@@ -355,8 +355,8 @@ export default function PricingSection() {
 
         <AnimatedSection delay={300}>
           <div className="mt-12 text-center">
-            <div className="bg-teal-50 rounded-lg p-6 mb-8">
-              <h3 className="text-xl font-semibold text-teal-800 mb-4">Informacje dodatkowe</h3>
+            <div className="bg-eduhus-bg-light rounded-lg p-6 mb-8">
+              <h3 className="text-xl font-semibold text-eduhus-secondary mb-4">Informacje dodatkowe</h3>
               <div className="grid md:grid-cols-2 gap-4 text-sm text-eduhus-accent">
                 <div>
                   <strong>Pakiety:</strong> Wybierając pakiety sesji, oszczędzasz na pojedynczych wizytach
@@ -378,7 +378,7 @@ export default function PricingSection() {
               <Button
                 onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
                 variant="outline"
-                className="text-eduhus-accent border-eduhus-accent hover:bg-teal-50"
+                className="text-eduhus-accent border-eduhus-accent hover:bg-eduhus-bg-light"
               >
                 Skontaktuj się ze mną
               </Button>

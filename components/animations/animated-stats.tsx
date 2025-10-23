@@ -60,7 +60,7 @@ const StatItem = memo(({ icon, value, label, suffix = "", duration = 2000 }: Sta
   return (
     <div ref={ref} className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div className="flex justify-center mb-4">
-        <div className="bg-teal-100 p-3 rounded-full">
+        <div className="bg-eduhus-bg-light p-3 rounded-full">
           {icon}
         </div>
       </div>
@@ -104,7 +104,7 @@ const AnimatedStats = memo(() => {
   ], [])
 
   return (
-    <div className="py-16 px-4 bg-gradient-to-br from-teal-50 to-blue-50">
+  <div className="py-16 px-4 bg-gradient-to-br from-eduhus-bg-light to-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">

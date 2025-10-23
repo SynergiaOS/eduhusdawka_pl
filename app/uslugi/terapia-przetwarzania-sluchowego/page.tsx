@@ -31,17 +31,17 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                     <p className="text-xl text-eduhus-accent">Program mTalent - certyfikowany wyrób medyczny</p>
                   </div>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-900 mb-8 leading-relaxed">
                   Podczas zajęć wykorzystuję profesjonalny program terapeutyczny mTalent Zaburzenia przetwarzania słuchowego, 
                   będący certyfikowanym wyrobem medycznym. To nowoczesny zestaw interaktywnych ćwiczeń opracowany przez 
                   specjalistów z zakresu pedagogiki, logopedii i neuropsychologii.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-teal-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-icon-hearing" />
                     <span className="text-eduhus-icon-hearing">Certyfikowany wyrób medyczny</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-teal-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-icon-hearing" />
                     <span className="text-eduhus-icon-hearing">Profesjonalny program</span>
                   </div>
@@ -68,12 +68,12 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
               Czym jest program mTalent?
             </h2>
             <div className="bg-eduhus-accent-50 p-8 rounded-2xl mb-8">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              <p className="text-lg text-gray-900 leading-relaxed mb-4">
                 Program mTalent to nowoczesny system interaktywnych ćwiczeń terapeutycznych wspierających rozwój wyższych 
                 funkcji słuchowych, uwagi i pamięci opartej na analizatorze słuchowym. Zawiera ponad 700 interaktywnych 
                 ekranów oraz 150 kart pracy, które w atrakcyjny i angażujący sposób wspomagają dziecko w procesie terapii.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-900 leading-relaxed">
                 Ćwiczenia pomagają usprawniać percepcję i przetwarzanie bodźców słuchowych, co przekłada się na lepsze 
                 rozumienie mowy, konkurowanie z hałasem i generalnie lepsze funkcjonowanie słuchowe.
               </p>
@@ -94,18 +94,18 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                   <CheckCircle className="w-6 h-6 mr-2" />
                   700+ interaktywnych ekranów
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                   Bogata biblioteka ćwiczeń dostosowanych do różnych poziomów trudności, z których każde wspiera 
                   inny aspekt przetwarzania słuchowego
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-600">
-                <h3 className="text-lg font-semibold text-cyan-700 mb-4 flex items-center">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-secondary">
+                <h3 className="text-lg font-semibold text-eduhus-secondary mb-4 flex items-center">
                   <CheckCircle className="w-6 h-6 mr-2" />
                   150 kart pracy
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                   Dodatkowy materiał pracy wspierający uczenie się i utrwalanie umiejętności zarówno w terapii 
                   jak i w domu
                 </p>
@@ -116,18 +116,18 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                   <CheckCircle className="w-6 h-6 mr-2" />
                   Angająca forma zabawy
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                   Gry i ćwiczenia są prezentowane w atrakcyjnej, motywującej formie, co sprzyja zaangażowaniu 
                   dziecka w proces terapii
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-600">
-                <h3 className="text-lg font-semibold text-cyan-700 mb-4 flex items-center">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-eduhus-secondary">
+                <h3 className="text-lg font-semibold text-eduhus-secondary mb-4 flex items-center">
                   <CheckCircle className="w-6 h-6 mr-2" />
                   Opracowany przez specjalistów
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                   Program stworzony przez profesjonalistów z zakresu pedagogiki, logopedii i neuropsychologii, 
                   gwarantujący wysoką jakość terapii
                 </p>
@@ -152,39 +152,39 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Zaburzenia przetwarzania słuchowego (Auditory Processing Disorder)</span>
+                    <span className="text-gray-900">Zaburzenia przetwarzania słuchowego (Auditory Processing Disorder)</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Trudności w rozumieniu mowy, szczególnie w hałaśliwym środowisku</span>
+                    <span className="text-gray-900">Trudności w rozumieniu mowy, szczególnie w hałaśliwym środowisku</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Opóźniony rozwój mowy i zaburzenia komunikacyjne</span>
+                    <span className="text-gray-900">Opóźniony rozwój mowy i zaburzenia komunikacyjne</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Problemy z percepcją i dyskryminacją dźwięków</span>
+                    <span className="text-gray-900">Problemy z percepcją i dyskryminacją dźwięków</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Trudności w lokalizacji źródła dźwięku</span>
+                    <span className="text-gray-900">Trudności w lokalizacji źródła dźwięku</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">ADHD i problemy z koncentracją (związane z percepcją słuchową)</span>
+                    <span className="text-gray-900">ADHD i problemy z koncentracją (związane z percepcją słuchową)</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-hearing mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Zaburzenia memorii słuchowej</span>
+                    <span className="text-gray-900">Zaburzenia memorii słuchowej</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Problemy nauki czytania (dysleksja)</span>
+                    <span className="text-gray-900">Problemy nauki czytania (dysleksja)</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-accent-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Autyzm i zaburzenia ze spektrum</span>
+                    <span className="text-gray-900">Autyzm i zaburzenia ze spektrum</span>
                   </li>
                 </ul>
               </div>
@@ -204,7 +204,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Diagnoza i ocena</h3>
-                  <p className="text-gray-600">Wstępna ocena umiejętności słuchowych dziecka i identyfikacja obszarów wymagających wsparcia</p>
+                  <p className="text-gray-900">Wstępna ocena umiejętności słuchowych dziecka i identyfikacja obszarów wymagających wsparcia</p>
                 </div>
               </div>
               
@@ -212,7 +212,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Dostosowanie programu</h3>
-                  <p className="text-gray-600">Wybranie odpowiednich ćwiczeń z programu mTalent dostosowanych do poziomu i potrzeb dziecka</p>
+                  <p className="text-gray-900">Wybranie odpowiednich ćwiczeń z programu mTalent dostosowanych do poziomu i potrzeb dziecka</p>
                 </div>
               </div>
               
@@ -220,7 +220,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Ćwiczenia interaktywne</h3>
-                  <p className="text-gray-600">Wykonywanie ćwiczeń z programu w angażującej formie zabawy i gier</p>
+                  <p className="text-gray-900">Wykonywanie ćwiczeń z programu w angażującej formie zabawy i gier</p>
                 </div>
               </div>
               
@@ -228,7 +228,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Monitoring postępów</h3>
-                  <p className="text-gray-600">Obserwacja postępów dziecka i dostosowanie ćwiczeń do rosnących umiejętności</p>
+                  <p className="text-gray-900">Obserwacja postępów dziecka i dostosowanie ćwiczeń do rosnących umiejętności</p>
                 </div>
               </div>
 
@@ -236,7 +236,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
                 <div className="w-12 h-12 bg-eduhus-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Karty pracy i zadania domowe</h3>
-                  <p className="text-gray-600">Wykorzystanie kart pracy oraz rekomendacje ćwiczeń do utrwalania umiejętności w domu</p>
+                  <p className="text-gray-900">Wykorzystanie kart pracy oraz rekomendacje ćwiczeń do utrwalania umiejętności w domu</p>
                 </div>
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
         </AnimatedSection>
 
         {/* Efekty */}
-        <AnimatedSection className="py-16 px-4 bg-teal-50" delay={600}>
+        <AnimatedSection className="py-16 px-4 bg-eduhus-bg-light" delay={600}>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
               Efekty terapii
@@ -252,61 +252,61 @@ export default function TerapiaPrztwarzaniaSluchowegoPage() {
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
-                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Volume2 className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa percepcji słuchowej</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Dziecko lepiej odbiera i analizuje bodźce słuchowe
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
-                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Lepsza pamięć słuchowa</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Zwiększenie zdolności do zapamiętywania informacji słuchowych
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
-                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa uwagi i koncentracji</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Lepsze skupianie się na zadaniach wymagających słuchu
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
-                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Headphones className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa rozumienia mowy</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Lepsze rozumienie słów i instrukcji, szczególnie w hałasie
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
-                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa nauki czytania</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Lepsza dyskryminacja dźwięków wspiera naukę czytania
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-icon-hearing">
-                <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-8 h-8 text-eduhus-icon-hearing" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Wsparcie rozwoju mowy</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Lepsza percepcja słuchowa wspomaga naturalny rozwój mowy
                 </p>
               </div>

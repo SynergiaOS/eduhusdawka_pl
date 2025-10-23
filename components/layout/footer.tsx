@@ -95,19 +95,19 @@ const Footer = React.memo(() => {
             <h3 className="font-semibold mb-4">Kontakt</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-teal-400" />
+                <Phone className="h-4 w-4 text-eduhus-secondary" />
                 <span className="text-gray-400 text-sm">531 509 008</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-teal-400" />
+                <Mail className="h-4 w-4 text-eduhus-secondary" />
                 <span className="text-gray-400 text-sm">kontakt@eduhustawka.pl</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-teal-400" />
+                <MapPin className="h-4 w-4 text-eduhus-secondary" />
                 <span className="text-gray-400 text-sm">Polna 17, Pomigacze</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Clock className="h-4 w-4 text-teal-400" />
+                <Clock className="h-4 w-4 text-eduhus-secondary" />
                 <span className="text-gray-400 text-sm">Pon-Pt: 9:00-18:00</span>
               </div>
             </div>

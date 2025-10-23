@@ -65,7 +65,7 @@ export default function CookieBanner() {
                     type="checkbox"
                     checked={consents.analytics}
                     onChange={(e) => setConsent("analytics", e.target.checked)}
-                    className="h-4 w-4 text-eduhus-accent focus:ring-teal-500 border-gray-300 rounded"
+                    className="h-4 w-4 text-eduhus-accent focus:ring-eduhus-secondary border-gray-300 rounded"
                   />
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function CookieBanner() {
                     type="checkbox"
                     checked={consents.marketing}
                     onChange={(e) => setConsent("marketing", e.target.checked)}
-                    className="h-4 w-4 text-eduhus-accent focus:ring-teal-500 border-gray-300 rounded"
+                    className="h-4 w-4 text-eduhus-accent focus:ring-eduhus-secondary border-gray-300 rounded"
                   />
                 </div>
               </div>

@@ -96,7 +96,7 @@ export default function BlogSection() {
 
                   <Button
                     variant="ghost"
-                    className="w-full justify-between text-eduhus-accent hover:text-eduhus-accent hover:bg-teal-50 p-0"
+                    className="w-full justify-between text-eduhus-accent hover:text-eduhus-accent hover:bg-eduhus-bg-light p-0"
                   >
                     Czytaj więcej
                     <ArrowRight className="h-4 w-4" />
@@ -109,7 +109,7 @@ export default function BlogSection() {
 
         <AnimatedSection delay={400}>
           <div className="text-center mt-12">
-            <Button variant="outline" className="border-eduhus-accent text-eduhus-accent hover:bg-teal-50 bg-transparent">
+            <Button variant="outline" className="border-eduhus-accent text-eduhus-accent hover:bg-eduhus-bg-light bg-transparent">
               Zobacz wszystkie artykuły
             </Button>
           </div>

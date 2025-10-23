@@ -123,7 +123,7 @@ Z poważaniem`
                 Rezerwacja wizyty
               </h1>
             </div>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-900 mb-8">
               Umów się na konsultację lub terapię. Skontaktuj się ze mną, aby wybrać najlepszy termin.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -131,7 +131,7 @@ Z poważaniem`
                 <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                 <span className="text-eduhus-accent">Indywidualne podejście</span>
               </div>
-              <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                 <Clock className="w-5 h-5 text-eduhus-accent" />
                 <span className="text-eduhus-accent">Elastyczne terminy</span>
               </div>
@@ -152,9 +152,9 @@ Z poważaniem`
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.name}</h3>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-2xl font-bold text-eduhus-accent">{service.price}</span>
-                    <span className="text-gray-500">{service.duration}</span>
+                    <span className="text-gray-900">{service.duration}</span>
                   </div>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
+                  <p className="text-gray-900 text-sm">{service.description}</p>
                 </div>
               ))}
             </div>
@@ -170,11 +170,11 @@ Z poważaniem`
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Zadzwoń</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-900 mb-6">
                   Najszybszy sposób umówienia wizyty. Omówimy dostępne terminy i dobierzemy odpowiednią usługę.
                 </p>
                 <Button 
@@ -184,15 +184,15 @@ Z poważaniem`
                   <Phone className="w-4 h-4 mr-2" />
                   531 509 008
                 </Button>
-                <p className="text-sm text-gray-500 mt-2">Pon-Pt: 8:00-16:00</p>
+                <p className="text-sm text-gray-900 mt-2">Pon-Pt: 8:00-16:00</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <MessageSquare className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">WhatsApp</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-900 mb-6">
                   Napisz wiadomość na WhatsApp. Odpowiem tak szybko, jak to możliwe.
                 </p>
                 <Button 
@@ -202,15 +202,15 @@ Z poważaniem`
                   <MessageSquare className="w-4 h-4 mr-2" />
                   Napisz na WhatsApp
                 </Button>
-                <p className="text-sm text-gray-500 mt-2">Szybka odpowiedź</p>
+                <p className="text-sm text-gray-900 mt-2">Szybka odpowiedź</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Mail className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Email</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-900 mb-6">
                   Wyślij email z prośbą o umówienie wizyty. Szablon zostanie przygotowany automatycznie.
                 </p>
                 <Button 
@@ -220,7 +220,7 @@ Z poważaniem`
                   <Mail className="w-4 h-4 mr-2" />
                   Wyślij email
                 </Button>
-                <p className="text-sm text-gray-500 mt-2">Odpowiedź w 24h</p>
+                <p className="text-sm text-gray-900 mt-2">Odpowiedź w 24h</p>
               </div>
             </div>
           </div>
@@ -236,26 +236,26 @@ Z poważaniem`
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-eduhus-accent mb-4">Lokalizacja</h3>
-                <p className="text-gray-600 mb-2">
+                <p className="text-gray-900 mb-2">
                   <strong>Adres:</strong> ul. Polna 17, 18-106 Pomigacze
                 </p>
-                <p className="text-gray-600 mb-2">
+                <p className="text-gray-900 mb-2">
                   <strong>Dojazd:</strong> Możliwość terapii w domu klienta
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   <strong>Parking:</strong> Dostępny przy gabinecie
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-eduhus-accent mb-4">Płatność</h3>
-                <p className="text-gray-600 mb-2">
+                <p className="text-gray-900 mb-2">
                   <strong>Gotówka:</strong> Płatność po wizycie
                 </p>
-                <p className="text-gray-600 mb-2">
+                <p className="text-gray-900 mb-2">
                   <strong>Przelew:</strong> Możliwość płatności przelewem
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   <strong>Anulowanie:</strong> Proszę o informację 24h wcześniej
                 </p>
               </div>

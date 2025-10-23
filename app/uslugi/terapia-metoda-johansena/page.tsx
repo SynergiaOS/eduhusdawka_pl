@@ -31,17 +31,17 @@ export default function TerapiaMetodaJohansenPage() {
                     <p className="text-xl text-eduhus-icon-johansen">Nowoczesna terapia słuchowa dla dzieci</p>
                   </div>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-900 mb-8 leading-relaxed">
                   Metoda Johansena to innowacyjne podejście wspierające integrację sensoryczną i rozwój 
                   słuchu u dzieci z różnymi trudnościami rozwojowymi. Terapia opiera się na zasadzie 
                   stymulacji słuchowej i neuronalnego uczenia się.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-purple-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-icon-johansen" />
                     <span className="text-eduhus-icon-johansen">Sprawdzona metoda</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                     <span className="text-eduhus-accent">Indywidualna terapia</span>
                   </div>
@@ -67,13 +67,13 @@ export default function TerapiaMetodaJohansenPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest Metoda Johansena?
             </h2>
-            <div className="bg-purple-50 p-8 rounded-2xl mb-8">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            <div className="bg-eduhus-bg-light p-8 rounded-2xl mb-8">
+              <p className="text-lg text-gray-900 leading-relaxed mb-4">
                 Metoda Johansena to zintegrowany system terapeutyczny łączący stymulację słuchową z 
                 ćwiczeniami ruchowymi i zmysłowymi. Metoda wspiera naturalny proces rozwojowy dziecka, 
                 aktywując i wzmacniając funkcje słuchowe oraz integracyjne ośrodkowego systemu nerwowego.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-900 leading-relaxed">
                 Terapia jest dostosowywana indywidualnie do potrzeb każdego dziecka, uwzględniając jego 
                 aktualny poziom funkcjonowania i tempo rozwojowe.
               </p>
@@ -97,31 +97,31 @@ export default function TerapiaMetodaJohansenPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Opoźniony rozwój mowy i komunikacji</span>
+                    <span className="text-gray-900">Opoźniony rozwój mowy i komunikacji</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Problemy z przetwarzaniem słuchowym</span>
+                    <span className="text-gray-900">Problemy z przetwarzaniem słuchowym</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Zaburzenia integracji sensorycznej</span>
+                    <span className="text-gray-900">Zaburzenia integracji sensorycznej</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Autyzm i zaburzenia ze spektrum</span>
+                    <span className="text-gray-900">Autyzm i zaburzenia ze spektrum</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">ADHD i problemy z koncentracją</span>
+                    <span className="text-gray-900">ADHD i problemy z koncentracją</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Zaburzenia motoryki i koordynacji</span>
+                    <span className="text-gray-900">Zaburzenia motoryki i koordynacji</span>
                   </li>
                   <li className="flex items-start">
                     <Star className="w-5 h-5 text-eduhus-icon-johansen mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Zaburzenia emocjonalne i behawioralne</span>
+                    <span className="text-gray-900">Zaburzenia emocjonalne i behawioralne</span>
                   </li>
                 </ul>
               </div>
@@ -138,31 +138,31 @@ export default function TerapiaMetodaJohansenPage() {
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <MessageCircle className="w-8 h-8 text-eduhus-icon-johansen" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Mowa i komunikacja</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Poprawa artykulacji, wzbogacanie słownictwa, rozwinięcie umiejętności komunikacyjnych
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Funkcje poznawcze</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Wspieranie koncentracji, poprawianie pamięci, wspomaganie procesów uczenia się
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Integracja sensoryczna</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Wspomaganie przetwarzania informacji zmysłowych, poprawa koordynacji i motoryki
                 </p>
               </div>
@@ -172,7 +172,7 @@ export default function TerapiaMetodaJohansenPage() {
                   <Ear className="w-8 h-8 text-pink-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Słuch i percepcja</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Wzmocnienie słuchu, lepsza percepcja dźwięków, rozwój świadomości słuchowej
                 </p>
               </div>
@@ -192,7 +192,7 @@ export default function TerapiaMetodaJohansenPage() {
                 <div className="w-12 h-12 bg-eduhus-icon-johansen text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Ocena i diagnoza</h3>
-                  <p className="text-gray-600">Przeprowadzenie szczegółowej obserwacji i oceny poziomu funkcjonowania dziecka</p>
+                  <p className="text-gray-900">Przeprowadzenie szczegółowej obserwacji i oceny poziomu funkcjonowania dziecka</p>
                 </div>
               </div>
               
@@ -200,7 +200,7 @@ export default function TerapiaMetodaJohansenPage() {
                 <div className="w-12 h-12 bg-eduhus-icon-johansen text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Stymulacja słuchowa</h3>
-                  <p className="text-gray-600">Zastosowanie specjalistycznych sekwencji dźwiękowych w zabawie i ćwiczeniach</p>
+                  <p className="text-gray-900">Zastosowanie specjalistycznych sekwencji dźwiękowych w zabawie i ćwiczeniach</p>
                 </div>
               </div>
               
@@ -208,7 +208,7 @@ export default function TerapiaMetodaJohansenPage() {
                 <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Ćwiczenia ruchowe</h3>
-                  <p className="text-gray-600">Połączenie stymulacji słuchowej z ćwiczeniami wspomagającymi motorykę i koordynację</p>
+                  <p className="text-gray-900">Połączenie stymulacji słuchowej z ćwiczeniami wspomagającymi motorykę i koordynację</p>
                 </div>
               </div>
               
@@ -216,7 +216,7 @@ export default function TerapiaMetodaJohansenPage() {
                 <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Utrwalanie i transfer</h3>
-                  <p className="text-gray-600">Zabawy i ćwiczenia wspierające przenoszenie umiejętności do życia codziennego</p>
+                  <p className="text-gray-900">Zabawy i ćwiczenia wspierające przenoszenie umiejętności do życia codziennego</p>
                 </div>
               </div>
             </div>
@@ -236,7 +236,7 @@ export default function TerapiaMetodaJohansenPage() {
                   <span className="text-2xl font-bold text-eduhus-accent">150 zł</span>
                 </div>
               </div>
-              <div className="mt-6 text-center text-sm text-gray-600">
+              <div className="mt-6 text-center text-sm text-gray-900">
                 <p>💡 Możliwość dostosowania liczby sesji i harmonogramu do potrzeb dziecka</p>
               </div>
             </div>

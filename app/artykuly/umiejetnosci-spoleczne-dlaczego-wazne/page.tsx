@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function UmiejetnosciSpolecznePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-teal-50">
+    <div className="min-h-screen bg-gradient-to-br from-eduhus-secondary via-white to-eduhus-bg-light">
       <Header />
       
       <main className="pt-20">
@@ -22,7 +22,7 @@ export default function UmiejetnosciSpolecznePage() {
         <AnimatedSection className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full mb-6">
                 <Users className="w-5 h-5 text-eduhus-accent" />
                 <span className="text-eduhus-accent font-medium">TUS</span>
               </div>
@@ -31,11 +31,11 @@ export default function UmiejetnosciSpolecznePage() {
                 Dlaczego umiejętności społeczne <span className="text-eduhus-accent">są kluczowe?</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-900 mb-8 max-w-3xl mx-auto leading-relaxed">
                 Poznaj znaczenie TUS w rozwoju dziecka i dowiedz się, kiedy warto rozważyć trening umiejętności społecznych
               </p>
 
-              <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+              <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-900">
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
                   6 min czytania
@@ -64,7 +64,7 @@ export default function UmiejetnosciSpolecznePage() {
                   className="w-full h-64 md:h-80 object-cover rounded-xl mb-8"
                 />
                 
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-lg text-gray-900 leading-relaxed mb-6">
                   Umiejętności społeczne to fundament udanych relacji międzyludzkich. Dla dzieci są one 
                   równie ważne jak umiejętności akademickie. Trening Umiejętności Społecznych (TUS) 
                   pomaga dzieciom nauczyć się skutecznej komunikacji, budowania przyjaźni i radzenia 
@@ -105,9 +105,9 @@ export default function UmiejetnosciSpolecznePage() {
                       description: "Wyrażanie własnych potrzeb z poszanowaniem innych"
                     }
                   ].map((skill, index) => (
-                    <div key={index} className="bg-orange-50 rounded-lg p-6">
+                    <div key={index} className="bg-eduhus-bg-light rounded-lg p-6">
                       <h3 className="text-lg font-semibold text-eduhus-accent mb-3">{skill.title}</h3>
-                      <p className="text-gray-600 text-sm">{skill.description}</p>
+                      <p className="text-gray-900 text-sm">{skill.description}</p>
                     </div>
                   ))}
                 </div>
@@ -116,7 +116,7 @@ export default function UmiejetnosciSpolecznePage() {
               {/* Warning signs */}
               <div className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-                  <AlertTriangle className="w-8 h-8 text-orange-500" />
+                  <AlertTriangle className="w-8 h-8 text-eduhus-accent" />
                   Kiedy dziecko może potrzebować TUS?
                 </h2>
 
@@ -131,9 +131,9 @@ export default function UmiejetnosciSpolecznePage() {
                     "Ma trudności z wyrażaniem własnych potrzeb",
                     "Nie rozumie niepisanych reguł społecznych"
                   ].map((sign, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-orange-50 rounded-lg">
-                      <AlertTriangle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{sign}</span>
+                    <div key={index} className="flex items-start gap-3 p-4 bg-eduhus-bg-light rounded-lg">
+                      <AlertTriangle className="w-5 h-5 text-eduhus-accent mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-900">{sign}</span>
                     </div>
                   ))}
                 </div>
@@ -157,9 +157,9 @@ export default function UmiejetnosciSpolecznePage() {
                     "Umiejętność rozwiązywania konfliktów",
                     "Przygotowanie do dorosłego życia"
                   ].map((benefit, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-pink-50 rounded-lg">
+                    <div key={index} className="flex items-start gap-3 p-4 bg-eduhus-bg-light rounded-lg">
                       <CheckCircle className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{benefit}</span>
+                      <span className="text-gray-900">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -173,34 +173,34 @@ export default function UmiejetnosciSpolecznePage() {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                    <div className="w-8 h-8 bg-eduhus-bg-light0 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-2">Diagnoza i ocena potrzeb</h3>
-                      <p className="text-gray-600 text-sm">Szczegółowa analiza umiejętności społecznych dziecka i obszarów wymagających wsparcia</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">Diagnoza i ocena potrzeb</h3>
+                      <p className="text-gray-900 text-sm">Szczegółowa analiza umiejętności społecznych dziecka i obszarów wymagających wsparcia</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                    <div className="w-8 h-8 bg-eduhus-bg-light0 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-2">Trening w małych grupach</h3>
-                      <p className="text-gray-600 text-sm">Ćwiczenia praktyczne w bezpiecznym środowisku z innymi dziećmi</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">Trening w małych grupach</h3>
+                      <p className="text-gray-900 text-sm">Ćwiczenia praktyczne w bezpiecznym środowisku z innymi dziećmi</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                    <div className="w-8 h-8 bg-eduhus-bg-light0 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-2">Gry i zabawy edukacyjne</h3>
-                      <p className="text-gray-600 text-sm">Nauka przez zabawę - najskuteczniejsza metoda dla dzieci</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">Gry i zabawy edukacyjne</h3>
+                      <p className="text-gray-900 text-sm">Nauka przez zabawę - najskuteczniejsza metoda dla dzieci</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                    <div className="w-8 h-8 bg-eduhus-bg-light0 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-2">Praca z rodzicami</h3>
-                      <p className="text-gray-600 text-sm">Wskazówki dla rodziców, jak wspierać dziecko w domu</p>
+                      <h3 className="font-semibold text-gray-900 mb-2">Praca z rodzicami</h3>
+                      <p className="text-gray-900 text-sm">Wskazówki dla rodziców, jak wspierać dziecko w domu</p>
                     </div>
                   </div>
                 </div>
@@ -213,23 +213,23 @@ export default function UmiejetnosciSpolecznePage() {
                 </h2>
 
                 <div className="space-y-6">
-                  <div className="border-l-4 border-eduhus-accent pl-6 py-4 bg-orange-50 rounded-r-lg">
+                  <div className="border-l-4 border-eduhus-accent pl-6 py-4 bg-eduhus-bg-light rounded-r-lg">
                     <h3 className="text-xl font-semibold text-eduhus-accent mb-2">4-6 lat</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-900">
                       Podstawy komunikacji, dzielenie się, nauka czekania na swoją kolej, rozpoznawanie emocji
                     </p>
                   </div>
 
                   <div className="border-l-4 border-eduhus-accent-500 pl-6 py-4 bg-eduhus-accent-50 rounded-r-lg">
                     <h3 className="text-xl font-semibold text-eduhus-accent mb-2">7-10 lat</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-900">
                       Budowanie przyjaźni, rozwiązywanie konfliktów, praca w grupie, asertywność
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-eduhus-accent pl-6 py-4 bg-orange-50 rounded-r-lg">
+                  <div className="border-l-4 border-eduhus-accent pl-6 py-4 bg-eduhus-bg-light rounded-r-lg">
                     <h3 className="text-xl font-semibold text-eduhus-accent mb-2">11+ lat</h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-900">
                       Zaawansowane umiejętności komunikacyjne, radzenie sobie ze stresem społecznym, budowanie samooceny
                     </p>
                   </div>
@@ -237,7 +237,7 @@ export default function UmiejetnosciSpolecznePage() {
               </div>
 
               {/* CTA */}
-              <div className="bg-orange-50 rounded-xl p-8 text-center">
+              <div className="bg-eduhus-bg-light rounded-xl p-8 text-center">
                 <h3 className="text-2xl font-bold text-eduhus-accent mb-4">
                   Chcesz pomóc swojemu dziecku w rozwoju społecznym?
                 </h3>
@@ -247,12 +247,12 @@ export default function UmiejetnosciSpolecznePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a href="tel:+48531509008">
-                    <button className="bg-eduhus-accent hover:bg-orange-50-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
+                    <button className="bg-eduhus-accent hover:bg-eduhus-bg-light-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
                       Zadzwoń: 531 509 008
                     </button>
                   </a>
                   <Link href="/trening-umiejetnosci-spolecznych">
-                    <button className="bg-white text-eduhus-accent border-2 border-eduhus-accent hover:bg-orange-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <button className="bg-white text-eduhus-accent border-2 border-eduhus-accent hover:bg-eduhus-bg-light px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2">
                       Dowiedz się więcej o TUS
                       <ArrowRight className="w-4 h-4" />
                     </button>

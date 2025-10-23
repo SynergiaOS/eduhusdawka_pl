@@ -75,35 +75,35 @@ const config = {
         // EduHus Minimalist Color Palette - Professional Design
         // Backgrounds
         "eduhus-bg-white": "#ffffff", // główne tło
-        "eduhus-bg-light": "#f8f9fa", // alternatywne tło sekcji
-        "eduhus-bg-accent": "#e8eef5", // jasny niebieski akcent
+        "eduhus-bg-light": "#a4efeb", // alternatywne tło sekcji - jasny cyan
+        "eduhus-bg-accent": "#a4efeb", // jasny cyan akcent
         // Text
         "eduhus-text-dark": "#1a1a1a", // nagłówki
         "eduhus-text-main": "#444444", // tekst główny
         "eduhus-text-light": "#888888", // tekst jasny
-        // Action Colors
+        // Action Colors - Simplified to single colors
         "eduhus-accent": {
-          50: "#FEF3E7",
-          100: "#FCDFC0",
-          200: "#FAC89A",
-          300: "#F8B173",
-          400: "#F6A96A",
-          500: "#F4A261",
-          600: "#E88A45",
-          700: "#D67230",
-          800: "#B35A1F",
-          900: "#8A4416",
-          DEFAULT: "#F4A261",
-        },
-        "eduhus-secondary": "#2E86AB", // turkus - secondary akcent
-        "eduhus-tertiary": "#1ebaf1", // cyan - subtelny akcent
-        // Icon Colors (Service-specific)
-        "eduhus-icon-johansen": "#9b59b6", // fioletowy
+          50: "#FFFBEB",
+          100: "#FEF3C7",
+          200: "#FDE68A",
+          300: "#FCD34D",
+          400: "#FBBF24",
+          500: "#fed102",
+          600: "#D97706",
+          700: "#B45309",
+          800: "#92400E",
+          900: "#78350F",
+          DEFAULT: "#fed102",
+        }, // żółty - główny akcent
+        "eduhus-secondary": "#1ebaf1", // cyan - secondary akcent
+        "eduhus-tertiary": "#a4efeb", // jasny cyan
+        // Icon Colors (Service-specific) - Simplified to cyan & yellow
+        "eduhus-icon-johansen": "#1ebaf1", // cyan
         "eduhus-icon-neuroflow": "#1ebaf1", // cyan
-        "eduhus-icon-adhd": "#e74c3c", // czerwony
-        "eduhus-icon-forbrain": "#3498db", // niebieski
-        "eduhus-icon-autism": "#f39c12", // pomarańczowy
-        "eduhus-icon-hearing": "#16a085", // turkus
+        "eduhus-icon-adhd": "#fed102", // żółty
+        "eduhus-icon-forbrain": "#1ebaf1", // cyan
+        "eduhus-icon-autism": "#fed102", // żółty
+        "eduhus-icon-hearing": "#1ebaf1", // cyan
         blue: {
           25: "#f7faff",
           50: "#f0f5ff",

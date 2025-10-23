@@ -23,26 +23,26 @@ export default function TreningSluchowyJohansenaPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <Headphones className="h-12 w-12 text-indigo-600" />
+                  <Headphones className="h-12 w-12 text-eduhus-secondary" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Trening Słuchowy Johansena
                     </h1>
-                    <p className="text-xl text-indigo-600">Indywidualna Stymulacja Słuchu (IAS)</p>
+                    <p className="text-xl text-eduhus-secondary">Indywidualna Stymulacja Słuchu (IAS)</p>
                   </div>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-900 mb-8 leading-relaxed">
                   Nowoczesna metoda terapii słuchowej opracowana przez dr. Kjeld Johansena,
                   wspierająca rozwój mowy, koncentracji i przetwarzania słuchowego.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center gap-2 bg-indigo-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-indigo-600" />
-                    <span className="text-indigo-700">Indywidualne podejście</span>
+                    <CheckCircle className="w-5 h-5 text-eduhus-secondary" />
+                    <span className="text-eduhus-secondary">Indywidualne podejście</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-purple-600" />
-                    <span className="text-purple-700">Skuteczna metoda</span>
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-secondary" />
+                    <span className="text-eduhus-secondary">Skuteczna metoda</span>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function TreningSluchowyJohansenaPage() {
               Czym jest Trening Słuchowy Johansena?
             </h2>
             <div className="bg-indigo-50 p-8 rounded-2xl mb-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-900 leading-relaxed">
                 Trening Słuchowy Johansena (IAS) to metoda terapii słuchowej opracowana przez dr. Kjeld Johansena.
                 Polega na słuchaniu specjalnie zmodyfikowanej muzyki przez słuchawki, indywidualnie dostosowanej
                 do potrzeb każdego dziecka na podstawie przeprowadzonej diagnozy.
@@ -86,30 +86,30 @@ export default function TreningSluchowyJohansenaPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-indigo-600" />
+                  <Brain className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Diagnoza</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Kompleksowa diagnoza słuchowa lub uproszczona na podstawie obserwacji i wywiadu
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Music className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Music className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Program</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Przygotowanie indywidualnego programu muzycznego przez Instytut Johansena
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Volume2 className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Trening</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Słuchanie muzyki w domu 10-15 minut dziennie z kontrolą co 8-10 tygodni
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function TreningSluchowyJohansenaPage() {
             </h2>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-indigo-700 mb-6 flex items-center">
+              <h3 className="text-xl font-semibold text-eduhus-secondary mb-6 flex items-center">
                 <Target className="w-6 h-6 mr-2" />
                 Trudności, z którymi pomaga trening:
               </h3>

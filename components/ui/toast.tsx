@@ -34,7 +34,7 @@ export function Toast({ id, title, description, variant = "default", onDismiss }
         "fixed right-4 max-w-sm w-full bg-white rounded-lg shadow-lg border border-gray-200 pointer-events-auto overflow-hidden transition-all duration-300 transform",
         isVisible ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0",
         variant === "destructive" && "border-red-600",
-        variant === "success" && "border-green-600",
+        variant === "success" && "border-eduhus-secondary",
       )}
       style={{ top: `calc(1rem + ${id.charCodeAt(0) % 5}rem)` }}
     >
@@ -56,7 +56,7 @@ export function Toast({ id, title, description, variant = "default", onDismiss }
           </div>
           <div className="ml-4 flex-shrink-0 flex">
             <button
-              className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+              className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-eduhus-secondary"
               onClick={handleDismiss}
             >
               <span className="sr-only">Zamknij</span>

@@ -55,7 +55,7 @@ export default function RecommendedServices({ limit = 3, showPreferencesButton =
           <Button
             variant="outline"
             onClick={() => setShowPreferences(true)}
-            className="text-eduhus-accent border-eduhus-accent hover:bg-teal-50"
+            className="text-eduhus-accent border-eduhus-accent hover:bg-eduhus-bg-light"
           >
             Dostosuj rekomendacje
           </Button>

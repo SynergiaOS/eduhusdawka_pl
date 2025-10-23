@@ -61,11 +61,11 @@ export default function PrintableDirections() {
               </div>
             </div>
 
-            <div className="bg-teal-50 p-4 rounded-lg">
+            <div className="bg-eduhus-bg-light p-4 rounded-lg">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-eduhus-accent mt-1 mr-2 flex-shrink-0" />
                 <div>
-                  <h3 className="font-medium text-teal-800">Adres gabinetu</h3>
+                  <h3 className="font-medium text-eduhus-secondary">Adres gabinetu</h3>
                   <p className="text-eduhus-accent">
                     Polna 17
                     <br />

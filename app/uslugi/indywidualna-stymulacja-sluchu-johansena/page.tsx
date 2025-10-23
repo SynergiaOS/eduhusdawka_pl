@@ -23,27 +23,27 @@ export default function IASJohansenPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-                  <div className="bg-purple-100 p-4 rounded-full w-fit">
-                    <Headphones className="h-12 w-12 text-purple-600" />
+                  <div className="bg-eduhus-bg-light p-4 rounded-full w-fit">
+                    <Headphones className="h-12 w-12 text-eduhus-secondary" />
                   </div>
                   <div>
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight">
-                      Indywidualna Stymulacja Słuchu <span className="text-purple-600 block sm:inline">dr K. Johansena</span>
+                      Indywidualna Stymulacja Słuchu <span className="text-eduhus-secondary block sm:inline">dr K. Johansena</span>
                     </h1>
-                    <p className="text-lg sm:text-xl text-purple-600 font-medium">Skuteczna metoda wspierająca rozwój słuchu, mowy i koncentracji</p>
+                    <p className="text-lg sm:text-xl text-eduhus-secondary font-medium">Skuteczna metoda wspierająca rozwój słuchu, mowy i koncentracji</p>
                   </div>
                 </div>
-                <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-900 mb-8 leading-relaxed">
                   Indywidualna Stymulacja Słuchu (IAS) to terapia słuchowa podobna do metody Tomatisa,
                   różniąca się jednak sposobem realizacji. Odbywa się w warunkach domowych i opiera się
                   na słuchaniu specjalnie nagranej muzyki, dostosowanej do indywidualnych potrzeb.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
-                  <div className="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full">
-                    <Home className="w-5 h-5 text-purple-600" />
-                    <span className="text-purple-700 font-medium">Terapia w domu</span>
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
+                    <Home className="w-5 h-5 text-eduhus-secondary" />
+                    <span className="text-eduhus-secondary font-medium">Terapia w domu</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                     <span className="text-eduhus-accent font-medium">Indywidualny program</span>
                   </div>
@@ -63,7 +63,7 @@ export default function IASJohansenPage() {
               
               <div className="relative">
                 {/* Film YouTube o IAS Johansena */}
-                <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-2xl shadow-2xl">
+                <div className="bg-gradient-to-br from-purple-100 to-eduhus-secondary p-8 rounded-2xl shadow-2xl">
                   <div className="w-full max-w-lg mx-auto">
                     <YouTubeEmbed
                       videoId="uxCj7pgGD7M"
@@ -90,13 +90,13 @@ export default function IASJohansenPage() {
               Czym jest metoda Johansena IAS?
             </h2>
 
-            <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-2xl mb-12 border border-purple-100">
+            <div className="bg-gradient-to-r from-purple-50 to-eduhus-secondary p-8 rounded-2xl mb-12 border border-purple-100">
               <div className="flex items-center justify-center mb-4">
                 <div className="bg-purple-600 p-3 rounded-full">
                   <Brain className="w-8 h-8 text-white" />
                 </div>
               </div>
-              <p className="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
+              <p className="text-lg text-gray-900 leading-relaxed text-center max-w-4xl mx-auto">
                 Indywidualna Stymulacja Słuchu (IAS) to terapia słuchowa oparta na słuchaniu specjalnie
                 nagranej muzyki, dostosowanej do indywidualnych potrzeb danej osoby. Program jest
                 przygotowywany na podstawie szczegółowej diagnozy słuchowej.
@@ -106,36 +106,36 @@ export default function IASJohansenPage() {
             <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
               <div className="group bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500 hover:border-purple-600">
                 <div className="flex items-center mb-4">
-                  <div className="bg-purple-100 p-3 rounded-full group-hover:bg-purple-200 transition-colors">
-                    <Volume2 className="w-8 h-8 text-purple-600" />
+                  <div className="bg-eduhus-bg-light p-3 rounded-full group-hover:bg-purple-200 transition-colors">
+                    <Volume2 className="w-8 h-8 text-eduhus-secondary" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 ml-4">Bez specjalistycznego sprzętu</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Wystarczą zewnętrzne słuchawki przewodowe oraz odtwarzacz płyt CD lub telefon/tablet
                 </p>
               </div>
 
               <div className="group bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-eduhus-accent hover:border-eduhus-accent">
                 <div className="flex items-center mb-4">
-                  <div className="bg-orange-50 p-3 rounded-full group-hover:bg-orange-50-200 transition-colors">
+                  <div className="bg-eduhus-bg-light p-3 rounded-full group-hover:bg-eduhus-bg-light-200 transition-colors">
                     <Clock className="w-8 h-8 text-eduhus-accent" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 ml-4">Krótkie sesje</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Codzienna sesja trwa ok. 10 minut, zawsze o tej samej porze
                 </p>
               </div>
 
               <div className="group bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-eduhus-accent hover:border-eduhus-accent">
                 <div className="flex items-center mb-4">
-                  <div className="bg-orange-50 p-3 rounded-full group-hover:bg-orange-100 transition-colors">
+                  <div className="bg-eduhus-bg-light p-3 rounded-full group-hover:bg-eduhus-bg-light transition-colors">
                     <Target className="w-8 h-8 text-eduhus-accent" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 ml-4">Kontrolowane postępy</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Postępy kontrolowane co 4–10 tygodni. Program trwa 6–18 miesięcy
                 </p>
               </div>
@@ -151,7 +151,7 @@ export default function IASJohansenPage() {
             </h2>
             
             <div className="text-center mb-8">
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-900">
                 Terapia jest skuteczna dla dzieci, młodzieży i dorosłych z problemami w zakresie 
                 słuchania, mówienia, czytania i pisania. Może być stosowana także u niemowląt.
               </p>
@@ -171,7 +171,7 @@ export default function IASJohansenPage() {
                 <div key={index} className="bg-white p-6 rounded-lg shadow-md">
                   <div className="flex items-start">
                     <CheckCircle className="w-6 h-6 text-purple-500 mr-3 mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">{item}</p>
+                    <p className="text-gray-900">{item}</p>
                   </div>
                 </div>
               ))}
@@ -187,12 +187,12 @@ export default function IASJohansenPage() {
             </h2>
             
             <div className="space-y-8">
-              <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
+              <div className="bg-eduhus-bg-light p-6 rounded-lg border-l-4 border-eduhus-accent">
                 <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
                   <Brain className="w-6 h-6 mr-2" />
                   Diagnoza
                 </h3>
-                <p className="text-gray-700 mb-3">Diagnoza opiera się na:</p>
+                <p className="text-gray-900 mb-3">Diagnoza opiera się na:</p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="w-5 h-5 text-eduhus-accent mr-2 mt-0.5 flex-shrink-0" />
@@ -209,12 +209,12 @@ export default function IASJohansenPage() {
                 </ul>
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
+              <div className="bg-eduhus-bg-light p-6 rounded-lg border-l-4 border-eduhus-accent">
                 <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
                   <Headphones className="w-6 h-6 mr-2" />
                   Program terapeutyczny
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-900">
                   Program to indywidualnie filtrowana muzyka instrumentalna, nagrywana na płyty CD 
                   lub w aplikacji. Osoba objęta terapią słucha muzyki przez słuchawki, codziennie 
                   przez 10 minut. Postępy są kontrolowane co 4–8 tygodni, a każdorazowo wydawana 
@@ -276,7 +276,7 @@ export default function IASJohansenPage() {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">Przygotowanie indywidualnego programu</h3>
                 </div>
-                <p className="ml-14 text-gray-700">
+                <p className="ml-14 text-gray-900">
                   Na podstawie diagnozy przygotowywana jest płyta CD do codziennego słuchania w domu
                   (ok. 10–15 minut dziennie przez słuchawki). Pierwszy etap treningu trwa od 4 do 8 tygodni.
                 </p>
@@ -289,15 +289,15 @@ export default function IASJohansenPage() {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">Diagnoza międzyetapowa</h3>
                 </div>
-                <p className="ml-14 text-gray-700">
+                <p className="ml-14 text-gray-900">
                   Powtarzana co 4–8 tygodni. Obejmuje badania audiometryczne i testowe, na podstawie
                   których przygotowywana jest kolejna płyta. Spotkania służą kontroli postępów terapii.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-purple-50 rounded-lg text-center">
-              <p className="text-purple-700 font-semibold">
+            <div className="mt-8 p-6 bg-eduhus-bg-light rounded-lg text-center">
+              <p className="text-eduhus-secondary font-semibold">
                 📌 Cały program stymulacji słuchowej JIAS trwa ok. 6–10 miesięcy
               </p>
             </div>
@@ -321,17 +321,17 @@ export default function IASJohansenPage() {
                 "Wzrost samooceny i lepsze wyniki w nauce",
                 "Skuteczniejsze przyswajanie języków obcych"
               ].map((benefit, index) => (
-                <div key={index} className="bg-orange-50 p-6 rounded-lg border-l-4 border-eduhus-accent">
+                <div key={index} className="bg-eduhus-bg-light p-6 rounded-lg border-l-4 border-eduhus-accent">
                   <div className="flex items-start">
                     <CheckCircle className="w-6 h-6 text-eduhus-accent mr-3 mt-1 flex-shrink-0" />
-                    <p className="text-gray-700 font-medium">{benefit}</p>
+                    <p className="text-gray-900 font-medium">{benefit}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Zalety */}
-            <div className="bg-orange-50 p-8 rounded-2xl">
+            <div className="bg-eduhus-bg-light p-8 rounded-2xl">
               <h3 className="text-2xl font-bold text-eduhus-accent mb-6 text-center">Zalety terapii IAS</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start">
@@ -375,24 +375,24 @@ export default function IASJohansenPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-12">Cennik</h2>
 
-            <div className="bg-purple-50 p-8 rounded-2xl max-w-2xl mx-auto">
-              <h3 className="text-2xl font-semibold mb-6 text-purple-700">Indywidualna Stymulacja Słuchu (IAS)</h3>
+            <div className="bg-eduhus-bg-light p-8 rounded-2xl max-w-2xl mx-auto">
+              <h3 className="text-2xl font-semibold mb-6 text-eduhus-secondary">Indywidualna Stymulacja Słuchu (IAS)</h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
-                  <span className="text-gray-700">Diagnoza pełna</span>
-                  <span className="text-2xl font-bold text-purple-600">500 zł</span>
+                  <span className="text-gray-900">Diagnoza pełna</span>
+                  <span className="text-2xl font-bold text-eduhus-secondary">500 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
-                  <span className="text-gray-700">Diagnoza uproszczona</span>
-                  <span className="text-2xl font-bold text-purple-600">350 zł</span>
+                  <span className="text-gray-900">Diagnoza uproszczona</span>
+                  <span className="text-2xl font-bold text-eduhus-secondary">350 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
-                  <span className="text-gray-700">Program indywidualny</span>
-                  <span className="text-2xl font-bold text-purple-600">280–300 zł</span>
+                  <span className="text-gray-900">Program indywidualny</span>
+                  <span className="text-2xl font-bold text-eduhus-secondary">280–300 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
-                  <span className="text-gray-700">Diagnoza kontrolna pełna</span>
-                  <span className="text-2xl font-bold text-purple-600">350 zł</span>
+                  <span className="text-gray-900">Diagnoza kontrolna pełna</span>
+                  <span className="text-2xl font-bold text-eduhus-secondary">350 zł</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-purple-200">
                   <span className="eduhus-text-main">Diagnoza kontrolna uproszczona</span>

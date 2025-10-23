@@ -23,22 +23,22 @@ export default function TerapiaRekiPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <Hand className="h-12 w-12 text-purple-600" />
+                  <Hand className="h-12 w-12 text-eduhus-secondary" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Terapia Ręki
                     </h1>
-                    <p className="text-xl text-purple-600">Rozwój motoryki małej i umiejętności grafomotorycznych</p>
+                    <p className="text-xl text-eduhus-secondary">Rozwój motoryki małej i umiejętności grafomotorycznych</p>
                   </div>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-900 mb-8 leading-relaxed">
                   Specjalistyczna terapia wspierająca rozwój motoryki małej, koordynacji wzrokowo-ruchowej
                   i umiejętności grafomotorycznych u dzieci.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-purple-600" />
-                    <span className="text-purple-700">Indywidualne podejście</span>
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
+                    <CheckCircle className="w-5 h-5 text-eduhus-secondary" />
+                    <span className="text-eduhus-secondary">Indywidualne podejście</span>
                   </div>
                   <div className="flex items-center gap-2 bg-pink-100 px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-pink-600" />
@@ -66,8 +66,8 @@ export default function TerapiaRekiPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Czym jest terapia ręki?
             </h2>
-            <div className="bg-purple-50 p-8 rounded-2xl mb-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
+            <div className="bg-eduhus-bg-light p-8 rounded-2xl mb-8">
+              <p className="text-lg text-gray-900 leading-relaxed">
                 Terapia ręki to specjalistyczne wsparcie dla dzieci z trudnościami w zakresie motoryki małej.
                 Pomaga rozwijać sprawność rąk, koordynację wzrokowo-ruchową oraz umiejętności grafomotoryczne
                 niezbędne do pisania, rysowania i codziennych czynności.
@@ -85,11 +85,11 @@ export default function TerapiaRekiPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Diagnoza</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Ocena poziomu rozwoju motoryki małej i identyfikacja obszarów wymagających wsparcia
                 </p>
               </div>
@@ -99,17 +99,17 @@ export default function TerapiaRekiPage() {
                   <Puzzle className="w-8 h-8 text-pink-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Ćwiczenia</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Indywidualnie dobrane ćwiczenia wzmacniające mięśnie rąk i poprawiające koordynację
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Paintbrush className="w-8 h-8 text-indigo-600" />
+                  <Paintbrush className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Praktyka</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Zastosowanie nabytych umiejętności w praktycznych zadaniach pisania i rysowania
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function TerapiaRekiPage() {
             </h2>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-purple-700 mb-6 flex items-center">
+              <h3 className="text-xl font-semibold text-eduhus-secondary mb-6 flex items-center">
                 <Users className="w-6 h-6 mr-2" />
                 Rodzicu, jeśli Twoje dziecko:
               </h3>

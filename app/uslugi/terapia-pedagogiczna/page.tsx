@@ -31,7 +31,7 @@ export default function TerapiaPedagogicznaPage() {
                     <p className="text-xl text-eduhus-accent">Skuteczne wsparcie dla dzieci z trudnościami w nauce</p>
                   </div>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-900 mb-8 leading-relaxed">
                   Specjalistyczne wsparcie dla dzieci, które mają trudności w nauce i rozwoju.
                   Pomaga przezwyciężać trudności w czytaniu, pisaniu, liczeniu oraz wspiera rozwój emocjonalny i społeczny.
                 </p>
@@ -40,7 +40,7 @@ export default function TerapiaPedagogicznaPage() {
                     <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                     <span className="text-eduhus-accent">Indywidualne podejście</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                     <span className="text-eduhus-accent">Nowoczesne metody</span>
                   </div>
@@ -67,7 +67,7 @@ export default function TerapiaPedagogicznaPage() {
               Czym jest terapia pedagogiczna?
             </h2>
             <div className="bg-eduhus-accent-50 p-8 rounded-2xl mb-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-900 leading-relaxed">
                 Terapia pedagogiczna to specjalistyczne wsparcie dla dzieci, które mają trudności w nauce i rozwoju.
                 Pomaga przezwyciężać trudności w czytaniu, pisaniu, liczeniu oraz innych czynnościach szkolnych,
                 a także wspiera rozwój emocjonalny i społeczny.
@@ -89,27 +89,27 @@ export default function TerapiaPedagogicznaPage() {
                   <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">1. Diagnoza</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Szczegółowa ocena poziomu rozwoju i identyfikacja obszarów wymagających wsparcia
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Lightbulb className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">2. Plan terapii</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Opracowanie indywidualnego programu terapeutycznego dostosowanego do potrzeb dziecka
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <GraduationCap className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">3. Realizacja</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Systematyczna praca nad rozwojem umiejętności i eliminowaniem trudności
                 </p>
               </div>
@@ -210,7 +210,7 @@ export default function TerapiaPedagogicznaPage() {
                     {goal.icon}
                     <h3 className="text-xl font-semibold text-gray-900">{goal.title}</h3>
                   </div>
-                  <p className="text-gray-600">{goal.description}</p>
+                  <p className="text-gray-900">{goal.description}</p>
                 </div>
               ))}
             </div>

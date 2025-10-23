@@ -16,7 +16,7 @@ export default function Icon() {
     <div
       style={{
         fontSize: 24,
-        background: "#f0fdfa", // Light teal background
+  background: "#a4efeb", // Jasny cyan tła z nowej palety
         width: "100%",
         height: "100%",
         display: "flex",
@@ -35,7 +35,7 @@ export default function Icon() {
           justifyContent: "center",
           fontWeight: 700,
           fontSize: 22,
-          color: "#0d9488", // Teal color from the logo
+          color: "#fed102", // Żółty akcent z palety
           fontFamily: "serif",
           position: "relative",
           zIndex: 2,
@@ -52,7 +52,7 @@ export default function Icon() {
           width: 8,
           height: 8,
           borderRadius: "50%",
-          background: "#f59e0b", // Amber color for the puzzle piece
+          background: "#1ebaf1", // Cyan secondary akcent
           zIndex: 1,
         }}
       />

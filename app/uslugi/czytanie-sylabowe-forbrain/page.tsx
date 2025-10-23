@@ -23,15 +23,15 @@ export default function CzytanieSylaboweForbrain() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <Headphones className="h-12 w-12 text-indigo-600" />
+                  <Headphones className="h-12 w-12 text-eduhus-secondary" />
                   <div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
                       Czytanie Sylabowe z Forbrain
                     </h1>
-                    <p className="text-xl text-indigo-600">Metoda krakowska + technologia Forbrain</p>
+                    <p className="text-xl text-eduhus-secondary">Metoda krakowska + technologia Forbrain</p>
                   </div>
                 </div>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-lg text-gray-900 mb-8 leading-relaxed">
                   📚 Czytanie sylabowe z wykorzystaniem słuchawek Forbrain® – skuteczna metoda nauki czytania i poprawy koncentracji.
                   Zapraszam dzieci w wieku przedszkolnym i wczesnoszkolnym na indywidualne zajęcia czytania metodą sylabową 
                   z wykorzystaniem innowacyjnych słuchawek Forbrain®. To połączenie skutecznej metody Krakowskiej 
@@ -39,10 +39,10 @@ export default function CzytanieSylaboweForbrain() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center gap-2 bg-indigo-100 px-4 py-2 rounded-full">
-                    <CheckCircle className="w-5 h-5 text-indigo-600" />
-                    <span className="text-indigo-700">Skuteczna metoda</span>
+                    <CheckCircle className="w-5 h-5 text-eduhus-secondary" />
+                    <span className="text-eduhus-secondary">Skuteczna metoda</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full">
+                  <div className="flex items-center gap-2 bg-eduhus-bg-light px-4 py-2 rounded-full">
                     <CheckCircle className="w-5 h-5 text-eduhus-accent" />
                     <span className="text-eduhus-accent">Technologia Forbrain</span>
                   </div>
@@ -70,22 +70,22 @@ export default function CzytanieSylaboweForbrain() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-indigo-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-indigo-700 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-eduhus-secondary mb-4 flex items-center">
                   <BookOpen className="w-6 h-6 mr-2" />
                   Metoda sylabowa
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Ułatwia naukę czytania nawet dzieciom z trudnościami (dysleksja, opóźniony rozwój mowy, zaburzenia koncentracji).
                   Metoda krakowska jest sprawdzoną i efektywną metodą nauczania czytania.
                 </p>
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-lg">
+              <div className="bg-eduhus-bg-light p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-eduhus-accent mb-4 flex items-center">
                   <Headphones className="w-6 h-6 mr-2" />
                   Słuchawki Forbrain®
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-900 leading-relaxed">
                   Wzmacniają odbiór własnego głosu, poprawiają percepcję słuchową, rytm i płynność czytania.
                   Łączą się z nauką czytania tworząc bardzo efektywne połączenie.
                 </p>
@@ -102,7 +102,7 @@ export default function CzytanieSylaboweForbrain() {
             </h2>
             
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold text-indigo-700 mb-6">Zajęcia są:</h3>
+              <h3 className="text-2xl font-semibold text-eduhus-secondary mb-6">Zajęcia są:</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-4">
                   <Star className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5" />
@@ -143,40 +143,40 @@ export default function CzytanieSylaboweForbrain() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-indigo-600">
                 <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="w-8 h-8 text-indigo-600" />
+                  <BookOpen className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Poprawa płynności czytania</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Dziecko uczy się czytać płynnie i naturalnie, bez zatrzymań i błędów
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Lepsze rozumienie tekstu</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Dziecko lepiej rozumie i zapamiętuje czytane treści
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-purple-600">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-8 h-8 text-eduhus-secondary" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Wzrost koncentracji i uwagi</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Forbrain wspomaga zmysł słuchowy, co poprawia zdolność do skupienia
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent">
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Volume2 className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Rozwój mowy i komunikacji</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Forbrain wzmacnia odbiór własnego głosu, co wspiera mowę i wymowę
                 </p>
               </div>
@@ -186,17 +186,17 @@ export default function CzytanieSylaboweForbrain() {
                   <Brain className="w-8 h-8 text-pink-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Rozwój pamięci i języka</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Wspieranie rozwoju umiejętności językowych i pamięci
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-orange-600">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-orange-600" />
+              <div className="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-eduhus-accent">
+                <div className="w-16 h-16 bg-eduhus-bg-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-eduhus-accent" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Pewność siebie</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-900">
                   Dziecko zyskuje pewność siebie i motywację do dalszej nauki
                 </p>
               </div>
@@ -212,21 +212,21 @@ export default function CzytanieSylaboweForbrain() {
             </h2>
             
             <div className="bg-indigo-50 p-8 rounded-lg">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-900 leading-relaxed mb-6">
                 Słuchawki Forbrain wykorzystują nasz własny głos zamiast dźwięków docierających z otoczenia. 
                 Dźwięk własnego głosu odbieramy nie drogą powietrzną ale poprzez przewodnictwo kostne, za pośrednictwem kości czaszki. 
                 Gdy kości drgają, przekazują dźwięk, który dociera do ślimaka, nie przechodzi jednak przez błonę bębenkową. 
                 Podobnie jak w drodze powietrznej, drgania przekształcane są na impuls elektryczny i przekazywane do mózgu.
               </p>
               
-              <h3 className="text-xl font-semibold text-indigo-700 mb-4">Działanie słuchawek Forbrain opiera się na:</h3>
-              <ul className="space-y-3 text-gray-700">
+              <h3 className="text-xl font-semibold text-eduhus-secondary mb-4">Działanie słuchawek Forbrain opiera się na:</h3>
+              <ul className="space-y-3 text-gray-900">
                 <li className="flex items-start gap-3">
-                  <span className="text-indigo-600 font-bold">•</span>
+                  <span className="text-eduhus-secondary font-bold">•</span>
                   <span><strong>Wzmocnieniu przewodnictwa kostnego</strong> – ale jednoczesnym nie blokowaniu przewodnictwa powietrznego. Wpływa to na znaczne poprawienie percepcji dźwięku.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-indigo-600 font-bold">•</span>
+                  <span className="text-eduhus-secondary font-bold">•</span>
                   <span><strong>Treningu mózgu</strong> – umożliwiając znaczącą poprawę w wielu obszarach funkcjonowania dziecka</span>
                 </li>
               </ul>
@@ -244,32 +244,32 @@ export default function CzytanieSylaboweForbrain() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-semibold text-gray-900 mb-2">🗣️ Mowie i komunikacji</h3>
-                <p className="text-gray-600 text-sm">Słuchawki Forbrain zwiększają świadomość mowy, co prowadzi do lepszego, wyraźniejszego sposobu mówienia</p>
+                <p className="text-gray-900 text-sm">Słuchawki Forbrain zwiększają świadomość mowy, co prowadzi do lepszego, wyraźniejszego sposobu mówienia</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-semibold text-gray-900 mb-2">🎯 Uwadze i koncentracji</h3>
-                <p className="text-gray-600 text-sm">Słuchawki Forbrain pomagają skupiać się dłużej na danej czynności, co pozwala osiągać lepsze wyniki w nauce</p>
+                <p className="text-gray-900 text-sm">Słuchawki Forbrain pomagają skupiać się dłużej na danej czynności, co pozwala osiągać lepsze wyniki w nauce</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-semibold text-gray-900 mb-2">📚 Uczeniu się</h3>
-                <p className="text-gray-600 text-sm">Forbrain poprawia działanie dróg słuchowych w mózgu, co umożliwia lepsze przyswajanie informacji</p>
+                <p className="text-gray-900 text-sm">Forbrain poprawia działanie dróg słuchowych w mózgu, co umożliwia lepsze przyswajanie informacji</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-semibold text-gray-900 mb-2">📖 Czytaniu i pisaniu</h3>
-                <p className="text-gray-600 text-sm">Forbrain poprawia umiejętność czytania ze zrozumieniem, uczenia się słów i płynność czytania</p>
+                <p className="text-gray-900 text-sm">Forbrain poprawia umiejętność czytania ze zrozumieniem, uczenia się słów i płynność czytania</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-semibold text-gray-900 mb-2">⚙️ Autoregulacji</h3>
-                <p className="text-gray-600 text-sm">Przewodzenie kostne reguluje pracę układu autonomicznego i wpływa na poziom pobudzenia</p>
+                <p className="text-gray-900 text-sm">Przewodzenie kostne reguluje pracę układu autonomicznego i wpływa na poziom pobudzenia</p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-semibold text-gray-900 mb-2">👥 Umiejętnościach społecznych</h3>
-                <p className="text-gray-600 text-sm">Pewności siebie, umiejętności komunikacji społecznej i interakcji z innymi</p>
+                <p className="text-gray-900 text-sm">Pewności siebie, umiejętności komunikacji społecznej i interakcji z innymi</p>
               </div>
             </div>
           </div>

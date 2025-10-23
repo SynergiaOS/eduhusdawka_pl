@@ -35,7 +35,7 @@ import { useAnalytics } from "@/hooks/use-analytics"
 export default function HomeClient() {
   const { trackEvent } = useAnalytics()
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-white pb-16 lg:pb-0">
+    <div className="min-h-screen bg-gradient-to-br from-eduhus-bg-light to-white pb-16 lg:pb-0">
       {/* Skip link for accessibility */}
       <a href="#main-content" className="skip-link focus-enhanced">
         Przejdź do głównej treści
@@ -50,8 +50,8 @@ export default function HomeClient() {
 
       {/* Hero Section */}
       <main id="main-content">
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-teal-50 via-teal-50 to-teal-100">
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-600/10 via-teal-600/5 to-teal-600/10" />
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-eduhus-bg-light via-white to-eduhus-bg-light">
+        <div className="absolute inset-0 bg-gradient-to-br from-eduhus-secondary/15 via-eduhus-secondary/10 to-transparent" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -95,7 +95,7 @@ export default function HomeClient() {
 
                 <div className="mt-8 flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-600">
                   <div className="flex items-center">
-                    <Star className="h-5 w-5 text-yellow-500 mr-1" />
+                    <Star className="h-5 w-5 text-eduhus-accent mr-1" />
                     <span>15+ lat doświadczenia</span>
                   </div>
                   <div className="flex items-center">
@@ -146,7 +146,7 @@ export default function HomeClient() {
             {/* Główna usługa - Terapia ręki - Hero Card */}
             <AnimatedSection delay={100}>
               <div className="relative mb-8 group">
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-blue-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-eduhus-secondary to-eduhus-accent rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                 <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group-hover:shadow-3xl transition-all duration-500">
                   <div className="grid lg:grid-cols-2 gap-0">
                     <div className="relative h-80 lg:h-96 overflow-hidden">
@@ -159,7 +159,7 @@ export default function HomeClient() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
                       <div className="absolute top-6 left-6">
-                        <div className="bg-gradient-to-r from-teal-600 to-blue-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg">
+                        <div className="bg-gradient-to-r from-eduhus-secondary to-eduhus-accent text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg">
                           <Hand className="inline h-5 w-5 mr-2" />
                           Najczęściej wybierana
                         </div>
@@ -175,8 +175,8 @@ export default function HomeClient() {
                         </p>
                         <div className="flex flex-wrap gap-2 mb-6">
                           <span className="px-3 py-1 bg-eduhus-accent-100 text-eduhus-accent rounded-full text-sm font-medium">Motoryka mała</span>
-                          <span className="px-3 py-1 bg-orange-50 text-eduhus-accent rounded-full text-sm font-medium">Grafomotoryka</span>
-                          <span className="px-3 py-1 bg-orange-50 text-eduhus-accent rounded-full text-sm font-medium">Koordynacja</span>
+                          <span className="px-3 py-1 bg-eduhus-bg-light text-eduhus-accent rounded-full text-sm font-medium">Grafomotoryka</span>
+                          <span className="px-3 py-1 bg-eduhus-bg-light text-eduhus-accent rounded-full text-sm font-medium">Koordynacja</span>
                         </div>
                       </div>
                       <div>
@@ -200,7 +200,7 @@ export default function HomeClient() {
               {/* Trening Umiejętności Społecznych */}
               <AnimatedSection delay={200}>
                 <div className="relative group h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-eduhus-secondary to-eduhus-accent rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                   <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                     <div className="relative h-48 overflow-hidden">
                       <UnifiedImage
@@ -210,7 +210,7 @@ export default function HomeClient() {
                         height={200}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 via-teal-900/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-eduhus-secondary/70 via-eduhus-secondary/20 to-transparent"></div>
                       <div className="absolute top-4 left-4">
                         <div className="bg-eduhus-accent text-white px-3 py-2 rounded-full text-xs font-semibold">
                           <Users className="inline h-4 w-4 mr-1" />
@@ -227,7 +227,7 @@ export default function HomeClient() {
 
                       <div className="flex flex-wrap gap-1 mb-4">
                         <span className="px-2 py-1 bg-eduhus-accent-100 text-eduhus-accent rounded-full text-xs">Komunikacja</span>
-                        <span className="px-2 py-1 bg-orange-50 text-eduhus-accent rounded-full text-xs">Empatia</span>
+                        <span className="px-2 py-1 bg-eduhus-bg-light text-eduhus-accent rounded-full text-xs">Empatia</span>
                       </div>
                       <Link
                         href="/uslugi/trening-umiejetnosci-spolecznych"
@@ -244,7 +244,7 @@ export default function HomeClient() {
               {/* Terapia pedagogiczna */}
               <AnimatedSection delay={300}>
                 <div className="relative group h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-eduhus-secondary to-eduhus-accent rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                   <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                     <div className="relative h-48 overflow-hidden">
                       <UnifiedImage
@@ -254,7 +254,7 @@ export default function HomeClient() {
                         height={200}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-blue-900/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-eduhus-secondary/70 via-eduhus-secondary/20 to-transparent"></div>
                       <div className="absolute top-4 left-4">
                         <div className="bg-eduhus-accent text-white px-3 py-2 rounded-full text-xs font-semibold">
                           <BookOpen className="inline h-4 w-4 mr-1" />
@@ -270,7 +270,7 @@ export default function HomeClient() {
                       </p>
 
                       <div className="flex flex-wrap gap-1 mb-4">
-                        <span className="px-2 py-1 bg-orange-50 text-eduhus-accent rounded-full text-xs">Nauka</span>
+                        <span className="px-2 py-1 bg-eduhus-bg-light text-eduhus-accent rounded-full text-xs">Nauka</span>
                         <span className="px-2 py-1 bg-eduhus-accent-100 text-eduhus-accent rounded-full text-xs">Rozwój</span>
                       </div>
                       <Link
@@ -288,10 +288,10 @@ export default function HomeClient() {
               {/* IAS Johansena */}
               <AnimatedSection delay={400}>
                 <div className="relative group h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-eduhus-secondary to-eduhus-accent rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                   <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                     <div className="relative h-48 overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-emerald-100 to-teal-200 flex items-center justify-center p-4">
+                      <div className="w-full h-full bg-gradient-to-br from-eduhus-bg-light to-eduhus-secondary/40 flex items-center justify-center p-4">
                         <div className="aspect-video w-full max-w-xs">
                           <iframe
                             width="100%"
@@ -321,7 +321,7 @@ export default function HomeClient() {
 
                       <div className="flex flex-wrap gap-1 mb-4">
                         <span className="px-2 py-1 bg-eduhus-accent-100 text-eduhus-accent rounded-full text-xs">Słuch</span>
-                        <span className="px-2 py-1 bg-orange-50 text-eduhus-accent rounded-full text-xs">Mowa</span>
+                        <span className="px-2 py-1 bg-eduhus-bg-light text-eduhus-accent rounded-full text-xs">Mowa</span>
                       </div>
                       <Link
                         href="/uslugi/trening-sluchowy-johansena"
@@ -338,7 +338,7 @@ export default function HomeClient() {
               {/* Forbrain */}
               <AnimatedSection delay={500}>
                 <div className="relative group h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-eduhus-accent to-eduhus-secondary rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                   <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 group-hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                     <div className="relative h-48 overflow-hidden">
                       <UnifiedImage
@@ -348,7 +348,7 @@ export default function HomeClient() {
                         height={200}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-blue-900/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-eduhus-secondary/70 via-eduhus-secondary/20 to-transparent"></div>
                       <div className="absolute top-4 left-4">
                         <div className="bg-eduhus-accent text-white px-3 py-2 rounded-full text-xs font-semibold">
                           <BookOpen className="inline h-4 w-4 mr-1" />
@@ -364,7 +364,7 @@ export default function HomeClient() {
                       </p>
 
                       <div className="flex flex-wrap gap-1 mb-4">
-                        <span className="px-2 py-1 bg-orange-50 text-eduhus-accent rounded-full text-xs">Czytanie</span>
+                        <span className="px-2 py-1 bg-eduhus-bg-light text-eduhus-accent rounded-full text-xs">Czytanie</span>
                         <span className="px-2 py-1 bg-eduhus-accent-100 text-eduhus-accent rounded-full text-xs">Technologia</span>
                       </div>
                       <Link
@@ -394,7 +394,7 @@ export default function HomeClient() {
           <AnimatedSection>
             <div className="max-w-4xl mx-auto">
               {/* Modern Card Design */}
-              <div className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-3xl p-8 md:p-12 border border-eduhus-accent-100 shadow-sm">
+              <div className="bg-gradient-to-br from-eduhus-bg-light to-white rounded-3xl p-8 md:p-12 border border-eduhus-accent-100 shadow-sm">
                 <div className="text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-eduhus-accent rounded-2xl mb-6">
                     <MessageCircle className="h-8 w-8 text-white" />
@@ -435,20 +435,20 @@ export default function HomeClient() {
                   {/* Benefits - Clean Design */}
                   <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-3">
+                      <div className="w-12 h-12 bg-eduhus-bg-light rounded-xl flex items-center justify-center mb-3">
                         <CheckCircle className="h-6 w-6 text-eduhus-accent" />
                       </div>
                       <span className="text-sm font-medium text-gray-700">Bezpłatna konsultacja</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-3">
+                      <div className="w-12 h-12 bg-eduhus-bg-light rounded-xl flex items-center justify-center mb-3">
                         <Clock className="h-6 w-6 text-eduhus-accent" />
                       </div>
                       <span className="text-sm font-medium text-gray-700">30 minut rozmowy</span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-3">
-                        <Users className="h-6 w-6 text-purple-600" />
+                      <div className="w-12 h-12 bg-eduhus-bg-light rounded-xl flex items-center justify-center mb-3">
+                        <Users className="h-6 w-6 text-eduhus-secondary" />
                       </div>
                       <span className="text-sm font-medium text-gray-700">Indywidualne podejście</span>
                     </div>
@@ -525,7 +525,7 @@ export default function HomeClient() {
                       </div>
 
                       <div className="flex items-center">
-                        <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-4">
+                        <div className="w-10 h-10 bg-eduhus-bg-light rounded-lg flex items-center justify-center mr-4">
                           <MessageSquare className="h-5 w-5 text-eduhus-accent" />
                         </div>
                         <div>
@@ -542,7 +542,7 @@ export default function HomeClient() {
                       </div>
 
                       <div className="flex items-start">
-                        <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-4 mt-1">
+                        <div className="w-10 h-10 bg-eduhus-bg-light rounded-lg flex items-center justify-center mr-4 mt-1">
                           <Clock className="h-5 w-5 text-eduhus-accent" />
                         </div>
                         <div>
@@ -563,7 +563,7 @@ export default function HomeClient() {
 
                     <div className="space-y-4">
                       <div className="flex items-start">
-                        <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-4 mt-1">
+                        <div className="w-10 h-10 bg-eduhus-bg-light rounded-lg flex items-center justify-center mr-4 mt-1">
                           <span className="text-eduhus-accent font-bold text-lg">🚗</span>
                         </div>
                         <div>
@@ -576,7 +576,7 @@ export default function HomeClient() {
                       </div>
 
                       <div className="flex items-start">
-                        <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-4 mt-1">
+                        <div className="w-10 h-10 bg-eduhus-bg-light rounded-lg flex items-center justify-center mr-4 mt-1">
                           <span className="text-eduhus-accent font-bold text-lg">🚌</span>
                         </div>
                         <div>

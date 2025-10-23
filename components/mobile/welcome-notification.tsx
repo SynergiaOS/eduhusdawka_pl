@@ -42,7 +42,7 @@ export default function WelcomeNotification() {
       "fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-96 z-50 transition-all duration-300",
       isClosing ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
     )}>
-      <div className="bg-gradient-to-r from-eduhus-accent to-eduhus-accent text-white p-6 rounded-xl shadow-2xl border border-teal-400">
+      <div className="bg-gradient-to-r from-eduhus-accent to-eduhus-accent text-white p-6 rounded-xl shadow-2xl border border-eduhus-secondary">
         <button
           onClick={handleClose}
           className="absolute top-2 right-2 text-white/80 hover:text-white transition-colors"
@@ -84,7 +84,7 @@ export default function WelcomeNotification() {
         </div>
 
         {/* Animated pulse effect */}
-        <div className="absolute -inset-1 bg-gradient-to-r from-teal-400 to-teal-500 rounded-xl opacity-30 animate-pulse -z-10" />
+  <div className="absolute -inset-1 bg-gradient-to-r from-eduhus-secondary to-eduhus-accent rounded-xl opacity-30 animate-pulse -z-10" />
       </div>
     </div>
   )

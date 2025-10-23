@@ -98,14 +98,14 @@ export default function UslugiPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Nasze Usługi Terapeutyczne
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-900 mb-8 leading-relaxed">
               Oferujemy kompleksowe wsparcie terapeutyczne dla dzieci, dostosowane do indywidualnych potrzeb każdego małego pacjenta.
             </p>
           </div>
         </AnimatedSection>
 
         {/* Services Grid */}
-        <AnimatedSection className="py-16 px-4 bg-gradient-to-br from-orange-50 to-white">
+        <AnimatedSection className="py-16 px-4 bg-gradient-to-br from-eduhus-accent to-white">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service) => {
@@ -125,7 +125,7 @@ export default function UslugiPage() {
                           <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-eduhus-accent transition-colors">
                             {service.title}
                           </h3>
-                          <p className="text-gray-600 mb-4 leading-relaxed">
+                          <p className="text-gray-900 mb-4 leading-relaxed">
                             {service.description}
                           </p>
                           <div className="flex items-center text-eduhus-accent font-medium group-hover:opacity-80">
@@ -145,12 +145,12 @@ export default function UslugiPage() {
 
 
         {/* CTA Section */}
-        <AnimatedSection className="py-16 px-4 bg-gradient-to-br from-orange-50 to-white">
+        <AnimatedSection className="py-16 px-4 bg-gradient-to-br from-eduhus-accent to-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Potrzebujesz Konsultacji?
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-900 mb-8">
               Skontaktuj się z nami, aby omówić potrzeby Twojego dziecka i wybrać odpowiednią terapię.
             </p>
             <Link 

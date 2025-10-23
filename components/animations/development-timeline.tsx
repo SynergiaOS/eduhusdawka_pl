@@ -24,9 +24,9 @@ const timelineData: TimelineItem[] = [
     icon: <Sprout className="w-6 h-6" />,
     description: "Kluczowy okres rozwoju podstawowych umiejętności motorycznych i poznawczych",
     services: ["Diagnoza KORP", "Terapia ręki", "IAS Johansena"],
-    color: "border-pink-400",
-    bgColor: "bg-pink-50",
-    textColor: "text-pink-700",
+  color: "border-eduhus-accent",
+  bgColor: "bg-eduhus-bg-light",
+  textColor: "text-eduhus-accent",
     position: 'left'
   },
   {
@@ -35,9 +35,9 @@ const timelineData: TimelineItem[] = [
     icon: <Leaf className="w-6 h-6" />,
     description: "Rozwój umiejętności społecznych i przygotowanie do nauki",
     services: ["TUS", "Terapia pedagogiczna", "Wczesna nauka czytania"],
-    color: "border-blue-400",
-    bgColor: "bg-blue-50",
-    textColor: "text-blue-700",
+  color: "border-eduhus-secondary",
+  bgColor: "bg-eduhus-bg-light",
+  textColor: "text-eduhus-secondary",
     position: 'right'
   },
   {
@@ -46,9 +46,9 @@ const timelineData: TimelineItem[] = [
     icon: <GraduationCap className="w-6 h-6" />,
     description: "Wsparcie w nauce szkolnej i rozwoju umiejętności akademickich",
     services: ["Terapia pedagogiczna", "Forbrain", "Neuroflow"],
-    color: "border-green-400",
-    bgColor: "bg-orange-50",
-    textColor: "text-eduhus-accent",
+  color: "border-eduhus-secondary",
+  bgColor: "bg-eduhus-bg-light",
+  textColor: "text-eduhus-accent",
     position: 'left'
   },
   {
@@ -57,9 +57,9 @@ const timelineData: TimelineItem[] = [
     icon: <TreePine className="w-6 h-6" />,
     description: "Rozwój zaawansowanych umiejętności społecznych i przygotowanie do dorosłości",
     services: ["TUS", "IAS Johansena", "Terapia pedagogiczna"],
-    color: "border-purple-400",
-    bgColor: "bg-purple-50",
-    textColor: "text-purple-700",
+  color: "border-eduhus-accent",
+  bgColor: "bg-eduhus-bg-light",
+  textColor: "text-eduhus-secondary",
     position: 'right'
   }
 ]
@@ -68,18 +68,18 @@ export default function DevelopmentTimeline() {
   const [activeItem, setActiveItem] = useState<number | null>(null)
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-teal-50 via-white to-teal-50 relative overflow-hidden">
+    <section className="py-20 px-4 bg-gradient-to-br from-eduhus-bg-light via-white to-eduhus-bg-light relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 bg-eduhus-accent rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-eduhus-accent rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-600 rounded-full blur-2xl"></div>
+  <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-eduhus-secondary rounded-full blur-2xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative">
         <AnimatedSection>
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 bg-teal-100 px-6 py-3 rounded-full mb-6">
+            <div className="inline-flex items-center gap-3 bg-eduhus-bg-light px-6 py-3 rounded-full mb-6">
               <TreePine className="w-6 h-6 text-eduhus-accent" />
               <span className="text-eduhus-accent font-semibold">Drzewo Wsparcia</span>
             </div>
@@ -96,7 +96,7 @@ export default function DevelopmentTimeline() {
         {/* Tree Structure */}
         <div className="relative">
           {/* Tree trunk - central line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-2 bg-gradient-to-b from-amber-600 to-amber-800 rounded-full hidden lg:block"
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-2 bg-gradient-to-b from-eduhus-accent to-eduhus-secondary rounded-full hidden lg:block"
                style={{ height: 'calc(100% - 100px)', top: '50px' }}>
           </div>
 

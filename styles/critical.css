@@ -4,13 +4,13 @@
 /* CSS Variables - Essential for theming */
 :root {
   --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
-  --primary: 173 80% 40%;
-  --primary-foreground: 210 40% 98%;
+  --foreground: 210 29% 24%;
+  --primary: 45 99% 51%;
+  --primary-foreground: 210 29% 24%;
   --border: 214.3 31.8% 91.4%;
-  --teal-50: #f0fdfa;
-  --teal-600: #0d9488;
-  --teal-700: #0f766e;
+  --eduhus-light: #a4efeb;
+  --eduhus-secondary: #1ebaf1;
+  --eduhus-accent: #fed102;
   --gray-100: #f3f4f6;
   --gray-600: #4b5563;
   --gray-700: #374151;
@@ -165,12 +165,12 @@ body {
 }
 
 /* Colors - Critical for branding */
-.text-teal-600 {
-  color: var(--teal-600);
+.text-eduhus-secondary {
+  color: var(--eduhus-secondary);
 }
 
-.text-teal-700 {
-  color: var(--teal-700);
+.text-eduhus-accent {
+  color: var(--eduhus-accent);
 }
 
 .text-gray-600 {
@@ -182,11 +182,11 @@ body {
 }
 
 .bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--teal-50), var(--white));
+  background-image: linear-gradient(to bottom right, var(--eduhus-light), var(--white));
 }
 
 .bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--teal-600), var(--teal-600));
+  background-image: linear-gradient(to right, var(--eduhus-secondary), var(--eduhus-accent));
 }
 
 .bg-clip-text {
@@ -223,7 +223,7 @@ body {
 .loading-spinner {
   width: 3rem;
   height: 3rem;
-  border: 4px solid var(--teal-600);
+  border: 4px solid var(--eduhus-secondary);
   border-top-color: transparent;
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -240,7 +240,7 @@ body {
   position: absolute;
   top: -40px;
   left: 6px;
-  background: var(--teal-600);
+  background: var(--eduhus-accent);
   color: var(--white);
   padding: 8px;
   text-decoration: none;
@@ -309,8 +309,8 @@ img {
 }
 
 /* Hover states - Critical for interactivity */
-.hover\:text-teal-600:hover {
-  color: var(--teal-600);
+.hover\:text-eduhus-secondary:hover {
+  color: var(--eduhus-secondary);
 }
 
 .hover\:shadow-xl:hover {
@@ -357,8 +357,12 @@ img {
 }
 
 /* Background utilities */
-.bg-teal-600 {
-  background-color: var(--teal-600);
+.bg-eduhus-accent {
+  background-color: var(--eduhus-accent);
+}
+
+.bg-eduhus-secondary {
+  background-color: var(--eduhus-secondary);
 }
 
 /* Transition utilities */

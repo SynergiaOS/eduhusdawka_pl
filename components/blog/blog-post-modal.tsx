@@ -20,7 +20,7 @@ export default function BlogPostModal({ post, isOpen, onClose }: BlogPostModalPr
       <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
         <DialogHeader className="mb-4">
           <div className="flex justify-between items-start">
-            <DialogTitle className="text-2xl font-bold text-teal-800 font-heading">{post.title}</DialogTitle>
+            <DialogTitle className="text-2xl font-bold text-eduhus-secondary font-heading">{post.title}</DialogTitle>
             <DialogClose asChild>
               <Button variant="ghost" className="h-8 w-8 p-0 rounded-full" onClick={onClose} aria-label="Zamknij">
                 <X className="h-4 w-4" />
@@ -50,12 +50,12 @@ export default function BlogPostModal({ post, isOpen, onClose }: BlogPostModalPr
           </div>
         </div>
 
-        <div className="prose prose-teal max-w-none blog-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+  <div className="prose max-w-none blog-content prose-headings:text-eduhus-secondary prose-a:text-eduhus-accent" dangerouslySetInnerHTML={{ __html: post.content }} />
 
         <div className="mt-6 pt-4 border-t border-gray-200">
           <div className="flex flex-wrap gap-2">
             {post.tags.map((tag, index) => (
-              <div key={index} className="flex items-center bg-teal-50 text-eduhus-accent px-3 py-1 rounded-full text-sm">
+              <div key={index} className="flex items-center bg-eduhus-bg-light text-eduhus-accent px-3 py-1 rounded-full text-sm">
                 <Tag className="h-3 w-3 mr-1" />
                 {tag}
               </div>
