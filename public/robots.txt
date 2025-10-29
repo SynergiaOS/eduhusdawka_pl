@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.eduhustawka.pl/sitemap.xml
+
+# You can add Disallow lines for paths you don't want crawled, e.g.
+# Disallow: /api/
